@@ -5,8 +5,8 @@
 <title>Grupo Aspekto — Marketing</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; padding: 20px; background: #eef0f3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-  .tv { background: #0d1117; padding: 20px 22px; display: grid; grid-template-rows: auto auto 1fr; gap: 12px; border-radius: 12px; }
+  html, body { margin: 0; padding: 0; background: #0d1117; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .tv { background: #0d1117; padding: 18px 22px 28px; min-height: 100vh; display: flex; flex-direction: column; gap: 16px; }
   .topbar { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 0.5px solid #1e2d3d; flex-wrap: wrap; gap: 10px; }
   .brand-name { font-size: 16px; font-weight: 500; color: #e6edf3; letter-spacing: -0.4px; }
   .brand-sub { font-size: 12px; color: #8b9aaa; margin-top: 3px; }
@@ -14,6 +14,26 @@
   .dot { width: 7px; height: 7px; border-radius: 50%; background: #4fc3f7; animation: pulse 1.6s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
   .warn-banner { font-size: 11px; color: #f5c542; background: #171300; border: 0.5px solid #3d2e00; padding: 6px 10px; border-radius: 6px; display: none; }
+
+  .section-title { font-size: 10px; font-weight: 500; letter-spacing: 0.6px; text-transform: uppercase; color: #6e8394; margin-bottom: 2px; }
+
+  .stats-section { display: flex; flex-direction: column; gap: 10px; }
+  .user-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+  .user-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .uc-top { display: flex; align-items: center; gap: 6px; }
+  .uc-avatar { width: 20px; height: 20px; border-radius: 50%; background: #1e2d3d; color: #8b9aaa; font-size: 8.5px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .uc-name { font-size: 11px; font-weight: 500; color: #e6edf3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .uc-stats { display: flex; gap: 14px; }
+  .uc-stat { display: flex; flex-direction: column; }
+  .uc-num { font-size: 15px; font-weight: 500; color: #e6edf3; }
+  .uc-label { font-size: 8.5px; color: #5a6a7a; text-transform: uppercase; letter-spacing: 0.3px; }
+
+  .stage-time-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .stage-time-chip { display: flex; align-items: center; gap: 5px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 14px; padding: 4px 10px; }
+  .stc-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .stc-label { font-size: 9px; color: #8b9aaa; white-space: nowrap; }
+  .stc-value { font-size: 10px; font-weight: 500; color: #e6edf3; white-space: nowrap; }
+
   .grid { display: grid; grid-template-columns: repeat(10, minmax(148px, 1fr)); gap: 8px; align-items: start; overflow-x: auto; padding-bottom: 6px; }
   .col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
   .col-header { padding: 6px 6px 8px; border-bottom: 0.5px solid #1e2d3d; margin-bottom: 2px; }
@@ -44,8 +64,15 @@
   .badge-warn   { background: #2a1f00; color: #f5c542; border: 0.5px solid #5a4000; }
   .badge-danger { background: #2a0d0d; color: #f56b6b; border: 0.5px solid #5a1010; }
   .badge-neutral{ background: #171b21; color: #5a6a7a; border: 0.5px solid #262f3a; }
+  .stage-tag { font-size: 8px; font-weight: 500; color: #8b9aaa; background: #171b21; border: 0.5px solid #262f3a; border-radius: 8px; padding: 1px 6px; white-space: nowrap; }
   .loading-msg { color: #6e8394; font-size: 12px; padding: 20px; text-align: center; }
-  .readonly-note { font-size: 10px; color: #5a6a7a; }
+
+  .by-user-section { display: flex; flex-direction: column; gap: 8px; }
+  .by-user-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .user-col { display: flex; flex-direction: column; gap: 6px; background: #0a0d12; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px; }
+  .user-col-header { display: flex; align-items: center; gap: 6px; padding-bottom: 6px; border-bottom: 0.5px solid #1e2d3d; }
+  .user-col-name { font-size: 11px; font-weight: 500; color: #e6edf3; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .user-col-count { font-size: 10px; color: #5a6a7a; }
 </style>
 </head>
 <body>
@@ -59,8 +86,21 @@
     <div class="live"><span class="dot"></span>Somente leitura · atualiza a cada 10 min</div>
   </div>
   <div class="warn-banner" id="warnBanner"></div>
+
+  <div class="stats-section">
+    <div class="section-title">Por responsável</div>
+    <div class="user-cards" id="userStats"></div>
+    <div class="section-title">Tempo médio por etapa</div>
+    <div class="stage-time-row" id="stageTimes"></div>
+  </div>
+
   <div class="grid" id="grid">
     <div class="loading-msg">Carregando demandas...</div>
+  </div>
+
+  <div class="by-user-section">
+    <div class="section-title">Demandas em aberto por responsável</div>
+    <div class="by-user-board" id="byUserBoard"></div>
   </div>
 </div>
 
@@ -80,6 +120,7 @@ const STATUS_ORDER = [
   { key: 'concluído',                     label: 'Concluído',                   accent: '#26a37a' },
   { key: 'impedimento',                   label: 'Impedimento',                 accent: '#f56b6b', blinkHeader: true },
 ];
+const STATUS_LABELS = Object.fromEntries(STATUS_ORDER.map(m => [m.key, m.label]));
 
 function initials(name) {
   if (!name) return '?';
@@ -89,6 +130,14 @@ function initials(name) {
 
 function fmtClock(iso) {
   return new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+}
+
+function fmtDuration(minutes) {
+  if (!minutes || minutes <= 0) return '—';
+  if (minutes < 60) return Math.round(minutes) + 'min';
+  const hours = minutes / 60;
+  if (hours < 24) return hours.toFixed(1) + 'h';
+  return (hours / 24).toFixed(1) + 'd';
 }
 
 function dueBadge(dueDateMs) {
@@ -122,10 +171,72 @@ function cardHtml(task) {
     </a>`;
 }
 
+function cardHtmlByUser(task) {
+  const due = dueBadge(task.due_date ? Number(task.due_date) : null);
+  const cardClass = due.cls === 'danger' ? 'card-danger' : due.cls === 'warn' ? 'card-warn' : due.cls === 'ok' ? 'card-ok' : 'card-neutral';
+  return `
+    <a class="client-card ${cardClass}" href="${task.url || '#'}" target="_blank" rel="noopener">
+      <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
+      <div class="c-dono"><span class="stage-tag">${STATUS_LABELS[task.status] || task.status}</span></div>
+      <div class="c-bottom">
+        <span class="c-tempo c-${due.cls}">${due.text}</span>
+        <span class="badge badge-${due.cls}">${due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo'}</span>
+      </div>
+    </a>`;
+}
+
+function renderUserStats(data) {
+  const el = document.getElementById('userStats');
+  const stats = data.userStats || [];
+  el.innerHTML = stats.length ? stats.map(s => `
+    <div class="user-card">
+      <div class="uc-top">
+        <span class="uc-avatar">${initials(s.name)}</span>
+        <span class="uc-name">${s.name}</span>
+      </div>
+      <div class="uc-stats">
+        <div class="uc-stat"><span class="uc-num">${s.done}</span><span class="uc-label">feitas</span></div>
+        <div class="uc-stat"><span class="uc-num">${s.open}</span><span class="uc-label">em aberto</span></div>
+      </div>
+    </div>`).join('') : '<div class="empty-col">— sem membros —</div>';
+}
+
+function renderStageTimes(data) {
+  const el = document.getElementById('stageTimes');
+  const stageTimes = data.stageTimes || {};
+  el.innerHTML = STATUS_ORDER.map(meta => {
+    const minutes = stageTimes[meta.key];
+    const avg = minutes ? fmtDuration(minutes) : '—';
+    return `<div class="stage-time-chip"><span class="stc-dot" style="background:${meta.accent};"></span><span class="stc-label">${meta.label}</span><span class="stc-value">${avg}</span></div>`;
+  }).join('');
+}
+
+function renderByUser(data) {
+  const el = document.getElementById('byUserBoard');
+  const members = data.members || [];
+  const tasks = data.tasks || [];
+  el.innerHTML = members.length ? members.map(m => {
+    const open = tasks.filter(t => t.status !== 'concluído' && t.assignee && t.assignee.id === m.id);
+    const cardsHtml = open.length ? open.map(cardHtmlByUser).join('') : '<div class="empty-col">— nada em aberto —</div>';
+    return `
+      <div class="user-col">
+        <div class="user-col-header">
+          <span class="uc-avatar">${initials(m.name)}</span>
+          <span class="user-col-name">${m.name}</span>
+          <span class="user-col-count">${open.length}</span>
+        </div>
+        <div class="cards">${cardsHtml}</div>
+      </div>`;
+  }).join('') : '<div class="empty-col">— sem membros —</div>';
+}
+
 function render(data) {
   document.getElementById('sub').textContent = data.updatedAt
     ? `Fluxo de produção de conteúdo — atualizado em ${fmtClock(data.updatedAt)}`
     : 'Fluxo de produção de conteúdo';
+
+  renderUserStats(data);
+  renderStageTimes(data);
 
   const tasks = data.tasks || [];
   const grid = document.getElementById('grid');
@@ -148,6 +259,8 @@ function render(data) {
         <div class="cards">${cardsHtml}${moreNote}</div>
       </div>`;
   }).join('');
+
+  renderByUser(data);
 }
 
 async function load() {
