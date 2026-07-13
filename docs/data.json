@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T20:39:10.815Z",
+  "updatedAt": "2026-07-13T23:25:13.392Z",
   "members": [
     {
       "id": 118016784,
@@ -20,16 +20,13 @@
   ],
   "tasks": [
     {
-      "id": "86ajgvwq8",
+      "id": "86ajgzcx4",
       "name": "Teste",
-      "status": "banco de publicações",
-      "assignee": {
-        "id": 118016782,
-        "name": "Kico Cardoso"
-      },
-      "due_date": 1784617200000,
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": null,
       "date_closed": null,
-      "url": "https://app.clickup.com/t/86ajgvwq8"
+      "url": "https://app.clickup.com/t/86ajgzcx4"
     }
   ],
   "userStats": [
@@ -49,7 +46,7 @@
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 0,
-      "open": 1
+      "open": 0
     },
     {
       "id": 278685306,
