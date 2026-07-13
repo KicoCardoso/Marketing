@@ -61,6 +61,29 @@
   .user-col-info { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
   .user-col-name { font-size: 11px; font-weight: 500; color: #e6edf3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .user-col-stats { font-size: 9px; color: #5a6a7a; white-space: nowrap; }
+
+  .type-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+  .type-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 4px; }
+  .type-name { font-size: 11px; font-weight: 500; color: #e6edf3; }
+  .type-count { font-size: 18px; font-weight: 500; color: #e6edf3; }
+  .type-count span { font-size: 9px; font-weight: 400; color: #5a6a7a; margin-left: 4px; }
+  .type-time { font-size: 9.5px; color: #8b9aaa; }
+
+  .ontime-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ontime-chip { display: flex; align-items: center; gap: 6px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 14px; padding: 4px 10px; }
+  .ot-name { font-size: 9px; color: #8b9aaa; white-space: nowrap; }
+  .ot-value { font-size: 10px; font-weight: 500; white-space: nowrap; }
+  .ot-good { color: #4ade80; }
+  .ot-warn { color: #f5c542; }
+  .ot-bad { color: #f56b6b; }
+  .ot-neutral { color: #5a6a7a; }
+
+  .growth-row { display: flex; flex-direction: column; gap: 6px; }
+  .growth-item { display: flex; align-items: center; gap: 8px; }
+  .growth-label { font-size: 9.5px; color: #8b9aaa; width: 56px; flex-shrink: 0; }
+  .growth-bar-track { flex: 1; height: 8px; background: #12161c; border-radius: 4px; overflow: hidden; }
+  .growth-bar-fill { height: 100%; background: #ff9d4d; border-radius: 4px; }
+  .growth-count { font-size: 10px; font-weight: 500; color: #e6edf3; width: 22px; text-align: right; flex-shrink: 0; }
 </style>
 </head>
 <body>
@@ -91,6 +114,18 @@
       <span class="section-title">To do list</span>
     </div>
     <div class="by-user-board" id="byUserBoard"></div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-header">
+      <span class="section-accent" style="background:#ff9d4d;"></span>
+      <span class="section-title">Detalhamento de demanda</span>
+    </div>
+    <div class="type-cards" id="typeCards"></div>
+    <div class="section-subtitle">Entrega no prazo por responsável</div>
+    <div class="ontime-row" id="ontimeRow"></div>
+    <div class="section-subtitle">Volume mensal de demandas</div>
+    <div class="growth-row" id="growthRow"></div>
   </section>
 </div>
 
@@ -208,6 +243,47 @@ function renderByUser(data) {
   }).join('') : '<div class="empty-col">— sem membros —</div>';
 }
 
+function renderDetalhamento(data) {
+  const tasksByType = data.tasksByType || {};
+  const avgByType = data.avgCompletionTimeByType || {};
+  const typeEl = document.getElementById('typeCards');
+  const types = Object.keys(tasksByType).sort((a, b) => tasksByType[b] - tasksByType[a]);
+  typeEl.innerHTML = types.length ? types.map(tipo => {
+    const count = tasksByType[tipo];
+    const avg = avgByType[tipo] ? fmtDuration(avgByType[tipo]) : '—';
+    return `
+      <div class="type-card">
+        <div class="type-name">${tipo}</div>
+        <div class="type-count">${count}<span>demanda(s)</span></div>
+        <div class="type-time">méd. conclusão: ${avg}</div>
+      </div>`;
+  }).join('') : '<div class="empty-col">— sem dados —</div>';
+
+  const ontime = data.onTimeRateByUser || [];
+  const ontimeEl = document.getElementById('ontimeRow');
+  ontimeEl.innerHTML = ontime.length ? ontime.map(u => {
+    let cls = 'ot-neutral', text = '—';
+    if (u.rate !== null && u.rate !== undefined) {
+      text = u.rate + '%';
+      cls = u.rate >= 90 ? 'ot-good' : u.rate >= 70 ? 'ot-warn' : 'ot-bad';
+    }
+    return `<div class="ontime-chip"><span class="ot-name">${u.name}</span><span class="ot-value ${cls}">${text}</span></div>`;
+  }).join('') : '<div class="empty-col">— sem membros —</div>';
+
+  const growth = data.monthlyVolume || [];
+  const growthEl = document.getElementById('growthRow');
+  const max = Math.max(1, ...growth.map(g => g.count));
+  growthEl.innerHTML = growth.length ? growth.map(g => {
+    const pct = Math.round((g.count / max) * 100);
+    return `
+      <div class="growth-item">
+        <span class="growth-label">${g.month}</span>
+        <div class="growth-bar-track"><div class="growth-bar-fill" style="width:${pct}%;"></div></div>
+        <span class="growth-count">${g.count}</span>
+      </div>`;
+  }).join('') : '<div class="empty-col">— sem histórico ainda —</div>';
+}
+
 function render(data) {
   document.getElementById('sub').textContent = data.updatedAt
     ? `Fluxo de produção de conteúdo — atualizado em ${fmtClock(data.updatedAt)}`
@@ -240,6 +316,7 @@ function render(data) {
   }).join('');
 
   renderByUser(data);
+  renderDetalhamento(data);
 }
 
 async function load() {
