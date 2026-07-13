@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T23:30:30.320Z",
+  "updatedAt": "2026-07-13T23:35:12.703Z",
   "members": [
     {
       "id": 118016784,
@@ -25,7 +25,9 @@
       "status": "fila de demandas",
       "assignee": null,
       "due_date": null,
+      "date_created": 1783984199342,
       "date_closed": null,
+      "tipo": null,
       "url": "https://app.clickup.com/t/86ajgzcx4"
     }
   ],
@@ -55,5 +57,45 @@
       "open": 0
     }
   ],
-  "stageTimes": {}
+  "stageTimes": {},
+  "tasksByType": {
+    "Sem tipo": 1
+  },
+  "avgCompletionTimeByType": {},
+  "onTimeRateByUser": [
+    {
+      "id": 118016784,
+      "name": "Yuri Lima",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 118016783,
+      "name": "Ícaro Eduardo Alves Rodrigues",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 118016782,
+      "name": "Kico Cardoso",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 278685306,
+      "name": "Guilherme da Silva Barreto",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    }
+  ],
+  "monthlyVolume": [
+    {
+      "month": "2026-07",
+      "count": 1
+    }
+  ]
 }
