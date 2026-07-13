@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grupo Aspekto — Marketing</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 20px; background: #eef0f3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .tv { background: #0d1117; padding: 20px 22px; display: grid; grid-template-rows: auto auto 1fr; gap: 12px; border-radius: 12px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 0.5px solid #1e2d3d; flex-wrap: wrap; gap: 10px; }
+  .brand-name { font-size: 16px; font-weight: 500; color: #e6edf3; letter-spacing: -0.4px; }
+  .brand-sub { font-size: 12px; color: #8b9aaa; margin-top: 3px; }
+  .live { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: #4fc3f7; background: #0d2233; padding: 5px 12px; border-radius: 20px; border: 0.5px solid #1a3a52; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: #4fc3f7; animation: pulse 1.6s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
+  .warn-banner { font-size: 11px; color: #f5c542; background: #171300; border: 0.5px solid #3d2e00; padding: 6px 10px; border-radius: 6px; display: none; }
+  .grid { display: grid; grid-template-columns: repeat(10, minmax(148px, 1fr)); gap: 8px; align-items: start; overflow-x: auto; padding-bottom: 6px; }
+  .col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .col-header { padding: 6px 6px 8px; border-bottom: 0.5px solid #1e2d3d; margin-bottom: 2px; }
+  .col-title { font-size: 8.5px; font-weight: 500; letter-spacing: 0.4px; text-transform: uppercase; color: #6e8394; line-height: 1.3; }
+  .col-count { font-size: 12px; font-weight: 500; color: #e6edf3; margin-top: 3px; }
+  .col-count span { font-size: 9px; font-weight: 400; color: #5a6a7a; margin-left: 3px; }
+  .accent-bar { width: 20px; height: 2px; border-radius: 2px; margin-bottom: 6px; }
+  .cards { display: flex; flex-direction: column; gap: 4px; min-height: 20px; }
+  .empty-col { font-size: 9.5px; color: #3d4a58; padding: 10px 4px; text-align: center; }
+  .client-card { border-radius: 6px; padding: 7px 8px; border: 0.5px solid transparent; display: flex; flex-direction: column; gap: 4px; text-decoration: none; }
+  .card-ok     { background: #0f1a10; border-color: #1a3d20; }
+  .card-warn   { background: #171300; border-color: #3d2e00; }
+  .card-danger { background: #170d0d; border-color: #3d1010; }
+  .card-neutral{ background: #12161c; border-color: #1e2d3d; }
+  .c-nome { font-size: 11px; font-weight: 500; color: #e6edf3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .c-dono { font-size: 9.5px; color: #5a6a7a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 4px; }
+  .c-avatar { width: 14px; height: 14px; border-radius: 50%; background: #1e2d3d; color: #8b9aaa; font-size: 6.5px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .c-bottom { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+  .c-tempo { font-size: 9.5px; font-weight: 500; white-space: nowrap; }
+  .c-ok     { color: #4ade80; }
+  .c-warn   { color: #f5c542; }
+  .c-danger { color: #f56b6b; }
+  .c-neutral{ color: #5a6a7a; }
+  .blink { animation: pisca 1.2s infinite; }
+  @keyframes pisca { 0%,100%{opacity:1} 50%{opacity:0.35} }
+  .badge { font-size: 8px; font-weight: 500; padding: 1px 5px; border-radius: 8px; white-space: nowrap; }
+  .badge-ok     { background: #0d2a12; color: #4ade80; border: 0.5px solid #1a5c28; }
+  .badge-warn   { background: #2a1f00; color: #f5c542; border: 0.5px solid #5a4000; }
+  .badge-danger { background: #2a0d0d; color: #f56b6b; border: 0.5px solid #5a1010; }
+  .badge-neutral{ background: #171b21; color: #5a6a7a; border: 0.5px solid #262f3a; }
+  .loading-msg { color: #6e8394; font-size: 12px; padding: 20px; text-align: center; }
+  .readonly-note { font-size: 10px; color: #5a6a7a; }
+</style>
+</head>
+<body>
+
+<div class="tv" id="tv">
+  <div class="topbar">
+    <div>
+      <div class="brand-name">Grupo Aspekto — Marketing</div>
+      <div class="brand-sub" id="sub">Fluxo de produção de conteúdo</div>
+    </div>
+    <div class="live"><span class="dot"></span>Somente leitura · atualiza a cada 10 min</div>
+  </div>
+  <div class="warn-banner" id="warnBanner"></div>
+  <div class="grid" id="grid">
+    <div class="loading-msg">Carregando demandas...</div>
+  </div>
+</div>
+
+<script>
+const DATA_URL = './data.json';
+const REFRESH_MS = 2 * 60 * 1000;
+
+const STATUS_ORDER = [
+  { key: 'fila de demandas',              label: 'Fila de demandas',            accent: '#8b9aaa' },
+  { key: 'criação de copy / roteiros',    label: 'Criação de copy / roteiros',  accent: '#4fc3f7' },
+  { key: 'captação / gravação',           label: 'Captação / gravação',         accent: '#7c8cff' },
+  { key: 'produção / edição',             label: 'Produção / edição',           accent: '#b388ff' },
+  { key: 'aprovação 1',                   label: 'Aprovação 1',                 accent: '#f5c542' },
+  { key: 'ajuste',                        label: 'Ajuste',                      accent: '#ff9d4d' },
+  { key: 'aprovação 2',                   label: 'Aprovação 2',                 accent: '#f5c542' },
+  { key: 'banco de publicações',          label: 'Banco de publicações',        accent: '#4ade80' },
+  { key: 'concluído',                     label: 'Concluído',                   accent: '#26a37a' },
+  { key: 'impedimento',                   label: 'Impedimento',                 accent: '#f56b6b', blinkHeader: true },
+];
+
+function initials(name) {
+  if (!name) return '?';
+  const parts = name.trim().split(/\s+/);
+  return ((parts[0]?.[0] || '') + (parts[1]?.[0] || '')).toUpperCase();
+}
+
+function fmtClock(iso) {
+  return new Date(iso).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+}
+
+function dueBadge(dueDateMs) {
+  if (!dueDateMs) return { cls: 'neutral', text: 'sem prazo' };
+  const diffMs = dueDateMs - Date.now();
+  const diffH = diffMs / 3600000;
+  if (diffMs < 0) {
+    const d = Math.abs(diffMs / 86400000);
+    return { cls: 'danger', text: d >= 1 ? `atrasado ${Math.floor(d)}d` : 'atrasado' };
+  }
+  if (diffH <= 24) return { cls: 'warn', text: `vence em ${Math.max(1, Math.round(diffH))}h` };
+  const d = diffH / 24;
+  return { cls: 'ok', text: `vence em ${Math.ceil(d)}d` };
+}
+
+function cardHtml(task) {
+  const due = dueBadge(task.due_date ? Number(task.due_date) : null);
+  const cardClass = due.cls === 'danger' ? 'card-danger' : due.cls === 'warn' ? 'card-warn' : due.cls === 'ok' ? 'card-ok' : 'card-neutral';
+  const assignee = task.assignee;
+  return `
+    <a class="client-card ${cardClass}" href="${task.url || '#'}" target="_blank" rel="noopener">
+      <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
+      <div class="c-dono">
+        <span class="c-avatar">${initials(assignee ? assignee.name : '')}</span>
+        ${assignee ? assignee.name : 'Sem responsável'}
+      </div>
+      <div class="c-bottom">
+        <span class="c-tempo c-${due.cls}">${due.text}</span>
+        <span class="badge badge-${due.cls}">${due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo'}</span>
+      </div>
+    </a>`;
+}
+
+function render(data) {
+  document.getElementById('sub').textContent = data.updatedAt
+    ? `Fluxo de produção de conteúdo — atualizado em ${fmtClock(data.updatedAt)}`
+    : 'Fluxo de produção de conteúdo';
+
+  const tasks = data.tasks || [];
+  const grid = document.getElementById('grid');
+  grid.innerHTML = STATUS_ORDER.map(meta => {
+    const items = tasks.filter(t => (t.status || '').trim().toLowerCase() === meta.key);
+    let shown = items;
+    let moreNote = '';
+    if (meta.key === 'concluído') {
+      shown = items.slice().sort((a, b) => Number(b.date_closed || 0) - Number(a.date_closed || 0)).slice(0, 8);
+      if (items.length > 8) moreNote = `<div class="empty-col">+${items.length - 8} mais concluídas</div>`;
+    }
+    const cardsHtml = shown.length ? shown.map(cardHtml).join('') : '<div class="empty-col">— vazio —</div>';
+    return `
+      <div class="col">
+        <div class="col-header">
+          <div class="accent-bar ${meta.blinkHeader && items.length ? 'blink' : ''}" style="background:${meta.accent};"></div>
+          <div class="col-title">${meta.label}</div>
+          <div class="col-count">${items.length} <span>demanda(s)</span></div>
+        </div>
+        <div class="cards">${cardsHtml}${moreNote}</div>
+      </div>`;
+  }).join('');
+}
+
+async function load() {
+  const warnEl = document.getElementById('warnBanner');
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    warnEl.style.display = 'none';
+    render(data);
+  } catch (e) {
+    warnEl.textContent = `Falha ao carregar dados: ${e.message}`;
+    warnEl.style.display = 'block';
+  }
+}
+
+load();
+setInterval(load, REFRESH_MS);
+</script>
+</body>
+</html>
