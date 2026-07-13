@@ -5,19 +5,22 @@
 <title>Grupo Aspekto — Marketing</title>
 <style>
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: #0d1117; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-  .tv { background: #0d1117; padding: 18px 22px 28px; min-height: 100vh; display: flex; flex-direction: column; gap: 16px; }
-  .topbar { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 0.5px solid #1e2d3d; flex-wrap: wrap; gap: 10px; }
-  .brand-name { font-size: 16px; font-weight: 500; color: #e6edf3; letter-spacing: -0.4px; }
+  html, body { margin: 0; padding: 0; background: #05070a; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .tv { background: #05070a; padding: 20px 24px 32px; min-height: 100vh; display: flex; flex-direction: column; gap: 22px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; padding-bottom: 14px; border-bottom: 0.5px solid #1e2d3d; flex-wrap: wrap; gap: 10px; }
+  .brand-name { font-size: 17px; font-weight: 500; color: #e6edf3; letter-spacing: -0.4px; }
   .brand-sub { font-size: 12px; color: #8b9aaa; margin-top: 3px; }
   .live { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 500; color: #4fc3f7; background: #0d2233; padding: 5px 12px; border-radius: 20px; border: 0.5px solid #1a3a52; }
   .dot { width: 7px; height: 7px; border-radius: 50%; background: #4fc3f7; animation: pulse 1.6s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
   .warn-banner { font-size: 11px; color: #f5c542; background: #171300; border: 0.5px solid #3d2e00; padding: 6px 10px; border-radius: 6px; display: none; }
 
-  .section-title { font-size: 10px; font-weight: 500; letter-spacing: 0.6px; text-transform: uppercase; color: #6e8394; margin-bottom: 2px; }
+  .dashboard-section { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 16px 18px 18px; }
+  .section-header { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 0.5px solid #1e2d3d; }
+  .section-accent { width: 4px; height: 16px; border-radius: 2px; flex-shrink: 0; }
+  .section-title { font-size: 13px; font-weight: 500; letter-spacing: 0.2px; color: #e6edf3; }
+  .section-subtitle { font-size: 9.5px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: #6e8394; margin: 14px 0 8px; }
 
-  .stats-section { display: flex; flex-direction: column; gap: 10px; }
   .user-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
   .user-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
   .uc-top { display: flex; align-items: center; gap: 6px; }
@@ -67,9 +70,8 @@
   .stage-tag { font-size: 8px; font-weight: 500; color: #8b9aaa; background: #171b21; border: 0.5px solid #262f3a; border-radius: 8px; padding: 1px 6px; white-space: nowrap; }
   .loading-msg { color: #6e8394; font-size: 12px; padding: 20px; text-align: center; }
 
-  .by-user-section { display: flex; flex-direction: column; gap: 8px; }
   .by-user-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
-  .user-col { display: flex; flex-direction: column; gap: 6px; background: #0a0d12; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px; }
+  .user-col { display: flex; flex-direction: column; gap: 6px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px; }
   .user-col-header { display: flex; align-items: center; gap: 6px; padding-bottom: 6px; border-bottom: 0.5px solid #1e2d3d; }
   .user-col-name { font-size: 11px; font-weight: 500; color: #e6edf3; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .user-col-count { font-size: 10px; color: #5a6a7a; }
@@ -87,21 +89,33 @@
   </div>
   <div class="warn-banner" id="warnBanner"></div>
 
-  <div class="stats-section">
-    <div class="section-title">Por responsável</div>
+  <section class="dashboard-section">
+    <div class="section-header">
+      <span class="section-accent" style="background:#b388ff;"></span>
+      <span class="section-title">Kanban</span>
+    </div>
+    <div class="grid" id="grid">
+      <div class="loading-msg">Carregando demandas...</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <div class="section-header">
+      <span class="section-accent" style="background:#4fc3f7;"></span>
+      <span class="section-title">Volume de demanda</span>
+    </div>
     <div class="user-cards" id="userStats"></div>
-    <div class="section-title">Tempo médio por etapa</div>
+    <div class="section-subtitle">Tempo médio por etapa</div>
     <div class="stage-time-row" id="stageTimes"></div>
-  </div>
+  </section>
 
-  <div class="grid" id="grid">
-    <div class="loading-msg">Carregando demandas...</div>
-  </div>
-
-  <div class="by-user-section">
-    <div class="section-title">Demandas em aberto por responsável</div>
+  <section class="dashboard-section">
+    <div class="section-header">
+      <span class="section-accent" style="background:#4ade80;"></span>
+      <span class="section-title">To do list</span>
+    </div>
     <div class="by-user-board" id="byUserBoard"></div>
-  </div>
+  </section>
 </div>
 
 <script>
@@ -151,6 +165,14 @@ function dueBadge(dueDateMs) {
   if (diffH <= 24) return { cls: 'warn', text: `vence em ${Math.max(1, Math.round(diffH))}h` };
   const d = diffH / 24;
   return { cls: 'ok', text: `vence em ${Math.ceil(d)}d` };
+}
+
+function sortByUrgency(tasks) {
+  return tasks.slice().sort((a, b) => {
+    const da = a.due_date ? Number(a.due_date) : Infinity;
+    const db = b.due_date ? Number(b.due_date) : Infinity;
+    return da - db;
+  });
 }
 
 function cardHtml(task) {
@@ -216,7 +238,7 @@ function renderByUser(data) {
   const members = data.members || [];
   const tasks = data.tasks || [];
   el.innerHTML = members.length ? members.map(m => {
-    const open = tasks.filter(t => t.status !== 'concluído' && t.assignee && t.assignee.id === m.id);
+    const open = sortByUrgency(tasks.filter(t => t.status !== 'concluído' && t.assignee && t.assignee.id === m.id));
     const cardsHtml = open.length ? open.map(cardHtmlByUser).join('') : '<div class="empty-col">— nada em aberto —</div>';
     return `
       <div class="user-col">
