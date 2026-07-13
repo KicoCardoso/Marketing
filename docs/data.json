@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T23:35:12.703Z",
+  "updatedAt": "2026-07-13T23:38:17.497Z",
   "members": [
     {
       "id": 118016784,
@@ -22,8 +22,11 @@
     {
       "id": "86ajgzcx4",
       "name": "Teste",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "criação de copy / roteiros",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
       "due_date": null,
       "date_created": 1783984199342,
       "date_closed": null,
@@ -36,7 +39,7 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 0
+      "open": 1
     },
     {
       "id": 118016783,
