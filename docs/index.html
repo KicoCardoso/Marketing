@@ -21,26 +21,11 @@
   .section-title { font-size: 13px; font-weight: 500; letter-spacing: 0.2px; color: #e6edf3; }
   .section-subtitle { font-size: 9.5px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: #6e8394; margin: 14px 0 8px; }
 
-  .user-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
-  .user-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px 10px; display: flex; flex-direction: column; gap: 6px; }
-  .uc-top { display: flex; align-items: center; gap: 6px; }
-  .uc-avatar { width: 20px; height: 20px; border-radius: 50%; background: #1e2d3d; color: #8b9aaa; font-size: 8.5px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .uc-name { font-size: 11px; font-weight: 500; color: #e6edf3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .uc-stats { display: flex; gap: 14px; }
-  .uc-stat { display: flex; flex-direction: column; }
-  .uc-num { font-size: 15px; font-weight: 500; color: #e6edf3; }
-  .uc-label { font-size: 8.5px; color: #5a6a7a; text-transform: uppercase; letter-spacing: 0.3px; }
-
-  .stage-time-row { display: flex; flex-wrap: wrap; gap: 6px; }
-  .stage-time-chip { display: flex; align-items: center; gap: 5px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 14px; padding: 4px 10px; }
-  .stc-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-  .stc-label { font-size: 9px; color: #8b9aaa; white-space: nowrap; }
-  .stc-value { font-size: 10px; font-weight: 500; color: #e6edf3; white-space: nowrap; }
-
   .grid { display: grid; grid-template-columns: repeat(10, minmax(148px, 1fr)); gap: 8px; align-items: start; overflow-x: auto; padding-bottom: 6px; }
   .col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
   .col-header { padding: 6px 6px 8px; border-bottom: 0.5px solid #1e2d3d; margin-bottom: 2px; }
   .col-title { font-size: 8.5px; font-weight: 500; letter-spacing: 0.4px; text-transform: uppercase; color: #6e8394; line-height: 1.3; }
+  .col-time { font-size: 9px; font-weight: 500; color: #4fc3f7; margin-top: 3px; white-space: nowrap; }
   .col-count { font-size: 12px; font-weight: 500; color: #e6edf3; margin-top: 3px; }
   .col-count span { font-size: 9px; font-weight: 400; color: #5a6a7a; margin-left: 3px; }
   .accent-bar { width: 20px; height: 2px; border-radius: 2px; margin-bottom: 6px; }
@@ -72,9 +57,10 @@
 
   .by-user-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
   .user-col { display: flex; flex-direction: column; gap: 6px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 8px; }
-  .user-col-header { display: flex; align-items: center; gap: 6px; padding-bottom: 6px; border-bottom: 0.5px solid #1e2d3d; }
-  .user-col-name { font-size: 11px; font-weight: 500; color: #e6edf3; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .user-col-count { font-size: 10px; color: #5a6a7a; }
+  .user-col-header { display: flex; align-items: center; gap: 7px; padding-bottom: 7px; border-bottom: 0.5px solid #1e2d3d; }
+  .user-col-info { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+  .user-col-name { font-size: 11px; font-weight: 500; color: #e6edf3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .user-col-stats { font-size: 9px; color: #5a6a7a; white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -92,21 +78,11 @@
   <section class="dashboard-section">
     <div class="section-header">
       <span class="section-accent" style="background:#b388ff;"></span>
-      <span class="section-title">Kanban</span>
+      <span class="section-title">Fluxo de demanda</span>
     </div>
     <div class="grid" id="grid">
       <div class="loading-msg">Carregando demandas...</div>
     </div>
-  </section>
-
-  <section class="dashboard-section">
-    <div class="section-header">
-      <span class="section-accent" style="background:#4fc3f7;"></span>
-      <span class="section-title">Volume de demanda</span>
-    </div>
-    <div class="user-cards" id="userStats"></div>
-    <div class="section-subtitle">Tempo médio por etapa</div>
-    <div class="stage-time-row" id="stageTimes"></div>
   </section>
 
   <section class="dashboard-section">
@@ -207,45 +183,25 @@ function cardHtmlByUser(task) {
     </a>`;
 }
 
-function renderUserStats(data) {
-  const el = document.getElementById('userStats');
-  const stats = data.userStats || [];
-  el.innerHTML = stats.length ? stats.map(s => `
-    <div class="user-card">
-      <div class="uc-top">
-        <span class="uc-avatar">${initials(s.name)}</span>
-        <span class="uc-name">${s.name}</span>
-      </div>
-      <div class="uc-stats">
-        <div class="uc-stat"><span class="uc-num">${s.done}</span><span class="uc-label">feitas</span></div>
-        <div class="uc-stat"><span class="uc-num">${s.open}</span><span class="uc-label">em aberto</span></div>
-      </div>
-    </div>`).join('') : '<div class="empty-col">— sem membros —</div>';
-}
-
-function renderStageTimes(data) {
-  const el = document.getElementById('stageTimes');
-  const stageTimes = data.stageTimes || {};
-  el.innerHTML = STATUS_ORDER.map(meta => {
-    const minutes = stageTimes[meta.key];
-    const avg = minutes ? fmtDuration(minutes) : '—';
-    return `<div class="stage-time-chip"><span class="stc-dot" style="background:${meta.accent};"></span><span class="stc-label">${meta.label}</span><span class="stc-value">${avg}</span></div>`;
-  }).join('');
-}
-
 function renderByUser(data) {
   const el = document.getElementById('byUserBoard');
   const members = data.members || [];
   const tasks = data.tasks || [];
+  const userStatsById = Object.fromEntries((data.userStats || []).map(s => [s.id, s]));
   el.innerHTML = members.length ? members.map(m => {
-    const open = sortByUrgency(tasks.filter(t => t.status !== 'concluído' && t.assignee && t.assignee.id === m.id));
+    const mine = tasks.filter(t => t.assignee && t.assignee.id === m.id);
+    const stat = userStatsById[m.id];
+    const done = stat ? stat.done : mine.filter(t => t.status === 'concluído').length;
+    const open = sortByUrgency(mine.filter(t => t.status !== 'concluído'));
     const cardsHtml = open.length ? open.map(cardHtmlByUser).join('') : '<div class="empty-col">— nada em aberto —</div>';
     return `
       <div class="user-col">
         <div class="user-col-header">
           <span class="uc-avatar">${initials(m.name)}</span>
-          <span class="user-col-name">${m.name}</span>
-          <span class="user-col-count">${open.length}</span>
+          <div class="user-col-info">
+            <span class="user-col-name">${m.name}</span>
+            <span class="user-col-stats">${done} feitas · ${open.length} em aberto</span>
+          </div>
         </div>
         <div class="cards">${cardsHtml}</div>
       </div>`;
@@ -257,10 +213,8 @@ function render(data) {
     ? `Fluxo de produção de conteúdo — atualizado em ${fmtClock(data.updatedAt)}`
     : 'Fluxo de produção de conteúdo';
 
-  renderUserStats(data);
-  renderStageTimes(data);
-
   const tasks = data.tasks || [];
+  const stageTimes = data.stageTimes || {};
   const grid = document.getElementById('grid');
   grid.innerHTML = STATUS_ORDER.map(meta => {
     const items = tasks.filter(t => (t.status || '').trim().toLowerCase() === meta.key);
@@ -271,11 +225,14 @@ function render(data) {
       if (items.length > 8) moreNote = `<div class="empty-col">+${items.length - 8} mais concluídas</div>`;
     }
     const cardsHtml = shown.length ? shown.map(cardHtml).join('') : '<div class="empty-col">— vazio —</div>';
+    const minutes = stageTimes[meta.key];
+    const avgTime = minutes ? fmtDuration(minutes) : '—';
     return `
       <div class="col">
         <div class="col-header">
           <div class="accent-bar ${meta.blinkHeader && items.length ? 'blink' : ''}" style="background:${meta.accent};"></div>
           <div class="col-title">${meta.label}</div>
+          <div class="col-time">méd. ${avgTime}</div>
           <div class="col-count">${items.length} <span>demanda(s)</span></div>
         </div>
         <div class="cards">${cardsHtml}${moreNote}</div>
