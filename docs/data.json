@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:30:31.571Z",
+  "updatedAt": "2026-07-14T17:35:13.747Z",
   "members": [
     {
       "id": 118016784,
@@ -114,7 +114,7 @@
       "due_date": 1782198000000,
       "date_created": 1784046902747,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Influenciadores",
       "url": "https://app.clickup.com/t/86ajhbkvh"
     },
     {
@@ -286,7 +286,8 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 17
+    "Sem tipo": 16,
+    "Influenciadores": 1
   },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
