@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T15:25:12.952Z",
+  "updatedAt": "2026-07-14T15:30:30.561Z",
   "members": [
     {
       "id": 118016784,
@@ -18,7 +18,22 @@
       "name": "Guilherme da Silva Barreto"
     }
   ],
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "86ajha0y7",
+      "name": "Lançamento da Aspekto em São Paulo",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785481200000,
+      "date_created": 1784042725092,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajha0y7"
+    }
+  ],
   "userStats": [
     {
       "id": 118016784,
@@ -42,11 +57,13 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 0
+      "open": 1
     }
   ],
   "stageTimes": {},
-  "tasksByType": {},
+  "tasksByType": {
+    "Sem tipo": 1
+  },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
     {
@@ -78,5 +95,10 @@
       "rate": null
     }
   ],
-  "monthlyVolume": []
+  "monthlyVolume": [
+    {
+      "month": "2026-07",
+      "count": 1
+    }
+  ]
 }
