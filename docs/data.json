@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T16:50:25.126Z",
+  "updatedAt": "2026-07-14T16:55:17.265Z",
   "members": [
     {
       "id": 118016784,
@@ -133,8 +133,11 @@
       "id": "86ajhbkv3",
       "name": "Criar links dos conteúdos já postados pelos influenciadores",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
       "date_created": 1784046901664,
       "date_closed": null,
       "tipo": null,
@@ -144,8 +147,11 @@
       "id": "86ajhbkux",
       "name": "Planejamento do Youtube",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785481200000,
       "date_created": 1784046901366,
       "date_closed": null,
       "tipo": null,
@@ -155,8 +161,11 @@
       "id": "86ajhbkuj",
       "name": "Planejamento do TikTok",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785481200000,
       "date_created": 1784046901084,
       "date_closed": null,
       "tipo": null,
@@ -165,9 +174,12 @@
     {
       "id": "86ajhbku9",
       "name": "Desenvolver capa de reels no perfil da Aspekto",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784098800000,
       "date_created": 1784046900759,
       "date_closed": null,
       "tipo": null,
@@ -177,8 +189,11 @@
       "id": "86ajhbku1",
       "name": "Campanha de Aniversário Aspekto",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784876400000,
       "date_created": 1784046900490,
       "date_closed": null,
       "tipo": null,
@@ -187,8 +202,11 @@
     {
       "id": "86ajhbktv",
       "name": "Gravação de roteiros ADS → (Roteiro ADS - 19/06)",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "captação / gravação",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
       "due_date": null,
       "date_created": 1784046900274,
       "date_closed": null,
@@ -215,7 +233,7 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 0
+      "open": 1
     },
     {
       "id": 118016783,
@@ -233,7 +251,7 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 1
+      "open": 6
     }
   ],
   "stageTimes": {},
