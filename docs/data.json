@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:50:25.132Z",
+  "updatedAt": "2026-07-14T17:55:14.384Z",
   "members": [
     {
       "id": 118016784,
@@ -30,7 +30,7 @@
       "due_date": null,
       "date_created": 1784051367338,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz3k"
     },
     {
@@ -44,7 +44,7 @@
       "due_date": null,
       "date_created": 1784051367050,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz3f"
     },
     {
@@ -58,7 +58,7 @@
       "due_date": null,
       "date_created": 1784051366687,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz3a"
     },
     {
@@ -72,7 +72,7 @@
       "due_date": null,
       "date_created": 1784051366406,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz34"
     },
     {
@@ -86,7 +86,7 @@
       "due_date": null,
       "date_created": 1784051366148,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz31"
     },
     {
@@ -100,7 +100,7 @@
       "due_date": null,
       "date_created": 1784051365824,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhdz2y"
     },
     {
@@ -328,20 +328,6 @@
       "url": "https://app.clickup.com/t/86ajhbku1"
     },
     {
-      "id": "86ajhbktv",
-      "name": "Gravação de roteiros ADS",
-      "status": "captação / gravação",
-      "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
-      },
-      "due_date": null,
-      "date_created": 1784046900274,
-      "date_closed": null,
-      "tipo": "ADS",
-      "url": "https://app.clickup.com/t/86ajhbktv"
-    },
-    {
       "id": "86ajha0y7",
       "name": "Lançamento da Aspekto em São Paulo",
       "status": "demanda em desenvolvimento",
@@ -361,7 +347,7 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 7
+      "open": 6
     },
     {
       "id": 118016783,
@@ -384,13 +370,13 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 8,
+    "ADS": 6,
     "Identidade visual": 1,
     "Mídias sociais": 8,
     "Branding": 3,
     "CS": 1,
     "Influenciadores": 2,
-    "ADS": 1
+    "Sem tipo": 2
   },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
@@ -426,7 +412,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 24
+      "count": 23
     }
   ]
 }
