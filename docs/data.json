@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T15:15:17.837Z",
+  "updatedAt": "2026-07-14T15:20:23.533Z",
   "members": [
     {
       "id": 118016784,
@@ -18,28 +18,13 @@
       "name": "Guilherme da Silva Barreto"
     }
   ],
-  "tasks": [
-    {
-      "id": "86ajgzcx4",
-      "name": "Teste",
-      "status": "criação de copy / roteiros",
-      "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
-      },
-      "due_date": null,
-      "date_created": 1783984199342,
-      "date_closed": null,
-      "tipo": null,
-      "url": "https://app.clickup.com/t/86ajgzcx4"
-    }
-  ],
+  "tasks": [],
   "userStats": [
     {
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 1
+      "open": 0
     },
     {
       "id": 118016783,
@@ -61,9 +46,7 @@
     }
   ],
   "stageTimes": {},
-  "tasksByType": {
-    "Sem tipo": 1
-  },
+  "tasksByType": {},
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
     {
@@ -95,10 +78,5 @@
       "rate": null
     }
   ],
-  "monthlyVolume": [
-    {
-      "month": "2026-07",
-      "count": 1
-    }
-  ]
+  "monthlyVolume": []
 }
