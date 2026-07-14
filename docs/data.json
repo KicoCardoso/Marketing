@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T18:45:15.244Z",
+  "updatedAt": "2026-07-14T18:50:21.823Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,34 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajhg1ta",
+      "name": "Depoimento - Edijane Martins - 12h",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785222000000,
+      "date_created": 1784054940394,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhg1ta"
+    },
+    {
+      "id": "86ajhg07w",
+      "name": "CX - Tarefas e processos - Luiz",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": 1784134800000,
+      "date_created": 1784054874758,
+      "date_closed": null,
+      "tipo": "CS",
+      "url": "https://app.clickup.com/t/86ajhg07w"
+    },
     {
       "id": "86ajhdz3k",
       "name": "[ADS 19/06] Roteiro 06",
@@ -359,24 +387,24 @@
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 0,
-      "open": 1
+      "open": 2
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 14
+      "open": 15
     }
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Sem tipo": 3,
+    "CS": 2,
     "ADS": 6,
     "Identidade visual": 1,
     "Mídias sociais": 8,
     "Branding": 3,
-    "CS": 1,
-    "Influenciadores": 2,
-    "Sem tipo": 2
+    "Influenciadores": 2
   },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
@@ -412,7 +440,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 23
+      "count": 25
     }
   ]
 }
