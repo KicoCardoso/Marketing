@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:45:14.743Z",
+  "updatedAt": "2026-07-14T17:50:25.132Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,90 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajhdz3k",
+      "name": "[ADS 19/06] Roteiro 06",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051367338,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz3k"
+    },
+    {
+      "id": "86ajhdz3f",
+      "name": "[ADS 19/06] Roteiro 05",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051367050,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz3f"
+    },
+    {
+      "id": "86ajhdz3a",
+      "name": "[ADS 19/06] Roteiro 04",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366687,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz3a"
+    },
+    {
+      "id": "86ajhdz34",
+      "name": "[ADS 19/06] Roteiro 03",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366406,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz34"
+    },
+    {
+      "id": "86ajhdz31",
+      "name": "[ADS 19/06] Roteiro 02",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366148,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz31"
+    },
+    {
+      "id": "86ajhdz2y",
+      "name": "[ADS 19/06] Roteiro 01",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051365824,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhdz2y"
+    },
     {
       "id": "86ajhdjrd",
       "name": "SITE Aspekto",
@@ -277,7 +361,7 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 1
+      "open": 7
     },
     {
       "id": 118016783,
@@ -300,12 +384,12 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Sem tipo": 8,
     "Identidade visual": 1,
     "Mídias sociais": 8,
     "Branding": 3,
     "CS": 1,
     "Influenciadores": 2,
-    "Sem tipo": 2,
     "ADS": 1
   },
   "avgCompletionTimeByType": {},
@@ -342,7 +426,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 18
+      "count": 24
     }
   ]
 }
