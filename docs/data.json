@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T23:30:30.320Z",
+  "updatedAt": "2026-07-14T19:55:16.216Z",
   "members": [
     {
       "id": 118016784,
@@ -20,13 +20,354 @@
   ],
   "tasks": [
     {
-      "id": "86ajgzcx4",
-      "name": "Teste",
+      "id": "86ajhg1ta",
+      "name": "Depoimento - Edijane Martins - 12h",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785222000000,
+      "date_created": 1784054940394,
       "date_closed": null,
-      "url": "https://app.clickup.com/t/86ajgzcx4"
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhg1ta"
+    },
+    {
+      "id": "86ajhg07w",
+      "name": "CX - Tarefas e processos - Luiz",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": 1784134800000,
+      "date_created": 1784054874758,
+      "date_closed": null,
+      "tipo": "CS",
+      "url": "https://app.clickup.com/t/86ajhg07w"
+    },
+    {
+      "id": "86ajhdz3k",
+      "name": "[ADS 19/06] Roteiro 06",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051367338,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz3k"
+    },
+    {
+      "id": "86ajhdz3f",
+      "name": "[ADS 19/06] Roteiro 05",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051367050,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz3f"
+    },
+    {
+      "id": "86ajhdz3a",
+      "name": "[ADS 19/06] Roteiro 04",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366687,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz3a"
+    },
+    {
+      "id": "86ajhdz34",
+      "name": "[ADS 19/06] Roteiro 03",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366406,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz34"
+    },
+    {
+      "id": "86ajhdz31",
+      "name": "[ADS 19/06] Roteiro 02",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051366148,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz31"
+    },
+    {
+      "id": "86ajhdz2y",
+      "name": "[ADS 19/06] Roteiro 01",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": null,
+      "date_created": 1784051365824,
+      "date_closed": null,
+      "tipo": "ADS",
+      "url": "https://app.clickup.com/t/86ajhdz2y"
+    },
+    {
+      "id": "86ajhdjrd",
+      "name": "SITE Aspekto",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784050697212,
+      "date_closed": null,
+      "tipo": "Identidade visual",
+      "url": "https://app.clickup.com/t/86ajhdjrd"
+    },
+    {
+      "id": "86ajhbkwk",
+      "name": "Planejamento de Julho ",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784098800000,
+      "date_created": 1784046904412,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkwk"
+    },
+    {
+      "id": "86ajhbkwb",
+      "name": "Criar conteúdos fixos para o perfil da Aspekto",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784046904119,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkwb"
+    },
+    {
+      "id": "86ajhbkw6",
+      "name": "Logo da nova campanha: 14 anos Aspekto",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": null,
+      "date_created": 1784046903867,
+      "date_closed": null,
+      "tipo": "Branding",
+      "url": "https://app.clickup.com/t/86ajhbkw6"
+    },
+    {
+      "id": "86ajhbkw0",
+      "name": "Criar destaque - “Sou Novo Aqui”",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784046903562,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkw0"
+    },
+    {
+      "id": "86ajhbkvv",
+      "name": "Depoimento - Italo Henrique de Lima Silva",
+      "status": "impedimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784530800000,
+      "date_created": 1784046903346,
+      "date_closed": null,
+      "tipo": "CS",
+      "url": "https://app.clickup.com/t/86ajhbkvv"
+    },
+    {
+      "id": "86ajhbkvq",
+      "name": "Gravar reels de sorriso artístico",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784046903102,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkvq"
+    },
+    {
+      "id": "86ajhbkvh",
+      "name": "Contratos de influenciadores",
+      "status": "impedimento",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": 1782198000000,
+      "date_created": 1784046902747,
+      "date_closed": null,
+      "tipo": "Influenciadores",
+      "url": "https://app.clickup.com/t/86ajhbkvh"
+    },
+    {
+      "id": "86ajhbkve",
+      "name": "Fazer pesquisa de leads qualificados para o laboratório",
+      "status": "impedimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1782716400000,
+      "date_created": 1784046902429,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhbkve"
+    },
+    {
+      "id": "86ajhbkvc",
+      "name": "Elaborar copy para roteiros de conteúdos do Gui",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784012400000,
+      "date_created": 1784046902168,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkvc"
+    },
+    {
+      "id": "86ajhbkv4",
+      "name": "Desenvolver dashboard com métricas do Instagram",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784046901914,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkv4"
+    },
+    {
+      "id": "86ajhbkv3",
+      "name": "Criar links dos conteúdos já postados pelos influenciadores",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784046901664,
+      "date_closed": null,
+      "tipo": "Influenciadores",
+      "url": "https://app.clickup.com/t/86ajhbkv3"
+    },
+    {
+      "id": "86ajhbkux",
+      "name": "Planejamento do Youtube",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785481200000,
+      "date_created": 1784046901366,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbkux"
+    },
+    {
+      "id": "86ajhbkuj",
+      "name": "Planejamento do TikTok",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785481200000,
+      "date_created": 1784046901084,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhbkuj"
+    },
+    {
+      "id": "86ajhbku9",
+      "name": "Desenvolver capa de reels no perfil da Aspekto",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784012400000,
+      "date_created": 1784046900759,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajhbku9"
+    },
+    {
+      "id": "86ajhbku1",
+      "name": "Campanha de Aniversário Aspekto",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784876400000,
+      "date_created": 1784046900490,
+      "date_closed": null,
+      "tipo": "Branding",
+      "url": "https://app.clickup.com/t/86ajhbku1"
+    },
+    {
+      "id": "86ajha0y7",
+      "name": "Lançamento da Aspekto em São Paulo",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784042725092,
+      "date_closed": null,
+      "tipo": "Branding",
+      "url": "https://app.clickup.com/t/86ajha0y7"
     }
   ],
   "userStats": [
@@ -34,26 +375,72 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 0
+      "open": 6
     },
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 0,
-      "open": 0
+      "open": 2
     },
     {
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 0,
-      "open": 0
+      "open": 2
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 0
+      "open": 15
     }
   ],
-  "stageTimes": {}
+  "stageTimes": {},
+  "tasksByType": {
+    "Sem tipo": 3,
+    "CS": 2,
+    "ADS": 6,
+    "Identidade visual": 1,
+    "Mídias sociais": 8,
+    "Branding": 3,
+    "Influenciadores": 2
+  },
+  "avgCompletionTimeByType": {},
+  "onTimeRateByUser": [
+    {
+      "id": 118016784,
+      "name": "Yuri Lima",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 118016783,
+      "name": "Ícaro Eduardo Alves Rodrigues",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 118016782,
+      "name": "Kico Cardoso",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
+    {
+      "id": 278685306,
+      "name": "Guilherme da Silva Barreto",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    }
+  ],
+  "monthlyVolume": [
+    {
+      "month": "2026-07",
+      "count": 25
+    }
+  ]
 }
