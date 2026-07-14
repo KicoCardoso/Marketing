@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:15:17.995Z",
+  "updatedAt": "2026-07-14T17:20:25.536Z",
   "members": [
     {
       "id": 118016784,
@@ -21,10 +21,13 @@
   "tasks": [
     {
       "id": "86ajhbkwk",
-      "name": "Planejamento de Julho - fazer os roteiros com CTA de continuação do conteúdo",
+      "name": "Planejamento de Julho ",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784098800000,
       "date_created": 1784046904412,
       "date_closed": null,
       "tipo": null,
@@ -34,8 +37,11 @@
       "id": "86ajhbkwb",
       "name": "Criar conteúdos fixos para o perfil da Aspekto",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
       "date_created": 1784046904119,
       "date_closed": null,
       "tipo": null,
@@ -44,8 +50,11 @@
     {
       "id": "86ajhbkw6",
       "name": "Logo da nova campanha: 14 anos Aspekto",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
       "due_date": null,
       "date_created": 1784046903867,
       "date_closed": null,
@@ -56,8 +65,11 @@
       "id": "86ajhbkw0",
       "name": "Criar destaque - “Sou Novo Aqui”",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
       "date_created": 1784046903562,
       "date_closed": null,
       "tipo": null,
@@ -71,7 +83,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784530800000,
       "date_created": 1784046903346,
       "date_closed": null,
       "tipo": null,
@@ -219,7 +231,7 @@
     },
     {
       "id": "86ajhbktv",
-      "name": "Gravação de roteiros ADS → (Roteiro ADS - 19/06)",
+      "name": "Gravação de roteiros ADS",
       "status": "captação / gravação",
       "assignee": {
         "id": 118016784,
@@ -257,7 +269,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 0,
-      "open": 0
+      "open": 1
     },
     {
       "id": 118016782,
@@ -269,7 +281,7 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 12
+      "open": 15
     }
   ],
   "stageTimes": {},
