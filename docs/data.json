@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T16:55:17.265Z",
+  "updatedAt": "2026-07-14T17:00:35.564Z",
   "members": [
     {
       "id": 118016784,
@@ -32,7 +32,7 @@
     },
     {
       "id": "86ajhbkwb",
-      "name": "Criar conteúdos ficos para o perfil da Aspekto",
+      "name": "Criar conteúdos fixos para o perfil da Aspekto",
       "status": "fila de demandas",
       "assignee": null,
       "due_date": null,
@@ -66,8 +66,11 @@
     {
       "id": "86ajhbkvv",
       "name": "Depoimento - Italo Henrique de Lima Silva",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
       "due_date": null,
       "date_created": 1784046903346,
       "date_closed": null,
@@ -77,9 +80,12 @@
     {
       "id": "86ajhbkvq",
       "name": "Gravar reels de sorriso artístico",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784271600000,
       "date_created": 1784046903102,
       "date_closed": null,
       "tipo": null,
@@ -88,8 +94,11 @@
     {
       "id": "86ajhbkvh",
       "name": "Contratos de influenciadores",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "impedimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
       "due_date": null,
       "date_created": 1784046902747,
       "date_closed": null,
@@ -99,9 +108,12 @@
     {
       "id": "86ajhbkve",
       "name": "Fazer pesquisa de leads qualificados para o laboratório",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "impedimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784876400000,
       "date_created": 1784046902429,
       "date_closed": null,
       "tipo": null,
@@ -110,8 +122,11 @@
     {
       "id": "86ajhbkvc",
       "name": "Elaborar copy para roteiros de conteúdos do Gui",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
       "due_date": null,
       "date_created": 1784046902168,
       "date_closed": null,
@@ -121,8 +136,11 @@
     {
       "id": "86ajhbkv4",
       "name": "Desenvolver dashboard com métricas do Instagram",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
       "due_date": null,
       "date_created": 1784046901914,
       "date_closed": null,
@@ -251,7 +269,7 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 6
+      "open": 12
     }
   ],
   "stageTimes": {},
