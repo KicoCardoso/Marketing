@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T17:35:13.747Z",
+  "updatedAt": "2026-07-14T17:40:24.016Z",
   "members": [
     {
       "id": 118016784,
@@ -20,6 +20,20 @@
   ],
   "tasks": [
     {
+      "id": "86ajhdjrd",
+      "name": "SITE Aspekto",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784271600000,
+      "date_created": 1784050697212,
+      "date_closed": null,
+      "tipo": "Identidade visual",
+      "url": "https://app.clickup.com/t/86ajhdjrd"
+    },
+    {
       "id": "86ajhbkwk",
       "name": "Planejamento de Julho ",
       "status": "fila de demandas",
@@ -30,7 +44,7 @@
       "due_date": 1784098800000,
       "date_created": 1784046904412,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkwk"
     },
     {
@@ -44,7 +58,7 @@
       "due_date": 1784271600000,
       "date_created": 1784046904119,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkwb"
     },
     {
@@ -58,7 +72,7 @@
       "due_date": null,
       "date_created": 1784046903867,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Branding",
       "url": "https://app.clickup.com/t/86ajhbkw6"
     },
     {
@@ -72,7 +86,7 @@
       "due_date": 1784271600000,
       "date_created": 1784046903562,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkw0"
     },
     {
@@ -86,7 +100,7 @@
       "due_date": 1784530800000,
       "date_created": 1784046903346,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "CS",
       "url": "https://app.clickup.com/t/86ajhbkvv"
     },
     {
@@ -100,7 +114,7 @@
       "due_date": 1784271600000,
       "date_created": 1784046903102,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkvq"
     },
     {
@@ -142,7 +156,7 @@
       "due_date": 1784098800000,
       "date_created": 1784046902168,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkvc"
     },
     {
@@ -156,7 +170,7 @@
       "due_date": 1784271600000,
       "date_created": 1784046901914,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkv4"
     },
     {
@@ -170,7 +184,7 @@
       "due_date": 1784271600000,
       "date_created": 1784046901664,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Influenciadores",
       "url": "https://app.clickup.com/t/86ajhbkv3"
     },
     {
@@ -184,7 +198,7 @@
       "due_date": 1785481200000,
       "date_created": 1784046901366,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkux"
     },
     {
@@ -212,7 +226,7 @@
       "due_date": 1784098800000,
       "date_created": 1784046900759,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbku9"
     },
     {
@@ -226,7 +240,7 @@
       "due_date": 1784876400000,
       "date_created": 1784046900490,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Branding",
       "url": "https://app.clickup.com/t/86ajhbku1"
     },
     {
@@ -240,7 +254,7 @@
       "due_date": null,
       "date_created": 1784046900274,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "ADS",
       "url": "https://app.clickup.com/t/86ajhbktv"
     },
     {
@@ -254,7 +268,7 @@
       "due_date": 1784271600000,
       "date_created": 1784042725092,
       "date_closed": null,
-      "tipo": null,
+      "tipo": "Branding",
       "url": "https://app.clickup.com/t/86ajha0y7"
     }
   ],
@@ -269,7 +283,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 0,
-      "open": 1
+      "open": 2
     },
     {
       "id": 118016782,
@@ -286,8 +300,13 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 16,
-    "Influenciadores": 1
+    "Identidade visual": 1,
+    "Mídias sociais": 8,
+    "Branding": 3,
+    "CS": 1,
+    "Influenciadores": 2,
+    "Sem tipo": 2,
+    "ADS": 1
   },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
@@ -323,7 +342,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 17
+      "count": 18
     }
   ]
 }
