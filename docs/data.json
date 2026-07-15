@@ -1,6 +1,10 @@
 {
-  "updatedAt": "2026-07-15T21:10:28.808Z",
+  "updatedAt": "2026-07-15T21:15:14.973Z",
   "members": [
+    {
+      "id": 55109277,
+      "name": "Yuri Lima"
+    },
     {
       "id": 118016784,
       "name": "Yuri Lima"
@@ -498,6 +502,12 @@
   ],
   "userStats": [
     {
+      "id": 55109277,
+      "name": "Yuri Lima",
+      "done": 0,
+      "open": 0
+    },
+    {
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
@@ -535,6 +545,13 @@
   },
   "avgCompletionTimeByType": {},
   "onTimeRateByUser": [
+    {
+      "id": 55109277,
+      "name": "Yuri Lima",
+      "total": 0,
+      "onTime": 0,
+      "rate": null
+    },
     {
       "id": 118016784,
       "name": "Yuri Lima",
