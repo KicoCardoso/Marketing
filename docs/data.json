@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T20:25:13.153Z",
+  "updatedAt": "2026-07-15T20:30:32.660Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,20 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajj8qqm",
+      "name": "teste",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": null,
+      "date_created": 1784147299632,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "url": "https://app.clickup.com/t/86ajj8qqm"
+    },
     {
       "id": "86ajj0rae",
       "name": "Conteúdo 15/07",
@@ -423,7 +437,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 0,
-      "open": 3
+      "open": 4
     },
     {
       "id": 118016782,
@@ -440,6 +454,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 1,
     "Mídias sociais": 13,
     "CS": 1,
     "ADS": 6,
@@ -482,7 +497,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 28
+      "count": 29
     }
   ]
 }
