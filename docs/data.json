@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T22:00:32.752Z",
+  "updatedAt": "2026-07-15T22:05:13.623Z",
   "members": [
     {
       "id": 55109277,
@@ -110,14 +110,14 @@
     {
       "id": "86ajj0rae",
       "name": "Conteúdo 15/07",
-      "status": "captação / gravação",
+      "status": "concluído",
       "assignee": {
         "id": 118016784,
         "name": "Yuri Lima"
       },
       "due_date": 1784098800000,
       "date_created": 1784131253847,
-      "date_closed": null,
+      "date_closed": 1784153093913,
       "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajj0rae"
     },
@@ -510,8 +510,8 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "done": 0,
-      "open": 8
+      "done": 1,
+      "open": 7
     },
     {
       "id": 118016783,
@@ -543,7 +543,9 @@
     "Influenciadores": 2,
     "Sem tipo": 2
   },
-  "avgCompletionTimeByType": {},
+  "avgCompletionTimeByType": {
+    "Mídias sociais": 364
+  },
   "onTimeRateByUser": [
     {
       "id": 55109277,
@@ -555,9 +557,9 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "total": 0,
+      "total": 1,
       "onTime": 0,
-      "rate": null
+      "rate": 0
     },
     {
       "id": 118016783,
