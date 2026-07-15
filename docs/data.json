@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T16:00:37.222Z",
+  "updatedAt": "2026-07-15T16:05:20.768Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,20 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajj0rae",
+      "name": "Conteúdo 15/07",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784098800000,
+      "date_created": 1784131253847,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "url": "https://app.clickup.com/t/86ajj0rae"
+    },
     {
       "id": "86ajhzqdv",
       "name": "Depoimento - Maria Eduarda Monteiro - 10h",
@@ -421,12 +435,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 17
+      "open": 18
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Mídias sociais": 12,
+    "Mídias sociais": 13,
     "CS": 1,
     "ADS": 6,
     "Identidade visual": 1,
@@ -468,7 +482,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 27
+      "count": 28
     }
   ]
 }
