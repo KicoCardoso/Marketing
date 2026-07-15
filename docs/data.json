@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T14:55:13.686Z",
+  "updatedAt": "2026-07-15T15:00:37.641Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,20 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajhz6jb",
+      "name": "Depoimento - Yara Melo - 18h",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784185200000,
+      "date_created": 1784127560711,
+      "date_closed": null,
+      "tipo": null,
+      "url": "https://app.clickup.com/t/86ajhz6jb"
+    },
     {
       "id": "86ajhg1ta",
       "name": "Depoimento - Edijane Martins - 12h",
@@ -393,12 +407,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 15
+      "open": 16
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 3,
+    "Sem tipo": 4,
     "CS": 2,
     "ADS": 6,
     "Identidade visual": 1,
@@ -440,7 +454,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 25
+      "count": 26
     }
   ]
 }
