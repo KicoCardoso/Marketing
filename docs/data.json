@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-15T18:45:17.194Z",
+  "updatedAt": "2026-07-15T18:50:25.564Z",
   "members": [
     {
       "id": 118016784,
@@ -22,10 +22,10 @@
     {
       "id": "86ajj0rae",
       "name": "Conteúdo 15/07",
-      "status": "fila de demandas",
+      "status": "captação / gravação",
       "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
+        "id": 118016784,
+        "name": "Yuri Lima"
       },
       "due_date": 1784098800000,
       "date_created": 1784131253847,
@@ -97,7 +97,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051367338,
       "date_closed": null,
       "tipo": "ADS",
@@ -111,7 +111,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051367050,
       "date_closed": null,
       "tipo": "ADS",
@@ -125,7 +125,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051366687,
       "date_closed": null,
       "tipo": "ADS",
@@ -139,7 +139,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051366406,
       "date_closed": null,
       "tipo": "ADS",
@@ -153,7 +153,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051366148,
       "date_closed": null,
       "tipo": "ADS",
@@ -167,7 +167,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": null,
+      "due_date": 1784271600000,
       "date_created": 1784051365824,
       "date_closed": null,
       "tipo": "ADS",
@@ -195,7 +195,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784098800000,
+      "due_date": 1784271600000,
       "date_created": 1784046904412,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -260,10 +260,10 @@
     {
       "id": "86ajhbkvq",
       "name": "Gravar reels de sorriso artístico",
-      "status": "demanda em desenvolvimento",
+      "status": "captação / gravação",
       "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
+        "id": 118016784,
+        "name": "Yuri Lima"
       },
       "due_date": 1784530800000,
       "date_created": 1784046903102,
@@ -372,10 +372,10 @@
     {
       "id": "86ajhbku9",
       "name": "Desenvolver capa de reels no perfil da Aspekto",
-      "status": "demanda em desenvolvimento",
+      "status": "produção / edição",
       "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784703600000,
       "date_created": 1784046900759,
@@ -417,13 +417,13 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 0,
-      "open": 6
+      "open": 8
     },
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 0,
-      "open": 2
+      "open": 3
     },
     {
       "id": 118016782,
@@ -435,7 +435,7 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 0,
-      "open": 18
+      "open": 15
     }
   ],
   "stageTimes": {},
