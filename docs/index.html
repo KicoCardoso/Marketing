@@ -18,6 +18,9 @@
   .dot { width: 7px; height: 7px; border-radius: 50%; background: #4fc3f7; animation: pulse 1.6s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
   .warn-banner { font-size: 11px; color: #f5c542; background: #171300; border: 0.5px solid #3d2e00; padding: 6px 10px; border-radius: 6px; display: none; }
+  .filter-bar { display: flex; align-items: center; gap: 8px; }
+  .filter-bar label { font-size: 11px; color: #8b9aaa; }
+  .filter-bar select { font-size: 12px; font-weight: 500; background: #0d1117; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 6px 10px; }
 
   .dashboard-section { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 16px 18px 18px; }
   .section-header { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 0.5px solid #1e2d3d; }
@@ -97,6 +100,12 @@
     <div>
       <div class="brand-name">Grupo Aspekto — Marketing</div>
       <div class="brand-sub" id="sub">Fluxo de produção de conteúdo</div>
+    </div>
+    <div class="filter-bar">
+      <label for="userFilter">Usuário</label>
+      <select id="userFilter" onchange="onUserFilterChange(this.value)">
+        <option value="">Todos os usuários</option>
+      </select>
     </div>
     <div class="live"><span class="dot"></span>Somente leitura · atualiza a cada 5 min</div>
   </div>
@@ -190,6 +199,22 @@ function sortByUrgency(tasks) {
   });
 }
 
+let LAST_DATA = null;
+let selectedUserId = '';
+
+function renderUserFilterOptions(members) {
+  const sel = document.getElementById('userFilter');
+  if (!sel) return;
+  const current = selectedUserId;
+  sel.innerHTML = '<option value="">Todos os usuários</option>' +
+    (members || []).map(m => `<option value="${m.id}" ${String(m.id) === current ? 'selected' : ''}>${m.name}</option>`).join('');
+}
+
+function onUserFilterChange(value) {
+  selectedUserId = value;
+  if (LAST_DATA) render(LAST_DATA);
+}
+
 function cardHtml(task) {
   const due = dueBadge(task.due_date ? Number(task.due_date) : null);
   const cardClass = due.cls === 'danger' ? 'card-danger' : due.cls === 'warn' ? 'card-warn' : due.cls === 'ok' ? 'card-ok' : 'card-neutral';
@@ -224,7 +249,8 @@ function cardHtmlByUser(task) {
 
 function renderByUser(data) {
   const el = document.getElementById('byUserBoard');
-  const members = data.members || [];
+  const allMembers = data.members || [];
+  const members = selectedUserId ? allMembers.filter(m => String(m.id) === selectedUserId) : allMembers;
   const tasks = data.tasks || [];
   const userStatsById = Object.fromEntries((data.userStats || []).map(s => [s.id, s]));
   el.innerHTML = members.length ? members.map(m => {
@@ -297,7 +323,11 @@ function render(data) {
   const stageTimes = data.stageTimes || {};
   const grid = document.getElementById('grid');
   grid.innerHTML = STATUS_ORDER.map(meta => {
-    const items = tasks.filter(t => (t.status || '').trim().toLowerCase() === meta.key);
+    const items = tasks.filter(t => {
+      if ((t.status || '').trim().toLowerCase() !== meta.key) return false;
+      if (selectedUserId && (!t.assignee || String(t.assignee.id) !== selectedUserId)) return false;
+      return true;
+    });
     let shown = items;
     let moreNote = '';
     if (meta.key === 'concluído') {
@@ -330,6 +360,8 @@ async function load() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     warnEl.style.display = 'none';
+    LAST_DATA = data;
+    renderUserFilterOptions(data.members);
     render(data);
   } catch (e) {
     warnEl.textContent = `Falha ao carregar dados: ${e.message}`;
