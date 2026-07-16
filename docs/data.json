@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T15:05:16.743Z",
+  "updatedAt": "2026-07-16T15:10:15.617Z",
   "members": [
     {
       "id": 55109277,
@@ -52,20 +52,6 @@
       "url": "https://app.clickup.com/t/86ajj9f4t"
     },
     {
-      "id": "86ajj9f3q",
-      "name": "Vinicius Braccini de Lima",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784271600000,
-      "date_created": 1784149253208,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "url": "https://app.clickup.com/t/86ajj9f3q"
-    },
-    {
       "id": "86ajj9f2u",
       "name": "Ana Clara Diniz Benitah Batista",
       "status": "concluído",
@@ -78,20 +64,6 @@
       "date_closed": 1784211957937,
       "tipo": "Fotografia",
       "url": "https://app.clickup.com/t/86ajj9f2u"
-    },
-    {
-      "id": "86ajj9f1q",
-      "name": "Lucas Diniz Oliveira Estanislau",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784185200000,
-      "date_created": 1784149248657,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "url": "https://app.clickup.com/t/86ajj9f1q"
     },
     {
       "id": "86ajj9f18",
@@ -517,7 +489,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 2,
-      "open": 7
+      "open": 5
     },
     {
       "id": 118016782,
@@ -534,7 +506,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 6,
+    "Fotografia": 4,
     "Mídias sociais": 13,
     "CS": 1,
     "ADS": 6,
@@ -587,7 +559,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 34
+      "count": 32
     }
   ]
 }
