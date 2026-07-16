@@ -94,6 +94,27 @@
   .growth-bar-track { flex: 1; height: 8px; background: #12161c; border-radius: 4px; overflow: hidden; }
   .growth-bar-fill { height: 100%; background: #ff9d4d; border-radius: 4px; }
   .growth-count { font-size: 10px; font-weight: 500; color: #e6edf3; width: 22px; text-align: right; flex-shrink: 0; }
+
+  .card-clickable { display: flex; flex-direction: column; gap: 4px; cursor: pointer; }
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
+  .modal-overlay.open { display: flex; }
+  .modal-box { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 20px 22px 22px; width: 100%; max-width: 620px; }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .modal-title { font-size: 15px; font-weight: 600; color: #e6edf3; line-height: 1.4; }
+  .modal-close { background: transparent; border: 0.5px solid #1e2d3d; color: #8b9aaa; border-radius: 6px; padding: 4px 9px; cursor: pointer; font-size: 12px; flex-shrink: 0; }
+  .modal-close:hover { background: #171b21; }
+  .modal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 18px; margin-bottom: 16px; }
+  .modal-field-label { font-size: 9.5px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; color: #6e8394; margin-bottom: 3px; }
+  .modal-field-value { font-size: 12px; color: #e6edf3; }
+  .modal-section-title { font-size: 9.5px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: #6e8394; margin: 16px 0 8px; padding-top: 12px; border-top: 0.5px solid #1e2d3d; }
+  .modal-desc { font-size: 12.5px; color: #c3ccd6; line-height: 1.6; white-space: pre-wrap; }
+  .subtask-row { display: flex; align-items: center; gap: 8px; padding: 6px 0; border-bottom: 0.5px solid #171b21; font-size: 11.5px; }
+  .subtask-row:last-child { border-bottom: none; }
+  .subtask-name { flex: 1; color: #e6edf3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .subtask-status { font-size: 8px; font-weight: 500; color: #8b9aaa; background: #171b21; border: 0.5px solid #262f3a; border-radius: 8px; padding: 1px 6px; white-space: nowrap; }
+  .subtask-assignee { font-size: 10.5px; color: #5a6a7a; white-space: nowrap; }
+  .modal-link { font-size: 11px; color: #4fc3f7; text-decoration: none; }
+  .modal-link:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -149,6 +170,10 @@
   </section>
 </div>
 
+<div class="modal-overlay" id="taskModal" onclick="if (event.target === this) closeTaskModal();">
+  <div class="modal-box" id="taskModalBox"></div>
+</div>
+
 <script>
 const DATA_URL = './data.json';
 const REFRESH_MS = 2 * 60 * 1000;
@@ -187,6 +212,97 @@ function fmtDuration(minutes) {
   return (hours / 24).toFixed(1) + 'd';
 }
 
+function fmtDate(ms) {
+  if (!ms) return '—';
+  return new Date(Number(ms)).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+
+const PRIORITY_LABELS = { urgent: 'Urgente', high: 'Alta', normal: 'Normal', low: 'Baixa' };
+const PRIORITY_COLORS = { urgent: '#f56b6b', high: '#ff9d4d', normal: '#4fc3f7', low: '#8b9aaa' };
+
+function priorityHtml(priority) {
+  const p = priority && priority.priority ? priority.priority : (typeof priority === 'string' ? priority : null);
+  if (!p) return '<span class="modal-field-value">—</span>';
+  const label = PRIORITY_LABELS[p] || p;
+  const color = PRIORITY_COLORS[p] || '#8b9aaa';
+  return `<span class="modal-field-value" style="color:${color};">${label}</span>`;
+}
+
+function closeTaskModal() {
+  document.getElementById('taskModal').classList.remove('open');
+}
+
+function openTaskModal(taskId) {
+  const overlay = document.getElementById('taskModal');
+  const box = document.getElementById('taskModalBox');
+  const t = TASK_BY_ID[taskId];
+  if (!t) return;
+  box.innerHTML = renderTaskModalHtml(t);
+  overlay.classList.add('open');
+}
+
+function renderTaskModalHtml(t) {
+  const assigneeName = t.assignee ? (t.assignee.name) : 'Sem responsável';
+  const desc = t.description || '(sem descrição)';
+  const subtasks = t.subtasks || [];
+
+  const fieldsHtml = `
+    <div>
+      <div class="modal-field-label">Tipo de demanda</div>
+      <div class="modal-field-value">${t.tipo || '—'}</div>
+    </div>
+    <div>
+      <div class="modal-field-label">E-mail do solicitante</div>
+      <div class="modal-field-value">${t.email || '—'}</div>
+    </div>`;
+
+  const subtasksHtml = subtasks.length ? subtasks.map(s => `
+    <div class="subtask-row">
+      <span class="subtask-name" title="${(s.name || '').replace(/"/g, '&quot;')}">${s.name}</span>
+      <span class="subtask-status">${STATUS_LABELS[s.status] || s.status || '—'}</span>
+      <span class="subtask-assignee">${s.assignee ? s.assignee.name : '—'}</span>
+    </div>`).join('') : '';
+
+  return `
+    <div class="modal-head">
+      <div class="modal-title">${t.name}</div>
+      <button class="modal-close" onclick="closeTaskModal()">Fechar</button>
+    </div>
+    <div class="modal-grid">
+      <div>
+        <div class="modal-field-label">Status</div>
+        <div class="modal-field-value">${STATUS_LABELS[t.status] || t.status}</div>
+      </div>
+      <div>
+        <div class="modal-field-label">Responsável</div>
+        <div class="modal-field-value">${assigneeName}</div>
+      </div>
+      <div>
+        <div class="modal-field-label">Prioridade</div>
+        ${priorityHtml(t.priority)}
+      </div>
+      <div>
+        <div class="modal-field-label">Prazo</div>
+        <div class="modal-field-value">${fmtDate(t.due_date)}</div>
+      </div>
+      <div>
+        <div class="modal-field-label">Início</div>
+        <div class="modal-field-value">${fmtDate(t.start_date)}</div>
+      </div>
+      <div>
+        <div class="modal-field-label">Criada em</div>
+        <div class="modal-field-value">${fmtDate(t.date_created)}</div>
+      </div>
+    </div>
+    <div class="modal-desc">${desc}</div>
+    <div class="modal-section-title">Campos</div>
+    <div class="modal-grid">${fieldsHtml}</div>
+    ${subtasksHtml ? `<div class="modal-section-title">Subtarefas (${subtasks.length})</div>${subtasksHtml}` : ''}
+    <div class="modal-section-title">&nbsp;</div>
+    <a class="modal-link" href="${t.url}" target="_blank" rel="noopener">Abrir no ClickUp →</a>
+  `;
+}
+
 function dueBadge(dueDateMs) {
   if (!dueDateMs) return { cls: 'neutral', text: 'sem prazo' };
   const diffMs = dueDateMs - Date.now();
@@ -210,6 +326,7 @@ function sortByUrgency(tasks) {
 
 let LAST_DATA = null;
 let selectedUserId = '';
+let TASK_BY_ID = {};
 
 function renderUserFilterOptions(members) {
   const sel = document.getElementById('userFilter');
@@ -240,31 +357,37 @@ function cardHtml(task) {
   const badgeLabel = isDone ? 'Concluído' : (due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo');
   const assignee = task.assignee;
   return `
-    <a class="client-card ${cardClass}" href="${task.url || '#'}" target="_blank" rel="noopener">
-      <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
-      <div class="c-dono">
-        <span class="c-avatar">${initials(assignee ? assignee.name : '')}</span>
-        ${assignee ? assignee.name : 'Sem responsável'}
+    <div class="client-card ${cardClass}">
+      <div class="card-clickable" onclick="openTaskModal('${task.id}')">
+        <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
+        <div class="c-dono">
+          <span class="c-avatar">${initials(assignee ? assignee.name : '')}</span>
+          ${assignee ? assignee.name : 'Sem responsável'}
+        </div>
+        <div class="c-bottom">
+          <span class="c-tempo c-${due.cls}">${due.text}</span>
+          <span class="badge badge-${due.cls}">${badgeLabel}</span>
+        </div>
       </div>
-      <div class="c-bottom">
-        <span class="c-tempo c-${due.cls}">${due.text}</span>
-        <span class="badge badge-${due.cls}">${badgeLabel}</span>
-      </div>
-    </a>`;
+    </div>`;
 }
 
 function cardHtmlByUser(task) {
-  const due = dueBadge(task.due_date ? Number(task.due_date) : null);
+  const isDone = task.status === 'concluído';
+  const due = isDone ? { cls: 'ok', text: 'Concluído' } : dueBadge(task.due_date ? Number(task.due_date) : null);
   const cardClass = due.cls === 'danger' ? 'card-danger' : due.cls === 'warn' ? 'card-warn' : due.cls === 'ok' ? 'card-ok' : 'card-neutral';
+  const badgeLabel = isDone ? 'Concluído' : (due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo');
   return `
-    <a class="client-card ${cardClass}" href="${task.url || '#'}" target="_blank" rel="noopener">
-      <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
-      <div class="c-dono"><span class="stage-tag">${STATUS_LABELS[task.status] || task.status}</span></div>
-      <div class="c-bottom">
-        <span class="c-tempo c-${due.cls}">${due.text}</span>
-        <span class="badge badge-${due.cls}">${due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo'}</span>
+    <div class="client-card ${cardClass}">
+      <div class="card-clickable" onclick="openTaskModal('${task.id}')">
+        <div class="c-nome" title="${(task.name || '').replace(/"/g, '&quot;')}">${task.name}</div>
+        <div class="c-dono"><span class="stage-tag">${STATUS_LABELS[task.status] || task.status}</span></div>
+        <div class="c-bottom">
+          <span class="c-tempo c-${due.cls}">${due.text}</span>
+          <span class="badge badge-${due.cls}">${badgeLabel}</span>
+        </div>
       </div>
-    </a>`;
+    </div>`;
 }
 
 function renderByUser(data) {
@@ -386,6 +509,7 @@ async function load() {
     warnEl.style.display = 'none';
     data.members = (data.members || []).filter(m => !EXCLUDED_MEMBER_IDS.has(Number(m.id)));
     LAST_DATA = data;
+    TASK_BY_ID = Object.fromEntries((data.tasks || []).map(t => [t.id, t]));
     renderUserFilterOptions(data.members);
     render(data);
   } catch (e) {

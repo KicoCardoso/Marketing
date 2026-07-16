@@ -2,6 +2,7 @@ const TOKEN = process.env.CLICKUP_TOKEN;
 const LIST_ID = '901327810989';
 const TEAM_ID = '90133042352';
 const TIPO_FIELD_ID = '4db7b187-0bc2-4a77-888a-6a06423f04df';
+const EMAIL_FIELD_ID = 'e33ce220-035a-4600-aead-7b3b88570eff';
 const EXCLUDED_MEMBER_IDS = new Set([55109277]); // conta duplicada (Yuri Lima - e-mail pessoal, sem demandas)
 const DONE_STATUSES = new Set(['concluído', 'banco de publicações']);
 
@@ -57,6 +58,35 @@ function getTipo(t) {
   return opt ? opt.name : null;
 }
 
+function getEmail(t) {
+  const field = (t.custom_fields || []).find(f => f.id === EMAIL_FIELD_ID);
+  if (!field || field.value === undefined || field.value === null || field.value === '') return null;
+  return field.value;
+}
+
+async function fetchTaskExtras(taskIds) {
+  const extras = {};
+  for (const id of taskIds) {
+    try {
+      const t = await api(`/task/${id}?include_subtasks=true`);
+      extras[id] = {
+        description: t.markdown_description || t.text_content || t.description || '',
+        priority: t.priority || null,
+        start_date: t.start_date ? Number(t.start_date) : null,
+        subtasks: (t.subtasks || []).map(s => ({
+          id: s.id,
+          name: s.name,
+          status: (s.status && s.status.status || '').toLowerCase(),
+          assignee: s.assignees && s.assignees[0] ? { name: s.assignees[0].username } : null
+        }))
+      };
+    } catch (e) {
+      extras[id] = { description: '', priority: null, start_date: null, subtasks: [] };
+    }
+  }
+  return extras;
+}
+
 const [taskData, teamData] = await Promise.all([
   api(`/list/${LIST_ID}/task?include_closed=true`),
   api(`/team`)
@@ -76,8 +106,18 @@ const tasks = (taskData.tasks || []).map(t => ({
   date_created: t.date_created ? Number(t.date_created) : null,
   date_closed: t.date_closed ? Number(t.date_closed) : null,
   tipo: getTipo(t),
+  email: getEmail(t),
   url: t.url
 }));
+
+const taskExtras = await fetchTaskExtras(tasks.map(t => t.id));
+for (const t of tasks) {
+  const ex = taskExtras[t.id] || {};
+  t.description = ex.description || '';
+  t.priority = ex.priority || null;
+  t.start_date = ex.start_date || null;
+  t.subtasks = ex.subtasks || [];
+}
 
 const timeByStatus = await fetchTimeInStatus(tasks.map(t => t.id));
 
