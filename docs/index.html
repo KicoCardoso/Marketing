@@ -21,6 +21,9 @@
   .filter-bar { display: flex; align-items: center; gap: 8px; }
   .filter-bar label { font-size: 11px; color: #8b9aaa; }
   .filter-bar select { font-size: 12px; font-weight: 500; background: #0d1117; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 6px 10px; }
+  .view-toggle { display: flex; gap: 4px; margin-left: auto; }
+  .view-toggle button { font-size: 11px; font-weight: 500; padding: 5px 12px; border-radius: 7px; border: 0.5px solid #1e2d3d; background: transparent; color: #8b9aaa; cursor: pointer; }
+  .view-toggle button.active { background: #0d2233; color: #4fc3f7; border-color: #1a3a52; }
 
   .dashboard-section { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 16px 18px 18px; }
   .section-header { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 0.5px solid #1e2d3d; }
@@ -115,6 +118,10 @@
     <div class="section-header">
       <span class="section-accent" style="background:#b388ff;"></span>
       <span class="section-title">Fluxo de demanda</span>
+      <div class="view-toggle">
+        <button id="btn-view-abertos" class="active" onclick="onFlowViewChange('abertos')">Abertos</button>
+        <button id="btn-view-concluidos" onclick="onFlowViewChange('concluidos')">Concluídos</button>
+      </div>
     </div>
     <div class="grid" id="grid">
       <div class="loading-msg">Carregando demandas...</div>
@@ -217,9 +224,20 @@ function onUserFilterChange(value) {
   if (LAST_DATA) render(LAST_DATA);
 }
 
+let flowView = 'abertos'; // 'abertos' | 'concluidos'
+
+function onFlowViewChange(view) {
+  flowView = view;
+  document.getElementById('btn-view-abertos').classList.toggle('active', view === 'abertos');
+  document.getElementById('btn-view-concluidos').classList.toggle('active', view === 'concluidos');
+  if (LAST_DATA) render(LAST_DATA);
+}
+
 function cardHtml(task) {
-  const due = dueBadge(task.due_date ? Number(task.due_date) : null);
+  const isDone = task.status === 'concluído';
+  const due = isDone ? { cls: 'ok', text: 'Concluído' } : dueBadge(task.due_date ? Number(task.due_date) : null);
   const cardClass = due.cls === 'danger' ? 'card-danger' : due.cls === 'warn' ? 'card-warn' : due.cls === 'ok' ? 'card-ok' : 'card-neutral';
+  const badgeLabel = isDone ? 'Concluído' : (due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo');
   const assignee = task.assignee;
   return `
     <a class="client-card ${cardClass}" href="${task.url || '#'}" target="_blank" rel="noopener">
@@ -230,7 +248,7 @@ function cardHtml(task) {
       </div>
       <div class="c-bottom">
         <span class="c-tempo c-${due.cls}">${due.text}</span>
-        <span class="badge badge-${due.cls}">${due.cls === 'danger' ? 'Atrasado' : due.cls === 'warn' ? 'Atenção' : due.cls === 'ok' ? 'Ok' : 'Sem prazo'}</span>
+        <span class="badge badge-${due.cls}">${badgeLabel}</span>
       </div>
     </a>`;
 }
@@ -323,7 +341,11 @@ function render(data) {
   const tasks = data.tasks || [];
   const stageTimes = data.stageTimes || {};
   const grid = document.getElementById('grid');
-  grid.innerHTML = STATUS_ORDER.map(meta => {
+  const visibleColumns = flowView === 'concluidos'
+    ? STATUS_ORDER.filter(m => m.key === 'concluído')
+    : STATUS_ORDER.filter(m => m.key !== 'concluído');
+  grid.style.gridTemplateColumns = `repeat(${visibleColumns.length}, minmax(148px, 1fr))`;
+  grid.innerHTML = visibleColumns.map(meta => {
     const items = tasks.filter(t => {
       if ((t.status || '').trim().toLowerCase() !== meta.key) return false;
       if (selectedUserId && (!t.assignee || String(t.assignee.id) !== selectedUserId)) return false;
@@ -332,8 +354,9 @@ function render(data) {
     let shown = items;
     let moreNote = '';
     if (meta.key === 'concluído') {
-      shown = items.slice().sort((a, b) => Number(b.date_closed || 0) - Number(a.date_closed || 0)).slice(0, 8);
-      if (items.length > 8) moreNote = `<div class="empty-col">+${items.length - 8} mais concluídas</div>`;
+      const limit = flowView === 'concluidos' ? 40 : 8;
+      shown = items.slice().sort((a, b) => Number(b.date_closed || 0) - Number(a.date_closed || 0)).slice(0, limit);
+      if (items.length > limit) moreNote = `<div class="empty-col">+${items.length - limit} mais concluídas</div>`;
     }
     const cardsHtml = shown.length ? shown.map(cardHtml).join('') : '<div class="empty-col">— vazio —</div>';
     const minutes = stageTimes[meta.key];
