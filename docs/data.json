@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T15:00:26.361Z",
+  "updatedAt": "2026-07-16T15:05:16.743Z",
   "members": [
     {
       "id": 55109277,
@@ -26,14 +26,14 @@
     {
       "id": "86ajj9f62",
       "name": "Lucas Diniz Oliveira Estanislau",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784530800000,
       "date_created": 1784149257706,
-      "date_closed": null,
+      "date_closed": 1784214255461,
       "tipo": "Fotografia",
       "url": "https://app.clickup.com/t/86ajj9f62"
     },
@@ -516,8 +516,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 1,
-      "open": 8
+      "done": 2,
+      "open": 7
     },
     {
       "id": 118016782,
@@ -544,7 +544,7 @@
     "Sem tipo": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 1045,
+    "Fotografia": 1064,
     "Mídias sociais": 364
   },
   "onTimeRateByUser": [
@@ -565,8 +565,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 1,
-      "onTime": 1,
+      "total": 2,
+      "onTime": 2,
       "rate": 100
     },
     {
