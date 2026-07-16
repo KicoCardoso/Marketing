@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T19:00:23.842Z",
+  "updatedAt": "2026-07-16T19:05:23.189Z",
   "members": [
     {
       "id": 55109277,
@@ -23,6 +23,20 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajjtz2f",
+      "name": "Foto do paciente - teste",
+      "status": "impedimento",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784444400000,
+      "date_created": 1784228537141,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "url": "https://app.clickup.com/t/86ajjtz2f"
+    },
     {
       "id": "86ajjqvjx",
       "name": "Lucas Diniz Oliveira Estanislau - 16878 - Fotos finais",
@@ -643,7 +657,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 3,
-      "open": 5
+      "open": 6
     },
     {
       "id": 118016782,
@@ -660,7 +674,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 5,
+    "Fotografia": 6,
     "Mídias sociais": 23,
     "CS": 1,
     "ADS": 6,
@@ -713,7 +727,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 43
+      "count": 44
     }
   ]
 }
