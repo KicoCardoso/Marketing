@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T19:15:18.571Z",
+  "updatedAt": "2026-07-16T19:20:15.742Z",
   "members": [
     {
       "id": 55109277,
@@ -530,14 +530,14 @@
     {
       "id": "86ajhbkvc",
       "name": "Elaborar copy para roteiros de conteúdos do Gui",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1784185200000,
       "date_created": 1784046902168,
-      "date_closed": null,
+      "date_closed": 1784229447806,
       "tipo": "Mídias sociais",
       "url": "https://app.clickup.com/t/86ajhbkvc"
     },
@@ -668,8 +668,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 0,
-      "open": 15
+      "done": 1,
+      "open": 14
     }
   ],
   "stageTimes": {},
@@ -685,7 +685,7 @@
   },
   "avgCompletionTimeByType": {
     "Fotografia": 1094,
-    "Mídias sociais": 364
+    "Mídias sociais": 1703
   },
   "onTimeRateByUser": [
     {
@@ -719,9 +719,9 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 0,
+      "total": 1,
       "onTime": 0,
-      "rate": null
+      "rate": 0
     }
   ],
   "monthlyVolume": [
