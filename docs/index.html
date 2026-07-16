@@ -160,6 +160,7 @@ const STATUS_ORDER = [
   { key: 'impedimento',                   label: 'Impedimento',                 accent: '#f56b6b', blinkHeader: true },
 ];
 const STATUS_LABELS = Object.fromEntries(STATUS_ORDER.map(m => [m.key, m.label]));
+const DONE_STATUSES = new Set(['concluído', 'banco de publicações']);
 
 function initials(name) {
   if (!name) return '?';
@@ -256,9 +257,8 @@ function renderByUser(data) {
   const userStatsById = Object.fromEntries((data.userStats || []).map(s => [s.id, s]));
   el.innerHTML = members.length ? members.map(m => {
     const mine = tasks.filter(t => t.assignee && t.assignee.id === m.id);
-    const stat = userStatsById[m.id];
-    const done = stat ? stat.done : mine.filter(t => t.status === 'concluído').length;
-    const open = sortByUrgency(mine.filter(t => t.status !== 'concluído'));
+    const done = mine.filter(t => DONE_STATUSES.has(t.status)).length;
+    const open = sortByUrgency(mine.filter(t => !DONE_STATUSES.has(t.status)));
     const cardsHtml = open.length ? open.map(cardHtmlByUser).join('') : '<div class="empty-col">— nada em aberto —</div>';
     return `
       <div class="user-col">

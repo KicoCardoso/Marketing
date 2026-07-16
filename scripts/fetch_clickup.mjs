@@ -3,6 +3,7 @@ const LIST_ID = '901327810989';
 const TEAM_ID = '90133042352';
 const TIPO_FIELD_ID = '4db7b187-0bc2-4a77-888a-6a06423f04df';
 const EXCLUDED_MEMBER_IDS = new Set([55109277]); // conta duplicada (Yuri Lima - e-mail pessoal, sem demandas)
+const DONE_STATUSES = new Set(['concluído', 'banco de publicações']);
 
 if (!TOKEN) {
   console.error('CLICKUP_TOKEN não definido (configure o secret CLICKUP_API_TOKEN no repositório).');
@@ -82,7 +83,7 @@ const timeByStatus = await fetchTimeInStatus(tasks.map(t => t.id));
 
 const userStats = members.map(m => {
   const mine = tasks.filter(t => t.assignee && t.assignee.id === m.id);
-  const done = mine.filter(t => t.status === 'concluído').length;
+  const done = mine.filter(t => DONE_STATUSES.has(t.status)).length;
   return { id: m.id, name: m.name, done, open: mine.length - done };
 });
 
