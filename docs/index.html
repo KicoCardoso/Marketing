@@ -145,6 +145,7 @@
 <script>
 const DATA_URL = './data.json';
 const REFRESH_MS = 2 * 60 * 1000;
+const EXCLUDED_MEMBER_IDS = new Set([55109277]); // conta duplicada (Yuri Lima - e-mail pessoal, sem demandas)
 
 const STATUS_ORDER = [
   { key: 'fila de demandas',              label: 'Fila de demandas',            accent: '#8b9aaa' },
@@ -360,6 +361,7 @@ async function load() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     warnEl.style.display = 'none';
+    data.members = (data.members || []).filter(m => !EXCLUDED_MEMBER_IDS.has(Number(m.id)));
     LAST_DATA = data;
     renderUserFilterOptions(data.members);
     render(data);

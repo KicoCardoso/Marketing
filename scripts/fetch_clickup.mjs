@@ -2,6 +2,7 @@ const TOKEN = process.env.CLICKUP_TOKEN;
 const LIST_ID = '901327810989';
 const TEAM_ID = '90133042352';
 const TIPO_FIELD_ID = '4db7b187-0bc2-4a77-888a-6a06423f04df';
+const EXCLUDED_MEMBER_IDS = new Set([55109277]); // conta duplicada (Yuri Lima - e-mail pessoal, sem demandas)
 
 if (!TOKEN) {
   console.error('CLICKUP_TOKEN não definido (configure o secret CLICKUP_API_TOKEN no repositório).');
@@ -61,10 +62,9 @@ const [taskData, teamData] = await Promise.all([
 ]);
 
 const team = (teamData.teams || []).find(t => t.id === TEAM_ID) || teamData.teams?.[0];
-const members = (team?.members || []).map(m => ({
-  id: m.user.id,
-  name: m.user.username
-}));
+const members = (team?.members || [])
+  .map(m => ({ id: m.user.id, name: m.user.username }))
+  .filter(m => !EXCLUDED_MEMBER_IDS.has(Number(m.id)));
 
 const tasks = (taskData.tasks || []).map(t => ({
   id: t.id,
