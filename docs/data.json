@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T16:10:21.444Z",
+  "updatedAt": "2026-07-16T16:15:17.840Z",
   "members": [
     {
       "id": 55109277,
@@ -180,14 +180,14 @@
     {
       "id": "86ajj9f4t",
       "name": "Alan Bruneli Brás Lucas",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784271600000,
       "date_created": 1784149255419,
-      "date_closed": null,
+      "date_closed": 1784218514332,
       "tipo": "Fotografia",
       "url": "https://app.clickup.com/t/86ajj9f4t"
     },
@@ -628,8 +628,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 2,
-      "open": 5
+      "done": 3,
+      "open": 4
     },
     {
       "id": 118016782,
@@ -656,7 +656,7 @@
     "Sem tipo": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 1064,
+    "Fotografia": 1094,
     "Mídias sociais": 364
   },
   "onTimeRateByUser": [
@@ -677,8 +677,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 2,
-      "onTime": 2,
+      "total": 3,
+      "onTime": 3,
       "rate": 100
     },
     {
