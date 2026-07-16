@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T17:40:17.772Z",
+  "updatedAt": "2026-07-16T17:45:16.718Z",
   "members": [
     {
       "id": 55109277,
@@ -23,6 +23,20 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajjqvjx",
+      "name": "Lucas Diniz Oliveira Estanislau - 16878 - Fotos finais",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784790000000,
+      "date_created": 1784223816128,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "url": "https://app.clickup.com/t/86ajjqvjx"
+    },
     {
       "id": "86ajjmw1a",
       "name": "[Conteúdo Gui] Roteiro 10",
@@ -629,7 +643,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 3,
-      "open": 4
+      "open": 5
     },
     {
       "id": 118016782,
@@ -646,8 +660,8 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 5,
     "Mídias sociais": 23,
-    "Fotografia": 4,
     "CS": 1,
     "ADS": 6,
     "Identidade visual": 1,
@@ -699,7 +713,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 42
+      "count": 43
     }
   ]
 }
