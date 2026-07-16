@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T14:25:18.797Z",
+  "updatedAt": "2026-07-16T14:30:27.448Z",
   "members": [
     {
       "id": 55109277,
@@ -68,14 +68,14 @@
     {
       "id": "86ajj9f2u",
       "name": "Ana Clara Diniz Benitah Batista",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784271600000,
       "date_created": 1784149251531,
-      "date_closed": null,
+      "date_closed": 1784211957937,
       "tipo": "Fotografia",
       "url": "https://app.clickup.com/t/86ajj9f2u"
     },
@@ -516,8 +516,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 0,
-      "open": 9
+      "done": 1,
+      "open": 8
     },
     {
       "id": 118016782,
@@ -544,6 +544,7 @@
     "Sem tipo": 2
   },
   "avgCompletionTimeByType": {
+    "Fotografia": 1045,
     "Mídias sociais": 364
   },
   "onTimeRateByUser": [
@@ -564,9 +565,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 0,
-      "onTime": 0,
-      "rate": null
+      "total": 1,
+      "onTime": 1,
+      "rate": 100
     },
     {
       "id": 118016782,
