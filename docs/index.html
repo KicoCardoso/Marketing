@@ -98,8 +98,21 @@
   .card-clickable { display: flex; flex-direction: column; gap: 4px; cursor: pointer; }
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
   .modal-overlay.open { display: flex; }
-  .modal-box { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 20px 22px 22px; width: 100%; max-width: 620px; }
-  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .modal-box { background: #0d1117; border: 0.5px solid #1e2d3d; border-radius: 12px; padding: 20px 22px 22px; width: 100%; max-width: 960px; max-height: calc(100vh - 80px); display: flex; flex-direction: column; }
+  .modal-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-shrink: 0; }
+  .modal-body-grid { display: grid; grid-template-columns: 1fr 340px; gap: 0; flex: 1; min-height: 0; }
+  .modal-main { overflow-y: auto; padding-right: 18px; }
+  .modal-chat { display: flex; flex-direction: column; min-height: 0; border-left: 0.5px solid #1e2d3d; padding-left: 18px; margin-left: 18px; }
+  .modal-chat-title { font-size: 9.5px; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; color: #6e8394; margin-bottom: 10px; flex-shrink: 0; }
+  .modal-chat-list { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; min-height: 120px; }
+  .modal-chat-compose { flex-shrink: 0; display: flex; flex-direction: column; gap: 6px; margin-top: 10px; padding-top: 10px; border-top: 0.5px solid #1e2d3d; }
+  .modal-chat-compose select { font-size: 12px; background: #12161c; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 6px; padding: 6px 8px; }
+  .modal-chat-compose textarea { font-size: 12px; background: #12161c; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 6px; padding: 8px; resize: vertical; min-height: 56px; font-family: inherit; }
+  .modal-chat-compose button { align-self: flex-end; }
+  @media (max-width: 760px) {
+    .modal-body-grid { grid-template-columns: 1fr; }
+    .modal-chat { border-left: none; margin-left: 0; padding-left: 0; border-top: 0.5px solid #1e2d3d; padding-top: 14px; margin-top: 14px; }
+  }
   .modal-title { font-size: 15px; font-weight: 600; color: #e6edf3; line-height: 1.4; }
   .modal-close { background: transparent; border: 0.5px solid #1e2d3d; color: #8b9aaa; border-radius: 6px; padding: 4px 9px; cursor: pointer; font-size: 12px; flex-shrink: 0; }
   .modal-close:hover { background: #171b21; }
@@ -118,7 +131,6 @@
   .modal-move-row { display: flex; gap: 8px; align-items: center; }
   .modal-move-row select, .modal-move-row input[type="date"], .modal-move-row input[type="text"] { flex: 1; font-size: 12px; background: #12161c; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 6px; padding: 7px 8px; }
   .modal-move-row button { flex-shrink: 0; }
-  .comments-list { display: flex; flex-direction: column; gap: 8px; max-height: 220px; overflow-y: auto; }
   .comment-row { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 7px 9px; }
   .comment-head { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 3px; }
   .comment-author { font-size: 10.5px; font-weight: 500; color: #e6edf3; }
@@ -257,12 +269,12 @@ function closeTaskModal() {
 }
 
 async function onModalComment(taskId, taskName) {
-  const nameInput = document.getElementById('modalCommentName');
+  const authorSel = document.getElementById('modalCommentAuthor');
   const input = document.getElementById('modalCommentInput');
   const btn = document.getElementById('modalCommentBtn');
   const msgEl = document.getElementById('modalCommentMsg');
   const text = input.value.trim();
-  const name = nameInput.value.trim() || 'Alguém';
+  const author = authorSel.value || 'Alguém';
   if (!text) { msgEl.textContent = 'Escreva um comentário.'; return; }
 
   btn.disabled = true;
@@ -273,15 +285,15 @@ async function onModalComment(taskId, taskName) {
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify({ task_id: taskId, task_name: taskName, changes: { comment: `${name}: ${text}` } })
+      body: JSON.stringify({ task_id: taskId, task_name: taskName, changes: { comment: `${author}: ${text}` } })
     });
     input.value = '';
     btn.textContent = 'Enviado ✓';
     msgEl.textContent = 'Comentário enviado — aparece no ClickUp em até 5 min.';
-    setTimeout(() => { btn.disabled = false; btn.textContent = 'Comentar'; msgEl.textContent = ''; }, 2500);
+    setTimeout(() => { btn.disabled = false; btn.textContent = 'Enviar'; msgEl.textContent = ''; }, 2500);
   } catch (e) {
     btn.disabled = false;
-    btn.textContent = 'Comentar';
+    btn.textContent = 'Enviar';
     msgEl.textContent = 'Falha ao enviar: ' + e.message;
   }
 }
@@ -366,69 +378,77 @@ function renderTaskModalHtml(t) {
       <div class="comment-text">${(c.text || '').replace(/</g, '&lt;')}</div>
     </div>`).join('') : '<div class="empty-col">— sem comentários ainda —</div>';
 
+  const memberOptions = (LAST_DATA && LAST_DATA.members || []).map(m => `<option value="${(m.name || '').replace(/"/g, '&quot;')}">${m.name}</option>`).join('');
+
   return `
     <div class="modal-head">
       <div class="modal-title">${t.name}</div>
       <button class="modal-close" onclick="closeTaskModal()">Fechar</button>
     </div>
-    <div class="modal-grid">
-      <div>
-        <div class="modal-field-label">Status</div>
-        <div class="modal-field-value">${STATUS_LABELS[t.status] || t.status}</div>
+    <div class="modal-body-grid">
+      <div class="modal-main">
+        <div class="modal-grid">
+          <div>
+            <div class="modal-field-label">Status</div>
+            <div class="modal-field-value">${STATUS_LABELS[t.status] || t.status}</div>
+          </div>
+          <div>
+            <div class="modal-field-label">Responsável</div>
+            <div class="modal-field-value">${assigneeName}</div>
+          </div>
+          <div>
+            <div class="modal-field-label">Prioridade</div>
+            ${priorityHtml(t.priority)}
+          </div>
+          <div>
+            <div class="modal-field-label">Prazo</div>
+            <div class="modal-field-value">${fmtDate(t.due_date)}</div>
+          </div>
+          <div>
+            <div class="modal-field-label">Início</div>
+            <div class="modal-field-value">${fmtDate(t.start_date)}</div>
+          </div>
+          <div>
+            <div class="modal-field-label">Criada em</div>
+            <div class="modal-field-value">${fmtDate(t.date_created)}</div>
+          </div>
+        </div>
+        <div class="modal-desc">${desc}</div>
+        <div class="modal-section-title">Campos</div>
+        <div class="modal-grid">${fieldsHtml}</div>
+        ${subtasksHtml ? `<div class="modal-section-title">Subtarefas (${subtasks.length})</div>${subtasksHtml}` : ''}
+        <div class="modal-section-title">Responsável</div>
+        <div class="modal-move-row">
+          <select id="modalAssigneeSelect">
+            ${(LAST_DATA && LAST_DATA.members || []).map(m => `<option value="${m.id}" ${t.assignee && String(t.assignee.id) === String(m.id) ? 'selected' : ''}>${m.name}</option>`).join('')}
+          </select>
+        </div>
+        <div class="modal-section-title">Prazo</div>
+        <div class="modal-move-row">
+          <input type="date" id="modalDueInput" value="${isoDateOnly(t.due_date)}">
+        </div>
+        <div class="modal-section-title">Etapa</div>
+        <div class="modal-move-row">
+          <select id="modalMoveSelect">
+            ${STATUS_ORDER.map(s => `<option value="${s.key}" ${s.key === t.status ? 'selected' : ''}>${s.label}</option>`).join('')}
+          </select>
+          <button class="btn btn-confirm" id="modalMoveBtn" onclick="onModalMove('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Mover</button>
+        </div>
+        <div id="modalMoveMsg" class="card-error"></div>
+        <div class="modal-section-title">&nbsp;</div>
+        <a class="modal-link" href="${t.url}" target="_blank" rel="noopener">Abrir no ClickUp →</a>
       </div>
-      <div>
-        <div class="modal-field-label">Responsável</div>
-        <div class="modal-field-value">${assigneeName}</div>
-      </div>
-      <div>
-        <div class="modal-field-label">Prioridade</div>
-        ${priorityHtml(t.priority)}
-      </div>
-      <div>
-        <div class="modal-field-label">Prazo</div>
-        <div class="modal-field-value">${fmtDate(t.due_date)}</div>
-      </div>
-      <div>
-        <div class="modal-field-label">Início</div>
-        <div class="modal-field-value">${fmtDate(t.start_date)}</div>
-      </div>
-      <div>
-        <div class="modal-field-label">Criada em</div>
-        <div class="modal-field-value">${fmtDate(t.date_created)}</div>
+      <div class="modal-chat">
+        <div class="modal-chat-title">Comentários (${comments.length})</div>
+        <div class="modal-chat-list">${commentsHtml}</div>
+        <div class="modal-chat-compose">
+          <select id="modalCommentAuthor">${memberOptions}</select>
+          <textarea id="modalCommentInput" placeholder="Escreva uma mensagem..."></textarea>
+          <button class="btn btn-confirm" id="modalCommentBtn" onclick="onModalComment('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Enviar</button>
+        </div>
+        <div id="modalCommentMsg" class="card-error"></div>
       </div>
     </div>
-    <div class="modal-desc">${desc}</div>
-    <div class="modal-section-title">Campos</div>
-    <div class="modal-grid">${fieldsHtml}</div>
-    ${subtasksHtml ? `<div class="modal-section-title">Subtarefas (${subtasks.length})</div>${subtasksHtml}` : ''}
-    <div class="modal-section-title">Comentários (${comments.length})</div>
-    <div class="comments-list">${commentsHtml}</div>
-    <div class="modal-move-row" style="margin-top:6px;">
-      <input type="text" id="modalCommentName" placeholder="Seu nome" style="max-width:110px;">
-      <input type="text" id="modalCommentInput" placeholder="Escreva um comentário...">
-      <button class="btn btn-confirm" id="modalCommentBtn" onclick="onModalComment('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Comentar</button>
-    </div>
-    <div id="modalCommentMsg" class="card-error"></div>
-    <div class="modal-section-title">Responsável</div>
-    <div class="modal-move-row">
-      <select id="modalAssigneeSelect">
-        ${(LAST_DATA && LAST_DATA.members || []).map(m => `<option value="${m.id}" ${t.assignee && String(t.assignee.id) === String(m.id) ? 'selected' : ''}>${m.name}</option>`).join('')}
-      </select>
-    </div>
-    <div class="modal-section-title">Prazo</div>
-    <div class="modal-move-row">
-      <input type="date" id="modalDueInput" value="${isoDateOnly(t.due_date)}">
-    </div>
-    <div class="modal-section-title">Etapa</div>
-    <div class="modal-move-row">
-      <select id="modalMoveSelect">
-        ${STATUS_ORDER.map(s => `<option value="${s.key}" ${s.key === t.status ? 'selected' : ''}>${s.label}</option>`).join('')}
-      </select>
-      <button class="btn btn-confirm" id="modalMoveBtn" onclick="onModalMove('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Mover</button>
-    </div>
-    <div id="modalMoveMsg" class="card-error"></div>
-    <div class="modal-section-title">&nbsp;</div>
-    <a class="modal-link" href="${t.url}" target="_blank" rel="noopener">Abrir no ClickUp →</a>
   `;
 }
 
