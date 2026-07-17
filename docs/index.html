@@ -164,14 +164,11 @@
       <div class="brand-name">Grupo Aspekto — Marketing</div>
       <div class="brand-sub" id="sub">Fluxo de produção de conteúdo</div>
     </div>
-    <div class="filter-bar">
-      <label for="viewMode">Visualização</label>
-      <select id="viewMode" onchange="onViewModeChange(this.value)">
-        <option value="geral">Geral</option>
-        <option value="fluxo">Fluxo de demandas</option>
-        <option value="todo">To do list</option>
-        <option value="insights">Insights</option>
-      </select>
+    <div class="view-toggle" id="viewModeToggle" style="margin-left:0;">
+      <button id="btn-viewmode-geral" class="active" onclick="onViewModeChange('geral')">Geral</button>
+      <button id="btn-viewmode-fluxo" onclick="onViewModeChange('fluxo')">Fluxo de demandas</button>
+      <button id="btn-viewmode-todo" onclick="onViewModeChange('todo')">To do list</button>
+      <button id="btn-viewmode-insights" onclick="onViewModeChange('insights')">Insights</button>
     </div>
     <div class="filter-bar">
       <label for="userFilter">Usuário</label>
@@ -553,6 +550,9 @@ function onViewModeChange(mode) {
   document.getElementById('sectionTodo').style.display = (mode === 'geral' || mode === 'todo') ? '' : 'none';
   document.getElementById('sectionDetalhamento').style.display = (mode === 'geral') ? '' : 'none';
   document.getElementById('sectionInsights').style.display = (mode === 'insights') ? '' : 'none';
+  ['geral', 'fluxo', 'todo', 'insights'].forEach(m => {
+    document.getElementById('btn-viewmode-' + m).classList.toggle('active', m === mode);
+  });
 }
 
 let flowView = 'abertos'; // 'abertos' | 'concluidos'
