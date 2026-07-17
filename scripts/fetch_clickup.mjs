@@ -42,33 +42,43 @@ async function processMoveQueue() {
 
   for (const item of pending) {
     try {
-      const action = item.action || 'status'; // compat com itens antigos sem 'action'
-      const value = item.action ? item.value : item.new_status;
+      // 'changes' é o formato atual ({status?, assignee?, due_date?}); mantém compat com itens antigos (action/value ou new_status).
+      const changes = item.changes || (item.action ? { [item.action]: item.value } : (item.new_status ? { status: item.new_status } : {}));
       const task = await api(`/task/${item.task_id}`);
 
       if (!task.list || String(task.list.id) !== LIST_ID) {
         console.log(`Ignorado ${item.task_id}: não pertence à lista de demandas`);
       } else {
-        let body = null;
-        if (action === 'status' && ALLOWED_STATUSES.has(String(value))) {
-          body = { status: value };
-        } else if (action === 'assignee' && ALLOWED_ASSIGNEE_IDS.has(Number(value))) {
+        const body = {};
+        const applied = [];
+
+        if (changes.status !== undefined && ALLOWED_STATUSES.has(String(changes.status))) {
+          body.status = changes.status;
+          applied.push(`status=${changes.status}`);
+        }
+        if (changes.assignee !== undefined && ALLOWED_ASSIGNEE_IDS.has(Number(changes.assignee))) {
           const currentIds = (task.assignees || []).map(a => a.id);
-          body = { assignees: { add: [Number(value)], rem: currentIds.filter(id => id !== Number(value)) } };
-        } else if (action === 'due_date' && value) {
-          const ms = new Date(value).getTime();
-          if (!isNaN(ms)) body = { due_date: ms, due_date_time: false };
+          body.assignees = { add: [Number(changes.assignee)], rem: currentIds.filter(id => id !== Number(changes.assignee)) };
+          applied.push(`assignee=${changes.assignee}`);
+        }
+        if (changes.due_date) {
+          const ms = new Date(changes.due_date).getTime();
+          if (!isNaN(ms)) {
+            body.due_date = ms;
+            body.due_date_time = false;
+            applied.push(`due_date=${changes.due_date}`);
+          }
         }
 
-        if (body) {
+        if (applied.length) {
           await fetch(`https://api.clickup.com/api/v2/task/${item.task_id}`, {
             method: 'PUT',
             headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
             body: JSON.stringify(body)
           });
-          console.log(`Aplicado ${action}=${value} em ${item.task_id} (${item.task_name || ''})`);
+          console.log(`Aplicado [${applied.join(', ')}] em ${item.task_id} (${item.task_name || ''})`);
         } else {
-          console.log(`Ignorado ${item.task_id}: ${action}=${value} inválido`);
+          console.log(`Ignorado ${item.task_id}: nenhuma mudança válida`, JSON.stringify(changes));
         }
       }
     } catch (e) {

@@ -250,7 +250,25 @@ function closeTaskModal() {
   document.getElementById('taskModal').classList.remove('open');
 }
 
-async function sendQueueRequest({ taskId, taskName, action, value, btn, msgEl, idleLabel, closeOnSuccess }) {
+async function onModalMove(taskId, taskName) {
+  const assigneeSel = document.getElementById('modalAssigneeSelect');
+  const dueInput = document.getElementById('modalDueInput');
+  const statusSel = document.getElementById('modalMoveSelect');
+  const btn = document.getElementById('modalMoveBtn');
+  const msgEl = document.getElementById('modalMoveMsg');
+  const task = TASK_BY_ID[taskId];
+  if (!task) return;
+
+  const currentAssigneeId = task.assignee ? String(task.assignee.id) : '';
+  const currentDue = isoDateOnly(task.due_date);
+
+  const changes = {};
+  if (assigneeSel.value && assigneeSel.value !== currentAssigneeId) changes.assignee = assigneeSel.value;
+  if (dueInput.value && dueInput.value !== currentDue) changes.due_date = dueInput.value;
+  if (statusSel.value !== task.status) changes.status = statusSel.value;
+
+  if (Object.keys(changes).length === 0) { closeTaskModal(); return; }
+
   btn.disabled = true;
   btn.textContent = 'Enviando...';
   msgEl.textContent = '';
@@ -259,41 +277,16 @@ async function sendQueueRequest({ taskId, taskName, action, value, btn, msgEl, i
       method: 'POST',
       mode: 'no-cors',
       headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify({ task_id: taskId, task_name: taskName, action, value })
+      body: JSON.stringify({ task_id: taskId, task_name: taskName, changes })
     });
     btn.textContent = 'Enviado ✓';
     msgEl.textContent = 'Solicitação enviada — a mudança deve aparecer no dashboard em até 5 min.';
-    if (closeOnSuccess) setTimeout(closeTaskModal, 1800);
-    else setTimeout(() => { btn.disabled = false; btn.textContent = idleLabel; msgEl.textContent = ''; }, 2500);
+    setTimeout(closeTaskModal, 1800);
   } catch (e) {
     btn.disabled = false;
-    btn.textContent = idleLabel;
+    btn.textContent = 'Mover';
     msgEl.textContent = 'Falha ao enviar solicitação: ' + e.message;
   }
-}
-
-function onModalMove(taskId, taskName) {
-  const sel = document.getElementById('modalMoveSelect');
-  const btn = document.getElementById('modalMoveBtn');
-  const msgEl = document.getElementById('modalMoveMsg');
-  const task = TASK_BY_ID[taskId];
-  if (task && sel.value === task.status) { closeTaskModal(); return; }
-  sendQueueRequest({ taskId, taskName, action: 'status', value: sel.value, btn, msgEl, idleLabel: 'Mover', closeOnSuccess: true });
-}
-
-function onModalAssignee(taskId, taskName) {
-  const sel = document.getElementById('modalAssigneeSelect');
-  const btn = document.getElementById('modalAssigneeBtn');
-  const msgEl = document.getElementById('modalAssigneeMsg');
-  sendQueueRequest({ taskId, taskName, action: 'assignee', value: sel.value, btn, msgEl, idleLabel: 'Salvar', closeOnSuccess: false });
-}
-
-function onModalDueDate(taskId, taskName) {
-  const input = document.getElementById('modalDueInput');
-  const btn = document.getElementById('modalDueBtn');
-  const msgEl = document.getElementById('modalDueMsg');
-  if (!input.value) { msgEl.textContent = 'Escolha uma data.'; return; }
-  sendQueueRequest({ taskId, taskName, action: 'due_date', value: input.value, btn, msgEl, idleLabel: 'Salvar', closeOnSuccess: false });
 }
 
 function openTaskModal(taskId) {
@@ -362,21 +355,17 @@ function renderTaskModalHtml(t) {
     <div class="modal-section-title">Campos</div>
     <div class="modal-grid">${fieldsHtml}</div>
     ${subtasksHtml ? `<div class="modal-section-title">Subtarefas (${subtasks.length})</div>${subtasksHtml}` : ''}
-    <div class="modal-section-title">Alterar responsável</div>
+    <div class="modal-section-title">Responsável</div>
     <div class="modal-move-row">
       <select id="modalAssigneeSelect">
         ${(LAST_DATA && LAST_DATA.members || []).map(m => `<option value="${m.id}" ${t.assignee && String(t.assignee.id) === String(m.id) ? 'selected' : ''}>${m.name}</option>`).join('')}
       </select>
-      <button class="btn btn-confirm" id="modalAssigneeBtn" onclick="onModalAssignee('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Salvar</button>
     </div>
-    <div id="modalAssigneeMsg" class="card-error"></div>
-    <div class="modal-section-title">Alterar prazo</div>
+    <div class="modal-section-title">Prazo</div>
     <div class="modal-move-row">
       <input type="date" id="modalDueInput" value="${isoDateOnly(t.due_date)}">
-      <button class="btn btn-confirm" id="modalDueBtn" onclick="onModalDueDate('${t.id}', '${(t.name || '').replace(/'/g, "\\'")}')">Salvar</button>
     </div>
-    <div id="modalDueMsg" class="card-error"></div>
-    <div class="modal-section-title">Mover demanda</div>
+    <div class="modal-section-title">Etapa</div>
     <div class="modal-move-row">
       <select id="modalMoveSelect">
         ${STATUS_ORDER.map(s => `<option value="${s.key}" ${s.key === t.status ? 'selected' : ''}>${s.label}</option>`).join('')}
