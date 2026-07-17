@@ -499,7 +499,9 @@ function renderTaskModalHtml(t) {
 
 function dueBadge(dueDateMs) {
   if (!dueDateMs) return { cls: 'neutral', text: 'sem prazo' };
-  const diffMs = dueDateMs - Date.now();
+  const dueDay = new Date(Number(dueDateMs));
+  const endOfDueDay = new Date(dueDay.getFullYear(), dueDay.getMonth(), dueDay.getDate(), 23, 59, 59, 999).getTime();
+  const diffMs = endOfDueDay - Date.now();
   const diffH = diffMs / 3600000;
   if (diffMs < 0) {
     const d = Math.abs(diffMs / 86400000);
@@ -669,7 +671,7 @@ function renderInsights(data) {
   const total = tasks.length;
   const done = tasks.filter(t => DONE_STATUSES.has(t.status)).length;
   const open = total - done;
-  const overdue = tasks.filter(t => !DONE_STATUSES.has(t.status) && t.due_date && Number(t.due_date) < Date.now()).length;
+  const overdue = tasks.filter(t => !DONE_STATUSES.has(t.status) && t.due_date && dueBadge(Number(t.due_date)).cls === 'danger').length;
 
   document.getElementById('kpiRow').innerHTML = `
     <div class="kpi-card"><div class="kpi-label">Total de demandas</div><div class="kpi-value">${total}</div></div>
