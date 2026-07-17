@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T12:35:29.802Z",
+  "updatedAt": "2026-07-17T12:40:32.994Z",
   "members": [
     {
       "id": 118016784,
@@ -41,14 +41,14 @@
     {
       "id": "86ajjqvjx",
       "name": "Lucas Diniz Oliveira Estanislau - 16878 - Fotos finais",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784790000000,
       "date_created": 1784223816128,
-      "date_closed": null,
+      "date_closed": 1784291723957,
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajjqvjx",
@@ -1126,8 +1126,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 3,
-      "open": 6
+      "done": 4,
+      "open": 5
     },
     {
       "id": 118016782,
@@ -1154,7 +1154,7 @@
     "Sem tipo": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 1094,
+    "Fotografia": 1104,
     "Mídias sociais": 1703
   },
   "onTimeRateByUser": [
@@ -1168,8 +1168,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 3,
-      "onTime": 3,
+      "total": 4,
+      "onTime": 4,
       "rate": 100
     },
     {
