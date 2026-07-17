@@ -80,7 +80,11 @@ async function processMoveQueue() {
         }
 
         if (changes.comment) {
-          const commentText = '[Dashboard público] ' + String(changes.comment).slice(0, 2000);
+          const raw = String(changes.comment).slice(0, 2000);
+          const sep = raw.indexOf(': ');
+          const commentText = (sep > 0 && sep < 80)
+            ? `👤 ${raw.slice(0, sep)} (via dashboard público):\n${raw.slice(sep + 2)}`
+            : `[Dashboard público] ${raw}`;
           await fetch(`https://api.clickup.com/api/v2/task/${item.task_id}/comment`, {
             method: 'POST',
             headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
