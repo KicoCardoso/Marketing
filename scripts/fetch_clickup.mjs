@@ -5,6 +5,12 @@ const TIPO_FIELD_ID = '4db7b187-0bc2-4a77-888a-6a06423f04df';
 const EMAIL_FIELD_ID = 'e33ce220-035a-4600-aead-7b3b88570eff';
 const EXCLUDED_MEMBER_IDS = new Set([55109277]); // conta duplicada (Yuri Lima - e-mail pessoal, sem demandas)
 const DONE_STATUSES = new Set(['concluído', 'banco de publicações']);
+const MOVE_QUEUE_URL = 'https://script.google.com/macros/s/AKfycbwT5j1BjTfgneljYlnjVS_4bRiBqvoHw2Qcs5yPNErQw-2AZ_TOkj2CX9hoPyKZpmQt/exec';
+const ALLOWED_STATUSES = new Set([
+  'fila de demandas', 'criação de copy / roteiros', 'captação / gravação',
+  'produção / edição', 'aprovação 1', 'ajuste', 'aprovação 2',
+  'banco de publicações', 'concluído', 'impedimento'
+]);
 
 if (!TOKEN) {
   console.error('CLICKUP_TOKEN não definido (configure o secret CLICKUP_API_TOKEN no repositório).');
@@ -20,6 +26,48 @@ async function api(path) {
   }
   return res.json();
 }
+
+async function processMoveQueue() {
+  let pending = [];
+  try {
+    const res = await fetch(`${MOVE_QUEUE_URL}?action=pending`);
+    if (!res.ok) { console.log('Fila de movimentação: HTTP', res.status); return; }
+    const data = await res.json();
+    pending = data.pending || [];
+  } catch (e) {
+    console.log('Fila de movimentação indisponível:', e.message);
+    return;
+  }
+
+  for (const item of pending) {
+    try {
+      if (!ALLOWED_STATUSES.has(item.new_status)) {
+        console.log(`Ignorado ${item.task_id}: etapa inválida (${item.new_status})`);
+      } else {
+        const task = await api(`/task/${item.task_id}`);
+        if (task.list && String(task.list.id) === LIST_ID) {
+          await fetch(`https://api.clickup.com/api/v2/task/${item.task_id}`, {
+            method: 'PUT',
+            headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ status: item.new_status })
+          });
+          console.log(`Movida ${item.task_id} (${item.task_name || ''}) -> ${item.new_status}`);
+        } else {
+          console.log(`Ignorado ${item.task_id}: não pertence à lista de demandas`);
+        }
+      }
+    } catch (e) {
+      console.log(`Erro ao mover ${item.task_id}:`, e.message);
+    }
+    try {
+      await fetch(`${MOVE_QUEUE_URL}?action=ack&id=${encodeURIComponent(item.id)}`);
+    } catch (e) {
+      console.log(`Erro ao confirmar processamento de ${item.id}:`, e.message);
+    }
+  }
+}
+
+await processMoveQueue();
 
 async function fetchTimeInStatus(taskIds) {
   const acc = {};
