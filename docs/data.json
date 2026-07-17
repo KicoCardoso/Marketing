@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T17:22:02.071Z",
+  "updatedAt": "2026-07-17T17:26:35.914Z",
   "members": [
     {
       "id": 118016784,
@@ -103,6 +103,11 @@
       "start_date": null,
       "subtasks": [],
       "comments": [
+        {
+          "author": "Kico Cardoso",
+          "date": 1784309116792,
+          "text": "[Dashboard público] Kico Cardoso: teste"
+        },
         {
           "author": "Kico Cardoso",
           "date": 1784308818409,
@@ -579,14 +584,14 @@
     {
       "id": "86ajhdz34",
       "name": "[ADS 19/06] Roteiro 03",
-      "status": "captação / gravação",
+      "status": "concluído",
       "assignee": {
         "id": 118016784,
         "name": "Yuri Lima"
       },
       "due_date": 1784271600000,
       "date_created": 1784051366406,
-      "date_closed": null,
+      "date_closed": 1784308970770,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz34",
@@ -604,14 +609,14 @@
     {
       "id": "86ajhdz31",
       "name": "[ADS 19/06] Roteiro 02",
-      "status": "captação / gravação",
+      "status": "concluído",
       "assignee": {
         "id": 118016784,
         "name": "Yuri Lima"
       },
       "due_date": 1784271600000,
       "date_created": 1784051366148,
-      "date_closed": null,
+      "date_closed": 1784308961147,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz31",
@@ -629,14 +634,14 @@
     {
       "id": "86ajhdz2y",
       "name": "[ADS 19/06] Roteiro 01",
-      "status": "captação / gravação",
+      "status": "concluído",
       "assignee": {
         "id": 118016784,
         "name": "Yuri Lima"
       },
       "due_date": 1784271600000,
       "date_created": 1784051365824,
-      "date_closed": null,
+      "date_closed": 1784308947480,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz2y",
@@ -1223,8 +1228,8 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "done": 1,
-      "open": 17
+      "done": 4,
+      "open": 14
     },
     {
       "id": 118016783,
@@ -1259,13 +1264,14 @@
   "avgCompletionTimeByType": {
     "Fotografia": 1104,
     "Mídias sociais": 1703,
+    "ADS": 4293,
     "Branding": 4201
   },
   "onTimeRateByUser": [
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "total": 1,
+      "total": 4,
       "onTime": 0,
       "rate": 0
     },
