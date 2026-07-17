@@ -8,7 +8,7 @@ const DONE_STATUSES = new Set(['concluído', 'banco de publicações']);
 const MOVE_QUEUE_URL = 'https://script.google.com/macros/s/AKfycbwT5j1BjTfgneljYlnjVS_4bRiBqvoHw2Qcs5yPNErQw-2AZ_TOkj2CX9hoPyKZpmQt/exec';
 const ALLOWED_STATUSES = new Set([
   'fila de demandas', 'criação de copy / roteiros', 'captação / gravação',
-  'produção / edição', 'aprovação 1', 'ajuste', 'aprovação 2',
+  'produção / edição', 'aprovação 1', 'ajuste',
   'banco de publicações', 'concluído', 'impedimento'
 ]);
 const ALLOWED_ASSIGNEE_IDS = new Set([118016784, 118016783, 118016782, 278685306]);
