@@ -77,7 +77,20 @@ async function processMoveQueue() {
             body: JSON.stringify(body)
           });
           console.log(`Aplicado [${applied.join(', ')}] em ${item.task_id} (${item.task_name || ''})`);
-        } else {
+        }
+
+        if (changes.comment) {
+          const commentText = '[Dashboard público] ' + String(changes.comment).slice(0, 2000);
+          await fetch(`https://api.clickup.com/api/v2/task/${item.task_id}/comment`, {
+            method: 'POST',
+            headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ comment_text: commentText })
+          });
+          applied.push('comentário');
+          console.log(`Comentário adicionado em ${item.task_id}`);
+        }
+
+        if (!applied.length) {
           console.log(`Ignorado ${item.task_id}: nenhuma mudança válida`, JSON.stringify(changes));
         }
       }
@@ -137,11 +150,25 @@ function getEmail(t) {
   return field.value;
 }
 
+async function fetchComments(taskId) {
+  try {
+    const res = await api(`/task/${taskId}/comment`);
+    return (res.comments || []).slice(0, 15).map(c => ({
+      author: (c.user && (c.user.username || c.user.email)) || 'Alguém',
+      date: c.date ? Number(c.date) : null,
+      text: c.comment_text || (Array.isArray(c.comment) ? c.comment.map(p => p.text || '').join('') : '')
+    }));
+  } catch (e) {
+    return [];
+  }
+}
+
 async function fetchTaskExtras(taskIds) {
   const extras = {};
   for (const id of taskIds) {
     try {
       const t = await api(`/task/${id}?include_subtasks=true`);
+      const comments = await fetchComments(id);
       extras[id] = {
         description: t.markdown_description || t.text_content || t.description || '',
         priority: t.priority || null,
@@ -151,10 +178,11 @@ async function fetchTaskExtras(taskIds) {
           name: s.name,
           status: (s.status && s.status.status || '').toLowerCase(),
           assignee: s.assignees && s.assignees[0] ? { name: s.assignees[0].username } : null
-        }))
+        })),
+        comments
       };
     } catch (e) {
-      extras[id] = { description: '', priority: null, start_date: null, subtasks: [] };
+      extras[id] = { description: '', priority: null, start_date: null, subtasks: [], comments: [] };
     }
   }
   return extras;
@@ -190,6 +218,7 @@ for (const t of tasks) {
   t.priority = ex.priority || null;
   t.start_date = ex.start_date || null;
   t.subtasks = ex.subtasks || [];
+  t.comments = ex.comments || [];
 }
 
 const timeByStatus = await fetchTimeInStatus(tasks.map(t => t.id));
