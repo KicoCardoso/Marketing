@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T12:45:32.933Z",
+  "updatedAt": "2026-07-17T12:50:33.662Z",
   "members": [
     {
       "id": 118016784,
@@ -652,14 +652,14 @@
     {
       "id": "86ajhbkw6",
       "name": "Logo da nova campanha: 14 anos Aspekto",
-      "status": "produção / edição",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784530800000,
       "date_created": 1784046903867,
-      "date_closed": null,
+      "date_closed": 1784292316182,
       "tipo": "Branding",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkw6",
@@ -1126,8 +1126,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 4,
-      "open": 5
+      "done": 5,
+      "open": 4
     },
     {
       "id": 118016782,
@@ -1155,7 +1155,8 @@
   },
   "avgCompletionTimeByType": {
     "Fotografia": 1104,
-    "Mídias sociais": 1703
+    "Mídias sociais": 1703,
+    "Branding": 4090
   },
   "onTimeRateByUser": [
     {
@@ -1168,8 +1169,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 4,
-      "onTime": 4,
+      "total": 5,
+      "onTime": 5,
       "rate": 100
     },
     {
