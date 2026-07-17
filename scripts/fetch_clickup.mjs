@@ -12,6 +12,15 @@ const ALLOWED_STATUSES = new Set([
   'banco de publicações', 'concluído', 'impedimento'
 ]);
 const ALLOWED_ASSIGNEE_IDS = new Set([118016784, 118016783, 118016782, 278685306]);
+const TIPO_OPTION_IDS = {
+  'Fotografia': 'fa79ab5c-85fd-4300-8b0b-d75801cf02fc',
+  'ADS': '381f0c8d-152a-43ac-bec9-1ddae537e237',
+  'Mídias sociais': '8fc9c85e-5399-4e5b-8c7f-d4a8dbda514e',
+  'Influenciadores': 'f287e700-9457-4845-974f-8ff481db5559',
+  'CS': '840b6c82-7449-457e-b9a4-8078ac5ba278',
+  'Branding': 'bf28b21a-5d1b-4038-aa5f-16e931d8610d',
+  'Identidade visual': '94060698-5b6b-4e54-b571-9b985fe14673'
+};
 
 if (!TOKEN) {
   console.error('CLICKUP_TOKEN não definido (configure o secret CLICKUP_API_TOKEN no repositório).');
@@ -28,6 +37,37 @@ async function api(path) {
   return res.json();
 }
 
+async function processCreateItem(item) {
+  const customFields = [];
+  if (item.tipo && TIPO_OPTION_IDS[item.tipo]) {
+    customFields.push({ id: TIPO_FIELD_ID, value: TIPO_OPTION_IDS[item.tipo] });
+  }
+  if (item.email) {
+    customFields.push({ id: EMAIL_FIELD_ID, value: item.email });
+  }
+  const body = {
+    name: item.name,
+    markdown_content: item.description || '',
+    status: 'fila de demandas'
+  };
+  if (customFields.length) body.custom_fields = customFields;
+  if (item.due_date) {
+    const ms = new Date(item.due_date).getTime();
+    if (!isNaN(ms)) { body.due_date = ms; body.due_date_time = false; }
+  }
+  const res = await fetch(`https://api.clickup.com/api/v2/list/${LIST_ID}/task`, {
+    method: 'POST',
+    headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+  const created = await res.json();
+  if (created && created.id) {
+    console.log(`Demanda criada via dashboard público: "${item.name}" (${created.id})`);
+  } else {
+    console.log(`Falha ao criar demanda "${item.name}":`, JSON.stringify(created));
+  }
+}
+
 async function processMoveQueue() {
   let pending = [];
   try {
@@ -42,6 +82,16 @@ async function processMoveQueue() {
 
   for (const item of pending) {
     try {
+      if (item.kind === 'create') {
+        await processCreateItem(item);
+        try {
+          await fetch(`${MOVE_QUEUE_URL}?action=ack&id=${encodeURIComponent(item.id)}`);
+        } catch (e) {
+          console.log(`Erro ao confirmar processamento de ${item.id}:`, e.message);
+        }
+        continue;
+      }
+
       // 'changes' é o formato atual ({status?, assignee?, due_date?}); mantém compat com itens antigos (action/value ou new_status).
       const changes = item.changes || (item.action ? { [item.action]: item.value } : (item.new_status ? { status: item.new_status } : {}));
       const task = await api(`/task/${item.task_id}`);

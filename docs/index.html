@@ -108,6 +108,14 @@
   .tv[data-view="fluxo"] .col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
   .tv[data-view="todo"] .user-col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
 
+  .create-form { display: flex; flex-direction: column; gap: 10px; }
+  .create-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
+  .create-field { display: flex; flex-direction: column; gap: 4px; }
+  .create-field label { font-size: 9.5px; font-weight: 500; letter-spacing: 0.3px; text-transform: uppercase; color: #6e8394; }
+  .create-field input, .create-field select, .create-field textarea { font-size: 12px; background: #12161c; color: #e6edf3; border: 0.5px solid #1e2d3d; border-radius: 6px; padding: 7px 9px; font-family: inherit; }
+  .create-field textarea { min-height: 70px; resize: vertical; }
+  .create-actions { display: flex; align-items: center; gap: 10px; }
+
   .card-clickable { display: flex; flex-direction: column; gap: 4px; cursor: pointer; }
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
   .modal-overlay.open { display: flex; }
@@ -179,6 +187,50 @@
     <div class="live"><span class="dot"></span>Somente leitura · atualiza a cada 5 min</div>
   </div>
   <div class="warn-banner" id="warnBanner"></div>
+
+  <section class="dashboard-section" id="sectionCreate">
+    <div class="section-header">
+      <span class="section-accent" style="background:#4fc3f7;"></span>
+      <span class="section-title">Criar demanda</span>
+    </div>
+    <div class="create-form">
+      <div class="create-row">
+        <div class="create-field">
+          <label for="createName">Nome da demanda</label>
+          <input type="text" id="createName" placeholder="Ex: Vídeo institucional para Instagram">
+        </div>
+        <div class="create-field">
+          <label for="createTipo">Tipo de demanda</label>
+          <select id="createTipo">
+            <option value="">Selecione...</option>
+            <option>Fotografia</option>
+            <option>ADS</option>
+            <option>Mídias sociais</option>
+            <option>Influenciadores</option>
+            <option>CS</option>
+            <option>Branding</option>
+            <option>Identidade visual</option>
+          </select>
+        </div>
+        <div class="create-field">
+          <label for="createEmail">E-mail do solicitante</label>
+          <input type="email" id="createEmail" placeholder="seu@email.com">
+        </div>
+        <div class="create-field">
+          <label for="createDue">Prazo desejado</label>
+          <input type="date" id="createDue">
+        </div>
+      </div>
+      <div class="create-field">
+        <label for="createDesc">Descrição</label>
+        <textarea id="createDesc" placeholder="Detalhe a demanda..."></textarea>
+      </div>
+      <div class="create-actions">
+        <button class="btn btn-confirm" id="createBtn" onclick="onCreateDemand()">Criar demanda</button>
+        <span id="createMsg" class="card-error"></span>
+      </div>
+    </div>
+  </section>
 
   <section class="dashboard-section" id="sectionFluxo">
     <div class="section-header">
@@ -310,6 +362,46 @@ function priorityHtml(priority) {
 
 function closeTaskModal() {
   document.getElementById('taskModal').classList.remove('open');
+}
+
+async function onCreateDemand() {
+  const nameEl = document.getElementById('createName');
+  const tipoEl = document.getElementById('createTipo');
+  const emailEl = document.getElementById('createEmail');
+  const dueEl = document.getElementById('createDue');
+  const descEl = document.getElementById('createDesc');
+  const btn = document.getElementById('createBtn');
+  const msgEl = document.getElementById('createMsg');
+
+  const name = nameEl.value.trim();
+  if (!name) { msgEl.textContent = 'Informe o nome da demanda.'; return; }
+
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+  msgEl.textContent = '';
+  try {
+    await fetch(MOVE_QUEUE_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        kind: 'create',
+        name,
+        tipo: tipoEl.value,
+        email: emailEl.value.trim(),
+        description: descEl.value.trim(),
+        due_date: dueEl.value
+      })
+    });
+    nameEl.value = ''; tipoEl.value = ''; emailEl.value = ''; dueEl.value = ''; descEl.value = '';
+    btn.textContent = 'Enviada ✓';
+    msgEl.textContent = 'Demanda enviada — aparece no ClickUp e no dashboard em até 5 min.';
+    setTimeout(() => { btn.disabled = false; btn.textContent = 'Criar demanda'; msgEl.textContent = ''; }, 3000);
+  } catch (e) {
+    btn.disabled = false;
+    btn.textContent = 'Criar demanda';
+    msgEl.textContent = 'Falha ao enviar: ' + e.message;
+  }
 }
 
 async function onModalComment(taskId, taskName) {
@@ -541,6 +633,7 @@ let viewMode = 'geral'; // 'geral' | 'fluxo' | 'todo' | 'insights'
 function onViewModeChange(mode) {
   viewMode = mode;
   document.getElementById('tv').setAttribute('data-view', mode);
+  document.getElementById('sectionCreate').style.display = (mode === 'geral') ? '' : 'none';
   document.getElementById('sectionFluxo').style.display = (mode === 'geral' || mode === 'fluxo') ? '' : 'none';
   document.getElementById('sectionTodo').style.display = (mode === 'geral' || mode === 'todo') ? '' : 'none';
   document.getElementById('sectionDetalhamento').style.display = (mode === 'geral') ? '' : 'none';
