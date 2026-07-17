@@ -11,7 +11,7 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: #05070a; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   .app-shell { display: flex; min-height: 100vh; background: #05070a; }
-  .sidebar { width: 190px; flex-shrink: 0; background: #0d1117; border-right: 0.5px solid #1e2d3d; padding: 20px 12px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; transition: width 0.18s ease; }
+  .sidebar { width: 190px; flex-shrink: 0; background: #0d1117; border-right: 0.5px solid #1e2d3d; padding: 20px 12px; display: flex; flex-direction: column; gap: 6px; overflow: hidden; transition: width 0.18s ease; position: sticky; top: 0; height: 100vh; }
   .sidebar-toggle { align-self: flex-start; width: 32px; height: 32px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 14px; background: transparent; border: 0.5px solid #1e2d3d; border-radius: 8px; color: #8b9aaa; cursor: pointer; margin-bottom: 8px; }
   .sidebar-toggle:hover { background: #12161c; color: #e6edf3; }
   .sidebar-brand { padding: 2px 8px 18px; display: flex; align-items: center; gap: 8px; }
@@ -32,7 +32,7 @@
   .sidebar.collapsed .sb-label { display: none; }
   @media (max-width: 760px) {
     .app-shell { flex-direction: column; }
-    .sidebar { width: 100%; flex-direction: row; flex-wrap: wrap; align-items: center; border-right: none; border-bottom: 0.5px solid #1e2d3d; padding: 12px 14px; }
+    .sidebar { width: 100%; height: auto; position: static; flex-direction: row; flex-wrap: wrap; align-items: center; border-right: none; border-bottom: 0.5px solid #1e2d3d; padding: 12px 14px; }
     .sidebar-brand { display: none; }
     .sidebar-btn { width: auto; flex: 1 1 auto; text-align: center; }
   }
