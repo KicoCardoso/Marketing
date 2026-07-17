@@ -227,12 +227,6 @@
       <tbody id="stageTimesTable"></tbody>
     </table>
 
-    <div class="section-subtitle">Entrega no prazo por responsável</div>
-    <table class="insights-table">
-      <thead><tr><th>Responsável</th><th>No prazo</th><th>Total avaliado</th><th>Taxa</th></tr></thead>
-      <tbody id="insightsOntimeTable"></tbody>
-    </table>
-
     <div class="section-subtitle">Volume mensal de demandas</div>
     <div class="growth-row" id="insightsGrowthRow"></div>
 
@@ -688,13 +682,6 @@ function renderInsights(data) {
   document.getElementById('stageTimesTable').innerHTML = STATUS_ORDER.map(s => `
     <tr><td>${s.label}</td><td>${stageTimes[s.key] ? fmtDuration(stageTimes[s.key]) : '—'}</td></tr>
   `).join('');
-
-  const ontime = data.onTimeRateByUser || [];
-  document.getElementById('insightsOntimeTable').innerHTML = ontime.length ? ontime.map(u => {
-    const rateText = (u.rate !== null && u.rate !== undefined) ? u.rate + '%' : '—';
-    const color = (u.rate === null || u.rate === undefined) ? '#5a6a7a' : u.rate >= 90 ? '#4ade80' : u.rate >= 70 ? '#f5c542' : '#f56b6b';
-    return `<tr><td>${u.name}</td><td>${u.onTime}</td><td>${u.total}</td><td style="color:${color};font-weight:500;">${rateText}</td></tr>`;
-  }).join('') : '<tr><td colspan="4" class="empty-col">— sem dados —</td></tr>';
 
   const growth = data.monthlyVolume || [];
   const maxG = Math.max(1, ...growth.map(g => g.count));
