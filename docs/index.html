@@ -95,6 +95,19 @@
   .growth-bar-fill { height: 100%; background: #ff9d4d; border-radius: 4px; }
   .growth-count { font-size: 10px; font-weight: 500; color: #e6edf3; width: 22px; text-align: right; flex-shrink: 0; }
 
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .kpi-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 12px 14px; display: flex; flex-direction: column; gap: 5px; }
+  .kpi-label { font-size: 9.5px; font-weight: 500; letter-spacing: 0.4px; text-transform: uppercase; color: #6e8394; }
+  .kpi-value { font-size: 22px; font-weight: 600; color: #e6edf3; }
+
+  .insights-table { width: 100%; border-collapse: collapse; font-size: 11.5px; margin-bottom: 4px; }
+  .insights-table th { text-align: left; font-size: 9.5px; font-weight: 500; letter-spacing: 0.4px; text-transform: uppercase; color: #6e8394; padding: 6px 8px; border-bottom: 0.5px solid #1e2d3d; }
+  .insights-table td { padding: 7px 8px; border-bottom: 0.5px solid #171b21; color: #c3ccd6; }
+  .insights-table tr:last-child td { border-bottom: none; }
+
+  .tv[data-view="fluxo"] .col .cards { max-height: 620px; overflow-y: auto; padding-right: 3px; }
+  .tv[data-view="todo"] .user-col .cards { max-height: 620px; overflow-y: auto; padding-right: 3px; }
+
   .card-clickable { display: flex; flex-direction: column; gap: 4px; cursor: pointer; }
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; align-items: flex-start; justify-content: center; padding: 40px 16px; overflow-y: auto; }
   .modal-overlay.open { display: flex; }
@@ -152,6 +165,15 @@
       <div class="brand-sub" id="sub">Fluxo de produção de conteúdo</div>
     </div>
     <div class="filter-bar">
+      <label for="viewMode">Visualização</label>
+      <select id="viewMode" onchange="onViewModeChange(this.value)">
+        <option value="geral">Geral</option>
+        <option value="fluxo">Fluxo de demandas</option>
+        <option value="todo">To do list</option>
+        <option value="insights">Insights</option>
+      </select>
+    </div>
+    <div class="filter-bar">
       <label for="userFilter">Usuário</label>
       <select id="userFilter" onchange="onUserFilterChange(this.value)">
         <option value="">Todos os usuários</option>
@@ -161,7 +183,7 @@
   </div>
   <div class="warn-banner" id="warnBanner"></div>
 
-  <section class="dashboard-section">
+  <section class="dashboard-section" id="sectionFluxo">
     <div class="section-header">
       <span class="section-accent" style="background:#b388ff;"></span>
       <span class="section-title">Fluxo de demanda</span>
@@ -175,7 +197,7 @@
     </div>
   </section>
 
-  <section class="dashboard-section">
+  <section class="dashboard-section" id="sectionTodo">
     <div class="section-header">
       <span class="section-accent" style="background:#4ade80;"></span>
       <span class="section-title">To do list</span>
@@ -183,7 +205,7 @@
     <div class="by-user-board" id="byUserBoard"></div>
   </section>
 
-  <section class="dashboard-section">
+  <section class="dashboard-section" id="sectionDetalhamento">
     <div class="section-header">
       <span class="section-accent" style="background:#ff9d4d;"></span>
       <span class="section-title">Detalhamento de demanda</span>
@@ -193,6 +215,38 @@
     <div class="ontime-row" id="ontimeRow"></div>
     <div class="section-subtitle">Volume mensal de demandas</div>
     <div class="growth-row" id="growthRow"></div>
+  </section>
+
+  <section class="dashboard-section" id="sectionInsights" style="display:none;">
+    <div class="section-header">
+      <span class="section-accent" style="background:#4fc3f7;"></span>
+      <span class="section-title">Insights</span>
+    </div>
+    <div class="kpi-row" id="kpiRow"></div>
+
+    <div class="section-subtitle">Tempo médio por etapa</div>
+    <table class="insights-table">
+      <thead><tr><th>Etapa</th><th>Tempo médio</th></tr></thead>
+      <tbody id="stageTimesTable"></tbody>
+    </table>
+
+    <div class="section-subtitle">Entrega no prazo por responsável</div>
+    <table class="insights-table">
+      <thead><tr><th>Responsável</th><th>No prazo</th><th>Total avaliado</th><th>Taxa</th></tr></thead>
+      <tbody id="insightsOntimeTable"></tbody>
+    </table>
+
+    <div class="section-subtitle">Volume mensal de demandas</div>
+    <div class="growth-row" id="insightsGrowthRow"></div>
+
+    <div class="section-subtitle">Distribuição por tipo de demanda</div>
+    <div class="type-cards" id="insightsTypeCards"></div>
+
+    <div class="section-subtitle">Produtividade por usuário</div>
+    <table class="insights-table">
+      <thead><tr><th>Usuário</th><th>Concluídas</th><th>Em aberto</th><th>Total</th></tr></thead>
+      <tbody id="productivityTable"></tbody>
+    </table>
   </section>
 </div>
 
@@ -490,6 +544,17 @@ function onUserFilterChange(value) {
   if (LAST_DATA) render(LAST_DATA);
 }
 
+let viewMode = 'geral'; // 'geral' | 'fluxo' | 'todo' | 'insights'
+
+function onViewModeChange(mode) {
+  viewMode = mode;
+  document.getElementById('tv').setAttribute('data-view', mode);
+  document.getElementById('sectionFluxo').style.display = (mode === 'geral' || mode === 'fluxo') ? '' : 'none';
+  document.getElementById('sectionTodo').style.display = (mode === 'geral' || mode === 'todo') ? '' : 'none';
+  document.getElementById('sectionDetalhamento').style.display = (mode === 'geral') ? '' : 'none';
+  document.getElementById('sectionInsights').style.display = (mode === 'insights') ? '' : 'none';
+}
+
 let flowView = 'abertos'; // 'abertos' | 'concluidos'
 
 function onFlowViewChange(view) {
@@ -605,6 +670,64 @@ function renderDetalhamento(data) {
   }).join('') : '<div class="empty-col">— sem histórico ainda —</div>';
 }
 
+function renderInsights(data) {
+  const tasks = data.tasks || [];
+  const total = tasks.length;
+  const done = tasks.filter(t => DONE_STATUSES.has(t.status)).length;
+  const open = total - done;
+  const overdue = tasks.filter(t => !DONE_STATUSES.has(t.status) && t.due_date && Number(t.due_date) < Date.now()).length;
+
+  document.getElementById('kpiRow').innerHTML = `
+    <div class="kpi-card"><div class="kpi-label">Total de demandas</div><div class="kpi-value">${total}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Em aberto</div><div class="kpi-value">${open}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Concluídas</div><div class="kpi-value">${done}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Atrasadas</div><div class="kpi-value" style="color:${overdue ? '#f56b6b' : '#e6edf3'};">${overdue}</div></div>
+  `;
+
+  const stageTimes = data.stageTimes || {};
+  document.getElementById('stageTimesTable').innerHTML = STATUS_ORDER.map(s => `
+    <tr><td>${s.label}</td><td>${stageTimes[s.key] ? fmtDuration(stageTimes[s.key]) : '—'}</td></tr>
+  `).join('');
+
+  const ontime = data.onTimeRateByUser || [];
+  document.getElementById('insightsOntimeTable').innerHTML = ontime.length ? ontime.map(u => {
+    const rateText = (u.rate !== null && u.rate !== undefined) ? u.rate + '%' : '—';
+    const color = (u.rate === null || u.rate === undefined) ? '#5a6a7a' : u.rate >= 90 ? '#4ade80' : u.rate >= 70 ? '#f5c542' : '#f56b6b';
+    return `<tr><td>${u.name}</td><td>${u.onTime}</td><td>${u.total}</td><td style="color:${color};font-weight:500;">${rateText}</td></tr>`;
+  }).join('') : '<tr><td colspan="4" class="empty-col">— sem dados —</td></tr>';
+
+  const growth = data.monthlyVolume || [];
+  const maxG = Math.max(1, ...growth.map(g => g.count));
+  document.getElementById('insightsGrowthRow').innerHTML = growth.length ? growth.map(g => {
+    const pct = Math.round((g.count / maxG) * 100);
+    return `
+      <div class="growth-item">
+        <span class="growth-label">${g.month}</span>
+        <div class="growth-bar-track"><div class="growth-bar-fill" style="width:${pct}%;"></div></div>
+        <span class="growth-count">${g.count}</span>
+      </div>`;
+  }).join('') : '<div class="empty-col">— sem histórico ainda —</div>';
+
+  const tasksByType = data.tasksByType || {};
+  const avgByType = data.avgCompletionTimeByType || {};
+  const types = Object.keys(tasksByType).sort((a, b) => tasksByType[b] - tasksByType[a]);
+  document.getElementById('insightsTypeCards').innerHTML = types.length ? types.map(tipo => {
+    const count = tasksByType[tipo];
+    const avg = avgByType[tipo] ? fmtDuration(avgByType[tipo]) : '—';
+    return `
+      <div class="type-card">
+        <div class="type-name">${tipo}</div>
+        <div class="type-count">${count}<span>demanda(s)</span></div>
+        <div class="type-time">méd. conclusão: ${avg}</div>
+      </div>`;
+  }).join('') : '<div class="empty-col">— sem dados —</div>';
+
+  const userStats = (data.userStats || []).slice().sort((a, b) => (b.done + b.open) - (a.done + a.open));
+  document.getElementById('productivityTable').innerHTML = userStats.length ? userStats.map(u => `
+    <tr><td>${u.name}</td><td>${u.done}</td><td>${u.open}</td><td>${u.done + u.open}</td></tr>
+  `).join('') : '<tr><td colspan="4" class="empty-col">— sem dados —</td></tr>';
+}
+
 function render(data) {
   document.getElementById('sub').textContent = data.updatedAt
     ? `Fluxo de produção de conteúdo — atualizado em ${fmtClock(data.updatedAt)}`
@@ -647,6 +770,7 @@ function render(data) {
 
   renderByUser(data);
   renderDetalhamento(data);
+  renderInsights(data);
 }
 
 async function load() {
