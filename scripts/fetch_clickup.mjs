@@ -11,6 +11,7 @@ const ALLOWED_STATUSES = new Set([
   'produção / edição', 'aprovação 1', 'ajuste', 'aprovação 2',
   'banco de publicações', 'concluído', 'impedimento'
 ]);
+const ALLOWED_ASSIGNEE_IDS = new Set([118016784, 118016783, 118016782, 278685306]);
 
 if (!TOKEN) {
   console.error('CLICKUP_TOKEN não definido (configure o secret CLICKUP_API_TOKEN no repositório).');
@@ -41,23 +42,37 @@ async function processMoveQueue() {
 
   for (const item of pending) {
     try {
-      if (!ALLOWED_STATUSES.has(item.new_status)) {
-        console.log(`Ignorado ${item.task_id}: etapa inválida (${item.new_status})`);
+      const action = item.action || 'status'; // compat com itens antigos sem 'action'
+      const value = item.action ? item.value : item.new_status;
+      const task = await api(`/task/${item.task_id}`);
+
+      if (!task.list || String(task.list.id) !== LIST_ID) {
+        console.log(`Ignorado ${item.task_id}: não pertence à lista de demandas`);
       } else {
-        const task = await api(`/task/${item.task_id}`);
-        if (task.list && String(task.list.id) === LIST_ID) {
+        let body = null;
+        if (action === 'status' && ALLOWED_STATUSES.has(String(value))) {
+          body = { status: value };
+        } else if (action === 'assignee' && ALLOWED_ASSIGNEE_IDS.has(Number(value))) {
+          const currentIds = (task.assignees || []).map(a => a.id);
+          body = { assignees: { add: [Number(value)], rem: currentIds.filter(id => id !== Number(value)) } };
+        } else if (action === 'due_date' && value) {
+          const ms = new Date(value).getTime();
+          if (!isNaN(ms)) body = { due_date: ms, due_date_time: false };
+        }
+
+        if (body) {
           await fetch(`https://api.clickup.com/api/v2/task/${item.task_id}`, {
             method: 'PUT',
             headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ status: item.new_status })
+            body: JSON.stringify(body)
           });
-          console.log(`Movida ${item.task_id} (${item.task_name || ''}) -> ${item.new_status}`);
+          console.log(`Aplicado ${action}=${value} em ${item.task_id} (${item.task_name || ''})`);
         } else {
-          console.log(`Ignorado ${item.task_id}: não pertence à lista de demandas`);
+          console.log(`Ignorado ${item.task_id}: ${action}=${value} inválido`);
         }
       }
     } catch (e) {
-      console.log(`Erro ao mover ${item.task_id}:`, e.message);
+      console.log(`Erro ao processar ${item.task_id}:`, e.message);
     }
     try {
       await fetch(`${MOVE_QUEUE_URL}?action=ack&id=${encodeURIComponent(item.id)}`);
