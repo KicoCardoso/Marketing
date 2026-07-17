@@ -12,7 +12,8 @@
   html, body { margin: 0; padding: 0; background: #05070a; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
   .app-shell { display: flex; min-height: 100vh; background: #05070a; }
   .sidebar { width: 190px; flex-shrink: 0; background: #0d1117; border-right: 0.5px solid #1e2d3d; padding: 20px 12px; display: flex; flex-direction: column; gap: 6px; }
-  .sidebar-brand { padding: 2px 8px 18px; }
+  .sidebar-brand { padding: 2px 8px 18px; display: flex; align-items: center; gap: 8px; }
+  .sidebar-logo { width: 28px; height: 28px; flex-shrink: 0; }
   .sidebar-brand .brand-name { font-size: 14.5px; font-weight: 500; color: #e6edf3; letter-spacing: -0.3px; line-height: 1.3; }
   .sidebar-btn { width: 100%; box-sizing: border-box; text-align: left; font-size: 12.5px; font-weight: 500; padding: 10px 12px; border-radius: 8px; border: 0.5px solid transparent; background: transparent; color: #8b9aaa; cursor: pointer; }
   .sidebar-btn:hover:not(.active) { background: #12161c; }
@@ -184,6 +185,7 @@
 <div class="app-shell">
 <nav class="sidebar">
   <div class="sidebar-brand">
+    <img class="sidebar-logo" src="./apple-touch-icon.png" alt="Grupo Aspekto">
     <div class="brand-name">Grupo Aspekto<br>Marketing</div>
   </div>
   <button class="sidebar-btn active" id="btn-viewmode-geral" onclick="onViewModeChange('geral')">Geral</button>
