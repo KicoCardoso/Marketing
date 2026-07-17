@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T17:46:08.637Z",
+  "updatedAt": "2026-07-17T18:06:05.736Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajkatva",
+      "name": "Verificar lista de influenciadores Minimal",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784530800000,
+      "date_created": 1784310427558,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajkatva",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajk6h3k",
       "name": "Organizar demandas de influenciadores para a agência",
@@ -1247,12 +1267,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 1,
-      "open": 15
+      "open": 16
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 3,
+    "Sem tipo": 4,
     "Fotografia": 6,
     "Mídias sociais": 23,
     "CS": 1,
@@ -1300,7 +1320,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 45
+      "count": 46
     }
   ]
 }
