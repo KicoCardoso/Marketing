@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T15:35:37.285Z",
+  "updatedAt": "2026-07-17T15:40:40.616Z",
   "members": [
     {
       "id": 118016784,
@@ -446,7 +446,7 @@
     {
       "id": "86ajhg07w",
       "name": "CX - Tarefas e processos - Luiz",
-      "status": "produção / edição",
+      "status": "aprovação 1",
       "assignee": {
         "id": 118016782,
         "name": "Kico Cardoso"
@@ -1097,47 +1097,9 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajha0y7",
       "description": "",
-      "priority": {
-        "color": "#f8ae00",
-        "id": "2",
-        "orderindex": "2",
-        "priority": "high"
-      },
+      "priority": null,
       "start_date": null,
-      "subtasks": [
-        {
-          "id": "86ajha16j",
-          "name": "Desenhar proposta para diretoria",
-          "status": "concluído",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajha1b0",
-          "name": "Montar a apresentação",
-          "status": "concluído",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajha1hj",
-          "name": "Apresentar para a diretoria",
-          "status": "demanda em desenvolvimento",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajha1my",
-          "name": "Definir novos desdobramentos da campanha",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        }
-      ]
+      "subtasks": []
     }
   ],
   "userStats": [
