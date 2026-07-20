@@ -19,9 +19,20 @@ const STAGE_COMPARECEU = 'cdb5f0e5-1042-4991-9ba5-48b53b264e96';         // -> e
 const CLOSER_ORIGIN_ID = '3eabab75-2aae-45ac-918c-017066f5cb86';         // -> evento "Purchase" (com valor)
 
 const STATE_FILE = path.join(process.cwd(), 'docs', 'clint_sync_state.json');
+const METRICS_FILE = path.join(process.cwd(), 'docs', 'clint_metrics.json');
 const OVERLAP_MS = 3 * 60 * 60 * 1000; // sobreposição de 3h entre execuções, pra não perder nada por atraso/erro
 const SENT_EVENT_RETENTION_DAYS = 60;
 const MAX_PAGES = 25; // trava de segurança (25 páginas x 200 = até 5000 negócios por execução)
+
+// Conjuntos de etapas "alcançou ou passou" no funil SDR, usados pra métricas de funil completo.
+// Não inclui "Perdidos" de propósito: é uma etapa de fechamento alcançável de qualquer ponto do funil,
+// então não dá pra usar como "alcançou agendamento" com segurança.
+const SCHEDULED_OR_BEYOND = new Set([STAGE_AVALIACAO_AGENDADA, STAGE_COMPARECEU]);
+const ATTENDED_OR_BEYOND = new Set([STAGE_COMPARECEU]);
+const METRICS_PERIODS = [
+  { key: 'last_7d', days: 7 },
+  { key: 'last_30d', days: 30 }
+];
 
 if (!CLINT_TOKEN) {
   console.error('CLINT_API_TOKEN não definido (configure o secret CLINT_API_TOKEN no repositório).');
@@ -133,6 +144,44 @@ function pruneOldSentEvents(state) {
   }
 }
 
+// ===================== Métricas de funil completo (pro dashboard) =====================
+// Recalcula do zero a cada execução direto na Clint — não depende do checkpoint incremental,
+// então funciona certo mesmo que o `state.lastRunAt` já esteja avançado.
+async function computeMetricsForPeriod(sinceIso) {
+  const sdrDeals = await fetchAllDeals({ origin_id: SDR_ORIGIN_ID, updated_stage_at_start: sinceIso });
+  let scheduled = 0;
+  let attended = 0;
+  for (const deal of sdrDeals) {
+    if (SCHEDULED_OR_BEYOND.has(deal.stage_id)) scheduled += 1;
+    if (ATTENDED_OR_BEYOND.has(deal.stage_id)) attended += 1;
+  }
+
+  const wonDeals = await fetchAllDeals({ origin_id: CLOSER_ORIGIN_ID, status: 'WON', won_at_start: sinceIso });
+  const won = wonDeals.length;
+  const wonValue = wonDeals.reduce((sum, d) => sum + (Number(d.value) || 0), 0);
+  const currency = wonDeals[0]?.currency || 'BRL';
+
+  return { scheduled, attended, won, wonValue, currency };
+}
+
+async function computeAndSaveMetrics(now) {
+  const periods = {};
+  for (const { key, days } of METRICS_PERIODS) {
+    const since = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+    const sinceIso = since.toISOString();
+    try {
+      const metrics = await computeMetricsForPeriod(sinceIso);
+      periods[key] = { since: sinceIso, until: now.toISOString(), ...metrics };
+    } catch (e) {
+      console.error(`Erro ao calcular métricas do período ${key}: ${e.message}`);
+    }
+  }
+  const output = { generatedAt: now.toISOString(), periods };
+  fs.mkdirSync(path.dirname(METRICS_FILE), { recursive: true });
+  fs.writeFileSync(METRICS_FILE, JSON.stringify(output, null, 2));
+  console.log(`Métricas de funil salvas: ${JSON.stringify(periods)}`);
+}
+
 // ===================== Orquestração =====================
 async function handleEvent(eventName, deal, timeIso, eventId, customData, state, results) {
   if (state.sentEventIds[eventId]) return; // já processado numa execução anterior
@@ -179,6 +228,9 @@ async function main() {
   }
 
   console.log(`Concluído (desde ${sinceIso}): ${JSON.stringify(results)}`);
+
+  // 3) Métricas de funil completo (agendamentos, comparecimentos, vendas+valor) pro dashboard
+  await computeAndSaveMetrics(now);
 
   if (!dryRun) {
     state.lastRunAt = now.toISOString();
