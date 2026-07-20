@@ -1,4 +1,23 @@
 {
-  "generatedAt": null,
-  "periods": {}
+  "generatedAt": "2026-07-20T21:57:00.696Z",
+  "periods": {
+    "last_7d": {
+      "since": "2026-07-13T21:57:00.696Z",
+      "until": "2026-07-20T21:57:00.696Z",
+      "scheduled": 0,
+      "attended": 0,
+      "won": 0,
+      "wonValue": 0,
+      "currency": "BRL"
+    },
+    "last_30d": {
+      "since": "2026-06-20T21:57:00.696Z",
+      "until": "2026-07-20T21:57:00.696Z",
+      "scheduled": 0,
+      "attended": 0,
+      "won": 16,
+      "wonValue": 87040,
+      "currency": "BRL"
+    }
+  }
 }
