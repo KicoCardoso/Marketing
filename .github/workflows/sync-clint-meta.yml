@@ -22,6 +22,7 @@ jobs:
         env:
           CLINT_API_TOKEN: ${{ secrets.CLINT_API_TOKEN }}
           META_CAPI_ACCESS_TOKEN: ${{ secrets.META_CAPI_ACCESS_TOKEN }}
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
         run: node scripts/sync_clint_to_meta.mjs
 
       - name: Publicar estado atualizado

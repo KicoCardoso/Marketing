@@ -7,6 +7,11 @@ const CLINT_TOKEN = process.env.CLINT_API_TOKEN;
 const META_TOKEN = process.env.META_CAPI_ACCESS_TOKEN;
 const META_DATASET_ID = process.env.META_DATASET_ID || '1602726657764120'; // dataset "(Make) (Conversion API) (2025/Outubro)" já existente na conta
 const META_API_VERSION = 'v25.0';
+const CLICKUP_TOKEN = process.env.CLICKUP_TOKEN;
+// Tarefa "de sistema" (lista "Sistema - Integrações", fora do fluxo de demandas) onde publicamos
+// as métricas como comentário — o dashboard live não pode fazer fetch() a domínios externos,
+// então lê esse comentário via ferramenta MCP do ClickUp (mesmo canal já usado pros dados de anúncios).
+const CLICKUP_METRICS_TASK_ID = '86ajmg6cz';
 
 const CLINT_BASE = 'https://api.clint.digital';
 
@@ -188,6 +193,25 @@ async function computeAndSaveMetrics(now) {
   fs.mkdirSync(path.dirname(METRICS_FILE), { recursive: true });
   fs.writeFileSync(METRICS_FILE, JSON.stringify(output, null, 2));
   console.log(`Métricas de funil salvas: ${JSON.stringify(periods)}`);
+
+  if (CLICKUP_TOKEN) {
+    try {
+      const res = await fetch(`https://api.clickup.com/api/v2/task/${CLICKUP_METRICS_TASK_ID}/comment`, {
+        method: 'POST',
+        headers: { Authorization: CLICKUP_TOKEN, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ comment_text: JSON.stringify(output) })
+      });
+      if (!res.ok) {
+        console.error(`Erro ao publicar métricas no ClickUp: ${res.status} ${await res.text()}`);
+      } else {
+        console.log('Métricas publicadas no ClickUp (tarefa de sistema).');
+      }
+    } catch (e) {
+      console.error(`Erro ao publicar métricas no ClickUp: ${e.message}`);
+    }
+  } else {
+    console.warn('CLICKUP_TOKEN não definido — pulando publicação das métricas no ClickUp (o dashboard live não vai atualizar).');
+  }
 }
 
 // ===================== Orquestração =====================
