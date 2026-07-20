@@ -15,8 +15,12 @@ const SDR_ORIGIN_ID = 'db8f3e6b-82aa-4a5a-b0d4-067bb72022e2';
 const STAGE_AVALIACAO_AGENDADA = '9c5319f2-be89-4b85-8618-4e8242a953da'; // -> evento "Schedule"
 const STAGE_COMPARECEU = 'cdb5f0e5-1042-4991-9ba5-48b53b264e96';         // -> evento custom "Compareceu"
 
-// Funil "Realizada - Closer": onde a venda de fato fecha (status WON)
-const CLOSER_ORIGIN_ID = '3eabab75-2aae-45ac-918c-017066f5cb86';         // -> evento "Purchase" (com valor)
+// A venda de fato fecha (status WON + valor) na etapa final do Onboarding ("Jornada Liberada"),
+// não no Closer — lá o time só empurra o negócio pra última etapa, sem marcar ganho nem valor.
+// O negócio pode continuar em "Onboarding" ou já ter avançado pra "Jornada do cliente" (pós-venda);
+// como cada negócio só está numa origem por vez, somamos as duas sem risco de duplicar.
+const ONBOARDING_ORIGIN_ID = '4fc882cc-6482-4b97-933c-530d2156e531';
+const JORNADA_ORIGIN_ID = '0b80b403-4430-45b7-8d27-1e060e0ba143';
 
 const STATE_FILE = path.join(process.cwd(), 'docs', 'clint_sync_state.json');
 const METRICS_FILE = path.join(process.cwd(), 'docs', 'clint_metrics.json');
@@ -156,7 +160,11 @@ async function computeMetricsForPeriod(sinceIso) {
     if (ATTENDED_OR_BEYOND.has(deal.stage_id)) attended += 1;
   }
 
-  const wonDeals = await fetchAllDeals({ origin_id: CLOSER_ORIGIN_ID, status: 'WON', won_at_start: sinceIso });
+  const [onboardingWon, jornadaWon] = await Promise.all([
+    fetchAllDeals({ origin_id: ONBOARDING_ORIGIN_ID, status: 'WON', won_at_start: sinceIso }),
+    fetchAllDeals({ origin_id: JORNADA_ORIGIN_ID, status: 'WON', won_at_start: sinceIso })
+  ]);
+  const wonDeals = [...onboardingWon, ...jornadaWon];
   const won = wonDeals.length;
   const wonValue = wonDeals.reduce((sum, d) => sum + (Number(d.value) || 0), 0);
   const currency = wonDeals[0]?.currency || 'BRL';
@@ -220,9 +228,12 @@ async function main() {
     }
   }
 
-  // 2) Funil Closer: vendas fechadas (status WON)
-  const wonDeals = await fetchAllDeals({ origin_id: CLOSER_ORIGIN_ID, status: 'WON', won_at_start: sinceIso });
-  for (const deal of wonDeals) {
+  // 2) Vendas fechadas (status WON), marcadas na etapa final do Onboarding ou já em Jornada do cliente
+  const [onboardingWonRecent, jornadaWonRecent] = await Promise.all([
+    fetchAllDeals({ origin_id: ONBOARDING_ORIGIN_ID, status: 'WON', won_at_start: sinceIso }),
+    fetchAllDeals({ origin_id: JORNADA_ORIGIN_ID, status: 'WON', won_at_start: sinceIso })
+  ]);
+  for (const deal of [...onboardingWonRecent, ...jornadaWonRecent]) {
     const customData = { currency: deal.currency || 'BRL', value: Number(deal.value) || 0 };
     await handleEvent('Purchase', deal, deal.won_at, `${deal.id}-purchase`, customData, state, results);
   }
