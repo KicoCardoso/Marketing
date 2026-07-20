@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T13:10:45.538Z",
+  "updatedAt": "2026-07-20T13:15:43.864Z",
   "members": [
     {
       "id": 118016784,
@@ -20,19 +20,19 @@
   ],
   "tasks": [
     {
-      "id": "86ajkatva",
-      "name": "Verificar lista de influenciadores Minimal",
+      "id": "86ajm17cq",
+      "name": "Mostrar processos de influenciadores da Aspekto para Henrique",
       "status": "fila de demandas",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784530800000,
-      "date_created": 1784310427558,
+      "due_date": 1784703600000,
+      "date_created": 1784553217792,
       "date_closed": null,
       "tipo": null,
       "email": null,
-      "url": "https://app.clickup.com/t/86ajkatva",
+      "url": "https://app.clickup.com/t/86ajm17cq",
       "description": "",
       "priority": null,
       "start_date": null,
@@ -42,14 +42,14 @@
     {
       "id": "86ajk6h3k",
       "name": "Organizar demandas de influenciadores para a agência",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1784530800000,
       "date_created": 1784299175841,
-      "date_closed": null,
+      "date_closed": 1784553267098,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajk6h3k",
@@ -704,7 +704,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784703600000,
       "date_created": 1784046904412,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -729,7 +729,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784703600000,
       "date_created": 1784046904119,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -779,7 +779,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784703600000,
       "date_created": 1784046903562,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -946,7 +946,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784876400000,
       "date_created": 1784046901914,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -971,7 +971,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784617200000,
       "date_created": 1784046901664,
       "date_closed": null,
       "tipo": "Influenciadores",
@@ -1188,14 +1188,14 @@
     {
       "id": "86ajha0y7",
       "name": "Lançamento da Aspekto em São Paulo",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1784271600000,
       "date_created": 1784042725092,
-      "date_closed": null,
+      "date_closed": 1784553234685,
       "tipo": "Branding",
       "email": null,
       "url": "https://app.clickup.com/t/86ajha0y7",
@@ -1227,7 +1227,7 @@
         {
           "id": "86ajha1hj",
           "name": "Apresentar para a diretoria",
-          "status": "demanda em desenvolvimento",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1235,7 +1235,7 @@
         {
           "id": "86ajha1my",
           "name": "Definir novos desdobramentos da campanha",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1266,8 +1266,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 1,
-      "open": 16
+      "done": 3,
+      "open": 14
     }
   ],
   "stageTimes": {},
@@ -1282,10 +1282,11 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
+    "Sem tipo": 4235,
     "Fotografia": 1104,
     "Mídias sociais": 1703,
     "ADS": 4293,
-    "Branding": 4201
+    "Branding": 6355
   },
   "onTimeRateByUser": [
     {
@@ -1312,7 +1313,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 1,
+      "total": 3,
       "onTime": 0,
       "rate": 0
     }
