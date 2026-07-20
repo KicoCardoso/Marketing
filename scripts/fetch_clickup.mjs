@@ -55,6 +55,9 @@ async function processCreateItem(item) {
     const ms = new Date(item.due_date).getTime();
     if (!isNaN(ms)) { body.due_date = ms; body.due_date_time = false; }
   }
+  if (item.assignee && ALLOWED_ASSIGNEE_IDS.has(Number(item.assignee))) {
+    body.assignees = [Number(item.assignee)];
+  }
   const res = await fetch(`https://api.clickup.com/api/v2/list/${LIST_ID}/task`, {
     method: 'POST',
     headers: { Authorization: TOKEN, 'Content-Type': 'application/json' },
@@ -243,7 +246,7 @@ async function fetchTaskExtras(taskIds) {
 }
 
 const [taskData, teamData] = await Promise.all([
-  api(`/list/${LIST_ID}/task?include_closed=true`),
+  api(`/list/${LIST_ID}/task?include_closed=true&subtasks=true`),
   api(`/team`)
 ]);
 
