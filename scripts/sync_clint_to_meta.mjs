@@ -38,10 +38,14 @@ const MAX_PAGES = 25; // trava de segurança (25 páginas x 200 = até 5000 neg�
 // então não dá pra usar como "alcançou agendamento" com segurança.
 const SCHEDULED_OR_BEYOND = new Set([STAGE_AVALIACAO_AGENDADA, STAGE_COMPARECEU]);
 const ATTENDED_OR_BEYOND = new Set([STAGE_COMPARECEU]);
-const METRICS_PERIODS = [
-  { key: 'last_7d', days: 7 },
-  { key: 'last_30d', days: 30 }
-];
+const BR_UTC_OFFSET_MS = 3 * 60 * 60 * 1000; // América/São_Paulo é UTC-3 fixo (sem horário de verão desde 2019)
+
+// Início do mês corrente (dia 1, 00:00) no fuso de Brasília, convertido pra UTC.
+function startOfCurrentMonthBR(now) {
+  const brNow = new Date(now.getTime() - BR_UTC_OFFSET_MS);
+  const startBr = Date.UTC(brNow.getUTCFullYear(), brNow.getUTCMonth(), 1, 0, 0, 0);
+  return new Date(startBr + BR_UTC_OFFSET_MS);
+}
 
 if (!CLINT_TOKEN) {
   console.error('CLINT_API_TOKEN não definido (configure o secret CLINT_API_TOKEN no repositório).');
@@ -179,8 +183,11 @@ async function computeMetricsForPeriod(sinceIso) {
 
 async function computeAndSaveMetrics(now) {
   const periods = {};
-  for (const { key, days } of METRICS_PERIODS) {
-    const since = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+  const periodDefs = [
+    { key: 'last_7d', since: new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000) },
+    { key: 'month_to_date', since: startOfCurrentMonthBR(now) }
+  ];
+  for (const { key, since } of periodDefs) {
     const sinceIso = since.toISOString();
     try {
       const metrics = await computeMetricsForPeriod(sinceIso);
