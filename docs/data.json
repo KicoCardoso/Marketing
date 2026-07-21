@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T21:15:58.820Z",
+  "updatedAt": "2026-07-21T21:21:10.670Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajn42qf",
+      "name": "Agendar um horário para a Giovanna Souza",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784703600000,
+      "date_created": 1784668519295,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajn42qf",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajmzxtg",
       "name": "[ADS SP - BOF] Roteiro 09",
@@ -1787,12 +1807,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 7,
-      "open": 24
+      "open": 25
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 18,
+    "Sem tipo": 19,
     "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
@@ -1841,7 +1861,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 72
+      "count": 73
     }
   ]
 }
