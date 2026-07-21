@@ -20,7 +20,13 @@ const CLINT_BASE = 'https://api.clint.digital';
 // é um pipeline diferente e legado que não recebe negócios reais — não usar.
 const SDR_ORIGIN_ID = 'dce6a8ad-4895-475f-b120-27e210c24655';
 const STAGE_AVALIACAO_AGENDADA = '1332c361-8548-4f8f-9b14-6a689d776d18'; // -> evento "Schedule"
-const STAGE_COMPARECEU = 'e6a07968-246a-4d1f-941c-bfd6835c7feb';         // "Presença confirmada" -> evento custom "Compareceu"
+const STAGE_COMPARECEU = 'e6a07968-246a-4d1f-941c-bfd6835c7feb';         // "Presença confirmada" (raramente usada — ver abaixo)
+
+// Comparecimento de verdade não é uma etapa dentro do funil acima: é outro pipeline, também no
+// grupo "Atendimento - SDR", pro qual o negócio é movido quando comparece à avaliação e passa
+// pro Closer. Contamos como "atendido" todo negócio que ENTROU nesse pipeline no período
+// (confirmado pelo Kico em 21/07/2026).
+const REALIZADA_CLOSER_ORIGIN_ID = '3eabab75-2aae-45ac-918c-017066f5cb86';
 
 // A venda de fato fecha (status WON + valor) na etapa final do Onboarding ("Jornada Liberada"),
 // não no Closer — lá o time só empurra o negócio pra última etapa, sem marcar ganho nem valor.
@@ -35,11 +41,10 @@ const OVERLAP_MS = 3 * 60 * 60 * 1000; // sobreposição de 3h entre execuções
 const SENT_EVENT_RETENTION_DAYS = 60;
 const MAX_PAGES = 25; // trava de segurança (25 páginas x 200 = até 5000 negócios por execução)
 
-// Conjuntos de etapas "alcançou ou passou" no funil SDR, usados pra métricas de funil completo.
+// Conjunto de etapas do funil "Avaliação agendada" — qualquer uma conta como "agendou".
 // Não inclui "Perdidos" de propósito: é uma etapa de fechamento alcançável de qualquer ponto do funil,
 // então não dá pra usar como "alcançou agendamento" com segurança.
 const SCHEDULED_OR_BEYOND = new Set([STAGE_AVALIACAO_AGENDADA, STAGE_COMPARECEU]);
-const ATTENDED_OR_BEYOND = new Set([STAGE_COMPARECEU]);
 const BR_UTC_OFFSET_MS = 3 * 60 * 60 * 1000; // América/São_Paulo é UTC-3 fixo (sem horário de verão desde 2019)
 
 // Início do mês corrente (dia 1, 00:00) no fuso de Brasília, convertido pra UTC.
@@ -170,13 +175,12 @@ function pruneOldSentEvents(state) {
 // Recalcula do zero a cada execução direto na Clint — não depende do checkpoint incremental,
 // então funciona certo mesmo que o `state.lastRunAt` já esteja avançado.
 async function computeMetricsForPeriod(sinceIso) {
-  const sdrDeals = await fetchAllDeals({ origin_id: SDR_ORIGIN_ID, updated_stage_at_start: sinceIso });
-  let scheduled = 0;
-  let attended = 0;
-  for (const deal of sdrDeals) {
-    if (SCHEDULED_OR_BEYOND.has(deal.stage_id)) scheduled += 1;
-    if (ATTENDED_OR_BEYOND.has(deal.stage_id)) attended += 1;
-  }
+  const [sdrDeals, closerDeals] = await Promise.all([
+    fetchAllDeals({ origin_id: SDR_ORIGIN_ID, updated_stage_at_start: sinceIso }),
+    fetchAllDeals({ origin_id: REALIZADA_CLOSER_ORIGIN_ID, created_at_start: sinceIso })
+  ]);
+  const scheduled = sdrDeals.filter(d => SCHEDULED_OR_BEYOND.has(d.stage_id)).length;
+  const attended = closerDeals.length; // entrou no pipeline "Realizada - Closer" = compareceu
 
   const [onboardingWon, jornadaWon] = await Promise.all([
     fetchAllDeals({ origin_id: ONBOARDING_ORIGIN_ID, status: 'WON', won_at_start: sinceIso }),
@@ -259,14 +263,18 @@ async function main() {
 
   const results = { Schedule: 0, Compareceu: 0, Purchase: 0, errors: 0 };
 
-  // 1) Funil SDR: agendamento e comparecimento na avaliação
+  // 1) Funil SDR: agendamento da avaliação
   const sdrDeals = await fetchAllDeals({ origin_id: SDR_ORIGIN_ID, updated_stage_at_start: sinceIso });
   for (const deal of sdrDeals) {
     if (deal.stage_id === STAGE_AVALIACAO_AGENDADA) {
       await handleEvent('Schedule', deal, deal.updated_stage_at, `${deal.id}-schedule`, null, state, results);
-    } else if (deal.stage_id === STAGE_COMPARECEU) {
-      await handleEvent('Compareceu', deal, deal.updated_stage_at, `${deal.id}-compareceu`, null, state, results);
     }
+  }
+
+  // 1b) Comparecimento: negócios que entraram no pipeline "Realizada - Closer" no período
+  const closerDealsRecent = await fetchAllDeals({ origin_id: REALIZADA_CLOSER_ORIGIN_ID, created_at_start: sinceIso });
+  for (const deal of closerDealsRecent) {
+    await handleEvent('Compareceu', deal, deal.created_at, `${deal.id}-compareceu`, null, state, results);
   }
 
   // 2) Vendas fechadas (status WON), marcadas na etapa final do Onboarding ou já em Jornada do cliente
