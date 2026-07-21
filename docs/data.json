@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T17:46:34.256Z",
+  "updatedAt": "2026-07-21T17:51:11.724Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajmypfc",
+      "name": "Maria Augusta de Assis Rodrigues Haddad - 15h",
+      "status": "depoimentos",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784703600000,
+      "date_created": 1784656128281,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajmypfc",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajm17cq",
       "name": "Mostrar processos de influenciadores da Aspekto para Henrique",
@@ -1587,12 +1607,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 7,
-      "open": 14
+      "open": 15
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 8,
+    "Sem tipo": 9,
     "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
@@ -1641,7 +1661,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 62
+      "count": 63
     }
   ]
 }
