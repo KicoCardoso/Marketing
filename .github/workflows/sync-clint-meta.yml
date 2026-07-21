@@ -1,8 +1,12 @@
 name: Sincronizar Clint -> Meta Conversions API
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
+  # Agendamento automático PAUSADO em 21/07/2026 a pedido do Kico: o funil completo
+  # (agendamentos/comparecimentos/vendas) volta a ser atualizado manualmente a partir
+  # dos envios do AspektoApp, pra não sobrescrever o comentário manual no ClickUp a
+  # cada 30 min. Pra reativar, é só descomentar o bloco "schedule" abaixo.
+  # schedule:
+  #   - cron: '*/30 * * * *'
   workflow_dispatch: {}
 
 permissions:
