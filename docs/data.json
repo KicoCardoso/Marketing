@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T18:21:24.105Z",
+  "updatedAt": "2026-07-21T18:26:33.888Z",
   "members": [
     {
       "id": 118016784,
@@ -794,7 +794,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784790000000,
       "date_created": 1784051367338,
       "date_closed": null,
       "tipo": "ADS",
@@ -819,7 +819,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784790000000,
       "date_created": 1784051367050,
       "date_closed": null,
       "tipo": "ADS",
@@ -844,7 +844,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784790000000,
       "date_created": 1784051366687,
       "date_closed": null,
       "tipo": "ADS",
@@ -864,14 +864,14 @@
     {
       "id": "86ajhdz34",
       "name": "[ADS 19/06] Roteiro 03",
-      "status": "concluído",
+      "status": "aprovação 1",
       "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
+        "id": 118016782,
+        "name": "Kico Cardoso"
       },
-      "due_date": 1784271600000,
+      "due_date": 1784790000000,
       "date_created": 1784051366406,
-      "date_closed": 1784308970770,
+      "date_closed": null,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz34",
@@ -1095,7 +1095,7 @@
         "id": 118016784,
         "name": "Yuri Lima"
       },
-      "due_date": 1784530800000,
+      "due_date": 1784790000000,
       "date_created": 1784046903102,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -1588,7 +1588,7 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "done": 2,
+      "done": 1,
       "open": 4
     },
     {
@@ -1601,7 +1601,7 @@
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 1,
-      "open": 4
+      "open": 5
     },
     {
       "id": 278685306,
@@ -1625,14 +1625,13 @@
     "Sem tipo": 5494,
     "Fotografia": 1104,
     "Mídias sociais": 1703,
-    "ADS": 4293,
     "Branding": 6355
   },
   "onTimeRateByUser": [
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "total": 2,
+      "total": 1,
       "onTime": 0,
       "rate": 0
     },
