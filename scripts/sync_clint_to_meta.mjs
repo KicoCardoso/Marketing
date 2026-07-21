@@ -47,6 +47,13 @@ function startOfCurrentMonthBR(now) {
   return new Date(startBr + BR_UTC_OFFSET_MS);
 }
 
+// Início do dia corrente (00:00) no fuso de Brasília, convertido pra UTC.
+function startOfTodayBR(now) {
+  const brNow = new Date(now.getTime() - BR_UTC_OFFSET_MS);
+  const startBr = Date.UTC(brNow.getUTCFullYear(), brNow.getUTCMonth(), brNow.getUTCDate(), 0, 0, 0);
+  return new Date(startBr + BR_UTC_OFFSET_MS);
+}
+
 if (!CLINT_TOKEN) {
   console.error('CLINT_API_TOKEN não definido (configure o secret CLINT_API_TOKEN no repositório).');
   process.exit(1);
@@ -184,6 +191,7 @@ async function computeMetricsForPeriod(sinceIso) {
 async function computeAndSaveMetrics(now) {
   const periods = {};
   const periodDefs = [
+    { key: 'today', since: startOfTodayBR(now) },
     { key: 'last_7d', since: new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000) },
     { key: 'month_to_date', since: startOfCurrentMonthBR(now) }
   ];
