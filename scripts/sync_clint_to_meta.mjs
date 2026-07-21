@@ -15,10 +15,12 @@ const CLICKUP_METRICS_TASK_ID = '86ajmg6cz';
 
 const CLINT_BASE = 'https://api.clint.digital';
 
-// Funil "SDR - Comercial Aspekto": jornada do lead até agendar e comparecer na avaliação
-const SDR_ORIGIN_ID = 'db8f3e6b-82aa-4a5a-b0d4-067bb72022e2';
-const STAGE_AVALIACAO_AGENDADA = '9c5319f2-be89-4b85-8618-4e8242a953da'; // -> evento "Schedule"
-const STAGE_COMPARECEU = 'cdb5f0e5-1042-4991-9ba5-48b53b264e96';         // -> evento custom "Compareceu"
+// Funil "Etapa - Avaliação agendada" (grupo "Atendimento - SDR"): jornada do lead até agendar e
+// comparecer na avaliação. ATENÇÃO: "db8f3e6b..." (grupo "SDR", pipeline "SDR - Comercial Aspekto")
+// é um pipeline diferente e legado que não recebe negócios reais — não usar.
+const SDR_ORIGIN_ID = 'dce6a8ad-4895-475f-b120-27e210c24655';
+const STAGE_AVALIACAO_AGENDADA = '1332c361-8548-4f8f-9b14-6a689d776d18'; // -> evento "Schedule"
+const STAGE_COMPARECEU = 'e6a07968-246a-4d1f-941c-bfd6835c7feb';         // "Presença confirmada" -> evento custom "Compareceu"
 
 // A venda de fato fecha (status WON + valor) na etapa final do Onboarding ("Jornada Liberada"),
 // não no Closer — lá o time só empurra o negócio pra última etapa, sem marcar ganho nem valor.
