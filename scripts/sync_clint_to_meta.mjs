@@ -187,7 +187,11 @@ async function computeMetricsForPeriod(sinceIso) {
     fetchAllDeals({ origin_id: JORNADA_ORIGIN_ID, status: 'WON', won_at_start: sinceIso })
   ]);
   const wonDeals = [...onboardingWon, ...jornadaWon];
-  const won = wonDeals.length;
+  // "won" (contagem) usa só vendas acima de R$2.000 — padrão pedido pelo Kico pro cálculo de CAC
+  // do funil completo (bate com "Vendas 2000+" do AspektoApp). "wonValue" continua somando TODAS
+  // as vendas fechadas no período, sem esse filtro.
+  const WON_MIN_VALUE = 2000;
+  const won = wonDeals.filter(d => (Number(d.value) || 0) >= WON_MIN_VALUE).length;
   const wonValue = wonDeals.reduce((sum, d) => sum + (Number(d.value) || 0), 0);
   const currency = wonDeals[0]?.currency || 'BRL';
 
