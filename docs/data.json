@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T15:31:03.285Z",
+  "updatedAt": "2026-07-21T15:36:34.554Z",
   "members": [
     {
       "id": 118016784,
@@ -303,12 +303,12 @@
     {
       "id": "86ajjmw0d",
       "name": "[Conteúdo Gui] Roteiro 01",
-      "status": "captação / gravação",
+      "status": "aprovação 1",
       "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
+        "id": 118016782,
+        "name": "Kico Cardoso"
       },
-      "due_date": 1784530800000,
+      "due_date": 1784617200000,
       "date_created": 1784216091445,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -749,7 +749,7 @@
     {
       "id": "86ajhg07w",
       "name": "CX - Tarefas e processos - Luiz",
-      "status": "aprovação 1",
+      "status": "banco de publicações",
       "assignee": {
         "id": 118016782,
         "name": "Kico Cardoso"
@@ -869,14 +869,14 @@
     {
       "id": "86ajhdz31",
       "name": "[ADS 19/06] Roteiro 02",
-      "status": "concluído",
+      "status": "aprovação 1",
       "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
+        "id": 118016782,
+        "name": "Kico Cardoso"
       },
       "due_date": 1784271600000,
       "date_created": 1784051366148,
-      "date_closed": 1784308961147,
+      "date_closed": null,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz31",
@@ -894,14 +894,14 @@
     {
       "id": "86ajhdz2y",
       "name": "[ADS 19/06] Roteiro 01",
-      "status": "concluído",
+      "status": "aprovação 1",
       "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
+        "id": 118016782,
+        "name": "Kico Cardoso"
       },
       "due_date": 1784271600000,
       "date_created": 1784051365824,
-      "date_closed": 1784308947480,
+      "date_closed": null,
       "tipo": "ADS",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhdz2y",
@@ -1568,8 +1568,8 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "done": 4,
-      "open": 14
+      "done": 2,
+      "open": 13
     },
     {
       "id": 118016783,
@@ -1580,8 +1580,8 @@
     {
       "id": 118016782,
       "name": "Kico Cardoso",
-      "done": 0,
-      "open": 2
+      "done": 1,
+      "open": 4
     },
     {
       "id": 278685306,
@@ -1612,7 +1612,7 @@
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "total": 4,
+      "total": 2,
       "onTime": 0,
       "rate": 0
     },
