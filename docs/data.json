@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T12:46:16.508Z",
+  "updatedAt": "2026-07-22T12:51:15.198Z",
   "members": [
     {
       "id": 118016784,
@@ -683,14 +683,14 @@
     {
       "id": "86ajj0z83",
       "name": "CAPA 09",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784703600000,
       "date_created": 1784131991331,
-      "date_closed": null,
+      "date_closed": 1784724620205,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajj0z83",
@@ -698,7 +698,13 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Kico Cardoso",
+          "date": 1784724622546,
+          "text": "👤 Ícaro Eduardo Alves Rodrigues (via dashboard público):\nCaixinha de Pergunta - Yuri ja fez e subiu"
+        }
+      ]
     },
     {
       "id": "86ajj0z7w",
@@ -743,14 +749,14 @@
     {
       "id": "86ajj0z7n",
       "name": "CAPA 06",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784703600000,
       "date_created": 1784131990357,
-      "date_closed": null,
+      "date_closed": 1784724618043,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajj0z7n",
@@ -758,7 +764,13 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Kico Cardoso",
+          "date": 1784724615846,
+          "text": "👤 Ícaro Eduardo Alves Rodrigues (via dashboard público):\nCaixinha de Pergunta - Yuri ja fez e subiu."
+        }
+      ]
     },
     {
       "id": "86ajj0z7g",
@@ -1564,7 +1576,7 @@
         {
           "id": "86ajj0z7n",
           "name": "CAPA 06",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Ícaro Eduardo Alves Rodrigues"
           }
@@ -1588,7 +1600,7 @@
         {
           "id": "86ajj0z83",
           "name": "CAPA 09",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Ícaro Eduardo Alves Rodrigues"
           }
@@ -1794,8 +1806,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 5,
-      "open": 16
+      "done": 7,
+      "open": 14
     },
     {
       "id": 118016782,
@@ -1824,7 +1836,7 @@
   "avgCompletionTimeByType": {
     "Sem tipo": 5494,
     "Fotografia": 1104,
-    "Mídias sociais": 1703,
+    "Mídias sociais": 5790,
     "CS": 10131,
     "Branding": 6355
   },
@@ -1839,9 +1851,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 5,
+      "total": 7,
       "onTime": 5,
-      "rate": 100
+      "rate": 71
     },
     {
       "id": 118016782,
