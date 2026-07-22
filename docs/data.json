@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T14:31:54.763Z",
+  "updatedAt": "2026-07-22T14:37:17.709Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajnd3j7",
+      "name": "Carrossel - Por que algumas lentes ficam artificiais e outras não?",
+      "status": "produção / edição",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784790000000,
+      "date_created": 1784730660882,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajnd3j7",
+      "description": "[LÂMINA 01]\nPor que algumas lentes ficam artificiais... e outras não? \nDescubra o segredo por trás dos sorrisos de famosos! \n\n[LÂMINA 02]\nNão é sorte…. É planejamento.\nO que faz uma lente parecer artificial não é o material. É o que acontece antes dela ser feita.\nSem planejamento, o resultado fica genérico. Sem estudo, análise, preparo adequado, o sorriso perde a naturalidade.\n\n[LÂMINA 03]\nO material faz diferença!\nA porcelana de alta qualidade tem algo que a resina não consegue reproduzir: ela não risca, não mancha e não escurece.\nMantém o brilho natural do dente, deixando quase impossível diferenciar a lente do dente real.\n\n[LÂMINA 04]\nÉ por isso que os sorrisos naturais têm um padrão. \nNa Aspekto, cada sorriso é planejado individualmente, com porcelana de alta qualidade e uma equipe especializada em entregar naturalidade em cada detalhe.\nSomos especialistas no que fazemos, e em como fazemos.\n\n[LÂMINA 05]\nQuer saber como podemos transformar o seu sorriso? \nClique no link da bio e fale com a nossa equipe.",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajn42qf",
       "name": "Agendar um horário para a Giovanna Souza",
@@ -1813,7 +1833,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 7,
-      "open": 3
+      "open": 4
     },
     {
       "id": 118016782,
@@ -1830,7 +1850,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 19,
+    "Sem tipo": 20,
     "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
@@ -1879,7 +1899,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 73
+      "count": 74
     }
   ]
 }
