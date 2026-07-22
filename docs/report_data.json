@@ -1,115 +1,247 @@
 {
-  "updatedAt": "2026-07-22T19:11:05.725Z",
+  "updatedAt": "2026-07-22T19:16:15.225Z",
   "period": {
     "since": "2026-07-01",
-    "until": "2026-07-22"
+    "until": "2026-07-21"
   },
-  "current": {
-    "spend": 95189.01,
-    "impressions": 6165773,
-    "clicks": 76531,
-    "ctr": 1.241223,
-    "cpc": 1.243797,
-    "cpm": 15.438293,
-    "reach": 2628749,
-    "frequency": 2.345516,
-    "videoP25": 286508,
-    "videoP50": 153861,
-    "videoP95": 46497,
-    "videoPlays": 5267663,
-    "msgCount": 20253,
-    "cpl": 4.699995556213894
+  "previousPeriod": {
+    "since": "2026-06-01",
+    "until": "2026-06-21"
   },
   "dailySeries": [
     {
       "date": "2026-07-01",
-      "totalSpend": 3680.66
+      "label": "01/07",
+      "totalSpend": 3680.66,
+      "msgSpend": 3642.92,
+      "msgCount": 767,
+      "impressions": 209265,
+      "clicks": 1787
     },
     {
       "date": "2026-07-02",
-      "totalSpend": 2186.97
+      "label": "02/07",
+      "totalSpend": 2186.9700000000003,
+      "msgSpend": 2186.9700000000003,
+      "msgCount": 584,
+      "impressions": 150210,
+      "clicks": 1298
     },
     {
       "date": "2026-07-03",
-      "totalSpend": 2408.7
+      "label": "03/07",
+      "totalSpend": 2408.7,
+      "msgSpend": 2408.7,
+      "msgCount": 850,
+      "impressions": 150406,
+      "clicks": 1435
     },
     {
       "date": "2026-07-04",
-      "totalSpend": 2217.87
+      "label": "04/07",
+      "totalSpend": 2217.87,
+      "msgSpend": 2217.87,
+      "msgCount": 605,
+      "impressions": 125262,
+      "clicks": 965
     },
     {
       "date": "2026-07-05",
-      "totalSpend": 2112.06
+      "label": "05/07",
+      "totalSpend": 2112.06,
+      "msgSpend": 2112.06,
+      "msgCount": 436,
+      "impressions": 105877,
+      "clicks": 747
     },
     {
       "date": "2026-07-06",
-      "totalSpend": 2193.83
+      "label": "06/07",
+      "totalSpend": 2193.83,
+      "msgSpend": 2193.83,
+      "msgCount": 604,
+      "impressions": 105014,
+      "clicks": 578
     },
     {
       "date": "2026-07-07",
-      "totalSpend": 5955.97
+      "label": "07/07",
+      "totalSpend": 5955.97,
+      "msgSpend": 5955.97,
+      "msgCount": 1307,
+      "impressions": 392127,
+      "clicks": 2534
     },
     {
       "date": "2026-07-08",
-      "totalSpend": 6897.73
+      "label": "08/07",
+      "totalSpend": 6897.73,
+      "msgSpend": 6897.73,
+      "msgCount": 1488,
+      "impressions": 486819,
+      "clicks": 4143
     },
     {
       "date": "2026-07-09",
-      "totalSpend": 5546.32
+      "label": "09/07",
+      "totalSpend": 5546.32,
+      "msgSpend": 5546.32,
+      "msgCount": 1323,
+      "impressions": 347401,
+      "clicks": 4301
     },
     {
       "date": "2026-07-10",
-      "totalSpend": 3707.47
+      "label": "10/07",
+      "totalSpend": 3707.4700000000003,
+      "msgSpend": 3707.4700000000003,
+      "msgCount": 949,
+      "impressions": 235815,
+      "clicks": 4335
     },
     {
       "date": "2026-07-11",
-      "totalSpend": 3815.64
+      "label": "11/07",
+      "totalSpend": 3815.64,
+      "msgSpend": 3815.64,
+      "msgCount": 650,
+      "impressions": 233933,
+      "clicks": 5166
     },
     {
       "date": "2026-07-12",
-      "totalSpend": 3295.94
+      "label": "12/07",
+      "totalSpend": 3295.9399999999996,
+      "msgSpend": 3295.9399999999996,
+      "msgCount": 363,
+      "impressions": 202402,
+      "clicks": 3214
     },
     {
       "date": "2026-07-13",
-      "totalSpend": 3037.84
+      "label": "13/07",
+      "totalSpend": 3037.84,
+      "msgSpend": 3037.84,
+      "msgCount": 693,
+      "impressions": 128471,
+      "clicks": 1759
     },
     {
       "date": "2026-07-14",
-      "totalSpend": 5317.01
+      "label": "14/07",
+      "totalSpend": 5317.01,
+      "msgSpend": 5317.01,
+      "msgCount": 1260,
+      "impressions": 271669,
+      "clicks": 2645
     },
     {
       "date": "2026-07-15",
-      "totalSpend": 6582.63
+      "label": "15/07",
+      "totalSpend": 6582.63,
+      "msgSpend": 6582.63,
+      "msgCount": 1550,
+      "impressions": 385492,
+      "clicks": 5876
     },
     {
       "date": "2026-07-16",
-      "totalSpend": 5613.76
+      "label": "16/07",
+      "totalSpend": 5613.759999999999,
+      "msgSpend": 5613.759999999999,
+      "msgCount": 1472,
+      "impressions": 385025,
+      "clicks": 4817
     },
     {
       "date": "2026-07-17",
-      "totalSpend": 4699.17
+      "label": "17/07",
+      "totalSpend": 4699.17,
+      "msgSpend": 4699.17,
+      "msgCount": 1046,
+      "impressions": 349589,
+      "clicks": 4168
     },
     {
       "date": "2026-07-18",
-      "totalSpend": 5701.02
+      "label": "18/07",
+      "totalSpend": 5701.0199999999995,
+      "msgSpend": 5701.0199999999995,
+      "msgCount": 997,
+      "impressions": 470973,
+      "clicks": 5821
     },
     {
       "date": "2026-07-19",
-      "totalSpend": 4671.68
+      "label": "19/07",
+      "totalSpend": 4671.68,
+      "msgSpend": 4671.68,
+      "msgCount": 518,
+      "impressions": 432807,
+      "clicks": 5964
     },
     {
       "date": "2026-07-20",
-      "totalSpend": 4785.33
+      "label": "20/07",
+      "totalSpend": 4785.33,
+      "msgSpend": 4785.33,
+      "msgCount": 817,
+      "impressions": 396762,
+      "clicks": 5849
     },
     {
       "date": "2026-07-21",
-      "totalSpend": 7121.35
+      "label": "21/07",
+      "totalSpend": 7121.349999999999,
+      "msgSpend": 7121.349999999999,
+      "msgCount": 1285,
+      "impressions": 392731,
+      "clicks": 6481
     },
     {
       "date": "2026-07-22",
-      "totalSpend": 3640.06
+      "label": "22/07",
+      "totalSpend": 3657.06,
+      "msgSpend": 3657.06,
+      "msgCount": 689,
+      "impressions": 208591,
+      "clicks": 2663
     }
   ],
+  "current": {
+    "spend": 91548.95,
+    "impressions": 5958050,
+    "clicks": 73883,
+    "ctr": 1.240053,
+    "cpc": 1.239107,
+    "cpm": 15.365589,
+    "reach": 2577546,
+    "frequency": 2.31152,
+    "postEngagement": 0,
+    "videoP25": 276818,
+    "videoP50": 149064,
+    "videoP95": 44894,
+    "videoPlays": 5097098,
+    "msgCount": 19564,
+    "cpl": 4.679459721938254
+  },
+  "previous": {
+    "spend": 160825.27,
+    "impressions": 10282024,
+    "clicks": 99482,
+    "ctr": 0.967533,
+    "cpc": 1.616627,
+    "cpm": 15.641402,
+    "reach": 3511583,
+    "frequency": 2.928031,
+    "postEngagement": 0,
+    "videoP25": 516716,
+    "videoP50": 265394,
+    "videoP95": 86966,
+    "videoPlays": 8990664,
+    "msgCount": 29697,
+    "cpl": 5.415539280061958
+  },
   "campaigns": [
     {
       "id": "120237600983410654",
@@ -194,12 +326,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 61748.39,
-      "impressions": 3273234,
-      "clicks": 21376,
-      "ctr": 0.653054,
-      "results": 14705,
-      "costPerResult": 4.1991424685481125
+      "spend": 59651.69,
+      "impressions": 3170546,
+      "clicks": 20698,
+      "ctr": 0.652821,
+      "results": 14263,
+      "costPerResult": 4.1822681062889995
     },
     {
       "id": "120249823933420654",
@@ -224,55 +356,62 @@
     {
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3120.27,
-      "impressions": 815286,
-      "clicks": 26326,
-      "ctr": 3.229051,
-      "results": 121,
-      "costPerResult": 25.787355371900826
+      "spend": 2941.28,
+      "impressions": 770843,
+      "clicks": 24889,
+      "ctr": 3.228803,
+      "results": 113,
+      "costPerResult": 26.02902654867257
     },
     {
       "id": "120250220236320654",
       "name": "[Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 9280,
-      "impressions": 508931,
-      "clicks": 4851,
-      "ctr": 0.953174,
-      "results": 2519,
-      "costPerResult": 3.6840015879317187
+      "spend": 8389.98,
+      "impressions": 470361,
+      "clicks": 4486,
+      "ctr": 0.953736,
+      "results": 2303,
+      "costPerResult": 3.6430655666521927
     },
     {
       "id": "120250220343060654",
       "name": "[Lentes] [Fundo] [Engajamento] [whatsapp] [E3] Novo",
-      "spend": 5544.22,
-      "impressions": 313878,
-      "clicks": 2366,
-      "ctr": 0.753796,
-      "results": 311,
-      "costPerResult": 17.827073954983923
+      "spend": 5069.36,
+      "impressions": 291716,
+      "clicks": 2195,
+      "ctr": 0.752444,
+      "results": 288,
+      "costPerResult": 17.60194444444444
     }
   ],
+  "funnelSpendByStage": {
+    "perfil": 6375.120000000001,
+    "topo": 70563.84000000001,
+    "meio": 9110.609999999999,
+    "fundo": 5499.379999999999,
+    "outros": 0
+  },
   "highlights": {
     "bestCost": {
       "name": "[Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 9280,
-      "results": 2519,
-      "ctr": 0.953174,
-      "costPerResult": 3.6840015879317187
+      "spend": 8389.98,
+      "results": 2303,
+      "ctr": 0.953736,
+      "costPerResult": 3.6430655666521927
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 61748.39,
-      "results": 14705,
-      "ctr": 0.653054,
-      "costPerResult": 4.1991424685481125
+      "spend": 59651.69,
+      "results": 14263,
+      "ctr": 0.652821,
+      "costPerResult": 4.1822681062889995
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3120.27,
-      "results": 121,
-      "ctr": 3.229051,
-      "costPerResult": 25.787355371900826
+      "spend": 2941.28,
+      "results": 113,
+      "ctr": 3.228803,
+      "costPerResult": 26.02902654867257
     },
     "attention": {
       "name": "[Topo] [Curtidas] [C1]",
@@ -282,25 +421,17 @@
       "costPerResult": null
     }
   },
-  "funnelSpendByStage": {
-    "perfil": 6554.110000000001,
-    "topo": 72660.54000000001,
-    "meio": 10000.63,
-    "fundo": 5974.24,
-    "outros": 0
-  },
   "funnel": {
-    "spend": 95189.01,
+    "spend": 95206.01,
     "scheduled": 248,
     "attended": 153,
     "won": 95,
     "wonValue": 675663.67,
-    "cplSchedule": 383.8266532258064,
-    "cplAttend": 622.1503921568627,
-    "cac": 1001.9895789473684,
-    "roas": 7.098126874100278
+    "cplSchedule": 383.8952016129032,
+    "cplAttend": 622.2615032679738,
+    "cac": 1002.1685263157894,
+    "roas": 7.096859431458162
   },
-  "leadToday": 8,
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
     "until": "2026-07-22T19:10:27Z",
@@ -309,5 +440,6 @@
     "won": 95,
     "wonValue": 675663.67,
     "currency": "BRL"
-  }
+  },
+  "leadToday": 8
 }
