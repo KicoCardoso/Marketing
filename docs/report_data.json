@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-07-22T18:56:10.118Z",
+  "updatedAt": "2026-07-22T19:01:37.671Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-22"
   },
   "current": {
-    "spend": 95153.5,
-    "impressions": 6163933,
-    "clicks": 76490,
-    "ctr": 1.240928,
-    "cpc": 1.243999,
-    "cpm": 15.437141,
+    "spend": 95162.43,
+    "impressions": 6164388,
+    "clicks": 76501,
+    "ctr": 1.241015,
+    "cpc": 1.243937,
+    "cpm": 15.43745,
     "reach": 2628749,
-    "frequency": 2.344816,
-    "videoP25": 286360,
-    "videoP50": 153778,
-    "videoP95": 46477,
-    "videoPlays": 5265424,
+    "frequency": 2.344989,
+    "videoP25": 286437,
+    "videoP50": 153822,
+    "videoP95": 46485,
+    "videoPlays": 5266609,
     "msgCount": 20246,
-    "cpl": 4.699866640324014
+    "cpl": 4.700307715104218
   },
   "dailySeries": [
     {
@@ -107,7 +107,7 @@
     },
     {
       "date": "2026-07-22",
-      "totalSpend": 3604.55
+      "totalSpend": 3613.48
     }
   ],
   "campaigns": [
@@ -194,12 +194,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 61727.91,
-      "impressions": 3272503,
-      "clicks": 21369,
-      "ctr": 0.652986,
-      "results": 14682,
-      "costPerResult": 4.20432570494483
+      "spend": 61737.37,
+      "impressions": 3272865,
+      "clicks": 21374,
+      "ctr": 0.653067,
+      "results": 14699,
+      "costPerResult": 4.200106809987074
     },
     {
       "id": "120249823933420654",
@@ -224,55 +224,55 @@
     {
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3117.33,
-      "impressions": 814548,
-      "clicks": 26296,
-      "ctr": 3.228293,
+      "spend": 3118.6,
+      "impressions": 814850,
+      "clicks": 26308,
+      "ctr": 3.22857,
       "results": 121,
-      "costPerResult": 25.76305785123967
+      "costPerResult": 25.773553719008262
     },
     {
       "id": "120250220236320654",
       "name": "[Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 9270.79,
-      "impressions": 508485,
-      "clicks": 4844,
-      "ctr": 0.952634,
-      "results": 2513,
-      "costPerResult": 3.689132510943096
+      "spend": 9274.78,
+      "impressions": 508705,
+      "clicks": 4847,
+      "ctr": 0.952812,
+      "results": 2518,
+      "costPerResult": 3.6833915806195394
     },
     {
       "id": "120250220343060654",
       "name": "[Lentes] [Fundo] [Engajamento] [whatsapp] [E3] Novo",
-      "spend": 5540.83,
-      "impressions": 313813,
+      "spend": 5542.72,
+      "impressions": 313844,
       "clicks": 2366,
-      "ctr": 0.753952,
-      "results": 308,
-      "costPerResult": 17.989707792207792
+      "ctr": 0.753878,
+      "results": 311,
+      "costPerResult": 17.822250803858523
     }
   ],
   "highlights": {
     "bestCost": {
       "name": "[Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 9270.79,
-      "results": 2513,
-      "ctr": 0.952634,
-      "costPerResult": 3.689132510943096
+      "spend": 9274.78,
+      "results": 2518,
+      "ctr": 0.952812,
+      "costPerResult": 3.6833915806195394
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 61727.91,
-      "results": 14682,
-      "ctr": 0.652986,
-      "costPerResult": 4.20432570494483
+      "spend": 61737.37,
+      "results": 14699,
+      "ctr": 0.653067,
+      "costPerResult": 4.200106809987074
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3117.33,
+      "spend": 3118.6,
       "results": 121,
-      "ctr": 3.228293,
-      "costPerResult": 25.76305785123967
+      "ctr": 3.22857,
+      "costPerResult": 25.773553719008262
     },
     "attention": {
       "name": "[Topo] [Curtidas] [C1]",
@@ -283,22 +283,22 @@
     }
   },
   "funnelSpendByStage": {
-    "perfil": 6551.17,
-    "topo": 72640.06000000001,
-    "meio": 9991.42,
-    "fundo": 5970.85,
+    "perfil": 6552.4400000000005,
+    "topo": 72649.52,
+    "meio": 9995.41,
+    "fundo": 5972.74,
     "outros": 0
   },
   "funnel": {
-    "spend": 95153.5,
+    "spend": 95162.43,
     "scheduled": 248,
     "attended": 151,
     "won": 95,
     "wonValue": 675663.67,
-    "cplSchedule": 383.6834677419355,
-    "cplAttend": 630.1556291390729,
-    "cac": 1001.6157894736842,
-    "roas": 7.1007757991035545
+    "cplSchedule": 383.7194758064516,
+    "cplAttend": 630.2147682119205,
+    "cac": 1001.7097894736842,
+    "roas": 7.100109465468674
   },
   "leadToday": 8,
   "clintPeriodMTD": {
