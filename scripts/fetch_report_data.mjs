@@ -1,13 +1,12 @@
 // Busca dados do Relatório (Meta Ads + funil Clint/AspektoApp) e grava docs/report_data.json,
-// pro dashboard público (docs/index.html) conseguir montar a aba "Relatório" sem depender
-// do Cowork (que só funciona dentro da conversa com o Claude).
+// pro dashboard público (docs/index.html) conseguir montar a aba "Relatório" com a mesma
+// profundidade do dashboard live do Cowork: comparação com mês anterior, evolução diária,
+// vídeo/engajamento, eficiência de entrega, destaques de campanha, funil por etapa,
+// termômetros e funil completo (Meta Ads -> AspektoApp).
 //
 // Precisa de dois secrets no GitHub Actions:
 //   META_ADS_ACCESS_TOKEN — token de acesso Meta com permissão de leitura de Insights (ads_read)
-//                            na conta de anúncios abaixo. Pode ser o mesmo token usado na
-//                            Conversions API (META_CAPI_ACCESS_TOKEN) SE ele também tiver
-//                            permissão ads_read — não temos garantia disso, testar antes de
-//                            agendar (ver instruções no final do arquivo/README).
+//                            na conta de anúncios abaixo.
 //   CLICKUP_TOKEN         — já existente (mesmo usado no fetch_clickup.mjs).
 
 const META_TOKEN = process.env.META_ADS_ACCESS_TOKEN;
@@ -15,7 +14,6 @@ const CLICKUP_TOKEN = process.env.CLICKUP_TOKEN;
 const AD_ACCOUNT_ID = 'act_898197595348538'; // conta "Kico" — Clínica Aspekto - BH (Meta Ads)
 const META_API_VERSION = 'v25.0';
 const CLINT_METRICS_TASK_ID = '86ajmg6cz';
-const WON_MIN_VALUE = 2000;
 
 if (!META_TOKEN) {
   console.error('META_ADS_ACCESS_TOKEN não definido — configure esse secret no repositório (Settings > Secrets and variables > Actions).');
@@ -26,7 +24,7 @@ if (!CLICKUP_TOKEN) {
   process.exit(1);
 }
 
-// Datas em horário de Brasília (UTC-3), consistente com o resto do projeto.
+// ---- Datas (horário de Brasília, UTC-3) ----
 function brDateParts(d) {
   const utcMs = d.getTime() - 3 * 3600 * 1000;
   const br = new Date(utcMs);
@@ -35,12 +33,36 @@ function brDateParts(d) {
 function isoDate(y, m, day) {
   return `${y}-${String(m + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 }
+function toUTCDate(y, m, day) { return new Date(Date.UTC(y, m, day)); }
+function fromUTCDate(d) { return { y: d.getUTCFullYear(), m: d.getUTCMonth(), day: d.getUTCDate() }; }
+function ymdToIso(ymd) { return isoDate(ymd.y, ymd.m, ymd.day); }
+function fmtShortDate(iso) {
+  const [, m, d] = iso.split('-');
+  return `${d}/${m}`;
+}
 
 const now = new Date();
 const { y: curY, m: curM, day: curDay } = brDateParts(now);
 const monthStartIso = isoDate(curY, curM, 1);
 const todayIso = isoDate(curY, curM, curDay);
 
+// Comparação justa: mês atual até ontem vs os mesmos N dias no início do mês anterior —
+// evita comparar um mês parcial com um mês inteiro, o que distorceria as variações %.
+const monthStartDate = toUTCDate(curY, curM, 1);
+let curUntilDate = toUTCDate(curY, curM, curDay);
+curUntilDate.setUTCDate(curUntilDate.getUTCDate() - 1);
+if (curUntilDate < monthStartDate) curUntilDate = new Date(monthStartDate);
+const curSinceIso = monthStartIso;
+const curUntilIso = ymdToIso(fromUTCDate(curUntilDate));
+const daysElapsed = Math.max(1, Math.round((curUntilDate - monthStartDate) / 86400000) + 1);
+
+const prevSinceDate = toUTCDate(curY, curM - 1, 1);
+const prevUntilDate = new Date(prevSinceDate);
+prevUntilDate.setUTCDate(prevUntilDate.getUTCDate() + daysElapsed - 1);
+const prevSinceIso = ymdToIso(fromUTCDate(prevSinceDate));
+const prevUntilIso = ymdToIso(fromUTCDate(prevUntilDate));
+
+// ---- Meta Graph API ----
 async function metaApi(path, params) {
   const url = new URL(`https://graph.facebook.com/${META_API_VERSION}${path}`);
   url.searchParams.set('access_token', META_TOKEN);
@@ -60,37 +82,35 @@ function sumAction(actions, matcher) {
   return actions.filter(a => matcher(a.action_type || '')).reduce((sum, a) => sum + (Number(a.value) || 0), 0);
 }
 function isMessagingActionType(t) { return /messag/i.test(t); }
-
 function parseNum(v) {
   const n = Number(v);
   return isNaN(n) ? 0 : n;
 }
 
-async function fetchAccountInsights(since, until, timeIncrement) {
-  const params = {
-    fields: 'spend,impressions,clicks,ctr,cpc,cpm,reach,frequency,actions,video_p25_watched_actions,video_p50_watched_actions,video_p95_watched_actions,video_play_actions',
-    level: 'account',
-    time_range: { since, until },
-    limit: 500
-  };
-  if (timeIncrement) params.time_increment = String(timeIncrement);
-  const res = await metaApi(`/${AD_ACCOUNT_ID}/insights`, params);
-  return res.data || [];
-}
+const ACCOUNT_FIELDS = 'spend,impressions,clicks,ctr,cpc,cpm,reach,frequency,post_engagement,actions,video_p25_watched_actions,video_p50_watched_actions,video_p95_watched_actions,video_play_actions';
+const CAMPAIGN_FIELDS = 'campaign_id,campaign_name,spend,impressions,clicks,cpc,cpm,ctr,actions';
 
+async function fetchAccountInsights(since, until) {
+  const res = await metaApi(`/${AD_ACCOUNT_ID}/insights`, {
+    fields: ACCOUNT_FIELDS, level: 'account', time_range: { since, until }, limit: 1
+  });
+  return (res.data || [])[0] || null;
+}
 async function fetchCampaignInsights(since, until) {
-  const params = {
-    fields: 'campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions',
-    level: 'campaign',
-    time_range: { since, until },
-    limit: 200
-  };
-  const res = await metaApi(`/${AD_ACCOUNT_ID}/insights`, params);
+  const res = await metaApi(`/${AD_ACCOUNT_ID}/insights`, {
+    fields: CAMPAIGN_FIELDS, level: 'campaign', time_range: { since, until }, limit: 200
+  });
+  return res.data || [];
+}
+async function fetchDailyCampaignInsights(since, until) {
+  const res = await metaApi(`/${AD_ACCOUNT_ID}/insights`, {
+    fields: CAMPAIGN_FIELDS, level: 'campaign', time_range: { since, until }, time_increment: '1', limit: 500
+  });
   return res.data || [];
 }
 
-function summarizeAccountRow(row) {
-  if (!row) return null;
+function summarizeAccount(row) {
+  if (!row) return { spend: 0, impressions: 0, clicks: 0, ctr: 0, cpc: 0, cpm: 0, reach: 0, frequency: 0, postEngagement: 0, videoP25: 0, videoP50: 0, videoP95: 0, videoPlays: 0, msgCount: 0, cpl: null };
   const actions = row.actions || [];
   const msgCount = sumAction(actions, isMessagingActionType);
   const spend = parseNum(row.spend);
@@ -103,6 +123,7 @@ function summarizeAccountRow(row) {
     cpm: parseNum(row.cpm),
     reach: parseNum(row.reach),
     frequency: parseNum(row.frequency),
+    postEngagement: parseNum(row.post_engagement),
     videoP25: sumAction(row.video_p25_watched_actions, () => true),
     videoP50: sumAction(row.video_p50_watched_actions, () => true),
     videoP95: sumAction(row.video_p95_watched_actions, () => true),
@@ -112,70 +133,59 @@ function summarizeAccountRow(row) {
   };
 }
 
-// ---- 1) Resumo do mês (agregado, conta inteira) ----
-const accountRows = await fetchAccountInsights(monthStartIso, todayIso, null);
-const current = summarizeAccountRow(accountRows[0]) || summarizeAccountRow({});
-
-// ---- 2) Série diária do mês (pro termômetro de gasto) ----
-const dailyRows = await fetchAccountInsights(monthStartIso, todayIso, 1);
-const dailySeries = dailyRows
-  .map(row => ({ date: row.date_start, totalSpend: parseNum(row.spend) }))
-  .sort((a, b) => a.date.localeCompare(b.date));
-
-// ---- 3) Campanhas do mês (destaques + funil por etapa) ----
-const campaignRows = await fetchCampaignInsights(monthStartIso, todayIso);
-const campaigns = campaignRows.map(c => {
-  const spend = parseNum(c.spend);
-  const msgCount = sumAction(c.actions, isMessagingActionType);
-  return {
-    id: c.campaign_id,
-    name: c.campaign_name,
-    spend,
-    impressions: parseNum(c.impressions),
-    clicks: parseNum(c.clicks),
-    ctr: parseNum(c.ctr),
-    results: msgCount,
-    costPerResult: msgCount > 0 ? spend / msgCount : null
-  };
-}).filter(c => c.spend > 0);
-
-// ---- 4) Funil Clint/AspektoApp (via comentário mais recente no ClickUp) ----
-async function fetchClintMetrics() {
-  const res = await fetch(`https://api.clickup.com/api/v2/task/${CLINT_METRICS_TASK_ID}/comment`, {
-    headers: { Authorization: CLICKUP_TOKEN }
-  });
-  if (!res.ok) throw new Error(`ClickUp comments -> ${res.status} ${await res.text()}`);
-  const data = await res.json();
-  const comments = data.comments || [];
-  if (!comments.length) throw new Error('Nenhuma métrica publicada ainda.');
-  const latest = comments.reduce((a, b) => (Number(b.date) > Number(a.date) ? b : a));
-  return JSON.parse(String(latest.comment_text).trim());
-}
-
-let funnel = null;
-let clintRaw = null;
-try {
-  clintRaw = await fetchClintMetrics();
-  const periodMTD = clintRaw?.periods?.month_to_date;
-  if (periodMTD) {
-    const spend = current.spend;
-    funnel = {
+function mapCampaigns(rows) {
+  return rows.map(c => {
+    const spend = parseNum(c.spend);
+    const msgCount = sumAction(c.actions, isMessagingActionType);
+    return {
+      id: c.campaign_id,
+      name: c.campaign_name,
       spend,
-      scheduled: periodMTD.scheduled,
-      attended: periodMTD.attended,
-      won: periodMTD.won,
-      wonValue: periodMTD.wonValue,
-      cplSchedule: periodMTD.scheduled > 0 ? spend / periodMTD.scheduled : null,
-      cplAttend: periodMTD.attended > 0 ? spend / periodMTD.attended : null,
-      cac: periodMTD.won > 0 ? spend / periodMTD.won : null,
-      roas: spend > 0 ? periodMTD.wonValue / spend : null
+      impressions: parseNum(c.impressions),
+      clicks: parseNum(c.clicks),
+      ctr: parseNum(c.ctr),
+      results: msgCount,
+      costPerResult: msgCount > 0 ? spend / msgCount : null
     };
-  }
-} catch (e) {
-  console.log('Funil Clint/AspektoApp indisponível:', e.message);
+  }).filter(c => c.spend > 0);
 }
 
-// ---- 5) Destaques de campanhas (mesma lógica do dashboard live) ----
+// ---- 1) Série diária do mês (evolução diária + termômetro de gasto) ----
+const dailyRows = await fetchDailyCampaignInsights(monthStartIso, todayIso);
+const byDate = {};
+for (const row of dailyRows) {
+  const dateIso = row.date_start;
+  if (!dateIso) continue;
+  if (!byDate[dateIso]) byDate[dateIso] = { date: dateIso, label: fmtShortDate(dateIso), totalSpend: 0, msgSpend: 0, msgCount: 0, impressions: 0, clicks: 0 };
+  const spend = parseNum(row.spend);
+  byDate[dateIso].totalSpend += spend;
+  byDate[dateIso].impressions += parseNum(row.impressions);
+  byDate[dateIso].clicks += parseNum(row.clicks);
+  const msgCount = sumAction(row.actions, isMessagingActionType);
+  if (msgCount > 0) {
+    byDate[dateIso].msgSpend += spend;
+    byDate[dateIso].msgCount += msgCount;
+  }
+}
+const dailySeries = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
+
+// ---- 2) Mês atual (até ontem) vs mesmo período do mês anterior ----
+const [curAcctRow, curCampRows, prevAcctRow, prevCampRows] = await Promise.all([
+  fetchAccountInsights(curSinceIso, curUntilIso),
+  fetchCampaignInsights(curSinceIso, curUntilIso),
+  fetchAccountInsights(prevSinceIso, prevUntilIso),
+  fetchCampaignInsights(prevSinceIso, prevUntilIso)
+]);
+const current = summarizeAccount(curAcctRow);
+const previous = summarizeAccount(prevAcctRow);
+const campaigns = mapCampaigns(curCampRows);
+void prevCampRows; // só precisamos do agregado da conta pro comparativo — campanhas do mês anterior não são exibidas
+
+// ---- 3) Gasto do mês inteiro até hoje (pro funil completo — CPL/CAC/ROAS) ----
+const fullMtdAcctRow = await fetchAccountInsights(monthStartIso, todayIso);
+const spendFullMTD = parseNum(fullMtdAcctRow?.spend);
+
+// ---- 4) Destaques de campanhas (mesma lógica do dashboard live) ----
 function computeCampaignHighlights(camps) {
   const rows = camps.map(c => ({ name: c.name.replace(/^\[Lentes\]\s*/i, ''), spend: c.spend, results: c.results, ctr: c.ctr, costPerResult: c.costPerResult }));
   if (!rows.length) return null;
@@ -190,7 +200,7 @@ function computeCampaignHighlights(camps) {
 }
 const highlights = computeCampaignHighlights(campaigns);
 
-// ---- 6) Gasto por etapa de funil (Perfil/Topo/Meio/Fundo), mesma classificação do live ----
+// ---- 5) Gasto por etapa de funil (Perfil/Topo/Meio/Fundo), mesma classificação do live ----
 function classifyStage(name) {
   const n = (name || '').toLowerCase();
   if (n.includes('topo')) return 'topo';
@@ -214,23 +224,60 @@ for (const c of campaigns) {
   }
 }
 
-// ---- 7) Termômetro de leads (hoje vs ritmo do mês) ----
-const leadToday = clintRaw?.periods?.today?.scheduled ?? null;
+// ---- 6) Funil Clint/AspektoApp (via comentário mais recente no ClickUp) ----
+async function fetchClintMetrics() {
+  const res = await fetch(`https://api.clickup.com/api/v2/task/${CLINT_METRICS_TASK_ID}/comment`, {
+    headers: { Authorization: CLICKUP_TOKEN }
+  });
+  if (!res.ok) throw new Error(`ClickUp comments -> ${res.status} ${await res.text()}`);
+  const data = await res.json();
+  const comments = data.comments || [];
+  if (!comments.length) throw new Error('Nenhuma métrica publicada ainda.');
+  const latest = comments.reduce((a, b) => (Number(b.date) > Number(a.date) ? b : a));
+  return JSON.parse(String(latest.comment_text).trim());
+}
 
+let funnel = null;
+let clintPeriodMTD = null;
+let leadToday = null;
+try {
+  const clintRaw = await fetchClintMetrics();
+  clintPeriodMTD = clintRaw?.periods?.month_to_date || null;
+  leadToday = clintRaw?.periods?.today?.scheduled ?? null;
+  if (clintPeriodMTD) {
+    funnel = {
+      spend: spendFullMTD,
+      scheduled: clintPeriodMTD.scheduled,
+      attended: clintPeriodMTD.attended,
+      won: clintPeriodMTD.won,
+      wonValue: clintPeriodMTD.wonValue,
+      cplSchedule: clintPeriodMTD.scheduled > 0 ? spendFullMTD / clintPeriodMTD.scheduled : null,
+      cplAttend: clintPeriodMTD.attended > 0 ? spendFullMTD / clintPeriodMTD.attended : null,
+      cac: clintPeriodMTD.won > 0 ? spendFullMTD / clintPeriodMTD.won : null,
+      roas: spendFullMTD > 0 ? clintPeriodMTD.wonValue / spendFullMTD : null
+    };
+  }
+} catch (e) {
+  console.log('Funil Clint/AspektoApp indisponível:', e.message);
+}
+
+// ---- Grava o JSON estático consumido pelo docs/index.html ----
 const out = {
   updatedAt: new Date().toISOString(),
-  period: { since: monthStartIso, until: todayIso },
-  current,
+  period: { since: curSinceIso, until: curUntilIso },
+  previousPeriod: { since: prevSinceIso, until: prevUntilIso },
   dailySeries,
+  current,
+  previous,
   campaigns,
-  highlights,
   funnelSpendByStage: funnelSpend,
+  highlights,
   funnel,
-  leadToday,
-  clintPeriodMTD: clintRaw?.periods?.month_to_date || null
+  clintPeriodMTD,
+  leadToday
 };
 
 const fs = await import('node:fs/promises');
 await fs.mkdir('docs', { recursive: true });
 await fs.writeFile('docs/report_data.json', JSON.stringify(out, null, 2));
-console.log(`OK — relatório gravado em docs/report_data.json (gasto do mês: ${current.spend}, ${campaigns.length} campanhas)`);
+console.log(`OK — relatório gravado em docs/report_data.json (gasto do período: ${current.spend.toFixed(2)}, ${campaigns.length} campanhas, gasto MTD p/ funil: ${spendFullMTD.toFixed(2)})`);

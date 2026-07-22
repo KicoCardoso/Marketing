@@ -150,6 +150,26 @@
   .thermo-badge { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 8px; width: fit-content; margin-top: 6px; }
   .thermo-sub { font-size: 10px; color: #5a6a7a; margin-top: 4px; max-width: 200px; line-height: 1.4; }
 
+  .kpi-pro-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .kpi-pro-card { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+  .kpi-pro-label { font-size: 9.5px; font-weight: 500; letter-spacing: 0.4px; text-transform: uppercase; color: #6e8394; }
+  .kpi-pro-value { font-size: 18px; font-weight: 600; color: #e6edf3; }
+  .kpi-pro-trend { font-size: 9.5px; font-weight: 600; display: inline-flex; align-items: center; gap: 2px; width: fit-content; padding: 1px 6px; border-radius: 8px; }
+  .kpi-pro-trend.up { color: #4ade80; background: #0d2a12; }
+  .kpi-pro-trend.down { color: #f56b6b; background: #2a0d0d; }
+  .kpi-pro-spark { height: 32px; margin-top: 2px; }
+
+  .kpi-block-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .kpi-block { border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px; color: #05070a; }
+  .kpi-block-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.4px; opacity: 0.75; }
+  .kpi-block-value { font-size: 22px; font-weight: 700; }
+
+  .metric-mini-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .metric-mini { background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 8px; padding: 9px 10px; display: flex; flex-direction: column; gap: 3px; }
+  .metric-mini-label { font-size: 8.5px; color: #6e8394; text-transform: uppercase; letter-spacing: 0.3px; }
+  .metric-mini-value { font-size: 14px; font-weight: 600; color: #e6edf3; }
+  .metric-mini-sub { font-size: 9px; color: #5a6a7a; }
+
   .tv[data-view="fluxo"] .col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
   .tv[data-view="todo"] .user-col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
 
@@ -327,27 +347,77 @@
 
   <section class="dashboard-section" id="sectionRelatorio" style="display:none;">
     <div class="section-header">
-      <span class="section-accent" style="background:#f5a623;"></span>
-      <span class="section-title">Relatório</span>
+      <span class="section-accent" style="background:#7c8cff;"></span>
+      <span class="section-title">Relatório de campanhas · Meta Ads</span>
     </div>
     <div id="reportLoadingMsg" class="loading-msg">Carregando relatório...</div>
     <div id="reportContent" style="display:none;">
-      <div class="section-subtitle">Desempenho de anúncios (mês atual)</div>
-      <div class="kpi-row" id="reportKpiRow"></div>
+      <div class="section-subtitle" style="margin-top:0;">Visão geral · mês atual vs mesmo período do mês anterior</div>
+      <div class="kpi-pro-row" id="kpiProRow"></div>
 
-      <div class="section-subtitle">Funil completo (Meta Ads → AspektoApp)</div>
-      <div class="kpi-row" id="funnelKpiRow"></div>
-
-      <div class="section-subtitle">Destaques de campanhas</div>
-      <div class="highlight-grid" id="highlightGrid"></div>
-
-      <div class="section-subtitle">Gasto por etapa do funil</div>
-      <div style="max-width:340px;height:260px;margin:6px 0 4px;">
-        <canvas id="funnelSpendChart"></canvas>
+      <div class="report-main-grid" style="display:grid;grid-template-columns:1.6fr 1fr;gap:14px;margin-top:16px;align-items:start;">
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Evolução diária (mês atual)</div>
+          <div style="position:relative;height:230px;"><canvas id="chartDaily"></canvas></div>
+        </div>
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Vídeo &amp; engajamento</div>
+          <div class="metric-mini-grid" id="metricMiniGrid"></div>
+        </div>
       </div>
 
-      <div class="section-subtitle">Termômetros</div>
-      <div class="thermo-row" id="thermoRow"></div>
+      <div class="section-subtitle" style="margin-top:16px;">Eficiência da entrega</div>
+      <div class="kpi-block-row" id="kpiBlockRow"></div>
+
+      <div class="section-subtitle" style="margin-top:16px;">Destaques de campanhas — mês atual</div>
+      <div class="highlight-grid" id="highlightGrid"></div>
+
+      <div class="report-camp-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-top:16px;align-items:start;">
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Gasto do mês por etapa de funil</div>
+          <div style="position:relative;height:210px;"><canvas id="funnelSpendChart"></canvas></div>
+        </div>
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Termômetro de leads — hoje</div>
+          <div class="thermo-wrap">
+            <div class="thermo-tube"><div class="thermo-fill" id="thermoFill"></div></div>
+            <div class="thermo-info">
+              <div class="thermo-value" id="thermoValue">—</div>
+              <div class="thermo-label">avaliações agendadas hoje (funil SDR)</div>
+              <div class="thermo-badge" id="thermoBadge" style="background:#171b21;color:#5a6a7a;">—</div>
+              <div class="thermo-sub" id="thermoSub"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Termômetro de comparecimento</div>
+          <div class="thermo-wrap">
+            <div class="thermo-tube"><div class="thermo-fill" id="thermoAttendFill"></div></div>
+            <div class="thermo-info">
+              <div class="thermo-value" id="thermoAttendValue">—</div>
+              <div class="thermo-label">comparecem do que agenda (mês)</div>
+              <div class="thermo-badge" id="thermoAttendBadge" style="background:#171b21;color:#5a6a7a;">—</div>
+              <div class="thermo-sub" id="thermoAttendSub"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-subtitle" style="margin-top:0;">Termômetro de gasto diário</div>
+          <div class="thermo-wrap">
+            <div class="thermo-tube"><div class="thermo-fill" id="thermoSpendFill"></div></div>
+            <div class="thermo-info">
+              <div class="thermo-value" id="thermoSpendValue">—</div>
+              <div class="thermo-label">gasto hoje vs média dos últimos dias</div>
+              <div class="thermo-badge" id="thermoSpendBadge" style="background:#171b21;color:#5a6a7a;">—</div>
+              <div class="thermo-sub" id="thermoSpendSub"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-subtitle" style="margin-top:20px;">Funil completo · mês atual (Meta Ads + AspektoApp)</div>
+      <div style="font-size:11px;opacity:0.65;margin:-4px 0 8px;">Agendamentos, comparecimentos e vendas repassados com base no AspektoApp (sistema interno da clínica).</div>
+      <div class="kpi-row" id="funnelKpiRow"></div>
 
       <div style="font-size:10px;color:#5a6a7a;margin-top:14px;" id="reportUpdatedAt"></div>
     </div>
@@ -1071,23 +1141,30 @@ load();
 setInterval(load, REFRESH_MS);
 
 // ===================== Relatório (Meta Ads + funil AspektoApp) =====================
+// Espelha a lógica do Relatório do dashboard live (Cowork), mas lendo de um JSON estático
+// (docs/report_data.json) gerado pelo GitHub Action, já que aqui não há MCP disponível.
 const REPORT_DATA_URL = './report_data.json';
 let REPORT_DATA = null;
 let reportLoadStarted = false;
 let funnelSpendChartInstance = null;
+let chartDailyInstance = null;
+let kpiSparklines = [];
 
 function fmtBRL(v) {
-  if (v === null || v === undefined || isNaN(v)) return '—';
-  return Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+  return (v || 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 function fmtNum(v) {
-  if (v === null || v === undefined || isNaN(v)) return '—';
-  return Number(v).toLocaleString('pt-BR');
+  return Math.round(v || 0).toLocaleString('pt-BR');
 }
 function fmtPct(v, digits) {
   if (v === null || v === undefined || isNaN(v)) return '—';
   return Number(v).toFixed(digits === undefined ? 2 : digits).replace('.', ',') + '%';
 }
+function pctDelta(cur, prev) {
+  if (prev === null || prev === undefined || prev === 0 || cur === null || cur === undefined) return null;
+  return ((cur - prev) / prev) * 100;
+}
+function destroyChart(c) { if (c) c.destroy(); }
 
 function ensureReportDataLoaded() {
   if (reportLoadStarted) return;
@@ -1104,11 +1181,18 @@ async function loadReportData() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     REPORT_DATA = data;
-    renderReportKpis(data);
-    renderFunnelKpis(data);
-    renderCampaignHighlights(data);
-    renderFunnelSpendDonut(data);
-    renderThermometers(data);
+
+    renderDailyChart(data.dailySeries || []);
+    renderKpiProRow(data.dailySeries || [], data.current || {}, data.previous || {});
+    renderMetricMiniGrid(data.current || {});
+    renderKpiBlockRow(data.current || {});
+    renderCampaignHighlights(data.highlights);
+    renderFunnelSpendDonut(data.funnelSpendByStage || {});
+    renderLeadThermometer(data.clintPeriodMTD, data.leadToday);
+    renderAttendanceThermometer(data.funnel);
+    renderSpendThermometer(data.dailySeries || []);
+    renderFunnelKpis(data.funnel);
+
     const updEl = document.getElementById('reportUpdatedAt');
     if (updEl) updEl.textContent = data.updatedAt ? `Atualizado em ${fmtClock(data.updatedAt)}` : '';
     loadingEl.style.display = 'none';
@@ -1123,143 +1207,302 @@ async function loadReportData() {
   }
 }
 
-function renderReportKpis(data) {
-  const c = data.current || {};
-  const el = document.getElementById('reportKpiRow');
-  if (!el) return;
-  el.innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Gasto (mês)</div><div class="kpi-value">${fmtBRL(c.spend)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Resultados</div><div class="kpi-value">${fmtNum(c.msgCount)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Custo/Resultado</div><div class="kpi-value">${fmtBRL(c.cpl)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Cliques</div><div class="kpi-value">${fmtNum(c.clicks)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Impressões</div><div class="kpi-value">${fmtNum(c.impressions)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">CTR</div><div class="kpi-value">${fmtPct(c.ctr)}</div></div>`;
+function sparklineChart(canvasId, values, color) {
+  const el = document.getElementById(canvasId);
+  if (!el || typeof Chart === 'undefined') return null;
+  return new Chart(el.getContext('2d'), {
+    type: 'line',
+    data: { labels: values.map((_, i) => i), datasets: [{ data: values, borderColor: color, backgroundColor: color + '22', fill: true, tension: 0.35, pointRadius: 0, borderWidth: 1.6 }] },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      scales: { x: { display: false }, y: { display: false } }
+    }
+  });
 }
 
-function renderFunnelKpis(data) {
-  const f = data.funnel;
-  const el = document.getElementById('funnelKpiRow');
-  if (!el) return;
-  if (!f) {
-    el.innerHTML = `<div class="kpi-card" style="grid-column:1/-1;"><div class="kpi-label">Funil AspektoApp</div><div style="font-size:12px;color:#8b9aaa;margin-top:4px;">Ainda sem métricas sincronizadas do AspektoApp pra esse período.</div></div>`;
-    return;
-  }
-  el.innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Agendamentos</div><div class="kpi-value">${fmtNum(f.scheduled)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">CPL Agendamento</div><div class="kpi-value">${fmtBRL(f.cplSchedule)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Comparecimentos</div><div class="kpi-value">${fmtNum(f.attended)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">CPL Comparecimento</div><div class="kpi-value">${fmtBRL(f.cplAttend)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Vendas</div><div class="kpi-value">${fmtNum(f.won)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">CAC</div><div class="kpi-value">${fmtBRL(f.cac)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">Valor vendido</div><div class="kpi-value">${fmtBRL(f.wonValue)}</div></div>
-    <div class="kpi-card"><div class="kpi-label">ROAS</div><div class="kpi-value">${f.roas !== null && f.roas !== undefined ? f.roas.toFixed(1).replace('.', ',') + 'x' : '—'}</div></div>`;
+function renderDailyChart(dailySeries) {
+  destroyChart(chartDailyInstance);
+  const canvas = document.getElementById('chartDaily');
+  if (!canvas || typeof Chart === 'undefined') return;
+  chartDailyInstance = new Chart(canvas.getContext('2d'), {
+    data: {
+      labels: dailySeries.map(d => d.label),
+      datasets: [
+        { type: 'line', label: 'Resultados', data: dailySeries.map(d => d.msgCount), borderColor: '#4ade80', backgroundColor: '#4ade8022', fill: true, yAxisID: 'y', tension: 0.35, pointRadius: 2 },
+        { type: 'line', label: 'Custo/Resultado (R$)', data: dailySeries.map(d => d.msgCount > 0 ? d.msgSpend / d.msgCount : null), borderColor: '#ff9d4d', backgroundColor: '#ff9d4d', fill: false, yAxisID: 'y1', tension: 0.35, spanGaps: true, pointRadius: 2 }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      scales: {
+        y: { position: 'left', ticks: { color: '#8b9aaa' }, grid: { color: '#1e2d3d' } },
+        y1: { position: 'right', ticks: { color: '#8b9aaa' }, grid: { drawOnChartArea: false } },
+        x: { ticks: { color: '#8b9aaa' }, grid: { color: '#171b21' } }
+      },
+      plugins: { legend: { labels: { color: '#c3ccd6' } } }
+    }
+  });
 }
 
-function renderCampaignHighlights(data) {
-  const h = data.highlights;
+function renderKpiProRow(dailySeries, current, previous) {
+  kpiSparklines.forEach(destroyChart);
+  kpiSparklines = [];
+
+  const cards = [
+    { id: 'spend', label: 'Gasto', value: fmtBRL(current.spend), delta: pctDelta(current.spend, previous.spend), color: '#4fc3f7', series: dailySeries.map(d => d.totalSpend) },
+    { id: 'results', label: 'Resultados', value: fmtNum(current.msgCount), delta: pctDelta(current.msgCount, previous.msgCount), color: '#4ade80', series: dailySeries.map(d => d.msgCount) },
+    { id: 'cpl', label: 'Custo/Resultado', value: current.cpl != null ? fmtBRL(current.cpl) : '—', delta: pctDelta(current.cpl, previous.cpl), color: '#ff9d4d', invert: true, series: dailySeries.map(d => d.msgCount > 0 ? d.msgSpend / d.msgCount : 0) },
+    { id: 'clicks', label: 'Cliques (todos)', value: fmtNum(current.clicks), delta: pctDelta(current.clicks, previous.clicks), color: '#b388ff', series: dailySeries.map(d => d.clicks) },
+    { id: 'impressions', label: 'Impressões', value: fmtNum(current.impressions), delta: pctDelta(current.impressions, previous.impressions), color: '#ff6b9d', series: dailySeries.map(d => d.impressions) },
+    { id: 'cpc', label: 'CPC (todos)', value: fmtBRL(current.clicks > 0 ? current.spend / current.clicks : 0), delta: pctDelta(current.clicks > 0 ? current.spend / current.clicks : null, previous.clicks > 0 ? previous.spend / previous.clicks : null), color: '#f5c542', invert: true, series: dailySeries.map(d => d.clicks > 0 ? d.totalSpend / d.clicks : 0) }
+  ];
+
+  const el = document.getElementById('kpiProRow');
+  if (!el) return;
+  el.innerHTML = cards.map(c => {
+    const hasDelta = c.delta != null && isFinite(c.delta);
+    const good = hasDelta ? (c.invert ? c.delta <= 0 : c.delta >= 0) : null;
+    const trendHtml = hasDelta ? `<span class="kpi-pro-trend ${good ? 'up' : 'down'}">${c.delta >= 0 ? '▲' : '▼'} ${Math.abs(c.delta).toFixed(1)}%</span>` : '';
+    return `<div class="kpi-pro-card">
+      <div class="kpi-pro-label">${c.label}</div>
+      <div class="kpi-pro-value">${c.value}</div>
+      ${trendHtml}
+      <div class="kpi-pro-spark"><canvas id="spark-${c.id}"></canvas></div>
+    </div>`;
+  }).join('');
+
+  cards.forEach(c => {
+    const chart = sparklineChart('spark-' + c.id, c.series, c.color);
+    if (chart) kpiSparklines.push(chart);
+  });
+}
+
+function renderMetricMiniGrid(current) {
+  const el = document.getElementById('metricMiniGrid');
+  if (!el) return;
+  const costPerEng = current.postEngagement > 0 ? current.spend / current.postEngagement : null;
+  el.innerHTML = `
+    <div class="metric-mini"><div class="metric-mini-label">Viu vídeo 25%</div><div class="metric-mini-value">${fmtNum(current.videoP25)}</div></div>
+    <div class="metric-mini"><div class="metric-mini-label">Viu vídeo 50%</div><div class="metric-mini-value">${fmtNum(current.videoP50)}</div></div>
+    <div class="metric-mini"><div class="metric-mini-label">Viu vídeo 95%</div><div class="metric-mini-value">${fmtNum(current.videoP95)}</div></div>
+    <div class="metric-mini"><div class="metric-mini-label">CPM</div><div class="metric-mini-value">${fmtBRL(current.cpm)}</div></div>
+    <div class="metric-mini"><div class="metric-mini-label">Frequência</div><div class="metric-mini-value">${(current.frequency || 0).toFixed(2)}</div></div>
+    <div class="metric-mini"><div class="metric-mini-label">Engajamento c/ post</div><div class="metric-mini-value">${fmtNum(current.postEngagement)}</div>${costPerEng != null ? `<div class="metric-mini-sub">Custo/eng.: ${fmtBRL(costPerEng)}</div>` : ''}</div>
+  `;
+}
+
+function renderKpiBlockRow(current) {
+  const el = document.getElementById('kpiBlockRow');
+  if (!el) return;
+  const hookRate = current.impressions > 0 && current.videoPlays != null ? (current.videoPlays / current.impressions) * 100 : null;
+  const blocks = [
+    { label: 'CTR', value: (current.ctr || 0).toFixed(2) + '%', bg: 'linear-gradient(135deg,#f56b6b,#c0392b)' },
+    { label: 'CPM', value: fmtBRL(current.cpm), bg: 'linear-gradient(135deg,#f5c542,#c98f00)' },
+    { label: 'Frequência', value: (current.frequency || 0).toFixed(2), bg: 'linear-gradient(135deg,#4fc3f7,#1a6fa8)' },
+    { label: 'Hook rate', value: hookRate != null ? hookRate.toFixed(2) + '%' : '—', bg: 'linear-gradient(135deg,#4ade80,#1a8c4a)' }
+  ];
+  el.innerHTML = blocks.map(b => `<div class="kpi-block" style="background:${b.bg};"><div class="kpi-block-label">${b.label}</div><div class="kpi-block-value">${b.value}</div></div>`).join('');
+}
+
+function renderCampaignHighlights(h) {
   const el = document.getElementById('highlightGrid');
   if (!el) return;
-  if (!h) { el.innerHTML = '<div style="font-size:12px;color:#8b9aaa;">Sem campanhas com gasto nesse período.</div>'; return; }
+  if (!h) { el.innerHTML = '<div class="loading-msg" style="padding:14px;">Sem gasto em campanhas no período.</div>'; return; }
   const cards = [];
-  if (h.bestCost) cards.push({ icon: '🏆', color: '#4ade80', title: 'Melhor custo/resultado', name: h.bestCost.name, detail: `${fmtBRL(h.bestCost.costPerResult)} por resultado — ${fmtNum(h.bestCost.results)} resultado(s)` });
-  if (h.mostResults) cards.push({ icon: '📈', color: '#4fc3f7', title: 'Mais resultados', name: h.mostResults.name, detail: `${fmtNum(h.mostResults.results)} resultado(s) — ${fmtBRL(h.mostResults.spend)} gastos` });
-  if (h.hottest) cards.push({ icon: '🔥', color: '#ff9d4d', title: 'Maior CTR', name: h.hottest.name, detail: `CTR de ${fmtPct(h.hottest.ctr)}` });
-  if (h.attention) cards.push({ icon: '⚠️', color: '#f56b6b', title: 'Atenção', name: h.attention.name, detail: h.attention.results > 0 ? `${fmtBRL(h.attention.costPerResult)} por resultado (alto)` : `${fmtBRL(h.attention.spend)} gastos sem resultado` });
-  el.innerHTML = cards.map(c => `
-    <div class="highlight-card">
-      <div class="highlight-icon">${c.icon}</div>
-      <div>
-        <div class="highlight-title" style="color:${c.color};">${c.title}</div>
-        <div class="highlight-name" title="${(c.name || '').replace(/"/g, '&quot;')}">${c.name}</div>
-        <div class="highlight-detail">${c.detail}</div>
-      </div>
-    </div>`).join('') || '<div style="font-size:12px;color:#8b9aaa;">Sem destaques disponíveis.</div>';
+  if (h.bestCost) cards.push({ icon: '🏆', title: 'Melhor custo/resultado', name: h.bestCost.name, detail: `${fmtBRL(h.bestCost.costPerResult)} · ${h.bestCost.results} resultados`, color: '#4ade80' });
+  if (h.mostResults) cards.push({ icon: '📈', title: 'Mais resultados no mês', name: h.mostResults.name, detail: `${h.mostResults.results} resultados · ${fmtBRL(h.mostResults.spend)} gasto`, color: '#4fc3f7' });
+  if (h.hottest) cards.push({ icon: '🔥', title: 'Público mais engajado (CTR)', name: h.hottest.name, detail: `${h.hottest.ctr.toFixed(2)}% CTR`, color: '#ff9d4d' });
+  if (h.attention) cards.push({
+    icon: '⚠️',
+    title: h.attention.results === 0 ? 'Gastando sem resultado' : 'Pior custo/resultado',
+    name: h.attention.name,
+    detail: h.attention.results === 0 ? `${fmtBRL(h.attention.spend)} gastos, 0 resultados` : `${fmtBRL(h.attention.costPerResult)} · ${h.attention.results} resultados`,
+    color: '#f56b6b'
+  });
+  if (!cards.length) { el.innerHTML = '<div class="loading-msg" style="padding:14px;">Sem destaques ainda pra este período.</div>'; return; }
+  el.innerHTML = cards.map(c => `<div class="highlight-card" style="border-color:${c.color}55;">
+    <div class="highlight-icon">${c.icon}</div>
+    <div>
+      <div class="highlight-title" style="color:${c.color};">${c.title}</div>
+      <div class="highlight-name" title="${(c.name || '').replace(/"/g, '&quot;')}">${c.name}</div>
+      <div class="highlight-detail">${c.detail}</div>
+    </div>
+  </div>`).join('');
 }
 
-function renderFunnelSpendDonut(data) {
-  const s = data.funnelSpendByStage || {};
+const FUNNEL_DONUT_COLORS = { perfil: '#4fc3f7', topo: '#7ee0ff', meio: '#ff9d4d', fundo: '#4ade80', outros: '#8b9aaa' };
+const FUNNEL_DONUT_LABELS = { perfil: 'Engajamento/Perfil', topo: 'Topo · WhatsApp', meio: 'Meio', fundo: 'Fundo', outros: 'Outras' };
+function renderFunnelSpendDonut(totals) {
+  destroyChart(funnelSpendChartInstance);
+  funnelSpendChartInstance = null;
   const canvas = document.getElementById('funnelSpendChart');
   if (!canvas || typeof Chart === 'undefined') return;
-  const entries = [
-    { label: 'Perfil', value: s.perfil || 0, color: '#b388ff' },
-    { label: 'Topo', value: s.topo || 0, color: '#4fc3f7' },
-    { label: 'Meio', value: s.meio || 0, color: '#4ade80' },
-    { label: 'Fundo', value: s.fundo || 0, color: '#ff9d4d' },
-    { label: 'Outros', value: s.outros || 0, color: '#6e8394' }
-  ].filter(e => e.value > 0);
-  if (funnelSpendChartInstance) { funnelSpendChartInstance.destroy(); funnelSpendChartInstance = null; }
+  const entries = Object.entries(totals).filter(([, v]) => v > 0);
   if (!entries.length) return;
   funnelSpendChartInstance = new Chart(canvas.getContext('2d'), {
     type: 'doughnut',
     data: {
-      labels: entries.map(e => e.label),
-      datasets: [{ data: entries.map(e => e.value), backgroundColor: entries.map(e => e.color), borderWidth: 0 }]
+      labels: entries.map(([k]) => FUNNEL_DONUT_LABELS[k] || k),
+      datasets: [{ data: entries.map(([, v]) => v), backgroundColor: entries.map(([k]) => FUNNEL_DONUT_COLORS[k] || '#8b9aaa'), borderWidth: 0 }]
     },
     options: {
-      maintainAspectRatio: false,
+      responsive: true, maintainAspectRatio: false,
       plugins: {
-        legend: { position: 'right', labels: { color: '#c9d3dc', font: { size: 11 }, padding: 10 } },
+        legend: { position: 'right', labels: { color: '#c3ccd6', boxWidth: 10, font: { size: 10 } } },
         tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${fmtBRL(ctx.parsed)}` } }
       }
     }
   });
 }
 
-function thermoColor(pct) {
-  if (pct >= 70) return '#4ade80';
-  if (pct >= 40) return '#fbbf24';
-  return '#f56b6b';
-}
-function thermoBadgeText(pct) {
-  if (pct >= 70) return 'Bom ritmo';
-  if (pct >= 40) return 'Atenção';
-  return 'Abaixo do esperado';
-}
-function thermoHtml(value, label, pct, sub) {
-  const clamped = Math.max(0, Math.min(100, pct));
-  const color = thermoColor(pct);
-  return `
-    <div class="thermo-wrap">
-      <div class="thermo-tube"><div class="thermo-fill" style="height:${clamped}%;background:${color};"></div></div>
-      <div class="thermo-info">
-        <div class="thermo-value">${value}</div>
-        <div class="thermo-label">${label}</div>
-        <div class="thermo-badge" style="background:${color}22;color:${color};">${thermoBadgeText(pct)}</div>
-        <div class="thermo-sub">${sub}</div>
-      </div>
-    </div>`;
+// Termômetro de qualidade do lead: avaliações agendadas hoje (funil SDR) vs o ritmo médio
+// diário do mês, considerando só dias úteis (a clínica agenda bem menos aos fins de semana).
+const THERMO_COLORS = { cold: '#4fc3f7', warm: '#ff9d4d', hot: '#f56b6b', none: '#5a6a7a' };
+function countBusinessDays(startDate, endDate) {
+  let count = 0;
+  const cur = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+  const end = new Date(endDate.getFullYear(), endDate.getMonth(), endDate.getDate());
+  while (cur <= end) {
+    const dow = cur.getDay();
+    if (dow !== 0 && dow !== 6) count += 1;
+    cur.setDate(cur.getDate() + 1);
+  }
+  return count;
 }
 
-function renderThermometers(data) {
-  const el = document.getElementById('thermoRow');
+function renderLeadThermometer(clintPeriodMTD, leadToday) {
+  const fillEl = document.getElementById('thermoFill');
+  const valueEl = document.getElementById('thermoValue');
+  const badgeEl = document.getElementById('thermoBadge');
+  const subEl = document.getElementById('thermoSub');
+  if (!fillEl) return;
+
+  if (!clintPeriodMTD || leadToday === null || leadToday === undefined) {
+    fillEl.style.height = '4%'; fillEl.style.background = THERMO_COLORS.none;
+    valueEl.textContent = '—';
+    badgeEl.textContent = 'Sem dados'; badgeEl.style.background = '#171b21'; badgeEl.style.color = THERMO_COLORS.none;
+    subEl.textContent = 'Aguardando sincronização do AspektoApp.';
+    return;
+  }
+
+  const businessDaysElapsed = Math.max(1, countBusinessDays(new Date(clintPeriodMTD.since), new Date(clintPeriodMTD.until)));
+  const avgDaily = clintPeriodMTD.scheduled / businessDaysElapsed;
+  const ratio = avgDaily > 0 ? (leadToday / avgDaily) : (leadToday > 0 ? 2 : null);
+
+  valueEl.textContent = fmtNum(leadToday);
+
+  let color, label, sub;
+  if (ratio == null) {
+    color = THERMO_COLORS.none; label = 'Sem ritmo ainda'; sub = 'Ainda não há média do mês pra comparar.';
+  } else if (ratio < 0.6) {
+    color = THERMO_COLORS.cold; label = 'Frio'; sub = `Abaixo do ritmo do mês (${avgDaily.toFixed(1)}/dia útil em média).`;
+  } else if (ratio <= 1.3) {
+    color = THERMO_COLORS.warm; label = 'Morno'; sub = `Na média do mês (${avgDaily.toFixed(1)}/dia útil).`;
+  } else {
+    color = THERMO_COLORS.hot; label = 'Quente'; sub = `Acima do ritmo do mês (${avgDaily.toFixed(1)}/dia útil) — dia forte.`;
+  }
+
+  const pct = ratio == null ? 4 : Math.max(4, Math.min(100, (ratio / 2) * 100));
+  fillEl.style.height = pct + '%'; fillEl.style.background = color;
+  badgeEl.textContent = label; badgeEl.style.background = color + '22'; badgeEl.style.color = color;
+  subEl.textContent = sub;
+}
+
+function renderAttendanceThermometer(funnel) {
+  const fillEl = document.getElementById('thermoAttendFill');
+  const valueEl = document.getElementById('thermoAttendValue');
+  const badgeEl = document.getElementById('thermoAttendBadge');
+  const subEl = document.getElementById('thermoAttendSub');
+  if (!fillEl) return;
+
+  if (!funnel || !funnel.scheduled) {
+    fillEl.style.height = '4%'; fillEl.style.background = THERMO_COLORS.none;
+    valueEl.textContent = '—';
+    badgeEl.textContent = 'Sem dados'; badgeEl.style.background = '#171b21'; badgeEl.style.color = THERMO_COLORS.none;
+    subEl.textContent = 'Ainda sem agendamentos suficientes no mês pra calcular.';
+    return;
+  }
+
+  const rate = funnel.attended / funnel.scheduled;
+  valueEl.textContent = (rate * 100).toFixed(1) + '%';
+
+  let color, label, sub;
+  if (rate < 0.4) {
+    color = THERMO_COLORS.cold; label = 'Crítico';
+    sub = `${fmtNum(funnel.attended)} de ${fmtNum(funnel.scheduled)} agendados compareceram — vale reforçar lembrete/confirmação.`;
+  } else if (rate <= 0.6) {
+    color = THERMO_COLORS.warm; label = 'Na média';
+    sub = `${fmtNum(funnel.attended)} de ${fmtNum(funnel.scheduled)} agendados compareceram.`;
+  } else {
+    color = THERMO_COLORS.hot; label = 'Ótimo';
+    sub = `${fmtNum(funnel.attended)} de ${fmtNum(funnel.scheduled)} agendados compareceram — acima do esperado.`;
+  }
+
+  const pct = Math.max(4, Math.min(100, rate * 100));
+  fillEl.style.height = pct + '%'; fillEl.style.background = color;
+  badgeEl.textContent = label; badgeEl.style.background = color + '22'; badgeEl.style.color = color;
+  subEl.textContent = sub;
+}
+
+function renderSpendThermometer(dailySeries) {
+  const fillEl = document.getElementById('thermoSpendFill');
+  const valueEl = document.getElementById('thermoSpendValue');
+  const badgeEl = document.getElementById('thermoSpendBadge');
+  const subEl = document.getElementById('thermoSpendSub');
+  if (!fillEl) return;
+
+  if (!dailySeries || dailySeries.length < 2) {
+    fillEl.style.height = '4%'; fillEl.style.background = THERMO_COLORS.none;
+    valueEl.textContent = '—';
+    badgeEl.textContent = 'Sem dados'; badgeEl.style.background = '#171b21'; badgeEl.style.color = THERMO_COLORS.none;
+    subEl.textContent = 'Ainda não há dados diários suficientes.';
+    return;
+  }
+
+  const todaySpend = dailySeries[dailySeries.length - 1].totalSpend;
+  const priorDays = dailySeries.slice(Math.max(0, dailySeries.length - 8), dailySeries.length - 1);
+  const weeklyAvg = priorDays.length > 0 ? priorDays.reduce((sum, d) => sum + d.totalSpend, 0) / priorDays.length : null;
+  const ratio = weeklyAvg > 0 ? (todaySpend / weeklyAvg) : (todaySpend > 0 ? 2 : null);
+
+  valueEl.textContent = fmtBRL(todaySpend);
+
+  let color, label, sub;
+  if (ratio == null) {
+    color = THERMO_COLORS.none; label = 'Sem histórico'; sub = 'Ainda não há média dos últimos dias pra comparar.';
+  } else if (ratio < 0.6) {
+    color = THERMO_COLORS.cold; label = 'Abaixo'; sub = `Média dos últimos ${priorDays.length} dias: ${fmtBRL(weeklyAvg)}/dia.`;
+  } else if (ratio <= 1.3) {
+    color = THERMO_COLORS.warm; label = 'Na média'; sub = `Média dos últimos ${priorDays.length} dias: ${fmtBRL(weeklyAvg)}/dia.`;
+  } else {
+    color = THERMO_COLORS.hot; label = 'Acima'; sub = `Média dos últimos ${priorDays.length} dias: ${fmtBRL(weeklyAvg)}/dia — ritmo de gasto mais forte.`;
+  }
+
+  const pct = ratio == null ? 4 : Math.max(4, Math.min(100, (ratio / 2) * 100));
+  fillEl.style.height = pct + '%'; fillEl.style.background = color;
+  badgeEl.textContent = label; badgeEl.style.background = color + '22'; badgeEl.style.color = color;
+  subEl.textContent = sub;
+}
+
+function renderFunnelKpis(f) {
+  const el = document.getElementById('funnelKpiRow');
   if (!el) return;
-  const f = data.funnel;
-  const clint = data.clintPeriodMTD;
-  const parts = [];
-
-  // 1) Leads hoje vs média diária do mês
-  if (data.leadToday !== null && data.leadToday !== undefined && clint) {
-    const since = new Date(data.period.since + 'T00:00:00');
-    const until = new Date(data.period.until + 'T00:00:00');
-    const daysElapsed = Math.max(1, Math.round((until - since) / 86400000) + 1);
-    const avgDaily = clint.scheduled > 0 ? clint.scheduled / daysElapsed : 0;
-    const pct = avgDaily > 0 ? (data.leadToday / avgDaily) * 100 : (data.leadToday > 0 ? 100 : 0);
-    parts.push(thermoHtml(fmtNum(data.leadToday), 'Leads hoje', pct, `Média do mês: ${avgDaily.toFixed(1).replace('.', ',')}/dia`));
+  if (!f) {
+    el.innerHTML = '<div class="loading-msg">Métricas de funil completo (AspektoApp) ainda não disponíveis — tente de novo em instantes.</div>';
+    return;
   }
-
-  // 2) Comparecimento
-  if (f && f.scheduled > 0) {
-    const pct = (f.attended / f.scheduled) * 100;
-    parts.push(thermoHtml(fmtPct(pct, 0), 'Comparecimento', pct, `${fmtNum(f.attended)} de ${fmtNum(f.scheduled)} agendados`));
-  }
-
-  // 3) Conversão em venda
-  if (f && f.attended > 0) {
-    const pct = (f.won / f.attended) * 100;
-    parts.push(thermoHtml(fmtPct(pct, 0), 'Conversão em venda', pct, `${fmtNum(f.won)} de ${fmtNum(f.attended)} comparecimentos`));
-  }
-
-  el.innerHTML = parts.join('') || '<div style="font-size:12px;color:#8b9aaa;">Termômetros indisponíveis — aguardando dados do funil.</div>';
+  el.innerHTML = `
+    <div class="kpi-card"><div class="kpi-label">Agendamentos</div><div class="kpi-value">${fmtNum(f.scheduled)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CPL até Agendamento</div><div class="kpi-value">${f.cplSchedule != null ? fmtBRL(f.cplSchedule) : '—'}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Comparecimentos</div><div class="kpi-value">${fmtNum(f.attended)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CPL até Comparecimento</div><div class="kpi-value">${f.cplAttend != null ? fmtBRL(f.cplAttend) : '—'}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Vendas</div><div class="kpi-value">${fmtNum(f.won)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CAC (até Venda)</div><div class="kpi-value">${f.cac != null ? fmtBRL(f.cac) : '—'}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Valor vendido</div><div class="kpi-value">${fmtBRL(f.wonValue)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">ROAS</div><div class="kpi-value">${f.roas != null ? f.roas.toFixed(2) + 'x' : '—'}</div></div>
+  `;
 }
 </script>
 </body>
