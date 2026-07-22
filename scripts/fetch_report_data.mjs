@@ -80,7 +80,7 @@ async function fetchAccountInsights(since, until, timeIncrement) {
 
 async function fetchCampaignInsights(since, until) {
   const params = {
-    fields: 'id,name,status,objective,spend,impressions,clicks,ctr,cpc,cpm,actions',
+    fields: 'campaign_id,campaign_name,objective,spend,impressions,clicks,ctr,cpc,cpm,actions',
     level: 'campaign',
     time_range: { since, until },
     limit: 200
@@ -128,9 +128,8 @@ const campaigns = campaignRows.map(c => {
   const spend = parseNum(c.spend);
   const msgCount = sumAction(c.actions, isMessagingActionType);
   return {
-    id: c.id,
-    name: c.name,
-    status: c.status,
+    id: c.campaign_id,
+    name: c.campaign_name,
     spend,
     impressions: parseNum(c.impressions),
     clicks: parseNum(c.clicks),
