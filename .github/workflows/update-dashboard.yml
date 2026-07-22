@@ -23,10 +23,17 @@ jobs:
           CLICKUP_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
         run: node scripts/fetch_clickup.mjs
 
+      - name: Buscar dados do Relatorio (Meta Ads + funil)
+        env:
+          META_ADS_ACCESS_TOKEN: ${{ secrets.META_ADS_ACCESS_TOKEN }}
+          CLICKUP_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+        run: node scripts/fetch_report_data.mjs
+        continue-on-error: true
+
       - name: Publicar alterações
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data.json
+          git add docs/data.json docs/report_data.json
           git diff --cached --quiet || git commit -m "chore: atualizar dados do dashboard"
           git push

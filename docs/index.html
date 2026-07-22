@@ -7,6 +7,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: #05070a; min-height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
@@ -132,6 +133,23 @@
   .insights-table td { padding: 7px 8px; border-bottom: 0.5px solid #171b21; color: #c3ccd6; }
   .insights-table tr:last-child td { border-bottom: none; }
 
+  .highlight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .highlight-card { display: flex; gap: 10px; align-items: flex-start; background: #12161c; border: 1px solid #1e2d3d; border-radius: 10px; padding: 11px 13px; }
+  .highlight-icon { font-size: 18px; line-height: 1; }
+  .highlight-title { font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; }
+  .highlight-name { font-size: 12px; font-weight: 500; color: #e6edf3; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .highlight-detail { font-size: 10.5px; color: #8b9aaa; margin-top: 2px; }
+
+  .thermo-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .thermo-wrap { display: flex; gap: 18px; align-items: center; height: 190px; padding: 10px 4px; background: #12161c; border: 0.5px solid #1e2d3d; border-radius: 10px; }
+  .thermo-tube { position: relative; width: 30px; height: 170px; border-radius: 15px; background: #0a0d12; border: 1px solid #1e2d3d; overflow: hidden; flex-shrink: 0; margin-left: 14px; }
+  .thermo-fill { position: absolute; bottom: 0; left: 0; width: 100%; border-radius: 15px; transition: height 0.4s ease, background 0.4s ease; height: 4%; background: #5a6a7a; }
+  .thermo-info { display: flex; flex-direction: column; gap: 2px; }
+  .thermo-value { font-size: 26px; font-weight: 700; color: #e6edf3; line-height: 1; }
+  .thermo-label { font-size: 9.5px; color: #6e8394; text-transform: uppercase; letter-spacing: 0.3px; margin-top: 4px; }
+  .thermo-badge { font-size: 10.5px; font-weight: 600; padding: 2px 8px; border-radius: 8px; width: fit-content; margin-top: 6px; }
+  .thermo-sub { font-size: 10px; color: #5a6a7a; margin-top: 4px; max-width: 200px; line-height: 1.4; }
+
   .tv[data-view="fluxo"] .col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
   .tv[data-view="todo"] .user-col .cards { max-height: 710px; overflow-y: auto; padding-right: 3px; }
 
@@ -221,7 +239,11 @@
     <span class="sb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span>
     <span class="sb-label">Insights</span>
   </button>
-  <button class="sidebar-btn" id="btn-tvmode" onclick="onTvModeToggle()" title="Alterna Fluxo / Tarefas / Insights a cada 20s — pra exibir numa TV/tela da sala">
+  <button class="sidebar-btn" id="btn-viewmode-relatorio" onclick="onViewModeChange('relatorio')">
+    <span class="sb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="M9 15l2-2 2 2 3-3"/></svg></span>
+    <span class="sb-label">Relatório</span>
+  </button>
+  <button class="sidebar-btn" id="btn-tvmode" onclick="onTvModeToggle()" title="Alterna Fluxo / Tarefas / Relatório a cada 20s — pra exibir numa TV/tela da sala">
     <span class="sb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></span>
     <span class="sb-label">Modo TV</span>
   </button>
@@ -301,6 +323,35 @@
       <thead><tr><th>Usuário</th><th>Concluídas</th><th>Em aberto</th><th>Total</th></tr></thead>
       <tbody id="productivityTable"></tbody>
     </table>
+  </section>
+
+  <section class="dashboard-section" id="sectionRelatorio" style="display:none;">
+    <div class="section-header">
+      <span class="section-accent" style="background:#f5a623;"></span>
+      <span class="section-title">Relatório</span>
+    </div>
+    <div id="reportLoadingMsg" class="loading-msg">Carregando relatório...</div>
+    <div id="reportContent" style="display:none;">
+      <div class="section-subtitle">Desempenho de anúncios (mês atual)</div>
+      <div class="kpi-row" id="reportKpiRow"></div>
+
+      <div class="section-subtitle">Funil completo (Meta Ads → AspektoApp)</div>
+      <div class="kpi-row" id="funnelKpiRow"></div>
+
+      <div class="section-subtitle">Destaques de campanhas</div>
+      <div class="highlight-grid" id="highlightGrid"></div>
+
+      <div class="section-subtitle">Gasto por etapa do funil</div>
+      <div style="max-width:340px;height:260px;margin:6px 0 4px;">
+        <canvas id="funnelSpendChart"></canvas>
+      </div>
+
+      <div class="section-subtitle">Termômetros</div>
+      <div class="thermo-row" id="thermoRow"></div>
+
+      <div style="font-size:10px;color:#5a6a7a;margin-top:14px;" id="reportUpdatedAt"></div>
+    </div>
+    <div id="reportErrorMsg" class="card-error" style="display:none;"></div>
   </section>
 </div>
 </div>
@@ -709,16 +760,16 @@ function onUserFilterChange(value) {
   if (LAST_DATA) render(LAST_DATA);
 }
 
-let viewMode = 'geral'; // 'geral' | 'fluxo' | 'todo' | 'insights'
+let viewMode = 'geral'; // 'geral' | 'fluxo' | 'todo' | 'insights' | 'relatorio'
 
 function onSidebarToggle() {
   document.getElementById('sidebar').classList.toggle('collapsed');
 }
 
 // ===================== Modo TV (slideshow p/ tela na sala do marketing) =====================
-// Alterna Fluxo -> Tarefas -> Insights a cada 20s, tipo painel de aeroporto. Some com a sidebar
+// Alterna Fluxo -> Tarefas -> Relatório a cada 20s, tipo painel de aeroporto. Some com a sidebar
 // pra aproveitar a tela toda e mostra uma barra de progresso + botão flutuante pra sair (ou Esc).
-const TV_MODE_SEQUENCE = ['fluxo', 'todo', 'insights'];
+const TV_MODE_SEQUENCE = ['fluxo', 'todo', 'relatorio'];
 const TV_MODE_INTERVAL_MS = 20000;
 let tvMode = false;
 let tvModeTimer = null;
@@ -779,7 +830,9 @@ function onViewModeChange(mode) {
   document.getElementById('sectionTodo').style.display = (mode === 'geral' || mode === 'todo') ? '' : 'none';
   document.getElementById('sectionDetalhamento').style.display = (mode === 'geral') ? '' : 'none';
   document.getElementById('sectionInsights').style.display = (mode === 'insights') ? '' : 'none';
-  ['geral', 'fluxo', 'todo', 'insights'].forEach(m => {
+  document.getElementById('sectionRelatorio').style.display = (mode === 'relatorio') ? '' : 'none';
+  if (mode === 'relatorio') ensureReportDataLoaded();
+  ['geral', 'fluxo', 'todo', 'insights', 'relatorio'].forEach(m => {
     document.getElementById('btn-viewmode-' + m).classList.toggle('active', m === mode);
   });
 }
@@ -1016,7 +1069,198 @@ async function load() {
 
 load();
 setInterval(load, REFRESH_MS);
+
+// ===================== Relatório (Meta Ads + funil AspektoApp) =====================
+const REPORT_DATA_URL = './report_data.json';
+let REPORT_DATA = null;
+let reportLoadStarted = false;
+let funnelSpendChartInstance = null;
+
+function fmtBRL(v) {
+  if (v === null || v === undefined || isNaN(v)) return '—';
+  return Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+}
+function fmtNum(v) {
+  if (v === null || v === undefined || isNaN(v)) return '—';
+  return Number(v).toLocaleString('pt-BR');
+}
+function fmtPct(v, digits) {
+  if (v === null || v === undefined || isNaN(v)) return '—';
+  return Number(v).toFixed(digits === undefined ? 2 : digits).replace('.', ',') + '%';
+}
+
+function ensureReportDataLoaded() {
+  if (reportLoadStarted) return;
+  reportLoadStarted = true;
+  loadReportData();
+}
+
+async function loadReportData() {
+  const loadingEl = document.getElementById('reportLoadingMsg');
+  const contentEl = document.getElementById('reportContent');
+  const errorEl = document.getElementById('reportErrorMsg');
+  try {
+    const res = await fetch(REPORT_DATA_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    REPORT_DATA = data;
+    renderReportKpis(data);
+    renderFunnelKpis(data);
+    renderCampaignHighlights(data);
+    renderFunnelSpendDonut(data);
+    renderThermometers(data);
+    const updEl = document.getElementById('reportUpdatedAt');
+    if (updEl) updEl.textContent = data.updatedAt ? `Atualizado em ${fmtClock(data.updatedAt)}` : '';
+    loadingEl.style.display = 'none';
+    errorEl.style.display = 'none';
+    contentEl.style.display = '';
+  } catch (e) {
+    loadingEl.style.display = 'none';
+    contentEl.style.display = 'none';
+    errorEl.style.display = 'block';
+    errorEl.textContent = `Falha ao carregar relatório: ${e.message}`;
+    reportLoadStarted = false; // permite tentar de novo na próxima vez que a aba abrir
+  }
+}
+
+function renderReportKpis(data) {
+  const c = data.current || {};
+  const el = document.getElementById('reportKpiRow');
+  if (!el) return;
+  el.innerHTML = `
+    <div class="kpi-card"><div class="kpi-label">Gasto (mês)</div><div class="kpi-value">${fmtBRL(c.spend)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Resultados</div><div class="kpi-value">${fmtNum(c.msgCount)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Custo/Resultado</div><div class="kpi-value">${fmtBRL(c.cpl)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Cliques</div><div class="kpi-value">${fmtNum(c.clicks)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Impressões</div><div class="kpi-value">${fmtNum(c.impressions)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CTR</div><div class="kpi-value">${fmtPct(c.ctr)}</div></div>`;
+}
+
+function renderFunnelKpis(data) {
+  const f = data.funnel;
+  const el = document.getElementById('funnelKpiRow');
+  if (!el) return;
+  if (!f) {
+    el.innerHTML = `<div class="kpi-card" style="grid-column:1/-1;"><div class="kpi-label">Funil AspektoApp</div><div style="font-size:12px;color:#8b9aaa;margin-top:4px;">Ainda sem métricas sincronizadas do AspektoApp pra esse período.</div></div>`;
+    return;
+  }
+  el.innerHTML = `
+    <div class="kpi-card"><div class="kpi-label">Agendamentos</div><div class="kpi-value">${fmtNum(f.scheduled)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CPL Agendamento</div><div class="kpi-value">${fmtBRL(f.cplSchedule)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Comparecimentos</div><div class="kpi-value">${fmtNum(f.attended)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CPL Comparecimento</div><div class="kpi-value">${fmtBRL(f.cplAttend)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Vendas</div><div class="kpi-value">${fmtNum(f.won)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">CAC</div><div class="kpi-value">${fmtBRL(f.cac)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Valor vendido</div><div class="kpi-value">${fmtBRL(f.wonValue)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">ROAS</div><div class="kpi-value">${f.roas !== null && f.roas !== undefined ? f.roas.toFixed(1).replace('.', ',') + 'x' : '—'}</div></div>`;
+}
+
+function renderCampaignHighlights(data) {
+  const h = data.highlights;
+  const el = document.getElementById('highlightGrid');
+  if (!el) return;
+  if (!h) { el.innerHTML = '<div style="font-size:12px;color:#8b9aaa;">Sem campanhas com gasto nesse período.</div>'; return; }
+  const cards = [];
+  if (h.bestCost) cards.push({ icon: '🏆', color: '#4ade80', title: 'Melhor custo/resultado', name: h.bestCost.name, detail: `${fmtBRL(h.bestCost.costPerResult)} por resultado — ${fmtNum(h.bestCost.results)} resultado(s)` });
+  if (h.mostResults) cards.push({ icon: '📈', color: '#4fc3f7', title: 'Mais resultados', name: h.mostResults.name, detail: `${fmtNum(h.mostResults.results)} resultado(s) — ${fmtBRL(h.mostResults.spend)} gastos` });
+  if (h.hottest) cards.push({ icon: '🔥', color: '#ff9d4d', title: 'Maior CTR', name: h.hottest.name, detail: `CTR de ${fmtPct(h.hottest.ctr)}` });
+  if (h.attention) cards.push({ icon: '⚠️', color: '#f56b6b', title: 'Atenção', name: h.attention.name, detail: h.attention.results > 0 ? `${fmtBRL(h.attention.costPerResult)} por resultado (alto)` : `${fmtBRL(h.attention.spend)} gastos sem resultado` });
+  el.innerHTML = cards.map(c => `
+    <div class="highlight-card">
+      <div class="highlight-icon">${c.icon}</div>
+      <div>
+        <div class="highlight-title" style="color:${c.color};">${c.title}</div>
+        <div class="highlight-name" title="${(c.name || '').replace(/"/g, '&quot;')}">${c.name}</div>
+        <div class="highlight-detail">${c.detail}</div>
+      </div>
+    </div>`).join('') || '<div style="font-size:12px;color:#8b9aaa;">Sem destaques disponíveis.</div>';
+}
+
+function renderFunnelSpendDonut(data) {
+  const s = data.funnelSpendByStage || {};
+  const canvas = document.getElementById('funnelSpendChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  const entries = [
+    { label: 'Perfil', value: s.perfil || 0, color: '#b388ff' },
+    { label: 'Topo', value: s.topo || 0, color: '#4fc3f7' },
+    { label: 'Meio', value: s.meio || 0, color: '#4ade80' },
+    { label: 'Fundo', value: s.fundo || 0, color: '#ff9d4d' },
+    { label: 'Outros', value: s.outros || 0, color: '#6e8394' }
+  ].filter(e => e.value > 0);
+  if (funnelSpendChartInstance) { funnelSpendChartInstance.destroy(); funnelSpendChartInstance = null; }
+  if (!entries.length) return;
+  funnelSpendChartInstance = new Chart(canvas.getContext('2d'), {
+    type: 'doughnut',
+    data: {
+      labels: entries.map(e => e.label),
+      datasets: [{ data: entries.map(e => e.value), backgroundColor: entries.map(e => e.color), borderWidth: 0 }]
+    },
+    options: {
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { position: 'right', labels: { color: '#c9d3dc', font: { size: 11 }, padding: 10 } },
+        tooltip: { callbacks: { label: (ctx) => `${ctx.label}: ${fmtBRL(ctx.parsed)}` } }
+      }
+    }
+  });
+}
+
+function thermoColor(pct) {
+  if (pct >= 70) return '#4ade80';
+  if (pct >= 40) return '#fbbf24';
+  return '#f56b6b';
+}
+function thermoBadgeText(pct) {
+  if (pct >= 70) return 'Bom ritmo';
+  if (pct >= 40) return 'Atenção';
+  return 'Abaixo do esperado';
+}
+function thermoHtml(value, label, pct, sub) {
+  const clamped = Math.max(0, Math.min(100, pct));
+  const color = thermoColor(pct);
+  return `
+    <div class="thermo-wrap">
+      <div class="thermo-tube"><div class="thermo-fill" style="height:${clamped}%;background:${color};"></div></div>
+      <div class="thermo-info">
+        <div class="thermo-value">${value}</div>
+        <div class="thermo-label">${label}</div>
+        <div class="thermo-badge" style="background:${color}22;color:${color};">${thermoBadgeText(pct)}</div>
+        <div class="thermo-sub">${sub}</div>
+      </div>
+    </div>`;
+}
+
+function renderThermometers(data) {
+  const el = document.getElementById('thermoRow');
+  if (!el) return;
+  const f = data.funnel;
+  const clint = data.clintPeriodMTD;
+  const parts = [];
+
+  // 1) Leads hoje vs média diária do mês
+  if (data.leadToday !== null && data.leadToday !== undefined && clint) {
+    const since = new Date(data.period.since + 'T00:00:00');
+    const until = new Date(data.period.until + 'T00:00:00');
+    const daysElapsed = Math.max(1, Math.round((until - since) / 86400000) + 1);
+    const avgDaily = clint.scheduled > 0 ? clint.scheduled / daysElapsed : 0;
+    const pct = avgDaily > 0 ? (data.leadToday / avgDaily) * 100 : (data.leadToday > 0 ? 100 : 0);
+    parts.push(thermoHtml(fmtNum(data.leadToday), 'Leads hoje', pct, `Média do mês: ${avgDaily.toFixed(1).replace('.', ',')}/dia`));
+  }
+
+  // 2) Comparecimento
+  if (f && f.scheduled > 0) {
+    const pct = (f.attended / f.scheduled) * 100;
+    parts.push(thermoHtml(fmtPct(pct, 0), 'Comparecimento', pct, `${fmtNum(f.attended)} de ${fmtNum(f.scheduled)} agendados`));
+  }
+
+  // 3) Conversão em venda
+  if (f && f.attended > 0) {
+    const pct = (f.won / f.attended) * 100;
+    parts.push(thermoHtml(fmtPct(pct, 0), 'Conversão em venda', pct, `${fmtNum(f.won)} de ${fmtNum(f.attended)} comparecimentos`));
+  }
+
+  el.innerHTML = parts.join('') || '<div style="font-size:12px;color:#8b9aaa;">Termômetros indisponíveis — aguardando dados do funil.</div>';
+}
 </script>
 </body>
 </html>
-
