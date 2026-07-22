@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T16:16:08.364Z",
+  "updatedAt": "2026-07-22T16:21:08.285Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajngagr",
+      "name": "Atulizar briefing de influenciadores",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784703600000,
+      "date_created": 1784737167929,
+      "date_closed": 1784737178464,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajngagr",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajnf861",
       "name": "[ADS SP - TOF] Roteiro 04",
@@ -1924,13 +1944,13 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 7,
+      "done": 8,
       "open": 36
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 24,
+    "Sem tipo": 25,
     "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
@@ -1940,7 +1960,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 5494,
+    "Sem tipo": 4579,
     "Fotografia": 1104,
     "Mídias sociais": 5790,
     "CS": 10131,
@@ -1971,7 +1991,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 7,
+      "total": 8,
       "onTime": 0,
       "rate": 0
     }
@@ -1979,7 +1999,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 78
+      "count": 79
     }
   ]
 }
