@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T19:31:20.081Z",
+  "updatedAt": "2026-07-23T19:36:09.754Z",
   "members": [
     {
       "id": 118016784,
@@ -200,26 +200,6 @@
       "comments": []
     },
     {
-      "id": "86ajmzxtc",
-      "name": "[ADS SP - BOF] Roteiro 07",
-      "status": "captação / gravação",
-      "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
-      },
-      "due_date": 1784876400000,
-      "date_created": 1784658666500,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajmzxtc",
-      "description": "Você teria coragem de desgastar seus dentes naturais só pra ter um sorriso mais bonito?\nEsse é o maior medo de quem pesquisa lentes dentais: perder a estrutura natural dos dentes só para ter um sorriso mais bonito \nNa Aspekto, o protocolo é diferente. Preservamos a estrutura natural do seu dente, com planejamento personalizado para cada caso e realizamos apenas o preparo para encaixe das lentes.\nE agora, no aniversário de 14 anos da Aspekto, vamos inaugurar a nova unidade em São Paulo, no Morumbi, e você garante esse tratamento com 60% de desconto, em até 21 vezes sem juros.\nTenha o sorriso que você sempre sonhou em condições históricas, nunca vistas antes!\nMas atenção, as vagas são limitadas, e você só terá essa condição se inscrevendo na nossa pré-venda!\nClique no botão abaixo e se inscreva agora para garantir sua oferta de lançamento!",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
       "id": "86ajmzxt9",
       "name": "[ADS SP - BOF] Roteiro 06",
       "status": "captação / gravação",
@@ -344,10 +324,10 @@
       "name": "Maria Augusta de Assis Rodrigues Haddad - 15h",
       "status": "produção / edição",
       "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
+        "id": 118016784,
+        "name": "Yuri Lima"
       },
-      "due_date": 1784703600000,
+      "due_date": 1785049200000,
       "date_created": 1784656128281,
       "date_closed": null,
       "tipo": null,
@@ -1945,12 +1925,12 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 20,
-      "open": 24
+      "open": 23
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 25,
+    "Sem tipo": 24,
     "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
@@ -1999,7 +1979,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 79
+      "count": 78
     }
   ]
 }
