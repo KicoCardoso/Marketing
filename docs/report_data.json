@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T03:40:57.336Z",
+  "updatedAt": "2026-07-23T03:46:11.056Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-22"
@@ -201,38 +201,38 @@
     {
       "date": "2026-07-22",
       "label": "22/07",
-      "totalSpend": 5457.3,
-      "msgSpend": 5457.3,
+      "totalSpend": 5457.36,
+      "msgSpend": 5457.36,
       "msgCount": 1059,
-      "impressions": 338341,
+      "impressions": 338349,
       "clicks": 5037
     },
     {
       "date": "2026-07-23",
       "label": "23/07",
-      "totalSpend": 72.19,
-      "msgSpend": 29.81,
-      "msgCount": 1,
-      "impressions": 5155,
-      "clicks": 102
+      "totalSpend": 81.67999999999999,
+      "msgSpend": 34.82,
+      "msgCount": 4,
+      "impressions": 5959,
+      "clicks": 120
     }
   ],
   "current": {
-    "spend": 97006.45,
-    "impressions": 6296394,
+    "spend": 97006.52,
+    "impressions": 6296404,
     "clicks": 78920,
-    "ctr": 1.253416,
-    "cpc": 1.229174,
-    "cpm": 15.406668,
+    "ctr": 1.253414,
+    "cpc": 1.229175,
+    "cpm": 15.406654,
     "reach": 2677769,
-    "frequency": 2.351358,
+    "frequency": 2.351362,
     "postEngagement": 0,
-    "videoP25": 291491,
-    "videoP50": 156535,
+    "videoP25": 291492,
+    "videoP50": 156536,
     "videoP95": 47315,
-    "videoPlays": 5360045,
+    "videoPlays": 5360065,
     "msgCount": 20623,
-    "cpl": 4.703799156281821
+    "cpl": 4.703802550550357
   },
   "previous": {
     "spend": 169296.04,
@@ -335,12 +335,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 62743.88,
-      "impressions": 3318512,
+      "spend": 62743.89,
+      "impressions": 3318514,
       "clicks": 21694,
-      "ctr": 0.653727,
+      "ctr": 0.653726,
       "results": 14885,
-      "costPerResult": 4.215242190124286
+      "costPerResult": 4.215242861941552
     },
     {
       "id": "120249823933420654",
@@ -376,28 +376,28 @@
       "id": "120250220236320654",
       "name": "[Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
       "spend": 9692.11,
-      "impressions": 530357,
+      "impressions": 530359,
       "clicks": 5091,
-      "ctr": 0.959919,
+      "ctr": 0.959916,
       "results": 2683,
       "costPerResult": 3.612415206857995
     },
     {
       "id": "120250220343060654",
       "name": "[Lentes] [Fundo] [Engajamento] [whatsapp] [E3] Novo",
-      "spend": 5765.27,
-      "impressions": 327559,
+      "spend": 5765.32,
+      "impressions": 327563,
       "clicks": 2457,
-      "ctr": 0.750094,
+      "ctr": 0.750085,
       "results": 328,
-      "costPerResult": 17.57704268292683
+      "costPerResult": 17.57719512195122
     }
   ],
   "funnelSpendByStage": {
     "perfil": 6742.4,
-    "topo": 73656.03,
+    "topo": 73656.04000000001,
     "meio": 10412.74,
-    "fundo": 6195.290000000001,
+    "fundo": 6195.34,
     "outros": 0
   },
   "highlights": {
@@ -405,15 +405,15 @@
       "name": "[Meio] [Engajamento] [whatsapp] [E2] Novo",
       "spend": 9692.11,
       "results": 2683,
-      "ctr": 0.959919,
+      "ctr": 0.959916,
       "costPerResult": 3.612415206857995
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 62743.88,
+      "spend": 62743.89,
       "results": 14885,
-      "ctr": 0.653727,
-      "costPerResult": 4.215242190124286
+      "ctr": 0.653726,
+      "costPerResult": 4.215242861941552
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
@@ -431,15 +431,15 @@
     }
   },
   "funnel": {
-    "spend": 97073.26,
+    "spend": 97088.2,
     "scheduled": 248,
     "attended": 153,
     "won": 95,
     "wonValue": 675663.67,
-    "cplSchedule": 391.4244354838709,
-    "cplAttend": 634.4657516339869,
-    "cac": 1021.8237894736842,
-    "roas": 6.960347988725217
+    "cplSchedule": 391.48467741935485,
+    "cplAttend": 634.5633986928104,
+    "cac": 1021.9810526315789,
+    "roas": 6.95927692551721
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
