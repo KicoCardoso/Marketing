@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T15:11:42.839Z",
+  "updatedAt": "2026-07-23T15:16:43.583Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-22"
@@ -201,38 +201,38 @@
     {
       "date": "2026-07-22",
       "label": "22/07",
-      "totalSpend": 5458.78,
-      "msgSpend": 5458.78,
+      "totalSpend": 5458.79,
+      "msgSpend": 5458.79,
       "msgCount": 1059,
-      "impressions": 338430,
+      "impressions": 338431,
       "clicks": 5039
     },
     {
       "date": "2026-07-23",
       "label": "23/07",
-      "totalSpend": 1866.03,
-      "msgSpend": 1764.17,
-      "msgCount": 219,
-      "impressions": 88012,
-      "clicks": 1469
+      "totalSpend": 1905.01,
+      "msgSpend": 1801.51,
+      "msgCount": 225,
+      "impressions": 89972,
+      "clicks": 1496
     }
   ],
   "current": {
-    "spend": 97007.94,
-    "impressions": 6296485,
+    "spend": 97007.95,
+    "impressions": 6296486,
     "clicks": 78922,
     "ctr": 1.253429,
     "cpc": 1.229162,
-    "cpm": 15.406682,
+    "cpm": 15.406681,
     "reach": 2677769,
-    "frequency": 2.351392,
+    "frequency": 2.351393,
     "postEngagement": 0,
     "videoP25": 291497,
     "videoP50": 156538,
     "videoP95": 47316,
-    "videoPlays": 5360157,
+    "videoPlays": 5360158,
     "msgCount": 20623,
-    "cpl": 4.703871405712069
+    "cpl": 4.703871890607574
   },
   "previous": {
     "spend": 169296.04,
@@ -365,12 +365,12 @@
     {
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3308.64,
-      "impressions": 865406,
+      "spend": 3308.65,
+      "impressions": 865407,
       "clicks": 28064,
-      "ctr": 3.242871,
+      "ctr": 3.242867,
       "results": 130,
-      "costPerResult": 25.451076923076922
+      "costPerResult": 25.451153846153847
     },
     {
       "id": "120250220236320654",
@@ -394,7 +394,7 @@
     }
   ],
   "funnelSpendByStage": {
-    "perfil": 6742.48,
+    "perfil": 6742.49,
     "topo": 73657.08,
     "meio": 10412.96,
     "fundo": 6195.42,
@@ -417,10 +417,10 @@
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 3308.64,
+      "spend": 3308.65,
       "results": 130,
-      "ctr": 3.242871,
-      "costPerResult": 25.451076923076922
+      "ctr": 3.242867,
+      "costPerResult": 25.451153846153847
     },
     "attention": {
       "name": "[Topo] [Curtidas] [C1]",
@@ -431,15 +431,15 @@
     }
   },
   "funnel": {
-    "spend": 98873.97,
+    "spend": 98912.96,
     "scheduled": 248,
     "attended": 153,
     "won": 95,
     "wonValue": 675663.67,
-    "cplSchedule": 398.68536290322584,
-    "cplAttend": 646.2350980392157,
-    "cac": 1040.7786315789474,
-    "roas": 6.83358491623225
+    "cplSchedule": 398.8425806451613,
+    "cplAttend": 646.489934640523,
+    "cac": 1041.189052631579,
+    "roas": 6.830891219916985
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
