@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T18:54:48.791Z",
+  "updatedAt": "2026-07-24T19:07:33.258Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-23"
@@ -213,26 +213,26 @@
       "totalSpend": 4415.21,
       "msgSpend": 4415.21,
       "msgCount": 590,
-      "impressions": 255027,
+      "impressions": 255028,
       "clicks": 4587
     },
     {
       "date": "2026-07-24",
       "label": "24/07",
-      "totalSpend": 2909.7400000000002,
-      "msgSpend": 2909.7400000000002,
-      "msgCount": 525,
-      "impressions": 134516,
-      "clicks": 2241
+      "totalSpend": 2956.81,
+      "msgSpend": 2956.81,
+      "msgCount": 537,
+      "impressions": 137350,
+      "clicks": 2293
     }
   ],
   "current": {
     "spend": 101423.23,
-    "impressions": 6551520,
+    "impressions": 6551521,
     "clicks": 83509,
     "ctr": 1.274651,
     "cpc": 1.214519,
-    "cpm": 15.48087,
+    "cpm": 15.480868,
     "reach": 2744590,
     "frequency": 2.387067,
     "postEngagement": 0,
@@ -345,7 +345,7 @@
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
       "spend": 65148.05,
-      "impressions": 3407698,
+      "impressions": 3407699,
       "clicks": 22327,
       "ctr": 0.655193,
       "results": 15228,
@@ -440,24 +440,24 @@
     }
   },
   "funnel": {
-    "spend": 104332.97,
-    "scheduled": 268,
-    "attended": 159,
-    "won": 103,
-    "wonValue": 724335.99,
-    "cplSchedule": 389.30212686567165,
-    "cplAttend": 656.1822012578616,
-    "cac": 1012.9414563106797,
-    "roas": 6.94254165294058
+    "spend": 104380.04,
+    "scheduled": 272,
+    "attended": 162,
+    "won": 106,
+    "wonValue": 746429.74,
+    "cplSchedule": 383.75014705882353,
+    "cplAttend": 644.3212345679012,
+    "cac": 984.717358490566,
+    "roas": 7.151077351570281
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-23T23:08:04Z",
-    "scheduled": 268,
-    "attended": 159,
-    "won": 103,
-    "wonValue": 724335.99,
+    "until": "2026-07-24T19:03:43Z",
+    "scheduled": 272,
+    "attended": 162,
+    "won": 106,
+    "wonValue": 746429.74,
     "currency": "BRL"
   },
-  "leadToday": 15
+  "leadToday": 4
 }
