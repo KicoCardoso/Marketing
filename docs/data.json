@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T17:50:16.748Z",
+  "updatedAt": "2026-07-24T18:00:19.161Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,46 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajpqzh3",
+      "name": "Maria José Parreiras De Miranda",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784790000000,
+      "date_created": 1784915511027,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "rebecasalmen@outlook.com",
+      "url": "https://app.clickup.com/t/86ajpqzh3",
+      "description": "REBECA SALMEN - edição de foto (igualar a cor das lentes)",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86ajpqyqr",
+      "name": "edição de foto (igualar a cor das lentes)",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784790000000,
+      "date_created": 1784915442887,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "rebecasalmen@outlook.com",
+      "url": "https://app.clickup.com/t/86ajpqyqr",
+      "description": "REBECA SALMEN - edição de foto para postar",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajpn1hj",
       "name": "Kico Cardoso",
@@ -2001,7 +2041,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 7,
-      "open": 4
+      "open": 6
     },
     {
       "id": 118016782,
@@ -2018,7 +2058,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 8,
+    "Fotografia": 10,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2067,7 +2107,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 80
+      "count": 82
     }
   ]
 }
