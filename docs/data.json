@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T18:18:25.656Z",
+  "updatedAt": "2026-07-24T18:24:52.844Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,40 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajprntq",
+      "name": "Wilker Igor Santos Rocha 17301",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": null,
+      "date_created": 1784917225184,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "marcela.azevedo@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajprntq",
+      "description": "Foto de antes e depois do sorriso",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86ajprnrp",
+      "name": "Teste Icaro",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": 1785049200000,
+      "date_created": 1784917222214,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "icaro.rodrigues@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajprnrp",
+      "description": "Teste de Demanda",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajpra85",
       "name": "Site Mobile",
@@ -2075,8 +2109,8 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 12,
     "Identidade visual": 2,
-    "Fotografia": 10,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2124,7 +2158,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 83
+      "count": 85
     }
   ]
 }
