@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T18:00:19.161Z",
+  "updatedAt": "2026-07-24T18:12:06.852Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajpra85",
+      "name": "Site Mobile",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": 1785135600000,
+      "date_created": 1784916317379,
+      "date_closed": null,
+      "tipo": "Identidade visual",
+      "email": "icaro.rodrigues@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajpra85",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajpqzh3",
       "name": "Maria José Parreiras De Miranda",
@@ -802,7 +819,7 @@
       "tipo": "Fotografia",
       "email": null,
       "url": "https://app.clickup.com/t/86ajj9f4t",
-      "description": "Fotos\nZ:\\Prontuarios\\17097- Alan Bruneli Brás Lucas (BL1 HT)\\2 - Fotos",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2058,12 +2075,12 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Identidade visual": 2,
     "Fotografia": 10,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
     "ADS": 6,
-    "Identidade visual": 1,
     "Branding": 3,
     "Influenciadores": 2
   },
@@ -2107,7 +2124,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 82
+      "count": 83
     }
   ]
 }
