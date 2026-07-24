@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T15:30:25.222Z",
+  "updatedAt": "2026-07-24T15:46:19.239Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,46 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajpn1hj",
+      "name": "Kico Cardoso",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": null,
+      "date_created": 1784907044054,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "kico@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajpn1hj",
+      "description": "teste2",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86ajpn10t",
+      "name": "Fotos antes x depois",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784790000000,
+      "date_created": 1784906989121,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "pkumaira@gmail.com",
+      "url": "https://app.clickup.com/t/86ajpn10t",
+      "description": "Pedro Kumaira- fotos antes e depois do paciente: Danyell Lucas Furtado",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajngagr",
       "name": "Atulizar briefing de influenciadores",
@@ -1961,13 +2001,13 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 7,
-      "open": 3
+      "open": 4
     },
     {
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 1,
-      "open": 13
+      "open": 14
     },
     {
       "id": 278685306,
@@ -1978,8 +2018,8 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 8,
     "Sem tipo": 24,
-    "Fotografia": 6,
     "Mídias sociais": 35,
     "CS": 1,
     "ADS": 6,
@@ -2027,7 +2067,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 78
+      "count": 80
     }
   ]
 }
