@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T20:21:07.071Z",
+  "updatedAt": "2026-07-24T20:26:00.030Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-23"
@@ -213,28 +213,28 @@
       "totalSpend": 4415.21,
       "msgSpend": 4415.21,
       "msgCount": 590,
-      "impressions": 255028,
+      "impressions": 255029,
       "clicks": 4587
     },
     {
       "date": "2026-07-24",
       "label": "24/07",
-      "totalSpend": 3191.54,
-      "msgSpend": 3191.54,
-      "msgCount": 574,
-      "impressions": 152095,
-      "clicks": 2575
+      "totalSpend": 3202.1099999999997,
+      "msgSpend": 3202.1099999999997,
+      "msgCount": 577,
+      "impressions": 152660,
+      "clicks": 2588
     }
   ],
   "current": {
     "spend": 101423.23,
-    "impressions": 6551521,
+    "impressions": 6551522,
     "clicks": 83509,
-    "ctr": 1.274651,
+    "ctr": 1.27465,
     "cpc": 1.214519,
-    "cpm": 15.480868,
+    "cpm": 15.480865,
     "reach": 2744590,
-    "frequency": 2.387067,
+    "frequency": 2.387068,
     "postEngagement": 0,
     "videoP25": 302355,
     "videoP50": 162351,
@@ -345,7 +345,7 @@
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
       "spend": 65148.05,
-      "impressions": 3407699,
+      "impressions": 3407700,
       "clicks": 22327,
       "ctr": 0.655193,
       "results": 15228,
@@ -440,15 +440,15 @@
     }
   },
   "funnel": {
-    "spend": 104614.77,
+    "spend": 104625.34,
     "scheduled": 272,
     "attended": 162,
     "won": 106,
     "wonValue": 746429.74,
-    "cplSchedule": 384.613125,
-    "cplAttend": 645.7701851851853,
-    "cac": 986.9317924528302,
-    "roas": 7.135032080078176
+    "cplSchedule": 384.65198529411765,
+    "cplAttend": 645.8354320987654,
+    "cac": 987.0315094339622,
+    "roas": 7.134311248116374
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
