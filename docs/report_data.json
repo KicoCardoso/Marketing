@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25T14:46:15.015Z",
+  "updatedAt": "2026-07-25T15:18:22.733Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-24"
@@ -222,26 +222,26 @@
       "totalSpend": 4544.28,
       "msgSpend": 4544.28,
       "msgCount": 724,
-      "impressions": 250138,
+      "impressions": 250139,
       "clicks": 4573
     },
     {
       "date": "2026-07-25",
       "label": "25/07",
-      "totalSpend": 1970.6600000000003,
-      "msgSpend": 1970.6600000000003,
-      "msgCount": 185,
-      "impressions": 93956,
-      "clicks": 1446
+      "totalSpend": 2158.13,
+      "msgSpend": 2158.13,
+      "msgCount": 206,
+      "impressions": 104523,
+      "clicks": 1566
     }
   ],
   "current": {
     "spend": 105967.51,
-    "impressions": 6801662,
+    "impressions": 6801663,
     "clicks": 88082,
     "ctr": 1.295007,
     "cpc": 1.203055,
-    "cpm": 15.57965,
+    "cpm": 15.579647,
     "reach": 2793731,
     "frequency": 2.434616,
     "postEngagement": 0,
@@ -384,9 +384,9 @@
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 4058.3,
-      "impressions": 1050640,
+      "impressions": 1050641,
       "clicks": 34447,
-      "ctr": 3.278668,
+      "ctr": 3.278665,
       "results": 160,
       "costPerResult": 25.364375000000003
     },
@@ -437,7 +437,7 @@
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 4058.3,
       "results": 160,
-      "ctr": 3.278668,
+      "ctr": 3.278665,
       "costPerResult": 25.364375000000003
     },
     "attention": {
@@ -449,15 +449,15 @@
     }
   },
   "funnel": {
-    "spend": 107919.03,
+    "spend": 108125.64,
     "scheduled": 272,
     "attended": 162,
     "won": 106,
     "wonValue": 746429.74,
-    "cplSchedule": 396.76113970588233,
-    "cplAttend": 666.1668518518518,
-    "cac": 1018.1040566037735,
-    "roas": 6.916571989203387
+    "cplSchedule": 397.5207352941176,
+    "cplAttend": 667.4422222222222,
+    "cac": 1020.0532075471698,
+    "roas": 6.903355577825944
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
