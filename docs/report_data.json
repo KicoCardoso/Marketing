@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T09:47:26.759Z",
+  "updatedAt": "2026-07-26T09:52:32.781Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-07-25",
       "label": "25/07",
-      "totalSpend": 6183.15,
-      "msgSpend": 6183.15,
+      "totalSpend": 6183.16,
+      "msgSpend": 6183.16,
       "msgCount": 815,
-      "impressions": 304596,
+      "impressions": 304597,
       "clicks": 5085
     },
     {
       "date": "2026-07-26",
       "label": "26/07",
-      "totalSpend": 309.91,
-      "msgSpend": 199.54000000000002,
-      "msgCount": 29,
-      "impressions": 24846,
-      "clicks": 675
+      "totalSpend": 313.59999999999997,
+      "msgSpend": 239.10999999999999,
+      "msgCount": 35,
+      "impressions": 25021,
+      "clicks": 677
     }
   ],
   "current": {
-    "spend": 112150.73,
-    "impressions": 7106263,
+    "spend": 112150.74,
+    "impressions": 7106264,
     "clicks": 93167,
     "ctr": 1.311055,
     "cpc": 1.20376,
-    "cpm": 15.781956,
+    "cpm": 15.781955,
     "reach": 2872398,
     "frequency": 2.473983,
     "postEngagement": 0,
     "videoP25": 326747,
     "videoP50": 175293,
     "videoP95": 53354,
-    "videoPlays": 5939044,
+    "videoPlays": 5939045,
     "msgCount": 22752,
-    "cpl": 4.929269075246132
+    "cpl": 4.929269514767933
   },
   "previous": {
     "spend": 192202.96,
@@ -362,12 +362,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 71133.83,
-      "impressions": 3615386,
+      "spend": 71133.84,
+      "impressions": 3615387,
       "clicks": 23823,
       "ctr": 0.658934,
       "results": 16179,
-      "costPerResult": 4.396676556029421
+      "costPerResult": 4.3966771741145925
     },
     {
       "id": "120249823933420654",
@@ -422,7 +422,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 7907.84,
-    "topo": 82045.98000000001,
+    "topo": 82045.99,
     "meio": 13975.33,
     "fundo": 8221.58,
     "outros": 0
@@ -437,10 +437,10 @@
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 71133.83,
+      "spend": 71133.84,
       "results": 16179,
       "ctr": 0.658934,
-      "costPerResult": 4.396676556029421
+      "costPerResult": 4.3966771741145925
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
@@ -458,15 +458,15 @@
     }
   },
   "funnel": {
-    "spend": 112460.64,
+    "spend": 112464.34,
     "scheduled": 272,
     "attended": 162,
     "won": 106,
     "wonValue": 746429.74,
-    "cplSchedule": 413.4582352941176,
-    "cplAttend": 694.2014814814814,
-    "cac": 1060.949433962264,
-    "roas": 6.637253175866685
+    "cplSchedule": 413.4718382352941,
+    "cplAttend": 694.2243209876543,
+    "cac": 1060.9843396226415,
+    "roas": 6.637034814768842
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
