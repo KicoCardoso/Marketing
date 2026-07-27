@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T12:31:26.180Z",
+  "updatedAt": "2026-07-27T12:36:13.409Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-26"
@@ -240,26 +240,26 @@
       "totalSpend": 4001.3500000000004,
       "msgSpend": 4001.3500000000004,
       "msgCount": 448,
-      "impressions": 222652,
+      "impressions": 222653,
       "clicks": 4569
     },
     {
       "date": "2026-07-27",
       "label": "27/07",
-      "totalSpend": 601.39,
-      "msgSpend": 601.39,
+      "totalSpend": 611.9499999999999,
+      "msgSpend": 611.9499999999999,
       "msgCount": 54,
-      "impressions": 37229,
-      "clicks": 832
+      "impressions": 37752,
+      "clicks": 842
     }
   ],
   "current": {
     "spend": 116154.06,
-    "impressions": 7328996,
+    "impressions": 7328997,
     "clicks": 97736,
     "ctr": 1.333552,
     "cpc": 1.188447,
-    "cpm": 15.848564,
+    "cpm": 15.848562,
     "reach": 2928299,
     "frequency": 2.502817,
     "postEngagement": 0,
@@ -422,9 +422,9 @@
       "id": "120250220343060654",
       "name": "[Lentes] [Fundo] [Engajamento] [whatsapp] [E3] Novo",
       "spend": 8219.1,
-      "impressions": 428080,
+      "impressions": 428081,
       "clicks": 3289,
-      "ctr": 0.768314,
+      "ctr": 0.768313,
       "results": 428,
       "costPerResult": 19.203504672897196
     }
@@ -467,15 +467,15 @@
     }
   },
   "funnel": {
-    "spend": 116755.45,
+    "spend": 116766.01,
     "scheduled": 272,
     "attended": 162,
     "won": 106,
     "wonValue": 746429.74,
-    "cplSchedule": 429.2479779411765,
-    "cplAttend": 720.7126543209877,
-    "cac": 1101.4665094339623,
-    "roas": 6.39310404781961
+    "cplSchedule": 429.2868014705882,
+    "cplAttend": 720.7778395061728,
+    "cac": 1101.5661320754716,
+    "roas": 6.39252587289743
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
