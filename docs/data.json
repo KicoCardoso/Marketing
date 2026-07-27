@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T14:31:40.550Z",
+  "updatedAt": "2026-07-27T14:36:13.362Z",
   "members": [
     {
       "id": 118016784,
@@ -31,23 +31,6 @@
       "email": "marcela.azevedo@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajprntq",
       "description": "Foto de antes e depois do sorriso",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajprnrp",
-      "name": "Teste Icaro",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": 1785049200000,
-      "date_created": 1784917222214,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": "icaro.rodrigues@grupoaspekto.com",
-      "url": "https://app.clickup.com/t/86ajprnrp",
-      "description": "Teste de Demanda",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2072,7 +2055,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 11,
+    "Fotografia": 10,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2121,7 +2104,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 83
+      "count": 82
     }
   ]
 }
