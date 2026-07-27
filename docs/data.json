@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T19:16:10.764Z",
+  "updatedAt": "2026-07-27T19:21:16.863Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajqr53k",
+      "name": "Cronograma de Agosto",
+      "status": "aprovação 1",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": 1785222000000,
+      "date_created": 1785179912699,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajqr53k",
+      "description": "Segue o cronograma de agosto:",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajqhh4g",
       "name": "edição de foto (igualar a cor das lentes)",
@@ -1479,14 +1499,14 @@
     {
       "id": "86ajhbkwk",
       "name": "Planejamento de Julho ",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1784703600000,
       "date_created": 1784046904412,
-      "date_closed": null,
+      "date_closed": 1785179871627,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkwk",
@@ -1504,7 +1524,7 @@
     {
       "id": "86ajhbkwb",
       "name": "Criar conteúdos fixos para o perfil da Aspekto",
-      "status": "demanda em desenvolvimento",
+      "status": "aprovação 1",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -1524,7 +1544,13 @@
       },
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785179896769,
+          "text": "São os 3 primeiros roteiros: docs.google.com/document/d/1C7wfCb303Ydey8j4Vl6Jo0sdO21NZFVQER2CElDVVT8/edit?usp=sharing \n \n"
+        }
+      ]
     },
     {
       "id": "86ajhbkw6",
@@ -1949,14 +1975,14 @@
     {
       "id": "86ajhbku1",
       "name": "Campanha de Aniversário Aspekto",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1784876400000,
       "date_created": 1784046900490,
-      "date_closed": null,
+      "date_closed": 1785179960921,
       "tipo": "Branding",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbku1",
@@ -2127,19 +2153,19 @@
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 8,
-      "open": 7
+      "open": 8
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 21,
-      "open": 23
+      "done": 23,
+      "open": 21
     }
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Sem tipo": 25,
     "Fotografia": 14,
-    "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
     "ADS": 6,
@@ -2150,9 +2176,9 @@
   "avgCompletionTimeByType": {
     "Fotografia": 1731,
     "Sem tipo": 4124,
-    "Mídias sociais": 9272,
+    "Mídias sociais": 9872,
     "CS": 10131,
-    "Branding": 6355
+    "Branding": 10531
   },
   "onTimeRateByUser": [
     {
@@ -2179,7 +2205,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 21,
+      "total": 23,
       "onTime": 0,
       "rate": 0
     }
@@ -2187,7 +2213,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 86
+      "count": 87
     }
   ]
 }
