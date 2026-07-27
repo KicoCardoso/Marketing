@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T16:11:09.207Z",
+  "updatedAt": "2026-07-27T16:16:14.702Z",
   "members": [
     {
       "id": 118016784,
@@ -42,7 +42,7 @@
     {
       "id": "86ajqhh3h",
       "name": "Fotos para o instagram",
-      "status": "fila de demandas",
+      "status": "impedimento",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
@@ -154,26 +154,6 @@
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajpqzh3",
       "description": "REBECA SALMEN - edição de foto (igualar a cor das lentes)",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajpqyqr",
-      "name": "edição de foto (igualar a cor das lentes)",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784790000000,
-      "date_created": 1784915442887,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": "rebecasalmen@outlook.com",
-      "url": "https://app.clickup.com/t/86ajpqyqr",
-      "description": "REBECA SALMEN - edição de foto para postar",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2141,7 +2121,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 11,
-      "open": 7
+      "open": 6
     },
     {
       "id": 118016782,
@@ -2158,7 +2138,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 15,
+    "Fotografia": 14,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2207,7 +2187,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 87
+      "count": 86
     }
   ]
 }
