@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T14:26:18.919Z",
+  "updatedAt": "2026-07-27T14:31:40.550Z",
   "members": [
     {
       "id": 118016784,
@@ -54,33 +54,16 @@
       "comments": []
     },
     {
-      "id": "86ajpra85",
-      "name": "Site Mobile",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": 1785135600000,
-      "date_created": 1784916317379,
-      "date_closed": null,
-      "tipo": "Identidade visual",
-      "email": "icaro.rodrigues@grupoaspekto.com",
-      "url": "https://app.clickup.com/t/86ajpra85",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
       "id": "86ajpqzh3",
       "name": "Maria José Parreiras De Miranda",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784790000000,
       "date_created": 1784915511027,
-      "date_closed": null,
+      "date_closed": 1785162627537,
       "tipo": "Fotografia",
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajpqzh3",
@@ -133,14 +116,14 @@
     {
       "id": "86ajpn10t",
       "name": "Fotos antes x depois",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784790000000,
       "date_created": 1784906989121,
-      "date_closed": null,
+      "date_closed": 1785162629995,
       "tipo": "Fotografia",
       "email": "pkumaira@gmail.com",
       "url": "https://app.clickup.com/t/86ajpn10t",
@@ -559,26 +542,6 @@
         "orderindex": "3",
         "priority": "normal"
       },
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajjtz2f",
-      "name": "Foto do paciente - teste",
-      "status": "impedimento",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784444400000,
-      "date_created": 1784228537141,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": "kico@grupoaspekto.com",
-      "url": "https://app.clickup.com/t/86ajjtz2f",
-      "description": "Kico - Quero a foto editada do paciente fulano",
-      "priority": null,
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -1435,7 +1398,7 @@
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
-      "due_date": 1784876400000,
+      "due_date": 1785222000000,
       "date_created": 1784050697212,
       "date_closed": null,
       "tipo": "Identidade visual",
@@ -2091,8 +2054,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 7,
-      "open": 6
+      "done": 9,
+      "open": 3
     },
     {
       "id": 118016782,
@@ -2109,18 +2072,18 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 12,
-    "Identidade visual": 2,
+    "Fotografia": 11,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
     "ADS": 6,
+    "Identidade visual": 1,
     "Branding": 3,
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
+    "Fotografia": 2132,
     "Sem tipo": 4124,
-    "Fotografia": 1104,
     "Mídias sociais": 9272,
     "CS": 10131,
     "Branding": 6355
@@ -2136,9 +2099,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 7,
+      "total": 9,
       "onTime": 5,
-      "rate": 71
+      "rate": 56
     },
     {
       "id": 118016782,
@@ -2158,7 +2121,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 85
+      "count": 83
     }
   ]
 }
