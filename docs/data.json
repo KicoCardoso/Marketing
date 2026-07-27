@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T18:00:59.342Z",
+  "updatedAt": "2026-07-27T18:06:29.352Z",
   "members": [
     {
       "id": 118016784,
@@ -62,14 +62,14 @@
     {
       "id": "86ajqhh2v",
       "name": "Fotos para o instagram",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785394800000,
       "date_created": 1785165345068,
-      "date_closed": null,
+      "date_closed": 1785175522735,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh2v",
@@ -82,14 +82,14 @@
     {
       "id": "86ajqhh1f",
       "name": "Fotos para o instagram",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785394800000,
       "date_created": 1785165342408,
-      "date_closed": null,
+      "date_closed": 1785175524999,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh1f",
@@ -2120,8 +2120,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 11,
-      "open": 6
+      "done": 13,
+      "open": 4
     },
     {
       "id": 118016782,
@@ -2148,7 +2148,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 2121,
+    "Fotografia": 1731,
     "Sem tipo": 4124,
     "Mídias sociais": 9272,
     "CS": 10131,
@@ -2165,9 +2165,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 10,
-      "onTime": 5,
-      "rate": 50
+      "total": 12,
+      "onTime": 7,
+      "rate": 58
     },
     {
       "id": 118016782,
