@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T15:31:22.762Z",
+  "updatedAt": "2026-07-27T15:36:08.432Z",
   "members": [
     {
       "id": 118016784,
@@ -20,36 +20,16 @@
   ],
   "tasks": [
     {
-      "id": "86ajqhh5h",
-      "name": "Maria José Parreiras De Miranda",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784876400000,
-      "date_created": 1785165350681,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": "rebecasalmen@outlook.com",
-      "url": "https://app.clickup.com/t/86ajqhh5h",
-      "description": "REBECA SALMEN - edição de foto (igualar a cor das lentes)",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
       "id": "86ajqhh4g",
       "name": "edição de foto (igualar a cor das lentes)",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1784876400000,
       "date_created": 1785165348704,
-      "date_closed": null,
+      "date_closed": 1785166514822,
       "tipo": "Fotografia",
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajqhh4g",
@@ -142,11 +122,14 @@
     {
       "id": "86ajprntq",
       "name": "Wilker Igor Santos Rocha 17301",
-      "status": "fila de demandas",
-      "assignee": null,
+      "status": "concluído",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
       "due_date": null,
       "date_created": 1784917225184,
-      "date_closed": null,
+      "date_closed": 1785166517229,
       "tipo": "Fotografia",
       "email": "marcela.azevedo@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajprntq",
@@ -2157,8 +2140,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 9,
-      "open": 9
+      "done": 11,
+      "open": 7
     },
     {
       "id": 118016782,
@@ -2175,7 +2158,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 16,
+    "Fotografia": 15,
     "Sem tipo": 24,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2185,7 +2168,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 2132,
+    "Fotografia": 2121,
     "Sem tipo": 4124,
     "Mídias sociais": 9272,
     "CS": 10131,
@@ -2202,9 +2185,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 9,
+      "total": 10,
       "onTime": 5,
-      "rate": 56
+      "rate": 50
     },
     {
       "id": 118016782,
@@ -2224,7 +2207,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 88
+      "count": 87
     }
   ]
 }
