@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T20:36:27.999Z",
+  "updatedAt": "2026-07-27T20:41:05.416Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajqugy2",
+      "name": "Marcelo Secco da Conceição",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1785654000000,
+      "date_created": 1785184700960,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "rebeca.carvalho@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajqugy2",
+      "description": "Rebeca - fotos finais",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajqr53k",
       "name": "Cronograma de Agosto",
@@ -2147,7 +2167,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 13,
-      "open": 4
+      "open": 5
     },
     {
       "id": 118016782,
@@ -2164,8 +2184,8 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 15,
     "Sem tipo": 25,
-    "Fotografia": 14,
     "Mídias sociais": 35,
     "CS": 1,
     "ADS": 6,
@@ -2213,7 +2233,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 87
+      "count": 88
     }
   ]
 }
