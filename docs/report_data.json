@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T09:21:37.515Z",
+  "updatedAt": "2026-07-27T09:26:24.799Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-26"
@@ -237,20 +237,20 @@
     {
       "date": "2026-07-26",
       "label": "26/07",
-      "totalSpend": 4000.61,
-      "msgSpend": 4000.61,
+      "totalSpend": 4000.66,
+      "msgSpend": 4000.66,
       "msgCount": 448,
-      "impressions": 222626,
+      "impressions": 222629,
       "clicks": 4569
     },
     {
       "date": "2026-07-27",
       "label": "27/07",
-      "totalSpend": 170.55,
-      "msgSpend": 159.67000000000002,
+      "totalSpend": 174.53,
+      "msgSpend": 163.03,
       "msgCount": 18,
-      "impressions": 15045,
-      "clicks": 418
+      "impressions": 15314,
+      "clicks": 427
     }
   ],
   "current": {
@@ -371,12 +371,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 73476.49,
-      "impressions": 3688861,
+      "spend": 73476.53,
+      "impressions": 3688862,
       "clicks": 24298,
       "ctr": 0.658686,
       "results": 16439,
-      "costPerResult": 4.4696447472474
+      "costPerResult": 4.469647180485431
     },
     {
       "id": "120249823933420654",
@@ -421,19 +421,19 @@
     {
       "id": "120250220343060654",
       "name": "[Lentes] [Fundo] [Engajamento] [whatsapp] [E3] Novo",
-      "spend": 8219.09,
-      "impressions": 428078,
+      "spend": 8219.1,
+      "impressions": 428080,
       "clicks": 3289,
-      "ctr": 0.768318,
+      "ctr": 0.768314,
       "results": 428,
-      "costPerResult": 19.203481308411217
+      "costPerResult": 19.203504672897196
     }
   ],
   "funnelSpendByStage": {
     "perfil": 8342.59,
-    "topo": 84388.64000000001,
+    "topo": 84388.68000000001,
     "meio": 14772.98,
-    "fundo": 8649.11,
+    "fundo": 8649.12,
     "outros": 0
   },
   "highlights": {
@@ -446,10 +446,10 @@
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 73476.49,
+      "spend": 73476.53,
       "results": 16439,
       "ctr": 0.658686,
-      "costPerResult": 4.4696447472474
+      "costPerResult": 4.469647180485431
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
