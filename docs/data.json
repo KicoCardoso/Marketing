@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T15:01:11.864Z",
+  "updatedAt": "2026-07-28T15:10:02.431Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajr5ghu",
+      "name": "Guia para Lorena",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": 1785654000000,
+      "date_created": 1785250840186,
+      "date_closed": null,
+      "tipo": "CS",
+      "email": "helena.haddad@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajr5ghu",
+      "description": "GUIA DE ENCAMINHAMENTO ODONTOLÓGICO\nData: //________\n\nDADOS DO PACIENTE\nNome: _________________________________________________\nData de Nascimento: //________\nProntuário:\nCPF: _________________________________________________\nTelefone: _____________________________________________\n\n\nDENTISTA SOLICITANTE\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\n\n\n\nPROCEDIMENTOS ENCAMINHADOS\nDescrever os procedimentos que deverão ser realizados:\n\n\n\n\n\n\nSITUAÇÃO FINANCEIRA\n☐ Pago\n☐ Não Pago\nObservações:\n\n\n\nPROCEDIMENTOS AUTORIZADOS\nEsta guia autoriza exclusivamente a realização dos seguintes procedimentos:\n☐ Avaliação Odontológica\n☐ Remoção de Cárie\n☐ Tratamento Endodôntico (Canal)\nNão está autorizada a realização de quaisquer outros procedimentos sem prévia autorização da Clínica Aspekto e do cirurgião-dentista responsável pelo tratamento.\n\n\nOBSERVAÇÕES\n\n\n\n\nPREENCHIMENTO PELO PROFISSIONAL EXECUTANTE\nProcedimentos realizados:\n\n\n\n\nData da execução: //________\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\nCRO: __________________________",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajr56h3",
       "name": "Maria Augusta",
@@ -2221,10 +2238,10 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "CS": 2,
     "Fotografia": 17,
     "Sem tipo": 25,
     "Mídias sociais": 35,
-    "CS": 1,
     "ADS": 6,
     "Identidade visual": 1,
     "Branding": 3,
@@ -2270,7 +2287,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 90
+      "count": 91
     }
   ]
 }
