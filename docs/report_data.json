@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T10:02:11.020Z",
+  "updatedAt": "2026-07-28T10:05:58.310Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-27"
@@ -249,33 +249,33 @@
       "totalSpend": 5123.78,
       "msgSpend": 5123.78,
       "msgCount": 1072,
-      "impressions": 267261,
+      "impressions": 267262,
       "clicks": 4499
     },
     {
       "date": "2026-07-28",
       "label": "28/07",
-      "totalSpend": 402.35999999999996,
-      "msgSpend": 361.56,
+      "totalSpend": 407.25,
+      "msgSpend": 366.05,
       "msgCount": 93,
-      "impressions": 25994,
-      "clicks": 485
+      "impressions": 26308,
+      "clicks": 489
     }
   ],
   "current": {
     "spend": 121277.93,
-    "impressions": 7596264,
+    "impressions": 7596265,
     "clicks": 102235,
     "ctr": 1.345859,
     "cpc": 1.186266,
-    "cpm": 15.965471,
+    "cpm": 15.965469,
     "reach": 3019800,
     "frequency": 2.515486,
     "postEngagement": 0,
     "videoP25": 344331,
     "videoP50": 184585,
     "videoP95": 56293,
-    "videoPlays": 6244425,
+    "videoPlays": 6244428,
     "msgCount": 24272,
     "cpl": 4.996618737640079
   },
@@ -381,7 +381,7 @@
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
       "spend": 76167.76,
-      "impressions": 3783895,
+      "impressions": 3783896,
       "clicks": 24868,
       "ctr": 0.657206,
       "results": 16930,
@@ -475,25 +475,7 @@
       "costPerResult": null
     }
   },
-  "funnel": {
-    "spend": 121680.29,
-    "scheduled": 281,
-    "attended": 168,
-    "won": 110,
-    "wonValue": 775019.44,
-    "cplSchedule": 433.0259430604982,
-    "cplAttend": 724.2874404761905,
-    "cac": 1106.1844545454544,
-    "roas": 6.36930960634627
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-27T15:24:55Z",
-    "scheduled": 281,
-    "attended": 168,
-    "won": 110,
-    "wonValue": 775019.44,
-    "currency": "BRL"
-  },
-  "leadToday": 5
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
