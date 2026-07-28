@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T14:54:45.375Z",
+  "updatedAt": "2026-07-28T15:01:11.864Z",
   "members": [
     {
       "id": 118016784,
@@ -22,11 +22,11 @@
     {
       "id": "86ajr56h3",
       "name": "Maria Augusta",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": null,
       "due_date": 1785135600000,
       "date_created": 1785250220726,
-      "date_closed": null,
+      "date_closed": 1785250420128,
       "tipo": "Fotografia",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr56h3",
@@ -2231,7 +2231,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 1616,
+    "Fotografia": 1492,
     "Sem tipo": 4124,
     "Mídias sociais": 9872,
     "CS": 10131,
