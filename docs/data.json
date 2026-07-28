@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T14:45:03.587Z",
+  "updatedAt": "2026-07-28T14:54:45.375Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajr56h3",
+      "name": "Maria Augusta",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": 1785135600000,
+      "date_created": 1785250220726,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "helena.haddad@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajr56h3",
+      "description": "Editar Fotos",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajqukt7",
       "name": "Érica de Menezes Wanderley Secco",
@@ -2204,7 +2221,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 16,
+    "Fotografia": 17,
     "Sem tipo": 25,
     "Mídias sociais": 35,
     "CS": 1,
@@ -2253,7 +2270,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 89
+      "count": 90
     }
   ]
 }
