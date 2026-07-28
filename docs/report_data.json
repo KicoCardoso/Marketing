@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T03:36:06.945Z",
+  "updatedAt": "2026-07-28T03:41:04.206Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-27"
@@ -246,38 +246,38 @@
     {
       "date": "2026-07-27",
       "label": "27/07",
-      "totalSpend": 5121.990000000001,
-      "msgSpend": 5121.990000000001,
+      "totalSpend": 5122.26,
+      "msgSpend": 5122.26,
       "msgCount": 1072,
-      "impressions": 267171,
+      "impressions": 267184,
       "clicks": 4496
     },
     {
       "date": "2026-07-28",
       "label": "28/07",
-      "totalSpend": 105.75,
-      "msgSpend": 92.68,
+      "totalSpend": 117.2,
+      "msgSpend": 102.57,
       "msgCount": 20,
-      "impressions": 4708,
-      "clicks": 63
+      "impressions": 5140,
+      "clicks": 72
     }
   ],
   "current": {
-    "spend": 121276.14,
-    "impressions": 7596174,
+    "spend": 121276.41,
+    "impressions": 7596187,
     "clicks": 102232,
-    "ctr": 1.345835,
-    "cpc": 1.186284,
-    "cpm": 15.965424,
+    "ctr": 1.345833,
+    "cpc": 1.186286,
+    "cpm": 15.965432,
     "reach": 3019800,
-    "frequency": 2.515456,
+    "frequency": 2.51546,
     "postEngagement": 0,
-    "videoP25": 344326,
+    "videoP25": 344327,
     "videoP50": 184582,
-    "videoP95": 56290,
-    "videoPlays": 6244341,
+    "videoP95": 56291,
+    "videoPlays": 6244357,
     "msgCount": 24272,
-    "cpl": 4.9965449901120635
+    "cpl": 4.99655611404087
   },
   "previous": {
     "spend": 207539.28,
@@ -380,12 +380,12 @@
     {
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 76167.09,
-      "impressions": 3783858,
+      "spend": 76167.33,
+      "impressions": 3783865,
       "clicks": 24868,
-      "ctr": 0.657213,
+      "ctr": 0.657212,
       "results": 16930,
-      "costPerResult": 4.498942114589486
+      "costPerResult": 4.498956290608388
     },
     {
       "id": "120249823933420654",
@@ -410,22 +410,22 @@
     {
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 5301.32,
-      "impressions": 1351356,
+      "spend": 5301.34,
+      "impressions": 1351360,
       "clicks": 44835,
-      "ctr": 3.317779,
+      "ctr": 3.317769,
       "results": 244,
-      "costPerResult": 21.72672131147541
+      "costPerResult": 21.726803278688525
     },
     {
       "id": "120250220236320654",
       "name": "[Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 15338.4,
-      "impressions": 754071,
+      "spend": 15338.41,
+      "impressions": 754073,
       "clicks": 7458,
-      "ctr": 0.989032,
+      "ctr": 0.989029,
       "results": 3925,
-      "costPerResult": 3.9078726114649682
+      "costPerResult": 3.907875159235669
     },
     {
       "id": "120250220343060654",
@@ -439,33 +439,33 @@
     }
   ],
   "funnelSpendByStage": {
-    "perfil": 8735.16,
-    "topo": 87079.24,
-    "meio": 16059.029999999999,
+    "perfil": 8735.18,
+    "topo": 87079.48000000001,
+    "meio": 16059.039999999999,
     "fundo": 9402.710000000001,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 15338.4,
+      "spend": 15338.41,
       "results": 3925,
-      "ctr": 0.989032,
-      "costPerResult": 3.9078726114649682
+      "ctr": 0.989029,
+      "costPerResult": 3.907875159235669
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
-      "spend": 76167.09,
+      "spend": 76167.33,
       "results": 16930,
-      "ctr": 0.657213,
-      "costPerResult": 4.498942114589486
+      "ctr": 0.657212,
+      "costPerResult": 4.498956290608388
     },
     "hottest": {
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 5301.32,
+      "spend": 5301.34,
       "results": 244,
-      "ctr": 3.317779,
-      "costPerResult": 21.72672131147541
+      "ctr": 3.317769,
+      "costPerResult": 21.726803278688525
     },
     "attention": {
       "name": "[Topo] [Curtidas] [C1]",
