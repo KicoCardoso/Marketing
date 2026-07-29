@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T17:06:47.009Z",
+  "updatedAt": "2026-07-29T17:14:43.781Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-28"
@@ -259,24 +259,24 @@
       "msgSpend": 6540.09,
       "msgCount": 1772,
       "impressions": 419704,
-      "clicks": 5269
+      "clicks": 5270
     },
     {
       "date": "2026-07-29",
       "label": "29/07",
-      "totalSpend": 3051.7,
-      "msgSpend": 3051.7,
-      "msgCount": 716,
-      "impressions": 195285,
-      "clicks": 2261
+      "totalSpend": 3095.62,
+      "msgSpend": 3095.62,
+      "msgCount": 722,
+      "impressions": 198182,
+      "clicks": 2297
     }
   ],
   "current": {
     "spend": 127819.36,
     "impressions": 8016010,
-    "clicks": 107505,
-    "ctr": 1.341129,
-    "cpc": 1.188962,
+    "clicks": 107506,
+    "ctr": 1.341141,
+    "cpc": 1.188951,
     "cpm": 15.945509,
     "reach": 3119682,
     "frequency": 2.569496,
@@ -421,8 +421,8 @@
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 5691.73,
       "impressions": 1443896,
-      "clicks": 47968,
-      "ctr": 3.322123,
+      "clicks": 47969,
+      "ctr": 3.322192,
       "results": 270,
       "costPerResult": 21.08048148148148
     },
@@ -473,7 +473,7 @@
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 5691.73,
       "results": 270,
-      "ctr": 3.322123,
+      "ctr": 3.322192,
       "costPerResult": 21.08048148148148
     },
     "attention": {
@@ -485,15 +485,15 @@
     }
   },
   "funnel": {
-    "spend": 130871.06,
+    "spend": 130914.98,
     "scheduled": 281,
     "attended": 168,
     "won": 110,
     "wonValue": 775019.44,
-    "cplSchedule": 465.73330960854094,
-    "cplAttend": 778.9944047619048,
-    "cac": 1189.736909090909,
-    "roas": 5.922007814409083
+    "cplSchedule": 465.8896085409253,
+    "cplAttend": 779.2558333333333,
+    "cac": 1190.1361818181817,
+    "roas": 5.920021070163246
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
