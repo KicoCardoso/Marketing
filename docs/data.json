@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T17:14:40.892Z",
+  "updatedAt": "2026-07-29T17:20:38.999Z",
   "members": [
     {
       "id": 118016784,
@@ -81,41 +81,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajrwvpk",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajrwvpb",
-      "name": "[Cronograma Agosto] Roteiro 08",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
-      "date_created": 1785344929125,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajrwvpb",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajrwvp8",
-      "name": "[Cronograma Agosto] Roteiro 07",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
-      "date_created": 1785344928721,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajrwvp8",
-      "description": "",
+      "description": "[Lâmina 01]: \n3 mitos sobre o preço das lentes dentais da Aspekto\n\nDescubra como mais de 20 mil pacientes tiveram o sorriso transformado de maneira acessível!\n\n[Lâmina 02]: Mito 1: Quanto mais barato o procedimento, pior a qualidade!\nVerdade:\nCom laboratório próprio e equipamentos de precisão, a Aspekto elimina intermediários, controla a qualidade e entrega um preço mais acessível.\n\n[Lâmina 03]: Mito 2: É tão acessível, não deve ser porcelana de qualidade \n\nVerdade\nO que reduz o custo real é a escala. Produzindo várias lentes por dia, com processo otimizado e materiais em volume, o preço cai sem afetar a qualidade. \n\n[Lâmina 04]: Mito 03: É arriscado pagar tão barato e comprometer minha saúde bucal\n\n14 anos treinando uma equipe interna no mesmo padrão significa mais precisão, menos retrabalho e nenhum risco de amadorismo comprometer sua saúde bucal. \n\n\n[Lâmina 05]: \nLaboratório próprio, escala de produção e uma equipe com 14 anos de experiência.\nÉ essa estrutura que sustenta o padrão Aspekto e permite que qualidade e preço acessível caminhem juntos.\nClique no link da bio e venha conhecer esse padrão de perto.",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -124,9 +90,12 @@
     {
       "id": "86ajrwvp6",
       "name": "[Cronograma Agosto] Roteiro 06",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "captação / gravação",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": 1785826800000,
       "date_created": 1785344928473,
       "date_closed": null,
       "tipo": null,
@@ -141,9 +110,12 @@
     {
       "id": "86ajrwvp2",
       "name": "[Cronograma Agosto] Roteiro 05",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "captação / gravação",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": 1785826800000,
       "date_created": 1785344928211,
       "date_closed": null,
       "tipo": null,
@@ -158,9 +130,12 @@
     {
       "id": "86ajrwvnx",
       "name": "[Cronograma Agosto] Roteiro 04",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "captação / gravação",
+      "assignee": {
+        "id": 118016784,
+        "name": "Yuri Lima"
+      },
+      "due_date": 1785826800000,
       "date_created": 1785344927892,
       "date_closed": null,
       "tipo": null,
@@ -2390,6 +2365,46 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajha1b0",
+      "name": "Montar a apresentação",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784185200000,
+      "date_created": 1784042771345,
+      "date_closed": 1784229426548,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajha1b0",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86ajha16j",
+      "name": "Desenhar proposta para diretoria",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784185200000,
+      "date_created": 1784042759343,
+      "date_closed": 1784229424921,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajha16j",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2397,7 +2412,7 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 2,
-      "open": 9
+      "open": 12
     },
     {
       "id": 118016783,
@@ -2414,7 +2429,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 20,
+      "done": 22,
       "open": 21
     }
   ],
@@ -2431,7 +2446,7 @@
   },
   "avgCompletionTimeByType": {
     "Fotografia": 1492,
-    "Sem tipo": 5309,
+    "Sem tipo": 4821,
     "Mídias sociais": 9872,
     "CS": 10131,
     "Branding": 11543
@@ -2461,7 +2476,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 20,
+      "total": 22,
       "onTime": 0,
       "rate": 0
     }
