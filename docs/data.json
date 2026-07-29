@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T11:36:07.884Z",
+  "updatedAt": "2026-07-29T11:46:49.238Z",
   "members": [
     {
       "id": 118016784,
@@ -2237,9 +2237,47 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajha0y7",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
-      "subtasks": [],
+      "subtasks": [
+        {
+          "id": "86ajha16j",
+          "name": "Desenhar proposta para diretoria",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajha1b0",
+          "name": "Montar a apresentação",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajha1hj",
+          "name": "Apresentar para a diretoria",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajha1my",
+          "name": "Definir novos desdobramentos da campanha",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        }
+      ],
       "comments": []
     }
   ],
