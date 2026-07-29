@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T16:55:17.668Z",
+  "updatedAt": "2026-07-29T17:06:43.739Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajrwjpw",
+      "name": "Editar destaques \"Sou Novo Aqui\"",
+      "status": "produção / edição",
+      "assignee": null,
+      "due_date": null,
+      "date_created": 1785344113137,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajrwjpw",
+      "description": "Estamos precisando produzir um conteúdo, em formato de Stories, para ficar fixado nos destaques do perfil da clínica.\n\nEsses destaques não possuem um roteiro fechado, mas sim uma lista de tópicos que devem ser abordados. Todos eles estão disponíveis neste documento: \n\nFiz a captação desse conteúdo e, conforme o Kico comentou, buscamos uma boa qualidade de imagem e áudio. Acredito que o material tenha ficado bom, mas, caso seja necessário, podemos realizar uma nova gravação.\n\nSegue abaixo a pasta com os vídeos brutos:",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajr94rb",
       "name": "Conteúdos Guilherme",
@@ -2294,7 +2311,7 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 26,
+    "Sem tipo": 27,
     "CS": 2,
     "Fotografia": 16,
     "Mídias sociais": 34,
@@ -2343,7 +2360,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 90
+      "count": 91
     }
   ]
 }
