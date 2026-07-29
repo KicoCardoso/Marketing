@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T04:39:23.789Z",
+  "updatedAt": "2026-07-29T04:41:10.580Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-28"
@@ -258,35 +258,35 @@
       "totalSpend": 6539.330000000001,
       "msgSpend": 6539.330000000001,
       "msgCount": 1772,
-      "impressions": 419637,
+      "impressions": 419638,
       "clicks": 5266
     },
     {
       "date": "2026-07-29",
       "label": "29/07",
-      "totalSpend": 215.79,
-      "msgSpend": 197.19,
+      "totalSpend": 216.27,
+      "msgSpend": 197.67000000000002,
       "msgCount": 68,
-      "impressions": 19773,
-      "clicks": 364
+      "impressions": 19804,
+      "clicks": 365
     }
   ],
   "current": {
-    "spend": 127818.58,
-    "impressions": 8015941,
+    "spend": 127818.6,
+    "impressions": 8015944,
     "clicks": 107502,
-    "ctr": 1.341103,
+    "ctr": 1.341102,
     "cpc": 1.188988,
-    "cpm": 15.945549,
+    "cpm": 15.945546,
     "reach": 3119682,
-    "frequency": 2.569474,
+    "frequency": 2.569475,
     "postEngagement": 0,
     "videoP25": 358826,
     "videoP50": 192648,
     "videoP95": 58537,
-    "videoPlays": 6573546,
+    "videoPlays": 6573549,
     "msgCount": 26044,
-    "cpl": 4.907793733681462
+    "cpl": 4.907794501612655
   },
   "previous": {
     "spend": 214126.72,
@@ -390,7 +390,7 @@
       "id": "120249783409290654",
       "name": "[Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
       "spend": 80102.32,
-      "impressions": 3982957,
+      "impressions": 3982958,
       "clicks": 25761,
       "ctr": 0.646781,
       "results": 17626,
@@ -484,25 +484,7 @@
       "costPerResult": null
     }
   },
-  "funnel": {
-    "spend": 128031.75,
-    "scheduled": 281,
-    "attended": 168,
-    "won": 110,
-    "wonValue": 775019.44,
-    "cplSchedule": 455.62900355871886,
-    "cplAttend": 762.09375,
-    "cac": 1163.925,
-    "roas": 6.0533378634596495
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-27T15:24:55Z",
-    "scheduled": 281,
-    "attended": 168,
-    "won": 110,
-    "wonValue": 775019.44,
-    "currency": "BRL"
-  },
-  "leadToday": 5
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
