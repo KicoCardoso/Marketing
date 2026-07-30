@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T04:25:58.299Z",
+  "updatedAt": "2026-07-30T04:34:12.194Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-29"
@@ -267,33 +267,33 @@
       "totalSpend": 5481.209999999999,
       "msgSpend": 5481.209999999999,
       "msgCount": 1436,
-      "impressions": 364954,
+      "impressions": 364955,
       "clicks": 4980
     },
     {
       "date": "2026-07-30",
       "label": "30/07",
-      "totalSpend": 84.46999999999998,
-      "msgSpend": 84.46999999999998,
-      "msgCount": 20,
-      "impressions": 7291,
-      "clicks": 178
+      "totalSpend": 91.6,
+      "msgSpend": 91.6,
+      "msgCount": 23,
+      "impressions": 7968,
+      "clicks": 188
     }
   ],
   "current": {
     "spend": 133300.61,
-    "impressions": 8380968,
+    "impressions": 8380969,
     "clicks": 112486,
     "ctr": 1.34216,
     "cpc": 1.185042,
-    "cpm": 15.905157,
+    "cpm": 15.905155,
     "reach": 3178320,
     "frequency": 2.636918,
     "postEngagement": 0,
     "videoP25": 371031,
     "videoP50": 199818,
     "videoP95": 60604,
-    "videoPlays": 6862877,
+    "videoPlays": 6862880,
     "msgCount": 27480,
     "cpl": 4.850822780203784
   },
@@ -429,9 +429,9 @@
       "id": "120250220180740654",
       "name": "[Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 6056.82,
-      "impressions": 1525874,
+      "impressions": 1525875,
       "clicks": 50971,
-      "ctr": 3.340446,
+      "ctr": 3.340444,
       "results": 292,
       "costPerResult": 20.742534246575342
     },
@@ -482,7 +482,7 @@
       "name": "[Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
       "spend": 6056.82,
       "results": 292,
-      "ctr": 3.340446,
+      "ctr": 3.340444,
       "costPerResult": 20.742534246575342
     },
     "attention": {
@@ -493,7 +493,25 @@
       "costPerResult": null
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 133392.21,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 399.37787425149696,
+    "cplAttend": 702.0642631578947,
+    "cac": 1050.3323622047244,
+    "roas": 6.663543245891196
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
