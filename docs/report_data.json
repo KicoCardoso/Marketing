@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T20:31:05.609Z",
+  "updatedAt": "2026-07-30T20:35:52.035Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-29"
@@ -264,20 +264,20 @@
     {
       "date": "2026-07-29",
       "label": "29/07",
-      "totalSpend": 5483.5,
-      "msgSpend": 5483.5,
+      "totalSpend": 5483.509999999999,
+      "msgSpend": 5483.509999999999,
       "msgCount": 1436,
-      "impressions": 365034,
+      "impressions": 365035,
       "clicks": 4980
     },
     {
       "date": "2026-07-30",
       "label": "30/07",
-      "totalSpend": 2827.2299999999996,
-      "msgSpend": 2827.2299999999996,
-      "msgCount": 706,
-      "impressions": 182122,
-      "clicks": 2427
+      "totalSpend": 2845.9,
+      "msgSpend": 2845.9,
+      "msgCount": 707,
+      "impressions": 183903,
+      "clicks": 2455
     }
   ],
   "current": {
@@ -293,7 +293,7 @@
     "videoP25": 371040,
     "videoP50": 199822,
     "videoP95": 60606,
-    "videoPlays": 6863050,
+    "videoPlays": 6863051,
     "msgCount": 27480,
     "cpl": 4.850921033478894
   },
@@ -438,12 +438,12 @@
     {
       "id": "120250220236320654",
       "name": "[Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 18605.7,
-      "impressions": 959016,
+      "spend": 18605.71,
+      "impressions": 959017,
       "clicks": 9551,
-      "ctr": 0.995917,
+      "ctr": 0.995916,
       "results": 5562,
-      "costPerResult": 3.3451456310679615
+      "costPerResult": 3.34514742898238
     },
     {
       "id": "120250220343060654",
@@ -459,17 +459,17 @@
   "funnelSpendByStage": {
     "perfil": 9490.810000000001,
     "topo": 94572.14000000001,
-    "meio": 19326.33,
+    "meio": 19326.34,
     "fundo": 9914.03,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 18605.7,
+      "spend": 18605.71,
       "results": 5562,
-      "ctr": 0.995917,
-      "costPerResult": 3.3451456310679615
+      "ctr": 0.995916,
+      "costPerResult": 3.34514742898238
     },
     "mostResults": {
       "name": "[Topo] [Engajamento] [whatsapp] [E1] —Urgência",
