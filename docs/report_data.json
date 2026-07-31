@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T06:10:54.414Z",
+  "updatedAt": "2026-07-31T06:16:03.541Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-30"
@@ -273,29 +273,29 @@
     {
       "date": "2026-07-30",
       "label": "30/07",
-      "totalSpend": 3237.41,
-      "msgSpend": 3237.41,
+      "totalSpend": 3237.4199999999996,
+      "msgSpend": 3237.4199999999996,
       "msgCount": 919,
-      "impressions": 213141,
+      "impressions": 213142,
       "clicks": 2844
     }
   ],
   "current": {
-    "spend": 136540.74,
-    "impressions": 8594197,
+    "spend": 136540.75,
+    "impressions": 8594198,
     "clicks": 115330,
     "ctr": 1.341952,
-    "cpc": 1.183913,
-    "cpm": 15.887551,
+    "cpc": 1.183914,
+    "cpm": 15.88755,
     "reach": 3212243,
-    "frequency": 2.67545,
+    "frequency": 2.675451,
     "postEngagement": 0,
     "videoP25": 378600,
     "videoP50": 204175,
     "videoP95": 61847,
-    "videoPlays": 7025233,
+    "videoPlays": 7025237,
     "msgCount": 28399,
-    "cpl": 4.807941828937638
+    "cpl": 4.807942181062714
   },
   "previous": {
     "spend": 230959.74,
@@ -428,12 +428,12 @@
     {
       "id": "120250220180740654",
       "name": "[stop][Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 6303.09,
-      "impressions": 1581021,
+      "spend": 6303.1,
+      "impressions": 1581022,
       "clicks": 52691,
-      "ctr": 3.33272,
+      "ctr": 3.332718,
       "results": 301,
-      "costPerResult": 20.940498338870434
+      "costPerResult": 20.940531561461796
     },
     {
       "id": "120250220236320654",
@@ -457,7 +457,7 @@
     }
   ],
   "funnelSpendByStage": {
-    "perfil": 9736.93,
+    "perfil": 9736.94,
     "topo": 96427.16,
     "meio": 20342.23,
     "fundo": 10034.42,
@@ -480,10 +480,10 @@
     },
     "hottest": {
       "name": "[stop][Lentes] [Topo] [Tráfego] [perfil] [Abril] [P1] — Novo",
-      "spend": 6303.09,
+      "spend": 6303.1,
       "results": 301,
-      "ctr": 3.33272,
-      "costPerResult": 20.940498338870434
+      "ctr": 3.332718,
+      "costPerResult": 20.940531561461796
     },
     "attention": {
       "name": "[Topo] [Curtidas] [C1]",
