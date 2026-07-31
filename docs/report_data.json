@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T09:16:06.352Z",
+  "updatedAt": "2026-07-31T09:21:15.932Z",
   "period": {
     "since": "2026-07-01",
     "until": "2026-07-30"
@@ -273,10 +273,10 @@
     {
       "date": "2026-07-30",
       "label": "30/07",
-      "totalSpend": 3237.43,
-      "msgSpend": 3237.43,
+      "totalSpend": 3237.4399999999996,
+      "msgSpend": 3237.4399999999996,
       "msgCount": 919,
-      "impressions": 213143,
+      "impressions": 213144,
       "clicks": 2844
     },
     {
@@ -290,8 +290,8 @@
     }
   ],
   "current": {
-    "spend": 136540.76,
-    "impressions": 8594199,
+    "spend": 136540.77,
+    "impressions": 8594200,
     "clicks": 115330,
     "ctr": 1.341952,
     "cpc": 1.183914,
@@ -304,7 +304,7 @@
     "videoP95": 61847,
     "videoPlays": 7025272,
     "msgCount": 28399,
-    "cpl": 4.807942533187789
+    "cpl": 4.807942885312863
   },
   "previous": {
     "spend": 230959.74,
@@ -447,12 +447,12 @@
     {
       "id": "120250220236320654",
       "name": "[stop][Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 19621.61,
-      "impressions": 1032227,
+      "spend": 19621.62,
+      "impressions": 1032228,
       "clicks": 10158,
-      "ctr": 0.984086,
+      "ctr": 0.984085,
       "results": 5972,
-      "costPerResult": 3.2856011386470194
+      "costPerResult": 3.2856028131279302
     },
     {
       "id": "120250220343060654",
@@ -468,17 +468,17 @@
   "funnelSpendByStage": {
     "perfil": 9736.94,
     "topo": 96427.16,
-    "meio": 20342.24,
+    "meio": 20342.25,
     "fundo": 10034.42,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[stop][Lentes] [Meio] [Engajamento] [whatsapp] [E2] Novo",
-      "spend": 19621.61,
+      "spend": 19621.62,
       "results": 5972,
-      "ctr": 0.984086,
-      "costPerResult": 3.2856011386470194
+      "ctr": 0.984085,
+      "costPerResult": 3.2856028131279302
     },
     "mostResults": {
       "name": "[stop][Lentes] [Topo] [Engajamento] [whatsapp] [E1] —Urgência",
