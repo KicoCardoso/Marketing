@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T20:21:15.308Z",
+  "updatedAt": "2026-08-01T20:26:15.220Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-01"
@@ -12,29 +12,29 @@
     {
       "date": "2026-08-01",
       "label": "01/08",
-      "totalSpend": 2238.79,
-      "msgSpend": 2238.79,
+      "totalSpend": 2257.8700000000003,
+      "msgSpend": 2257.8700000000003,
       "msgCount": 401,
-      "impressions": 132176,
-      "clicks": 1049
+      "impressions": 133155,
+      "clicks": 1056
     }
   ],
   "current": {
-    "spend": 2238.79,
-    "impressions": 132176,
-    "clicks": 1049,
-    "ctr": 0.793639,
-    "cpc": 2.134214,
-    "cpm": 16.937946,
+    "spend": 2257.87,
+    "impressions": 133155,
+    "clicks": 1056,
+    "ctr": 0.793061,
+    "cpc": 2.138134,
+    "cpm": 16.956705,
     "reach": 106043,
-    "frequency": 1.246438,
+    "frequency": 1.25567,
     "postEngagement": 0,
-    "videoP25": 7401,
-    "videoP50": 3831,
-    "videoP95": 1045,
-    "videoPlays": 131664,
+    "videoP25": 7461,
+    "videoP50": 3859,
+    "videoP95": 1048,
+    "videoPlays": 132632,
     "msgCount": 401,
-    "cpl": 5.583017456359102
+    "cpl": 5.630598503740648
   },
   "previous": {
     "spend": 3680.66,
@@ -57,69 +57,69 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1430.1,
-      "impressions": 79428,
-      "clicks": 464,
-      "ctr": 0.584177,
+      "spend": 1443.46,
+      "impressions": 80089,
+      "clicks": 467,
+      "ctr": 0.583101,
       "results": 264,
-      "costPerResult": 5.4170454545454545
+      "costPerResult": 5.467651515151515
     },
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 675.88,
-      "impressions": 47447,
-      "clicks": 518,
-      "ctr": 1.091744,
+      "spend": 681.07,
+      "impressions": 47749,
+      "clicks": 522,
+      "ctr": 1.093217,
       "results": 102,
-      "costPerResult": 6.626274509803921
+      "costPerResult": 6.677156862745099
     },
     {
       "id": "120250655087860654",
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 132.81,
-      "impressions": 5301,
+      "spend": 133.34,
+      "impressions": 5317,
       "clicks": 67,
-      "ctr": 1.263912,
+      "ctr": 1.260109,
       "results": 27,
-      "costPerResult": 4.918888888888889
+      "costPerResult": 4.938518518518519
     }
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 1430.1,
-    "meio": 675.88,
-    "fundo": 132.81,
+    "topo": 1443.46,
+    "meio": 681.07,
+    "fundo": 133.34,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 132.81,
+      "spend": 133.34,
       "results": 27,
-      "ctr": 1.263912,
-      "costPerResult": 4.918888888888889
+      "ctr": 1.260109,
+      "costPerResult": 4.938518518518519
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1430.1,
+      "spend": 1443.46,
       "results": 264,
-      "ctr": 0.584177,
-      "costPerResult": 5.4170454545454545
+      "ctr": 0.583101,
+      "costPerResult": 5.467651515151515
     },
     "hottest": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 132.81,
+      "spend": 133.34,
       "results": 27,
-      "ctr": 1.263912,
-      "costPerResult": 4.918888888888889
+      "ctr": 1.260109,
+      "costPerResult": 4.938518518518519
     },
     "attention": {
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 675.88,
+      "spend": 681.07,
       "results": 102,
-      "ctr": 1.091744,
-      "costPerResult": 6.626274509803921
+      "ctr": 1.093217,
+      "costPerResult": 6.677156862745099
     }
   },
   "funnel": null,
