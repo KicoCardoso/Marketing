@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T21:36:22.599Z",
+  "updatedAt": "2026-08-01T21:44:55.411Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-01"
@@ -12,29 +12,29 @@
     {
       "date": "2026-08-01",
       "label": "01/08",
-      "totalSpend": 2490.8900000000003,
-      "msgSpend": 2490.8900000000003,
-      "msgCount": 425,
-      "impressions": 145536,
-      "clicks": 1164
+      "totalSpend": 2516.62,
+      "msgSpend": 2516.62,
+      "msgCount": 434,
+      "impressions": 146842,
+      "clicks": 1174
     }
   ],
   "current": {
-    "spend": 2478.67,
-    "impressions": 144984,
-    "clicks": 1160,
-    "ctr": 0.800088,
-    "cpc": 2.136784,
-    "cpm": 17.096162,
-    "reach": 114166,
-    "frequency": 1.26994,
+    "spend": 2516.62,
+    "impressions": 146842,
+    "clicks": 1174,
+    "ctr": 0.799499,
+    "cpc": 2.143629,
+    "cpm": 17.138285,
+    "reach": 114670,
+    "frequency": 1.280562,
     "postEngagement": 0,
-    "videoP25": 8075,
-    "videoP50": 4172,
-    "videoP95": 1126,
-    "videoPlays": 144350,
-    "msgCount": 425,
-    "cpl": 5.832164705882353
+    "videoP25": 8149,
+    "videoP50": 4214,
+    "videoP95": 1137,
+    "videoPlays": 145732,
+    "msgCount": 434,
+    "cpl": 5.798663594470046
   },
   "previous": {
     "spend": 3680.66,
@@ -57,69 +57,69 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1603.44,
-      "impressions": 88142,
-      "clicks": 528,
-      "ctr": 0.599033,
-      "results": 285,
-      "costPerResult": 5.6261052631578945
+      "spend": 1620.55,
+      "impressions": 88990,
+      "clicks": 532,
+      "ctr": 0.59782,
+      "results": 291,
+      "costPerResult": 5.568900343642611
     },
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 746.03,
-      "impressions": 51884,
-      "clicks": 567,
-      "ctr": 1.092822,
-      "results": 105,
-      "costPerResult": 7.105047619047618
+      "spend": 752.07,
+      "impressions": 52316,
+      "clicks": 572,
+      "ctr": 1.093356,
+      "results": 108,
+      "costPerResult": 6.963611111111112
     },
     {
       "id": "120250655087860654",
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 141.42,
-      "impressions": 5510,
-      "clicks": 69,
-      "ctr": 1.252269,
+      "spend": 144,
+      "impressions": 5536,
+      "clicks": 70,
+      "ctr": 1.264451,
       "results": 27,
-      "costPerResult": 5.237777777777778
+      "costPerResult": 5.333333333333333
     }
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 1603.44,
-    "meio": 746.03,
-    "fundo": 141.42,
+    "topo": 1620.55,
+    "meio": 752.07,
+    "fundo": 144,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 141.42,
+      "spend": 144,
       "results": 27,
-      "ctr": 1.252269,
-      "costPerResult": 5.237777777777778
+      "ctr": 1.264451,
+      "costPerResult": 5.333333333333333
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1603.44,
-      "results": 285,
-      "ctr": 0.599033,
-      "costPerResult": 5.6261052631578945
+      "spend": 1620.55,
+      "results": 291,
+      "ctr": 0.59782,
+      "costPerResult": 5.568900343642611
     },
     "hottest": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 141.42,
+      "spend": 144,
       "results": 27,
-      "ctr": 1.252269,
-      "costPerResult": 5.237777777777778
+      "ctr": 1.264451,
+      "costPerResult": 5.333333333333333
     },
     "attention": {
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 746.03,
-      "results": 105,
-      "ctr": 1.092822,
-      "costPerResult": 7.105047619047618
+      "spend": 752.07,
+      "results": 108,
+      "ctr": 1.093356,
+      "costPerResult": 6.963611111111112
     }
   },
   "funnel": null,
