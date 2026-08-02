@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T14:02:25.267Z",
+  "updatedAt": "2026-08-02T14:17:32.031Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-01"
@@ -12,38 +12,38 @@
     {
       "date": "2026-08-01",
       "label": "01/08",
-      "totalSpend": 3598.9700000000003,
-      "msgSpend": 3598.9700000000003,
+      "totalSpend": 3598.9800000000005,
+      "msgSpend": 3598.9800000000005,
       "msgCount": 635,
-      "impressions": 215884,
+      "impressions": 215885,
       "clicks": 1779
     },
     {
       "date": "2026-08-02",
       "label": "02/08",
-      "totalSpend": 753.36,
-      "msgSpend": 753.36,
-      "msgCount": 118,
-      "impressions": 38366,
-      "clicks": 357
+      "totalSpend": 812.82,
+      "msgSpend": 812.82,
+      "msgCount": 123,
+      "impressions": 41425,
+      "clicks": 382
     }
   ],
   "current": {
-    "spend": 3598.97,
-    "impressions": 215884,
+    "spend": 3598.98,
+    "impressions": 215885,
     "clicks": 1779,
-    "ctr": 0.824054,
-    "cpc": 2.02303,
-    "cpm": 16.670851,
+    "ctr": 0.82405,
+    "cpc": 2.023035,
+    "cpm": 16.67082,
     "reach": 163214,
-    "frequency": 1.322705,
+    "frequency": 1.322711,
     "postEngagement": 0,
     "videoP25": 12110,
     "videoP50": 6275,
     "videoP95": 1690,
-    "videoPlays": 218063,
+    "videoPlays": 218064,
     "msgCount": 635,
-    "cpl": 5.667669291338583
+    "cpl": 5.667685039370078
   },
   "previous": {
     "spend": 3680.66,
@@ -66,12 +66,12 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 2367.56,
-      "impressions": 131727,
+      "spend": 2367.57,
+      "impressions": 131728,
       "clicks": 863,
-      "ctr": 0.655143,
+      "ctr": 0.655138,
       "results": 452,
-      "costPerResult": 5.237964601769911
+      "costPerResult": 5.237986725663717
     },
     {
       "id": "120250655087250654",
@@ -96,7 +96,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 2367.56,
+    "topo": 2367.57,
     "meio": 1066.53,
     "fundo": 164.88,
     "outros": 0
@@ -104,17 +104,17 @@
   "highlights": {
     "bestCost": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 2367.56,
+      "spend": 2367.57,
       "results": 452,
-      "ctr": 0.655143,
-      "costPerResult": 5.237964601769911
+      "ctr": 0.655138,
+      "costPerResult": 5.237986725663717
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 2367.56,
+      "spend": 2367.57,
       "results": 452,
-      "ctr": 0.655143,
-      "costPerResult": 5.237964601769911
+      "ctr": 0.655138,
+      "costPerResult": 5.237986725663717
     },
     "hottest": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
@@ -132,15 +132,15 @@
     }
   },
   "funnel": {
-    "spend": 4352.33,
+    "spend": 4411.8,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 13.030928143712575,
-    "cplAttend": 22.907,
-    "cac": 34.27031496062992,
-    "roas": 204.2273357029453
+    "cplSchedule": 13.208982035928145,
+    "cplAttend": 23.220000000000002,
+    "cac": 34.738582677165354,
+    "roas": 201.4744004714629
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
