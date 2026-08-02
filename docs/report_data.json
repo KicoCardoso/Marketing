@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T07:46:21.152Z",
+  "updatedAt": "2026-08-02T07:54:50.089Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-01"
@@ -15,33 +15,33 @@
       "totalSpend": 3598.42,
       "msgSpend": 3598.42,
       "msgCount": 635,
-      "impressions": 215838,
+      "impressions": 215839,
       "clicks": 1779
     },
     {
       "date": "2026-08-02",
       "label": "02/08",
-      "totalSpend": 78.96000000000001,
-      "msgSpend": 73.53,
+      "totalSpend": 79.82,
+      "msgSpend": 74.39,
       "msgCount": 18,
-      "impressions": 4187,
-      "clicks": 39
+      "impressions": 4261,
+      "clicks": 41
     }
   ],
   "current": {
     "spend": 3598.42,
-    "impressions": 215837,
+    "impressions": 215839,
     "clicks": 1779,
-    "ctr": 0.824233,
+    "ctr": 0.824225,
     "cpc": 2.022721,
-    "cpm": 16.671933,
+    "cpm": 16.671779,
     "reach": 163214,
-    "frequency": 1.322417,
+    "frequency": 1.322429,
     "postEngagement": 0,
     "videoP25": 12108,
     "videoP50": 6274,
     "videoP95": 1690,
-    "videoPlays": 218011,
+    "videoPlays": 218014,
     "msgCount": 635,
     "cpl": 5.6668031496063
   },
@@ -77,9 +77,9 @@
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
       "spend": 1066.42,
-      "impressions": 77947,
+      "impressions": 77948,
       "clicks": 839,
-      "ctr": 1.076372,
+      "ctr": 1.076359,
       "results": 148,
       "costPerResult": 7.205540540540541
     },
@@ -127,29 +127,11 @@
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
       "spend": 1066.42,
       "results": 148,
-      "ctr": 1.076372,
+      "ctr": 1.076359,
       "costPerResult": 7.205540540540541
     }
   },
-  "funnel": {
-    "spend": 3676.28,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 11.00682634730539,
-    "cplAttend": 19.34884210526316,
-    "cac": 28.94708661417323,
-    "roas": 241.78374878953724
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
