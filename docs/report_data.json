@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-02T00:33:20.071Z",
+  "updatedAt": "2026-08-02T00:36:05.607Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-01"
@@ -12,29 +12,29 @@
     {
       "date": "2026-08-01",
       "label": "01/08",
-      "totalSpend": 2987,
-      "msgSpend": 2987,
+      "totalSpend": 2996.9,
+      "msgSpend": 2996.9,
       "msgCount": 529,
-      "impressions": 173620,
-      "clicks": 1435
+      "impressions": 174210,
+      "clicks": 1449
     }
   ],
   "current": {
-    "spend": 2987,
-    "impressions": 173620,
-    "clicks": 1435,
-    "ctr": 0.826518,
-    "cpc": 2.081533,
-    "cpm": 17.204239,
+    "spend": 2996.9,
+    "impressions": 174210,
+    "clicks": 1449,
+    "ctr": 0.831755,
+    "cpc": 2.068254,
+    "cpm": 17.202801,
     "reach": 133641,
-    "frequency": 1.299152,
+    "frequency": 1.303567,
     "postEngagement": 0,
-    "videoP25": 9793,
-    "videoP50": 5046,
-    "videoP95": 1361,
-    "videoPlays": 173661,
+    "videoP25": 9818,
+    "videoP50": 5064,
+    "videoP95": 1366,
+    "videoPlays": 174065,
     "msgCount": 529,
-    "cpl": 5.646502835538753
+    "cpl": 5.665217391304348
   },
   "previous": {
     "spend": 3680.66,
@@ -57,69 +57,69 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1938.8,
-      "impressions": 105705,
-      "clicks": 680,
-      "ctr": 0.6433,
+      "spend": 1944.25,
+      "impressions": 106035,
+      "clicks": 688,
+      "ctr": 0.648842,
       "results": 380,
-      "costPerResult": 5.1021052631578945
+      "costPerResult": 5.116447368421053
     },
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 891.63,
-      "impressions": 62049,
-      "clicks": 679,
-      "ctr": 1.094296,
+      "spend": 895.82,
+      "impressions": 62301,
+      "clicks": 684,
+      "ctr": 1.097896,
       "results": 114,
-      "costPerResult": 7.821315789473684
+      "costPerResult": 7.858070175438597
     },
     {
       "id": "120250655087860654",
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 156.57,
-      "impressions": 5866,
-      "clicks": 76,
-      "ctr": 1.295602,
+      "spend": 156.83,
+      "impressions": 5874,
+      "clicks": 77,
+      "ctr": 1.310861,
       "results": 27,
-      "costPerResult": 5.7988888888888885
+      "costPerResult": 5.808518518518519
     }
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 1938.8,
-    "meio": 891.63,
-    "fundo": 156.57,
+    "topo": 1944.25,
+    "meio": 895.82,
+    "fundo": 156.83,
     "outros": 0
   },
   "highlights": {
     "bestCost": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1938.8,
+      "spend": 1944.25,
       "results": 380,
-      "ctr": 0.6433,
-      "costPerResult": 5.1021052631578945
+      "ctr": 0.648842,
+      "costPerResult": 5.116447368421053
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 1938.8,
+      "spend": 1944.25,
       "results": 380,
-      "ctr": 0.6433,
-      "costPerResult": 5.1021052631578945
+      "ctr": 0.648842,
+      "costPerResult": 5.116447368421053
     },
     "hottest": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 156.57,
+      "spend": 156.83,
       "results": 27,
-      "ctr": 1.295602,
-      "costPerResult": 5.7988888888888885
+      "ctr": 1.310861,
+      "costPerResult": 5.808518518518519
     },
     "attention": {
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 891.63,
+      "spend": 895.82,
       "results": 114,
-      "ctr": 1.094296,
-      "costPerResult": 7.821315789473684
+      "ctr": 1.097896,
+      "costPerResult": 7.858070175438597
     }
   },
   "funnel": null,
