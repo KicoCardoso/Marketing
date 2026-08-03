@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T16:37:48.705Z",
+  "updatedAt": "2026-08-03T16:42:31.657Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ajv863g",
+      "name": "EDIÇÃO DE FOTO",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": 1785826800000,
+      "date_created": 1785775225528,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "eduarda.couto@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ajv863g",
+      "description": "Paciente Heryka Fernanda Padilha - colocar meu nome (Eduarda Dias Couto) na foto.\nAs fotos finais estão com o Yuri",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86ajua3zx",
       "name": "VSL - Guilherme",
@@ -2406,31 +2423,6 @@
           "text": "Z:\\Time\\Marketing\\Clínica aspekto\\CONTEUDOS\\2026\\CAPA DE REELS\n"
         }
       ]
-    },
-    {
-      "id": "86ajhbku1",
-      "name": "Campanha de Aniversário Aspekto",
-      "status": "concluído",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1784876400000,
-      "date_created": 1784046900490,
-      "date_closed": 1785179960921,
-      "tipo": "Branding",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajhbku1",
-      "description": "",
-      "priority": {
-        "color": "#f8ae00",
-        "id": "2",
-        "orderindex": "2",
-        "priority": "high"
-      },
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2455,19 +2447,19 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 19,
+      "done": 18,
       "open": 20
     }
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 19,
     "Sem tipo": 35,
-    "Fotografia": 18,
     "CS": 2,
     "Mídias sociais": 34,
     "ADS": 6,
     "Identidade visual": 1,
-    "Branding": 2,
+    "Branding": 1,
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
@@ -2476,7 +2468,7 @@
     "Sem tipo": 4030,
     "Mídias sociais": 9872,
     "Identidade visual": 24557,
-    "Branding": 11543
+    "Branding": 4201
   },
   "onTimeRateByUser": [
     {
@@ -2503,7 +2495,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 18,
+      "total": 17,
       "onTime": 0,
       "rate": 0
     }
@@ -2511,7 +2503,11 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 100
+      "count": 99
+    },
+    {
+      "month": "2026-08",
+      "count": 1
     }
   ]
 }
