@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:12:59.265Z",
+  "updatedAt": "2026-08-03T13:23:21.254Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-02"
@@ -30,11 +30,11 @@
     {
       "date": "2026-08-03",
       "label": "03/08",
-      "totalSpend": 487.92,
-      "msgSpend": 487.92,
-      "msgCount": 79,
-      "impressions": 15992,
-      "clicks": 163
+      "totalSpend": 536.3,
+      "msgSpend": 536.3,
+      "msgCount": 110,
+      "impressions": 17572,
+      "clicks": 183
     }
   ],
   "current": {
@@ -141,15 +141,15 @@
     }
   },
   "funnel": {
-    "spend": 6479.11,
+    "spend": 6527.49,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 19.398532934131737,
-    "cplAttend": 34.10057894736842,
-    "cac": 51.01661417322834,
-    "roas": 137.1893300160053
+    "cplSchedule": 19.543383233532932,
+    "cplAttend": 34.35521052631579,
+    "cac": 51.39755905511811,
+    "roas": 136.17251960554518
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
