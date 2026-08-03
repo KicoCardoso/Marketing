@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T06:52:21.499Z",
+  "updatedAt": "2026-08-03T06:58:16.051Z",
   "members": [
     {
       "id": 118016784,
@@ -2107,8 +2107,13 @@
       "tipo": "Influenciadores",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkvh",
-      "description": "",
-      "priority": null,
+      "description": "Contrato a ser revisado pelo Henrique, para que haja regulação do que queremos para nossas parcerias com influenciaodres. \n\nSegue o contrato para ser editado:",
+      "priority": {
+        "color": "#f50000",
+        "id": "1",
+        "orderindex": "1",
+        "priority": "urgent"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2127,11 +2132,27 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkve",
-      "description": "",
-      "priority": null,
+      "description": "Foi solicitado uma pesquisa de possíveis leads na região de Belo Horizonte para o laboratório. O objetivo é selecionar e enviar demanda para o comercial entrar em contato.",
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1784048932018,
+          "text": "Demanda está no aguardo esperando o Nathan entrar em contato\n"
+        },
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1784048912834,
+          "text": "Pesquisa realizada: docs.google.com/spreadsheets/d/1UYVUqBVOU2e0h0HHjrST1vIDDhAY_BPZAkqTcyy8NcE/edit?usp=drive_link \n \n"
+        }
+      ]
     },
     {
       "id": "86ajhbkvc",
@@ -2147,8 +2168,13 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkvc",
-      "description": "",
-      "priority": null,
+      "description": "Segue aprovação de roteiro:",
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2168,7 +2194,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv4",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2188,7 +2219,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv3",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2208,7 +2244,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkux",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2228,7 +2269,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkuj",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2247,11 +2293,119 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbku9",
-      "description": "",
-      "priority": null,
+      "description": "Será necessário fazer as capas de reels já postados no perfil da Aspekto. \n\nAbaixo, nas subtarefas, estão organizadas 12 capas, com o link para o vídeo, no qual será possível entender o contexto, além da copy que irá na arte.",
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
-      "subtasks": [],
-      "comments": []
+      "subtasks": [
+        {
+          "id": "86ajj0z71",
+          "name": "CAPA 01",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z77",
+          "name": "CAPA 02",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z78",
+          "name": "CAPA 03",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z7c",
+          "name": "CAPA 04",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z7g",
+          "name": "CAPA 05",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z7n",
+          "name": "CAPA 06",
+          "status": "concluído",
+          "assignee": {
+            "name": "Ícaro Eduardo Alves Rodrigues"
+          }
+        },
+        {
+          "id": "86ajj0z7v",
+          "name": "CAPA 07",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z7w",
+          "name": "CAPA 08",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z83",
+          "name": "CAPA 09",
+          "status": "concluído",
+          "assignee": {
+            "name": "Ícaro Eduardo Alves Rodrigues"
+          }
+        },
+        {
+          "id": "86ajj0z88",
+          "name": "CAPA 10",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z8a",
+          "name": "CAPA 11",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajj0z8h",
+          "name": "CAPA 12",
+          "status": "concluído",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        }
+      ],
+      "comments": [
+        {
+          "author": "Ícaro Eduardo Alves Rodrigues",
+          "date": 1784730432994,
+          "text": "Z:\\Time\\Marketing\\Clínica aspekto\\CONTEUDOS\\2026\\CAPA DE REELS\n"
+        }
+      ]
     },
     {
       "id": "86ajhbku1",
@@ -2268,7 +2422,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbku1",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
