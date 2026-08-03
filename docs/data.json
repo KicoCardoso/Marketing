@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T17:36:26.497Z",
+  "updatedAt": "2026-08-03T17:47:48.297Z",
   "members": [
     {
       "id": 118016784,
@@ -1924,37 +1924,17 @@
     {
       "id": "86ajhbkw0",
       "name": "Criar destaque - “Sou Novo Aqui”",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785308400000,
       "date_created": 1784046903562,
-      "date_closed": null,
+      "date_closed": 1785778582534,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkw0",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajhbkvv",
-      "name": "Depoimento - Italo Henrique de Lima Silva - 08:30h",
-      "status": "depoimentos",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1785394800000,
-      "date_created": 1784046903346,
-      "date_closed": null,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajhbkvv",
       "description": "",
       "priority": null,
       "start_date": null,
@@ -2049,7 +2029,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1785308400000,
+      "due_date": 1786086000000,
       "date_created": 1784046901914,
       "date_closed": null,
       "tipo": "Mídias sociais",
@@ -2064,14 +2044,14 @@
     {
       "id": "86ajhbkv3",
       "name": "Criar links dos conteúdos já postados pelos influenciadores",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785308400000,
       "date_created": 1784046901664,
-      "date_closed": null,
+      "date_closed": 1785778589699,
       "tipo": "Influenciadores",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv3",
@@ -2140,6 +2120,26 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajhbku1",
+      "name": "Campanha de Aniversário Aspekto",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784876400000,
+      "date_created": 1784046900490,
+      "date_closed": 1785179960921,
+      "tipo": "Branding",
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajhbku1",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2164,8 +2164,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 18,
-      "open": 20
+      "done": 21,
+      "open": 17
     }
   ],
   "stageTimes": {},
@@ -2173,19 +2173,20 @@
     "Fotografia": 19,
     "Sem tipo": 35,
     "CS": 2,
-    "Mídias sociais": 34,
+    "Mídias sociais": 33,
     "ADS": 6,
     "Identidade visual": 1,
-    "Branding": 1,
+    "Branding": 2,
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
     "Fotografia": 2968,
     "CS": 9428,
     "Sem tipo": 4030,
-    "Mídias sociais": 9872,
+    "Mídias sociais": 10989,
     "Identidade visual": 24557,
-    "Branding": 4201
+    "Branding": 11543,
+    "Influenciadores": 28861
   },
   "onTimeRateByUser": [
     {
@@ -2212,7 +2213,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 17,
+      "total": 20,
       "onTime": 0,
       "rate": 0
     }
