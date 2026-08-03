@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:23:14.054Z",
+  "updatedAt": "2026-08-03T13:32:26.870Z",
   "members": [
     {
       "id": 118016784,
@@ -82,7 +82,7 @@
     {
       "id": "86ajt2agb",
       "name": "Landing Page de geração de Leads",
-      "status": "fila de demandas",
+      "status": "aprovação 1",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
@@ -531,14 +531,14 @@
     {
       "id": "86ajqhh3h",
       "name": "Fotos para o instagram",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785394800000,
       "date_created": 1785165346912,
-      "date_closed": null,
+      "date_closed": 1785763235860,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh3h",
@@ -591,14 +591,14 @@
     {
       "id": "86ajqhh09",
       "name": "Fotos para postar no instagram",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785394800000,
       "date_created": 1785165339679,
-      "date_closed": null,
+      "date_closed": 1785763238551,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh09",
@@ -2443,8 +2443,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 16,
-      "open": 10
+      "done": 18,
+      "open": 8
     },
     {
       "id": 118016782,
@@ -2471,7 +2471,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 1492,
+    "Fotografia": 2621,
     "Sem tipo": 4030,
     "Mídias sociais": 9872,
     "CS": 10131,
@@ -2489,9 +2489,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 15,
+      "total": 17,
       "onTime": 9,
-      "rate": 60
+      "rate": 53
     },
     {
       "id": 118016782,
