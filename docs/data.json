@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:41:14.818Z",
+  "updatedAt": "2026-08-03T13:52:55.202Z",
   "members": [
     {
       "id": 118016784,
@@ -42,14 +42,14 @@
     {
       "id": "86ajtq2mh",
       "name": "Stephany Rocha",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785740400000,
       "date_created": 1785443559381,
-      "date_closed": null,
+      "date_closed": 1785764721370,
       "tipo": "Fotografia",
       "email": "stephany.rocha@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajtq2mh",
@@ -2443,8 +2443,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 18,
-      "open": 8
+      "done": 19,
+      "open": 7
     },
     {
       "id": 118016782,
@@ -2471,7 +2471,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 2621,
+    "Fotografia": 2792,
     "Sem tipo": 4030,
     "Mídias sociais": 9872,
     "CS": 10131,
@@ -2489,9 +2489,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 17,
+      "total": 18,
       "onTime": 9,
-      "rate": 53
+      "rate": 50
     },
     {
       "id": 118016782,
