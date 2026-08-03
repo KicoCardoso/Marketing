@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T13:52:55.202Z",
+  "updatedAt": "2026-08-03T14:05:16.735Z",
   "members": [
     {
       "id": 118016784,
@@ -62,14 +62,14 @@
     {
       "id": "86ajtcpjd",
       "name": "Gabriela Ariane de Oliveira",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785654000000,
       "date_created": 1785418516367,
-      "date_closed": null,
+      "date_closed": 1785765411368,
       "tipo": "Fotografia",
       "email": "breno.goncalves@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajtcpjd",
@@ -2438,12 +2438,12 @@
       "id": 118016784,
       "name": "Yuri Lima",
       "done": 2,
-      "open": 15
+      "open": 14
     },
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 19,
+      "done": 20,
       "open": 7
     },
     {
@@ -2471,7 +2471,7 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 2792,
+    "Fotografia": 2968,
     "Sem tipo": 4030,
     "Mídias sociais": 9872,
     "CS": 10131,
@@ -2489,9 +2489,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 18,
+      "total": 19,
       "onTime": 9,
-      "rate": 50
+      "rate": 47
     },
     {
       "id": 118016782,
