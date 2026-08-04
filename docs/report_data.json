@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T09:57:47.613Z",
+  "updatedAt": "2026-08-04T10:03:11.892Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-03"
@@ -33,33 +33,33 @@
       "totalSpend": 4308.15,
       "msgSpend": 4308.15,
       "msgCount": 1236,
-      "impressions": 235122,
+      "impressions": 235123,
       "clicks": 1776
     },
     {
       "date": "2026-08-04",
       "label": "04/08",
-      "totalSpend": 290.09000000000003,
-      "msgSpend": 290.09000000000003,
-      "msgCount": 49,
-      "impressions": 21369,
-      "clicks": 142
+      "totalSpend": 299.40999999999997,
+      "msgSpend": 299.40999999999997,
+      "msgCount": 52,
+      "impressions": 22104,
+      "clicks": 150
     }
   ],
   "current": {
     "spend": 10299.43,
-    "impressions": 589573,
+    "impressions": 589574,
     "clicks": 4721,
-    "ctr": 0.800749,
+    "ctr": 0.800748,
     "cpc": 2.18162,
-    "cpm": 17.469304,
+    "cpm": 17.469274,
     "reach": 362598,
-    "frequency": 1.625969,
+    "frequency": 1.625971,
     "postEngagement": 0,
     "videoP25": 31467,
     "videoP50": 16001,
     "videoP95": 4539,
-    "videoPlays": 591967,
+    "videoPlays": 591969,
     "msgCount": 2237,
     "cpl": 4.6041260616897635
   },
@@ -85,9 +85,9 @@
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
       "spend": 6429.48,
-      "impressions": 354793,
+      "impressions": 354794,
       "clicks": 2242,
-      "ctr": 0.631918,
+      "ctr": 0.631916,
       "results": 1444,
       "costPerResult": 4.452548476454293
     },
@@ -131,7 +131,7 @@
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
       "spend": 6429.48,
       "results": 1444,
-      "ctr": 0.631918,
+      "ctr": 0.631916,
       "costPerResult": 4.452548476454293
     },
     "hottest": {
@@ -150,15 +150,15 @@
     }
   },
   "funnel": {
-    "spend": 10589.38,
+    "spend": 10598.84,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 31.704730538922153,
-    "cplAttend": 55.733578947368414,
-    "cac": 83.38094488188976,
-    "roas": 83.93926367738244
+    "cplSchedule": 31.73305389221557,
+    "cplAttend": 55.783368421052636,
+    "cac": 83.45543307086615,
+    "roas": 83.86434364515362
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
