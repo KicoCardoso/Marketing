@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:25:51.517Z",
+  "updatedAt": "2026-08-04T21:31:03.752Z",
   "members": [
     {
       "id": 118016784,
@@ -341,7 +341,7 @@
     {
       "id": "86ajr94rb",
       "name": "Conteúdos Guilherme",
-      "status": "fila de demandas",
+      "status": "impedimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -429,7 +429,13 @@
           }
         }
       ],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785878978381,
+          "text": "Estamos pensando em outra linha editorial de conteúdos. Irei manter a tarefa ativa em \"Impedimentos\" caso decidimos seguir com os conteúdos de empreendedorismo\n"
+        }
+      ]
     },
     {
       "id": "86ajr5ghu",
@@ -1064,7 +1070,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1785135600000,
+      "due_date": 1786086000000,
       "date_created": 1784553217792,
       "date_closed": null,
       "tipo": null,
@@ -1684,14 +1690,14 @@
     {
       "id": "86ajhz6jb",
       "name": "Depoimento - Yara Melo - 18h",
-      "status": "banco de publicações",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785654000000,
       "date_created": 1784127560711,
-      "date_closed": null,
+      "date_closed": 1785879019717,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhz6jb",
@@ -2183,7 +2189,7 @@
     "Fotografia": 2891,
     "Sem tipo": 5349,
     "CS": 9428,
-    "Mídias sociais": 10989,
+    "Mídias sociais": 12000,
     "Identidade visual": 24557,
     "Branding": 11543,
     "Influenciadores": 28861
@@ -2213,7 +2219,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 20,
+      "total": 21,
       "onTime": 0,
       "rate": 0
     }
