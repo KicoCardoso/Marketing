@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T18:55:44.805Z",
+  "updatedAt": "2026-08-04T19:05:44.328Z",
   "members": [
     {
       "id": 118016784,
@@ -22,14 +22,14 @@
     {
       "id": "86ajv863g",
       "name": "EDIÇÃO DE FOTO",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785826800000,
       "date_created": 1785775225528,
-      "date_closed": null,
+      "date_closed": 1785870034432,
       "tipo": "Fotografia",
       "email": "eduarda.couto@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajv863g",
@@ -102,14 +102,14 @@
     {
       "id": "86ajt2agb",
       "name": "Landing Page de geração de Leads",
-      "status": "aprovação 1",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785481200000,
       "date_created": 1785353906335,
-      "date_closed": null,
+      "date_closed": 1785870046642,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajt2agb",
@@ -2432,8 +2432,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 22,
-      "open": 6
+      "done": 24,
+      "open": 4
     },
     {
       "id": 118016782,
@@ -2460,8 +2460,8 @@
     "Influenciadores": 2
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 2968,
-    "Sem tipo": 4807,
+    "Fotografia": 2891,
+    "Sem tipo": 5349,
     "CS": 9428,
     "Mídias sociais": 10989,
     "Identidade visual": 24557,
@@ -2479,9 +2479,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 21,
+      "total": 23,
       "onTime": 9,
-      "rate": 43
+      "rate": 39
     },
     {
       "id": 118016782,
