@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T17:59:04.783Z",
+  "updatedAt": "2026-08-04T18:05:28.085Z",
   "members": [
     {
       "id": 118016784,
@@ -187,14 +187,14 @@
     {
       "id": "86ajrwvpk",
       "name": "[Cronograma Agosto] Carrossel 01",
-      "status": "produção / edição",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1785826800000,
       "date_created": 1785344929566,
-      "date_closed": null,
+      "date_closed": 1785866474535,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajrwvpk",
@@ -2432,8 +2432,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 21,
-      "open": 7
+      "done": 22,
+      "open": 6
     },
     {
       "id": 118016782,
@@ -2461,8 +2461,8 @@
   },
   "avgCompletionTimeByType": {
     "Fotografia": 2968,
+    "Sem tipo": 4807,
     "CS": 9428,
-    "Sem tipo": 4030,
     "Mídias sociais": 10989,
     "Identidade visual": 24557,
     "Branding": 11543,
@@ -2479,9 +2479,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 20,
+      "total": 21,
       "onTime": 9,
-      "rate": 45
+      "rate": 43
     },
     {
       "id": 118016782,
