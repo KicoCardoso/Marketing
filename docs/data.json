@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T18:46:19.395Z",
+  "updatedAt": "2026-08-05T18:51:22.105Z",
   "members": [
     {
       "id": 118016784,
@@ -1108,7 +1108,13 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Kico Cardoso",
+          "date": 1784839528462,
+          "text": "👤 Yuri Lima (via dashboard público):\nNA PASTA  CRITAVO, 2026, UNIDADE SÃO PAULO, JULHO"
+        }
+      ]
     },
     {
       "id": "86ajmypfc",
@@ -2064,27 +2070,11 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkve",
-      "description": "Foi solicitado uma pesquisa de possíveis leads na região de Belo Horizonte para o laboratório. O objetivo é selecionar e enviar demanda para o comercial entrar em contato.",
-      "priority": {
-        "color": "#6fddff",
-        "id": "3",
-        "orderindex": "3",
-        "priority": "normal"
-      },
+      "description": "",
+      "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": [
-        {
-          "author": "Guilherme da Silva Barreto",
-          "date": 1784048932018,
-          "text": "Demanda está no aguardo esperando o Nathan entrar em contato\n"
-        },
-        {
-          "author": "Guilherme da Silva Barreto",
-          "date": 1784048912834,
-          "text": "Pesquisa realizada: docs.google.com/spreadsheets/d/1UYVUqBVOU2e0h0HHjrST1vIDDhAY_BPZAkqTcyy8NcE/edit?usp=drive_link \n \n"
-        }
-      ]
+      "comments": []
     },
     {
       "id": "86ajhbkvc",
@@ -2100,13 +2090,8 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkvc",
-      "description": "Segue aprovação de roteiro:",
-      "priority": {
-        "color": "#f8ae00",
-        "id": "2",
-        "orderindex": "2",
-        "priority": "high"
-      },
+      "description": "",
+      "priority": null,
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2126,12 +2111,7 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv4",
       "description": "",
-      "priority": {
-        "color": "#f8ae00",
-        "id": "2",
-        "orderindex": "2",
-        "priority": "high"
-      },
+      "priority": null,
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2151,12 +2131,7 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv3",
       "description": "",
-      "priority": {
-        "color": "#6fddff",
-        "id": "3",
-        "orderindex": "3",
-        "priority": "normal"
-      },
+      "priority": null,
       "start_date": null,
       "subtasks": [],
       "comments": []
