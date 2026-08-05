@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T10:50:56.873Z",
+  "updatedAt": "2026-08-05T10:55:53.813Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-04"
@@ -39,38 +39,38 @@
     {
       "date": "2026-08-04",
       "label": "04/08",
-      "totalSpend": 4961.33,
-      "msgSpend": 4961.33,
+      "totalSpend": 4961.36,
+      "msgSpend": 4961.36,
       "msgCount": 1188,
-      "impressions": 319417,
+      "impressions": 319418,
       "clicks": 2010
     },
     {
       "date": "2026-08-05",
       "label": "05/08",
-      "totalSpend": 863.4,
-      "msgSpend": 863.4,
-      "msgCount": 164,
-      "impressions": 47238,
-      "clicks": 375
+      "totalSpend": 892.55,
+      "msgSpend": 892.55,
+      "msgCount": 165,
+      "impressions": 49073,
+      "clicks": 398
     }
   ],
   "current": {
-    "spend": 15261.28,
-    "impressions": 909020,
+    "spend": 15261.31,
+    "impressions": 909021,
     "clicks": 6731,
-    "ctr": 0.740468,
-    "cpc": 2.267312,
-    "cpm": 16.788718,
+    "ctr": 0.740467,
+    "cpc": 2.267317,
+    "cpm": 16.788732,
     "reach": 528365,
-    "frequency": 1.720439,
+    "frequency": 1.720441,
     "postEngagement": 0,
     "videoP25": 47490,
     "videoP50": 23694,
     "videoP95": 6572,
     "videoPlays": 906544,
     "msgCount": 3425,
-    "cpl": 4.455848175182482
+    "cpl": 4.455856934306569
   },
   "previous": {
     "spend": 10494.2,
@@ -93,12 +93,12 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 9567.72,
-      "impressions": 558341,
+      "spend": 9567.75,
+      "impressions": 558342,
       "clicks": 3177,
-      "ctr": 0.569007,
+      "ctr": 0.569006,
       "results": 2217,
-      "costPerResult": 4.3156156968876855
+      "costPerResult": 4.315629228687415
     },
     {
       "id": "120250655087250654",
@@ -123,7 +123,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 9567.72,
+    "topo": 9567.75,
     "meio": 4809.87,
     "fundo": 883.69,
     "outros": 0
@@ -138,10 +138,10 @@
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1] — Urgência",
-      "spend": 9567.72,
+      "spend": 9567.75,
       "results": 2217,
-      "ctr": 0.569007,
-      "costPerResult": 4.3156156968876855
+      "ctr": 0.569006,
+      "costPerResult": 4.315629228687415
     },
     "hottest": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
