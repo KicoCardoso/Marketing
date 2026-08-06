@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T08:11:58.374Z",
+  "updatedAt": "2026-08-06T08:19:35.533Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -51,17 +51,17 @@
       "totalSpend": 4314.87,
       "msgSpend": 4314.87,
       "msgCount": 1257,
-      "impressions": 284191,
+      "impressions": 284192,
       "clicks": 2233
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 151.21,
-      "msgSpend": 108.14,
+      "totalSpend": 155.6,
+      "msgSpend": 110.67,
       "msgCount": 36,
-      "impressions": 13469,
-      "clicks": 164
+      "impressions": 13943,
+      "clicks": 165
     }
   ],
   "current": {
@@ -77,7 +77,7 @@
     "videoP25": 60585,
     "videoP50": 30213,
     "videoP95": 8602,
-    "videoPlays": 1186876,
+    "videoPlays": 1186877,
     "msgCount": 4682,
     "cpl": 4.181187526697992
   },
@@ -133,9 +133,9 @@
       "id": "120250782297540654",
       "name": "Engajamento",
       "spend": 259.42,
-      "impressions": 49173,
+      "impressions": 49174,
       "clicks": 670,
-      "ctr": 1.362536,
+      "ctr": 1.362509,
       "results": 3,
       "costPerResult": 86.47333333333334
     }
@@ -166,27 +166,27 @@
       "name": "Engajamento",
       "spend": 259.42,
       "results": 3,
-      "ctr": 1.362536,
+      "ctr": 1.362509,
       "costPerResult": 86.47333333333334
     },
     "attention": {
       "name": "Engajamento",
       "spend": 259.42,
       "results": 3,
-      "ctr": 1.362536,
+      "ctr": 1.362509,
       "costPerResult": 86.47333333333334
     }
   },
   "funnel": {
-    "spend": 19728.19,
+    "spend": 19731.92,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 59.0664371257485,
-    "cplAttend": 103.83257894736842,
-    "cac": 155.34007874015748,
-    "roas": 45.05556566517253
+    "cplSchedule": 59.07760479041916,
+    "cplAttend": 103.85221052631579,
+    "cac": 155.36944881889764,
+    "roas": 45.047048639970164
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
