@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T10:39:13.564Z",
+  "updatedAt": "2026-08-06T10:44:00.649Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -48,20 +48,20 @@
     {
       "date": "2026-08-05",
       "label": "05/08",
-      "totalSpend": 4315.65,
-      "msgSpend": 4315.65,
+      "totalSpend": 4315.66,
+      "msgSpend": 4315.66,
       "msgCount": 1257,
-      "impressions": 284239,
+      "impressions": 284240,
       "clicks": 2233
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 377.87,
-      "msgSpend": 285.28,
-      "msgCount": 65,
-      "impressions": 31280,
-      "clicks": 358
+      "totalSpend": 394.04999999999995,
+      "msgSpend": 298.95,
+      "msgCount": 68,
+      "impressions": 32373,
+      "clicks": 371
     }
   ],
   "current": {
@@ -132,12 +132,12 @@
     {
       "id": "120250782297540654",
       "name": "Engajamento",
-      "spend": 259.65,
-      "impressions": 49204,
+      "spend": 259.66,
+      "impressions": 49205,
       "clicks": 670,
-      "ctr": 1.361678,
+      "ctr": 1.36165,
       "results": 3,
-      "costPerResult": 86.55
+      "costPerResult": 86.55333333333334
     }
   ],
   "funnelSpendByStage": {
@@ -145,7 +145,7 @@
     "topo": 12212.38,
     "meio": 6002.24,
     "fundo": 1102.83,
-    "outros": 259.65
+    "outros": 259.66
   },
   "highlights": {
     "bestCost": {
@@ -164,17 +164,17 @@
     },
     "hottest": {
       "name": "Engajamento",
-      "spend": 259.65,
+      "spend": 259.66,
       "results": 3,
-      "ctr": 1.361678,
-      "costPerResult": 86.55
+      "ctr": 1.36165,
+      "costPerResult": 86.55333333333334
     },
     "attention": {
       "name": "Engajamento",
-      "spend": 259.65,
+      "spend": 259.66,
       "results": 3,
-      "ctr": 1.361678,
-      "costPerResult": 86.55
+      "ctr": 1.36165,
+      "costPerResult": 86.55333333333334
     }
   },
   "funnel": {
