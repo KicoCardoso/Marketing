@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T08:07:10.074Z",
+  "updatedAt": "2026-08-06T08:11:58.374Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -51,28 +51,28 @@
       "totalSpend": 4314.87,
       "msgSpend": 4314.87,
       "msgCount": 1257,
-      "impressions": 284190,
+      "impressions": 284191,
       "clicks": 2233
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 149.21,
-      "msgSpend": 106.78,
+      "totalSpend": 151.21,
+      "msgSpend": 108.14,
       "msgCount": 36,
-      "impressions": 13249,
-      "clicks": 161
+      "impressions": 13469,
+      "clicks": 164
     }
   ],
   "current": {
     "spend": 19576.32,
-    "impressions": 1193228,
+    "impressions": 1193230,
     "clicks": 8964,
-    "ctr": 0.751239,
+    "ctr": 0.751238,
     "cpc": 2.183882,
-    "cpm": 16.406186,
+    "cpm": 16.406158,
     "reach": 685325,
-    "frequency": 1.741113,
+    "frequency": 1.741116,
     "postEngagement": 0,
     "videoP25": 60585,
     "videoP50": 30213,
@@ -133,9 +133,9 @@
       "id": "120250782297540654",
       "name": "Engajamento",
       "spend": 259.42,
-      "impressions": 49172,
+      "impressions": 49173,
       "clicks": 670,
-      "ctr": 1.362564,
+      "ctr": 1.362536,
       "results": 3,
       "costPerResult": 86.47333333333334
     }
@@ -166,27 +166,27 @@
       "name": "Engajamento",
       "spend": 259.42,
       "results": 3,
-      "ctr": 1.362564,
+      "ctr": 1.362536,
       "costPerResult": 86.47333333333334
     },
     "attention": {
       "name": "Engajamento",
       "spend": 259.42,
       "results": 3,
-      "ctr": 1.362564,
+      "ctr": 1.362536,
       "costPerResult": 86.47333333333334
     }
   },
   "funnel": {
-    "spend": 19725.53,
+    "spend": 19728.19,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 59.058473053892214,
-    "cplAttend": 103.81857894736841,
-    "cac": 155.31913385826772,
-    "roas": 45.06164143625038
+    "cplSchedule": 59.0664371257485,
+    "cplAttend": 103.83257894736842,
+    "cac": 155.34007874015748,
+    "roas": 45.05556566517253
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
