@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T06:46:16.460Z",
+  "updatedAt": "2026-08-06T06:51:23.117Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -48,38 +48,38 @@
     {
       "date": "2026-08-05",
       "label": "05/08",
-      "totalSpend": 4314.83,
-      "msgSpend": 4314.83,
+      "totalSpend": 4314.84,
+      "msgSpend": 4314.84,
       "msgCount": 1257,
-      "impressions": 284187,
+      "impressions": 284188,
       "clicks": 2233
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 117.17000000000002,
-      "msgSpend": 84.63000000000001,
+      "totalSpend": 119.51000000000002,
+      "msgSpend": 86.38000000000001,
       "msgCount": 36,
-      "impressions": 10488,
-      "clicks": 137
+      "impressions": 10670,
+      "clicks": 139
     }
   ],
   "current": {
-    "spend": 19576.28,
-    "impressions": 1193225,
+    "spend": 19576.29,
+    "impressions": 1193226,
     "clicks": 8964,
     "ctr": 0.751241,
-    "cpc": 2.183878,
-    "cpm": 16.406193,
+    "cpc": 2.183879,
+    "cpm": 16.406188,
     "reach": 685325,
-    "frequency": 1.741108,
+    "frequency": 1.74111,
     "postEngagement": 0,
     "videoP25": 60585,
     "videoP50": 30213,
     "videoP95": 8602,
     "videoPlays": 1186873,
     "msgCount": 4682,
-    "cpl": 4.181178983340453
+    "cpl": 4.181181119179838
   },
   "previous": {
     "spend": 12606.26,
@@ -132,12 +132,12 @@
     {
       "id": "120250782297540654",
       "name": "Engajamento",
-      "spend": 259.38,
-      "impressions": 49169,
+      "spend": 259.39,
+      "impressions": 49170,
       "clicks": 670,
-      "ctr": 1.362647,
+      "ctr": 1.362619,
       "results": 3,
-      "costPerResult": 86.46
+      "costPerResult": 86.46333333333332
     }
   ],
   "funnelSpendByStage": {
@@ -145,7 +145,7 @@
     "topo": 12212.25,
     "meio": 6001.82,
     "fundo": 1102.83,
-    "outros": 259.38
+    "outros": 259.39
   },
   "highlights": {
     "bestCost": {
@@ -164,17 +164,17 @@
     },
     "hottest": {
       "name": "Engajamento",
-      "spend": 259.38,
+      "spend": 259.39,
       "results": 3,
-      "ctr": 1.362647,
-      "costPerResult": 86.46
+      "ctr": 1.362619,
+      "costPerResult": 86.46333333333332
     },
     "attention": {
       "name": "Engajamento",
-      "spend": 259.38,
+      "spend": 259.39,
       "results": 3,
-      "ctr": 1.362647,
-      "costPerResult": 86.46
+      "ctr": 1.362619,
+      "costPerResult": 86.46333333333332
     }
   },
   "funnel": null,
