@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T09:04:57.921Z",
+  "updatedAt": "2026-08-06T09:08:11.902Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -48,20 +48,20 @@
     {
       "date": "2026-08-05",
       "label": "05/08",
-      "totalSpend": 4314.94,
-      "msgSpend": 4314.94,
+      "totalSpend": 4314.95,
+      "msgSpend": 4314.95,
       "msgCount": 1257,
-      "impressions": 284198,
+      "impressions": 284200,
       "clicks": 2233
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 195.07000000000002,
-      "msgSpend": 139.88000000000002,
+      "totalSpend": 199.29,
+      "msgSpend": 142.94,
       "msgCount": 45,
-      "impressions": 17363,
-      "clicks": 202
+      "impressions": 17754,
+      "clicks": 203
     }
   ],
   "current": {
@@ -103,7 +103,7 @@
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
       "spend": 12212.29,
-      "impressions": 716942,
+      "impressions": 716943,
       "clicks": 4013,
       "ctr": 0.559738,
       "results": 3049,
@@ -132,12 +132,12 @@
     {
       "id": "120250782297540654",
       "name": "Engajamento",
-      "spend": 259.45,
-      "impressions": 49177,
+      "spend": 259.46,
+      "impressions": 49178,
       "clicks": 670,
-      "ctr": 1.362426,
+      "ctr": 1.362398,
       "results": 3,
-      "costPerResult": 86.48333333333333
+      "costPerResult": 86.48666666666666
     }
   ],
   "funnelSpendByStage": {
@@ -145,7 +145,7 @@
     "topo": 12212.29,
     "meio": 6001.82,
     "fundo": 1102.83,
-    "outros": 259.45
+    "outros": 259.46
   },
   "highlights": {
     "bestCost": {
@@ -164,17 +164,17 @@
     },
     "hottest": {
       "name": "Engajamento",
-      "spend": 259.45,
+      "spend": 259.46,
       "results": 3,
-      "ctr": 1.362426,
-      "costPerResult": 86.48333333333333
+      "ctr": 1.362398,
+      "costPerResult": 86.48666666666666
     },
     "attention": {
       "name": "Engajamento",
-      "spend": 259.45,
+      "spend": 259.46,
       "results": 3,
-      "ctr": 1.362426,
-      "costPerResult": 86.48333333333333
+      "ctr": 1.362398,
+      "costPerResult": 86.48666666666666
     }
   },
   "funnel": {
