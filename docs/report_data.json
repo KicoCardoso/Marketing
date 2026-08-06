@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T04:54:31.533Z",
+  "updatedAt": "2026-08-06T04:58:46.848Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-05"
@@ -48,20 +48,20 @@
     {
       "date": "2026-08-05",
       "label": "05/08",
-      "totalSpend": 4314.76,
-      "msgSpend": 4314.76,
+      "totalSpend": 4314.77,
+      "msgSpend": 4314.77,
       "msgCount": 1257,
-      "impressions": 284176,
+      "impressions": 284178,
       "clicks": 2232
     },
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 83.66999999999999,
-      "msgSpend": 59.519999999999996,
-      "msgCount": 24,
-      "impressions": 7391,
-      "clicks": 104
+      "totalSpend": 85.47,
+      "msgSpend": 60.6,
+      "msgCount": 27,
+      "impressions": 7578,
+      "clicks": 106
     }
   ],
   "current": {
@@ -103,7 +103,7 @@
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
       "spend": 12212.24,
-      "impressions": 716935,
+      "impressions": 716936,
       "clicks": 4012,
       "ctr": 0.559604,
       "results": 3049,
@@ -132,12 +132,12 @@
     {
       "id": "120250782297540654",
       "name": "Engajamento",
-      "spend": 259.33,
-      "impressions": 49164,
+      "spend": 259.34,
+      "impressions": 49165,
       "clicks": 670,
-      "ctr": 1.362786,
+      "ctr": 1.362758,
       "results": 3,
-      "costPerResult": 86.44333333333333
+      "costPerResult": 86.44666666666666
     }
   ],
   "funnelSpendByStage": {
@@ -145,7 +145,7 @@
     "topo": 12212.24,
     "meio": 6001.82,
     "fundo": 1102.82,
-    "outros": 259.33
+    "outros": 259.34
   },
   "highlights": {
     "bestCost": {
@@ -164,17 +164,17 @@
     },
     "hottest": {
       "name": "Engajamento",
-      "spend": 259.33,
+      "spend": 259.34,
       "results": 3,
-      "ctr": 1.362786,
-      "costPerResult": 86.44333333333333
+      "ctr": 1.362758,
+      "costPerResult": 86.44666666666666
     },
     "attention": {
       "name": "Engajamento",
-      "spend": 259.33,
+      "spend": 259.34,
       "results": 3,
-      "ctr": 1.362786,
-      "costPerResult": 86.44333333333333
+      "ctr": 1.362758,
+      "costPerResult": 86.44666666666666
     }
   },
   "funnel": {
