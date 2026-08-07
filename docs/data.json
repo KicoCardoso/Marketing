@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T12:47:53.932Z",
+  "updatedAt": "2026-08-07T12:53:09.862Z",
   "members": [
     {
       "id": 118016784,
@@ -30,26 +30,6 @@
       "tipo": "Fotografia",
       "email": "davi.guimaraes@grupoaspekto.com.br",
       "url": "https://app.clickup.com/t/86ajxc2km",
-      "description": "Editar fotos de antes e depois da paciente Lidcy Anacleto Gomes",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajxc2k6",
-      "name": "Fotos de Antes e Depois - Paciente",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1785913200000,
-      "date_created": 1786057417526,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": "davi.guimaraes@grupoaspekto.com.br",
-      "url": "https://app.clickup.com/t/86ajxc2k6",
       "description": "Editar fotos de antes e depois da paciente Lidcy Anacleto Gomes",
       "priority": null,
       "start_date": null,
@@ -2295,6 +2275,31 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajhbkv4",
+      "name": "Desenvolver dashboard com métricas do Instagram",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1786086000000,
+      "date_created": 1784046901914,
+      "date_closed": null,
+      "tipo": "Mídias sociais",
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajhbkv4",
+      "description": "",
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2308,7 +2313,7 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 24,
-      "open": 5
+      "open": 4
     },
     {
       "id": 118016782,
@@ -2320,15 +2325,15 @@
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 18,
-      "open": 15
+      "open": 16
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 21,
+    "Fotografia": 20,
     "Sem tipo": 38,
     "CS": 2,
-    "Mídias sociais": 30,
+    "Mídias sociais": 31,
     "ADS": 6,
     "Identidade visual": 1,
     "Branding": 1,
@@ -2375,11 +2380,11 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 93
+      "count": 94
     },
     {
       "month": "2026-08",
-      "count": 7
+      "count": 6
     }
   ]
 }
