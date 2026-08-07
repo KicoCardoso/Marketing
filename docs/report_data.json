@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T11:32:46.622Z",
+  "updatedAt": "2026-08-07T11:37:08.733Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-06"
@@ -60,33 +60,33 @@
       "totalSpend": 4536.610000000001,
       "msgSpend": 4536.610000000001,
       "msgCount": 1096,
-      "impressions": 371224,
+      "impressions": 371225,
       "clicks": 3895
     },
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 915.77,
-      "msgSpend": 854.31,
+      "totalSpend": 947.27,
+      "msgSpend": 884.24,
       "msgCount": 62,
-      "impressions": 126135,
-      "clicks": 1983
+      "impressions": 130427,
+      "clicks": 2041
     }
   ],
   "current": {
     "spend": 24113.8,
-    "impressions": 1564515,
+    "impressions": 1564516,
     "clicks": 12859,
     "ctr": 0.821916,
     "cpc": 1.875247,
-    "cpm": 15.412955,
+    "cpm": 15.412946,
     "reach": 923009,
-    "frequency": 1.695016,
+    "frequency": 1.695017,
     "postEngagement": 0,
     "videoP25": 75318,
     "videoP50": 38657,
     "videoP95": 11311,
-    "videoPlays": 1553379,
+    "videoPlays": 1553380,
     "msgCount": 5778,
     "cpl": 4.1733817930079615
   },
@@ -142,9 +142,9 @@
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
       "spend": 915.35,
-      "impressions": 138138,
+      "impressions": 138139,
       "clicks": 1906,
-      "ctr": 1.37978,
+      "ctr": 1.37977,
       "results": 38,
       "costPerResult": 24.08815789473684
     },
@@ -207,15 +207,15 @@
     }
   },
   "funnel": {
-    "spend": 25026.17,
+    "spend": 25068.96,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 74.92865269461078,
-    "cplAttend": 131.7166842105263,
-    "cac": 197.05645669291337,
-    "roas": 35.51741077440136
+    "cplSchedule": 75.05676646706587,
+    "cplAttend": 131.9418947368421,
+    "cac": 197.39338582677163,
+    "roas": 35.456786400393156
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
