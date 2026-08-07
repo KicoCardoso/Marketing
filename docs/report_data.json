@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T12:42:29.915Z",
+  "updatedAt": "2026-08-07T12:47:56.510Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-06"
@@ -57,38 +57,38 @@
     {
       "date": "2026-08-06",
       "label": "06/08",
-      "totalSpend": 4536.620000000001,
-      "msgSpend": 4536.620000000001,
+      "totalSpend": 4536.630000000001,
+      "msgSpend": 4536.630000000001,
       "msgCount": 1096,
-      "impressions": 371229,
+      "impressions": 371230,
       "clicks": 3895
     },
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 1208.62,
-      "msgSpend": 1137.78,
+      "totalSpend": 1230.63,
+      "msgSpend": 1159.42,
       "msgCount": 89,
-      "impressions": 158021,
-      "clicks": 2423
+      "impressions": 159953,
+      "clicks": 2449
     }
   ],
   "current": {
-    "spend": 24113.81,
-    "impressions": 1564520,
+    "spend": 24113.82,
+    "impressions": 1564521,
     "clicks": 12859,
     "ctr": 0.821913,
     "cpc": 1.875248,
-    "cpm": 15.412913,
+    "cpm": 15.412909,
     "reach": 923009,
-    "frequency": 1.695021,
+    "frequency": 1.695022,
     "postEngagement": 0,
     "videoP25": 75318,
     "videoP50": 38657,
     "videoP95": 11311,
     "videoPlays": 1553386,
     "msgCount": 5778,
-    "cpl": 4.173383523710627
+    "cpl": 4.173385254413292
   },
   "previous": {
     "spend": 14800.09,
@@ -151,12 +151,12 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 91.51,
-      "impressions": 8789,
+      "spend": 91.52,
+      "impressions": 8790,
       "clicks": 169,
-      "ctr": 1.922858,
+      "ctr": 1.922639,
       "results": 2,
-      "costPerResult": 45.755
+      "costPerResult": 45.76
     },
     {
       "id": "120250810627720654",
@@ -174,7 +174,7 @@
     "topo": 15483.48,
     "meio": 7265.9400000000005,
     "fundo": 1272.88,
-    "outros": 91.51
+    "outros": 91.52
   },
   "highlights": {
     "bestCost": {
@@ -193,29 +193,29 @@
     },
     "hottest": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 91.51,
+      "spend": 91.52,
       "results": 2,
-      "ctr": 1.922858,
-      "costPerResult": 45.755
+      "ctr": 1.922639,
+      "costPerResult": 45.76
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 91.51,
+      "spend": 91.52,
       "results": 2,
-      "ctr": 1.922858,
-      "costPerResult": 45.755
+      "ctr": 1.922639,
+      "costPerResult": 45.76
     }
   },
   "funnel": {
-    "spend": 25303.77,
+    "spend": 25344.45,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 75.75979041916167,
-    "cplAttend": 133.17773684210528,
-    "cac": 199.24228346456692,
-    "roas": 35.12776001362643
+    "cplSchedule": 75.8815868263473,
+    "cplAttend": 133.39184210526315,
+    "cac": 199.56259842519685,
+    "roas": 35.07137696813306
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
