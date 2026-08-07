@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T11:27:13.127Z",
+  "updatedAt": "2026-08-07T11:32:46.622Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-06"
@@ -60,33 +60,33 @@
       "totalSpend": 4536.610000000001,
       "msgSpend": 4536.610000000001,
       "msgCount": 1096,
-      "impressions": 371223,
-      "clicks": 3894
+      "impressions": 371224,
+      "clicks": 3895
     },
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 900.4,
-      "msgSpend": 839.59,
+      "totalSpend": 915.77,
+      "msgSpend": 854.31,
       "msgCount": 62,
-      "impressions": 124553,
-      "clicks": 1949
+      "impressions": 126135,
+      "clicks": 1983
     }
   ],
   "current": {
     "spend": 24113.8,
-    "impressions": 1564514,
-    "clicks": 12858,
-    "ctr": 0.821853,
-    "cpc": 1.875393,
-    "cpm": 15.412965,
+    "impressions": 1564515,
+    "clicks": 12859,
+    "ctr": 0.821916,
+    "cpc": 1.875247,
+    "cpm": 15.412955,
     "reach": 923009,
-    "frequency": 1.695015,
+    "frequency": 1.695016,
     "postEngagement": 0,
     "videoP25": 75318,
     "videoP50": 38657,
     "videoP95": 11311,
-    "videoPlays": 1553376,
+    "videoPlays": 1553379,
     "msgCount": 5778,
     "cpl": 4.1733817930079615
   },
@@ -162,9 +162,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 314.92,
-      "impressions": 66459,
-      "clicks": 1196,
-      "ctr": 1.799606,
+      "impressions": 66460,
+      "clicks": 1197,
+      "ctr": 1.801083,
       "results": 9,
       "costPerResult": 34.99111111111111
     }
@@ -206,7 +206,25 @@
       "costPerResult": 45.755
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 25026.17,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 74.92865269461078,
+    "cplAttend": 131.7166842105263,
+    "cac": 197.05645669291337,
+    "roas": 35.51741077440136
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
