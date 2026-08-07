@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T08:53:28.685Z",
+  "updatedAt": "2026-08-07T08:57:45.243Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-06"
@@ -60,33 +60,33 @@
       "totalSpend": 4535.69,
       "msgSpend": 4535.69,
       "msgCount": 1096,
-      "impressions": 371082,
+      "impressions": 371084,
       "clicks": 3892
     },
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 379.06,
-      "msgSpend": 146.34,
+      "totalSpend": 386.54999999999995,
+      "msgSpend": 149.59,
       "msgCount": 15,
-      "impressions": 53593,
-      "clicks": 869
+      "impressions": 54495,
+      "clicks": 879
     }
   ],
   "current": {
     "spend": 24112.88,
-    "impressions": 1564373,
+    "impressions": 1564375,
     "clicks": 12856,
-    "ctr": 0.821799,
+    "ctr": 0.821798,
     "cpc": 1.875613,
-    "cpm": 15.413766,
+    "cpm": 15.413747,
     "reach": 923009,
-    "frequency": 1.694862,
+    "frequency": 1.694864,
     "postEngagement": 0,
     "videoP25": 75314,
     "videoP50": 38654,
     "videoP95": 11310,
-    "videoPlays": 1553212,
+    "videoPlays": 1553216,
     "msgCount": 5778,
     "cpl": 4.173222568362755
   },
@@ -162,9 +162,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 314.45,
-      "impressions": 66361,
+      "impressions": 66363,
       "clicks": 1195,
-      "ctr": 1.800756,
+      "ctr": 1.800702,
       "results": 9,
       "costPerResult": 34.93888888888889
     }
@@ -207,15 +207,15 @@
     }
   },
   "funnel": {
-    "spend": 24491.94,
+    "spend": 24499.43,
     "scheduled": 334,
     "attended": 190,
     "won": 127,
     "wonValue": 888864.76,
-    "cplSchedule": 73.3291616766467,
-    "cplAttend": 128.90494736842103,
-    "cac": 192.84992125984252,
-    "roas": 36.29213365703166
+    "cplSchedule": 73.3515868263473,
+    "cplAttend": 128.94436842105264,
+    "cac": 192.9088976377953,
+    "roas": 36.281038375178525
   },
   "clintPeriodMTD": {
     "since": "2026-07-01T03:00:00Z",
