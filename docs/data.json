@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T02:32:20.734Z",
+  "updatedAt": "2026-08-07T02:37:18.731Z",
   "members": [
     {
       "id": 118016784,
@@ -2080,8 +2080,13 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkwk",
-      "description": "",
-      "priority": null,
+      "description": "Fazer os roteiros com CTA de continuação do conteúdo",
+      "priority": {
+        "color": "#f50000",
+        "id": "1",
+        "orderindex": "1",
+        "priority": "urgent"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2100,11 +2105,32 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkwb",
-      "description": "",
-      "priority": null,
+      "description": "História da Aspekto / O que fazemos, como e porque fazemos? \nHistória da Aspekto \nEstrutura \n\tFazer os três como se fossem continuações",
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785878645992,
+          "text": "@Kico Cardoso, reescrevi os roteiros 02 e 03, com a proposta que me pediu. Aguardo aprovação para gravação.\n"
+        },
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785335130077,
+          "text": "@Kico Cardoso, está aprovado?\n"
+        },
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785179896769,
+          "text": "São os 3 primeiros roteiros: docs.google.com/document/d/1C7wfCb303Ydey8j4Vl6Jo0sdO21NZFVQER2CElDVVT8/edit?usp=sharing \n \n"
+        }
+      ]
     },
     {
       "id": "86ajhbkw6",
