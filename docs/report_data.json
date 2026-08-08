@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T06:01:11.860Z",
+  "updatedAt": "2026-08-08T06:06:01.363Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-07"
@@ -66,38 +66,38 @@
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 5725.03,
-      "msgSpend": 5704.82,
+      "totalSpend": 5725.04,
+      "msgSpend": 5704.83,
       "msgCount": 863,
-      "impressions": 629165,
+      "impressions": 629166,
       "clicks": 7971
     },
     {
       "date": "2026-08-08",
       "label": "08/08",
-      "totalSpend": 316.44,
-      "msgSpend": 288.03,
+      "totalSpend": 320.24,
+      "msgSpend": 291.49,
       "msgCount": 14,
-      "impressions": 45558,
-      "clicks": 744
+      "impressions": 45938,
+      "clicks": 747
     }
   ],
   "current": {
-    "spend": 29839,
-    "impressions": 2193715,
+    "spend": 29839.01,
+    "impressions": 2193716,
     "clicks": 20831,
     "ctr": 0.949576,
-    "cpc": 1.432432,
-    "cpm": 13.60204,
+    "cpc": 1.432433,
+    "cpm": 13.602039,
     "reach": 1316121,
-    "frequency": 1.666803,
+    "frequency": 1.666804,
     "postEngagement": 0,
     "videoP25": 94760,
     "videoP50": 51718,
     "videoP95": 15041,
     "videoPlays": 2180476,
     "msgCount": 6641,
-    "cpl": 4.493148622195452
+    "cpl": 4.493150127992772
   },
   "previous": {
     "spend": 20756.06,
@@ -170,12 +170,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 1738.97,
-      "impressions": 383164,
+      "spend": 1738.98,
+      "impressions": 383165,
       "clicks": 6365,
-      "ctr": 1.661169,
+      "ctr": 1.661164,
       "results": 67,
-      "costPerResult": 25.954776119402986
+      "costPerResult": 25.95492537313433
     },
     {
       "id": "120250838115900654",
@@ -191,7 +191,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 18673.239999999998,
-    "meio": 9482.98,
+    "meio": 9482.99,
     "fundo": 1397.74,
     "outros": 285.03999999999996
   },
