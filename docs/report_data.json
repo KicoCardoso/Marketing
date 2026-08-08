@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T08:55:49.987Z",
+  "updatedAt": "2026-08-08T09:01:14.363Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-07"
@@ -66,38 +66,38 @@
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 5725.6,
-      "msgSpend": 5705.39,
+      "totalSpend": 5725.610000000001,
+      "msgSpend": 5705.400000000001,
       "msgCount": 863,
-      "impressions": 629230,
-      "clicks": 7973
+      "impressions": 629237,
+      "clicks": 7974
     },
     {
       "date": "2026-08-08",
       "label": "08/08",
-      "totalSpend": 496.81,
-      "msgSpend": 453.62,
+      "totalSpend": 506.18000000000006,
+      "msgSpend": 462.38,
       "msgCount": 22,
-      "impressions": 65415,
-      "clicks": 1105
+      "impressions": 66516,
+      "clicks": 1124
     }
   ],
   "current": {
-    "spend": 29839.57,
-    "impressions": 2193780,
-    "clicks": 20833,
-    "ctr": 0.949639,
-    "cpc": 1.432322,
-    "cpm": 13.601897,
+    "spend": 29839.58,
+    "impressions": 2193787,
+    "clicks": 20834,
+    "ctr": 0.949682,
+    "cpc": 1.432254,
+    "cpm": 13.601858,
     "reach": 1316261,
-    "frequency": 1.666676,
+    "frequency": 1.666681,
     "postEngagement": 0,
     "videoP25": 94761,
     "videoP50": 51718,
     "videoP95": 15041,
-    "videoPlays": 2180541,
+    "videoPlays": 2180546,
     "msgCount": 6641,
-    "cpl": 4.493234452642675
+    "cpl": 4.493235958439994
   },
   "previous": {
     "spend": 20756.06,
@@ -170,12 +170,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 1739.3,
-      "impressions": 383212,
-      "clicks": 6367,
-      "ctr": 1.661482,
+      "spend": 1739.31,
+      "impressions": 383219,
+      "clicks": 6368,
+      "ctr": 1.661713,
       "results": 67,
-      "costPerResult": 25.959701492537313
+      "costPerResult": 25.959850746268657
     },
     {
       "id": "120250838115900654",
@@ -191,7 +191,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 18673.32,
-    "meio": 9483.47,
+    "meio": 9483.48,
     "fundo": 1397.74,
     "outros": 285.03999999999996
   },
