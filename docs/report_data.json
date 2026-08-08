@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T07:50:53.426Z",
+  "updatedAt": "2026-08-08T07:55:55.313Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-07"
@@ -66,38 +66,38 @@
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 5725.259999999999,
-      "msgSpend": 5705.049999999999,
+      "totalSpend": 5725.29,
+      "msgSpend": 5705.08,
       "msgCount": 863,
-      "impressions": 629193,
-      "clicks": 7972
+      "impressions": 629195,
+      "clicks": 7973
     },
     {
       "date": "2026-08-08",
       "label": "08/08",
-      "totalSpend": 405.63,
-      "msgSpend": 368.71999999999997,
+      "totalSpend": 411.51,
+      "msgSpend": 374,
       "msgCount": 14,
-      "impressions": 56541,
-      "clicks": 935
+      "impressions": 57280,
+      "clicks": 948
     }
   ],
   "current": {
-    "spend": 29839.23,
-    "impressions": 2193743,
-    "clicks": 20832,
-    "ctr": 0.94961,
-    "cpc": 1.432375,
-    "cpm": 13.601972,
+    "spend": 29839.26,
+    "impressions": 2193745,
+    "clicks": 20833,
+    "ctr": 0.949655,
+    "cpc": 1.432307,
+    "cpm": 13.601973,
     "reach": 1316121,
-    "frequency": 1.666825,
+    "frequency": 1.666826,
     "postEngagement": 0,
     "videoP25": 94760,
     "videoP50": 51718,
     "videoP95": 15041,
-    "videoPlays": 2180508,
+    "videoPlays": 2180509,
     "msgCount": 6641,
-    "cpl": 4.493183255533805
+    "cpl": 4.493187772925764
   },
   "previous": {
     "spend": 20756.06,
@@ -170,12 +170,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 1739.12,
-      "impressions": 383185,
-      "clicks": 6366,
-      "ctr": 1.661339,
+      "spend": 1739.15,
+      "impressions": 383187,
+      "clicks": 6367,
+      "ctr": 1.661591,
       "results": 67,
-      "costPerResult": 25.957014925373134
+      "costPerResult": 25.957462686567165
     },
     {
       "id": "120250838115900654",
@@ -191,7 +191,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 18673.29,
-    "meio": 9483.16,
+    "meio": 9483.19,
     "fundo": 1397.74,
     "outros": 285.03999999999996
   },
