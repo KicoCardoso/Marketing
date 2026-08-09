@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T05:01:05.517Z",
+  "updatedAt": "2026-08-09T05:05:50.937Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-08"
@@ -75,38 +75,38 @@
     {
       "date": "2026-08-08",
       "label": "08/08",
-      "totalSpend": 6674.76,
-      "msgSpend": 6674.76,
+      "totalSpend": 6674.77,
+      "msgSpend": 6674.77,
       "msgCount": 711,
-      "impressions": 651655,
+      "impressions": 651659,
       "clicks": 8535
     },
     {
       "date": "2026-08-09",
       "label": "09/08",
-      "totalSpend": 356.49,
-      "msgSpend": 323.09000000000003,
+      "totalSpend": 366.45000000000005,
+      "msgSpend": 332.13,
       "msgCount": 17,
-      "impressions": 66638,
-      "clicks": 1000
+      "impressions": 68356,
+      "clicks": 1030
     }
   ],
   "current": {
-    "spend": 36515.52,
-    "impressions": 2845573,
+    "spend": 36515.53,
+    "impressions": 2845577,
     "clicks": 29372,
-    "ctr": 1.0322,
+    "ctr": 1.032198,
     "cpc": 1.243209,
-    "cpm": 12.832396,
+    "cpm": 12.832382,
     "reach": 1672869,
-    "frequency": 1.701014,
+    "frequency": 1.701016,
     "postEngagement": 0,
     "videoP25": 113877,
     "videoP50": 64293,
     "videoP95": 18550,
-    "videoPlays": 2832495,
+    "videoPlays": 2832497,
     "msgCount": 7352,
-    "cpl": 4.9667464635473335
+    "cpl": 4.966747823721436
   },
   "previous": {
     "spend": 27653.79,
@@ -139,12 +139,12 @@
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 8763.11,
-      "impressions": 540397,
+      "spend": 8763.12,
+      "impressions": 540400,
       "clicks": 5136,
-      "ctr": 0.950412,
+      "ctr": 0.950407,
       "results": 1835,
-      "costPerResult": 4.775536784741145
+      "costPerResult": 4.775542234332425
     },
     {
       "id": "120250655087860654",
@@ -180,9 +180,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 3206.99,
-      "impressions": 721991,
+      "impressions": 721992,
       "clicks": 11623,
-      "ctr": 1.609854,
+      "ctr": 1.609852,
       "results": 146,
       "costPerResult": 21.965684931506846
     },
@@ -200,7 +200,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 22538.559999999998,
-    "meio": 11970.1,
+    "meio": 11970.11,
     "fundo": 1541.72,
     "outros": 465.14
   },
