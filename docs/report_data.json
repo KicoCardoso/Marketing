@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T08:46:01.800Z",
+  "updatedAt": "2026-08-10T08:50:58.093Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-09"
@@ -84,20 +84,20 @@
     {
       "date": "2026-08-09",
       "label": "09/08",
-      "totalSpend": 6100.71,
-      "msgSpend": 6100.71,
+      "totalSpend": 6100.72,
+      "msgSpend": 6100.72,
       "msgCount": 450,
-      "impressions": 845374,
+      "impressions": 845379,
       "clicks": 11294
     },
     {
       "date": "2026-08-10",
       "label": "10/08",
-      "totalSpend": 249.39,
-      "msgSpend": 192.03000000000003,
+      "totalSpend": 252.52,
+      "msgSpend": 194.28,
       "msgCount": 27,
-      "impressions": 43184,
-      "clicks": 665
+      "impressions": 43659,
+      "clicks": 673
     }
   ],
   "current": {
@@ -178,20 +178,20 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 740.72,
-      "impressions": 97538,
+      "spend": 740.73,
+      "impressions": 97539,
       "clicks": 1715,
-      "ctr": 1.758289,
+      "ctr": 1.758271,
       "results": 5,
-      "costPerResult": 148.144
+      "costPerResult": 148.14600000000002
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 5229.69,
-      "impressions": 1287311,
+      "impressions": 1287315,
       "clicks": 19421,
-      "ctr": 1.508649,
+      "ctr": 1.508644,
       "results": 221,
       "costPerResult": 23.663755656108595
     },
@@ -211,7 +211,7 @@
     "topo": 25534.67,
     "meio": 14656.34,
     "fundo": 1664.9,
-    "outros": 760.9300000000001
+    "outros": 760.94
   },
   "highlights": {
     "bestCost": {
@@ -237,10 +237,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 740.72,
+      "spend": 740.73,
       "results": 5,
-      "ctr": 1.758289,
-      "costPerResult": 148.144
+      "ctr": 1.758271,
+      "costPerResult": 148.14600000000002
     }
   },
   "funnel": null,
