@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T13:26:01.969Z",
+  "updatedAt": "2026-08-10T13:31:07.984Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-09"
@@ -84,38 +84,38 @@
     {
       "date": "2026-08-09",
       "label": "09/08",
-      "totalSpend": 6101.91,
-      "msgSpend": 6101.91,
+      "totalSpend": 6101.9400000000005,
+      "msgSpend": 6101.9400000000005,
       "msgCount": 450,
-      "impressions": 845616,
+      "impressions": 845618,
       "clicks": 11298
     },
     {
       "date": "2026-08-10",
       "label": "10/08",
-      "totalSpend": 1117.7,
-      "msgSpend": 1048.81,
-      "msgCount": 128,
-      "impressions": 124424,
-      "clicks": 1901
+      "totalSpend": 1146.9299999999998,
+      "msgSpend": 1077.6100000000001,
+      "msgCount": 131,
+      "impressions": 126156,
+      "clicks": 1935
     }
   ],
   "current": {
-    "spend": 42618.09,
-    "impressions": 3691387,
+    "spend": 42618.12,
+    "impressions": 3691389,
     "clicks": 40674,
     "ctr": 1.101862,
-    "cpc": 1.047797,
-    "cpm": 11.545278,
+    "cpc": 1.047798,
+    "cpm": 11.54528,
     "reach": 2061010,
-    "frequency": 1.791057,
+    "frequency": 1.791058,
     "postEngagement": 0,
     "videoP25": 129021,
     "videoP50": 79439,
     "videoP95": 21914,
     "videoPlays": 3675555,
     "msgCount": 7802,
-    "cpl": 5.46245706229172
+    "cpl": 5.462460907459626
   },
   "previous": {
     "spend": 33200.11,
@@ -168,12 +168,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 6059.05,
-      "impressions": 571455,
+      "spend": 6059.08,
+      "impressions": 571456,
       "clicks": 7193,
-      "ctr": 1.258717,
+      "ctr": 1.258715,
       "results": 551,
-      "costPerResult": 10.996460980036298
+      "costPerResult": 10.996515426497277
     },
     {
       "id": "120250809278580654",
@@ -189,9 +189,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 5230.48,
-      "impressions": 1287492,
+      "impressions": 1287493,
       "clicks": 19425,
-      "ctr": 1.508747,
+      "ctr": 1.508746,
       "results": 221,
       "costPerResult": 23.66733031674208
     },
@@ -208,7 +208,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 25535.02,
+    "topo": 25535.050000000003,
     "meio": 14657.13,
     "fundo": 1664.9,
     "outros": 761.0400000000001
