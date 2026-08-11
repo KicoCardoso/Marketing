@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T17:26:03.125Z",
+  "updatedAt": "2026-08-11T17:31:11.364Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-10"
@@ -93,29 +93,29 @@
     {
       "date": "2026-08-10",
       "label": "10/08",
-      "totalSpend": 6502.41,
-      "msgSpend": 6502.41,
+      "totalSpend": 6502.42,
+      "msgSpend": 6502.42,
       "msgCount": 1061,
-      "impressions": 601876,
+      "impressions": 601877,
       "clicks": 8084
     },
     {
       "date": "2026-08-11",
       "label": "11/08",
-      "totalSpend": 3790.1500000000005,
-      "msgSpend": 3684.7900000000004,
-      "msgCount": 454,
-      "impressions": 292100,
-      "clicks": 4161
+      "totalSpend": 3836.7599999999998,
+      "msgSpend": 3730.58,
+      "msgCount": 467,
+      "impressions": 295845,
+      "clicks": 4200
     }
   ],
   "current": {
-    "spend": 49120.58,
-    "impressions": 4293276,
+    "spend": 49120.59,
+    "impressions": 4293277,
     "clicks": 48758,
     "ctr": 1.135683,
-    "cpc": 1.007436,
-    "cpm": 11.441282,
+    "cpc": 1.007437,
+    "cpm": 11.441281,
     "reach": 2271949,
     "frequency": 1.889689,
     "postEngagement": 0,
@@ -124,7 +124,7 @@
     "videoP95": 25051,
     "videoPlays": 4279010,
     "msgCount": 8863,
-    "cpl": 5.542206927676859
+    "cpl": 5.542208055962992
   },
   "previous": {
     "spend": 36907.58,
@@ -197,12 +197,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 6548.06,
-      "impressions": 1656516,
+      "spend": 6548.07,
+      "impressions": 1656517,
       "clicks": 24693,
-      "ctr": 1.490659,
+      "ctr": 1.490658,
       "results": 282,
-      "costPerResult": 23.220070921985815
+      "costPerResult": 23.220106382978724
     },
     {
       "id": "120250838115900654",
@@ -218,7 +218,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 28959.090000000004,
-    "meio": 17449.95,
+    "meio": 17449.96,
     "fundo": 1780.12,
     "outros": 931.4200000000001
   },
