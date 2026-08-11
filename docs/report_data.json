@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T12:56:03.279Z",
+  "updatedAt": "2026-08-11T13:01:26.653Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-10"
@@ -96,17 +96,17 @@
       "totalSpend": 6502.349999999999,
       "msgSpend": 6502.349999999999,
       "msgCount": 1061,
-      "impressions": 601850,
+      "impressions": 601852,
       "clicks": 8083
     },
     {
       "date": "2026-08-11",
       "label": "11/08",
-      "totalSpend": 1615.8799999999999,
-      "msgSpend": 1548.4199999999998,
-      "msgCount": 130,
-      "impressions": 167387,
-      "clicks": 2550
+      "totalSpend": 1654.4299999999998,
+      "msgSpend": 1586.08,
+      "msgCount": 135,
+      "impressions": 169456,
+      "clicks": 2580
     }
   ],
   "current": {
@@ -178,9 +178,9 @@
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
       "spend": 8401.36,
-      "impressions": 695857,
+      "impressions": 695858,
       "clicks": 8719,
-      "ctr": 1.252987,
+      "ctr": 1.252986,
       "results": 922,
       "costPerResult": 9.112104121475054
     },
@@ -198,9 +198,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 6548.02,
-      "impressions": 1656496,
+      "impressions": 1656497,
       "clicks": 24693,
-      "ctr": 1.490677,
+      "ctr": 1.490676,
       "results": 282,
       "costPerResult": 23.219929078014186
     },
@@ -252,7 +252,25 @@
       "costPerResult": 151.86666666666667
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 50774.95,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 152.02080838323351,
+    "cplAttend": 267.2365789473684,
+    "cac": 399.8027559055118,
+    "roas": 17.50597016836058
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
