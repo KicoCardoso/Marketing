@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T14:22:06.079Z",
+  "updatedAt": "2026-08-12T14:26:03.812Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-11"
@@ -102,20 +102,20 @@
     {
       "date": "2026-08-11",
       "label": "11/08",
-      "totalSpend": 7283.67,
-      "msgSpend": 7283.67,
+      "totalSpend": 7283.68,
+      "msgSpend": 7283.68,
       "msgCount": 925,
-      "impressions": 732466,
+      "impressions": 732467,
       "clicks": 8980
     },
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 1934.92,
-      "msgSpend": 1934.92,
-      "msgCount": 212,
-      "impressions": 187674,
-      "clicks": 2253
+      "totalSpend": 1978.3899999999999,
+      "msgSpend": 1978.3899999999999,
+      "msgCount": 218,
+      "impressions": 189287,
+      "clicks": 2276
     }
   ],
   "current": {
@@ -206,12 +206,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 7950.6,
-      "impressions": 2025383,
+      "spend": 7950.61,
+      "impressions": 2025384,
       "clicks": 30227,
-      "ctr": 1.492409,
+      "ctr": 1.492408,
       "results": 344,
-      "costPerResult": 23.11220930232558
+      "costPerResult": 23.11223837209302
     },
     {
       "id": "120250838115900654",
@@ -227,7 +227,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 32935.18,
-    "meio": 20419.83,
+    "meio": 20419.84,
     "fundo": 1915.76,
     "outros": 1133.83
   },
@@ -261,25 +261,7 @@
       "costPerResult": 159.0885714285714
     }
   },
-  "funnel": {
-    "spend": 58339.52,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 174.6692215568862,
-    "cplAttend": 307.0501052631579,
-    "cac": 459.3662992125984,
-    "roas": 15.236065706402796
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
