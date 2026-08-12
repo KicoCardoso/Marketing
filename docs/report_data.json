@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-12T02:56:04.970Z",
+  "updatedAt": "2026-08-12T03:01:18.985Z",
   "period": {
     "since": "2026-08-01",
-    "until": "2026-08-10"
+    "until": "2026-08-11"
   },
   "previousPeriod": {
     "since": "2026-07-01",
-    "until": "2026-07-10"
+    "until": "2026-07-11"
   },
   "dailySeries": [
     {
@@ -102,107 +102,107 @@
     {
       "date": "2026-08-11",
       "label": "11/08",
-      "totalSpend": 7238.390000000001,
-      "msgSpend": 7238.390000000001,
-      "msgCount": 921,
-      "impressions": 726284,
-      "clicks": 8886
+      "totalSpend": 7251.66,
+      "msgSpend": 7251.66,
+      "msgCount": 925,
+      "impressions": 728240,
+      "clicks": 8919
     }
   ],
   "current": {
-    "spend": 49120.93,
-    "impressions": 4293295,
-    "clicks": 48758,
-    "ctr": 1.135678,
-    "cpc": 1.007444,
-    "cpm": 11.441313,
-    "reach": 2271949,
-    "frequency": 1.889697,
+    "spend": 56372.59,
+    "impressions": 5021535,
+    "clicks": 57677,
+    "ctr": 1.148593,
+    "cpc": 0.977384,
+    "cpm": 11.226167,
+    "reach": 2524790,
+    "frequency": 1.988892,
     "postEngagement": 0,
-    "videoP25": 143258,
-    "videoP50": 95251,
-    "videoP95": 25051,
-    "videoPlays": 4279031,
-    "msgCount": 8863,
-    "cpl": 5.542246417691526
+    "videoP25": 163608,
+    "videoP50": 113261,
+    "videoP95": 29111,
+    "videoPlays": 5009380,
+    "msgCount": 9788,
+    "cpl": 5.759357376379239
   },
   "previous": {
-    "spend": 36907.58,
-    "impressions": 2308196,
-    "clicks": 22123,
-    "ctr": 0.958454,
-    "cpc": 1.66829,
-    "cpm": 15.989795,
-    "reach": 1375925,
-    "frequency": 1.677559,
+    "spend": 40723.22,
+    "impressions": 2542129,
+    "clicks": 27289,
+    "ctr": 1.07347,
+    "cpc": 1.492294,
+    "cpm": 16.019337,
+    "reach": 1513809,
+    "frequency": 1.679293,
     "postEngagement": 0,
-    "videoP25": 118377,
-    "videoP50": 60004,
-    "videoP95": 18861,
-    "videoPlays": 2135067,
-    "msgCount": 8913,
-    "cpl": 4.140870638393358
+    "videoP25": 133918,
+    "videoP50": 68729,
+    "videoP95": 21531,
+    "videoPlays": 2344671,
+    "msgCount": 9563,
+    "cpl": 4.258414723413155
   },
   "campaigns": [
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 20557.72,
-      "impressions": 1154482,
-      "clicks": 6667,
-      "ctr": 0.577488,
-      "results": 4986,
-      "costPerResult": 4.123088648215003
+      "spend": 22046.94,
+      "impressions": 1230961,
+      "clicks": 7150,
+      "ctr": 0.580847,
+      "results": 5338,
+      "costPerResult": 4.130187336080929
     },
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 10901.96,
-      "impressions": 603592,
-      "clicks": 5770,
-      "ctr": 0.955944,
-      "results": 2088,
-      "costPerResult": 5.221245210727969
+      "spend": 12464.72,
+      "impressions": 685055,
+      "clicks": 6462,
+      "ctr": 0.943282,
+      "results": 2299,
+      "costPerResult": 5.421800782949108
     },
     {
       "id": "120250655087860654",
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 1780.12,
-      "impressions": 51464,
-      "clicks": 663,
-      "ctr": 1.288279,
-      "results": 546,
-      "costPerResult": 3.26029304029304
+      "spend": 1915.37,
+      "impressions": 54880,
+      "clicks": 707,
+      "ctr": 1.288265,
+      "results": 563,
+      "costPerResult": 3.4020781527531083
     },
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 8401.54,
-      "impressions": 695868,
-      "clicks": 8720,
-      "ctr": 1.253111,
-      "results": 922,
-      "costPerResult": 9.112299349240782
+      "spend": 10872.94,
+      "impressions": 868902,
+      "clicks": 10392,
+      "ctr": 1.195992,
+      "results": 1204,
+      "costPerResult": 9.030681063122923
     },
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 911.24,
-      "impressions": 129029,
-      "clicks": 2199,
-      "ctr": 1.704268,
-      "results": 6,
-      "costPerResult": 151.87333333333333
+      "spend": 1112.08,
+      "impressions": 156267,
+      "clicks": 2734,
+      "ctr": 1.74957,
+      "results": 7,
+      "costPerResult": 158.8685714285714
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 6548.14,
-      "impressions": 1656526,
-      "clicks": 24693,
-      "ctr": 1.49065,
-      "results": 282,
-      "costPerResult": 23.22035460992908
+      "spend": 7940.33,
+      "impressions": 2023136,
+      "clicks": 30186,
+      "ctr": 1.49204,
+      "results": 344,
+      "costPerResult": 23.08235465116279
     },
     {
       "id": "120250838115900654",
@@ -217,25 +217,25 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 28959.260000000002,
-    "meio": 17450.1,
-    "fundo": 1780.12,
-    "outros": 931.45
+    "topo": 32919.88,
+    "meio": 20405.05,
+    "fundo": 1915.37,
+    "outros": 1132.29
   },
   "highlights": {
     "bestCost": {
       "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 1780.12,
-      "results": 546,
-      "ctr": 1.288279,
-      "costPerResult": 3.26029304029304
+      "spend": 1915.37,
+      "results": 563,
+      "ctr": 1.288265,
+      "costPerResult": 3.4020781527531083
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 20557.72,
-      "results": 4986,
-      "ctr": 0.577488,
-      "costPerResult": 4.123088648215003
+      "spend": 22046.94,
+      "results": 5338,
+      "ctr": 0.580847,
+      "costPerResult": 4.130187336080929
     },
     "hottest": {
       "name": "teste",
@@ -246,10 +246,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 911.24,
-      "results": 6,
-      "ctr": 1.704268,
-      "costPerResult": 151.87333333333333
+      "spend": 1112.08,
+      "results": 7,
+      "ctr": 1.74957,
+      "costPerResult": 158.8685714285714
     }
   },
   "funnel": null,
