@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T09:31:08.336Z",
+  "updatedAt": "2026-08-12T09:35:46.786Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-11"
@@ -102,20 +102,20 @@
     {
       "date": "2026-08-11",
       "label": "11/08",
-      "totalSpend": 7282.5599999999995,
-      "msgSpend": 7282.5599999999995,
+      "totalSpend": 7282.61,
+      "msgSpend": 7282.61,
       "msgCount": 925,
-      "impressions": 732287,
-      "clicks": 8978
+      "impressions": 732307,
+      "clicks": 8980
     },
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 647.5999999999999,
-      "msgSpend": 609.9499999999999,
+      "totalSpend": 667.5699999999999,
+      "msgSpend": 629.03,
       "msgCount": 62,
-      "impressions": 75943,
-      "clicks": 924
+      "impressions": 78344,
+      "clicks": 945
     }
   ],
   "current": {
@@ -157,7 +157,7 @@
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
       "spend": 22049.98,
-      "impressions": 1231223,
+      "impressions": 1231224,
       "clicks": 7153,
       "ctr": 0.580967,
       "results": 5338,
@@ -167,9 +167,9 @@
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
       "spend": 12468.96,
-      "impressions": 685445,
+      "impressions": 685446,
       "clicks": 6466,
-      "ctr": 0.943329,
+      "ctr": 0.943327,
       "results": 2299,
       "costPerResult": 5.4236450630709
     },
@@ -187,9 +187,9 @@
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
       "spend": 10884.94,
-      "impressions": 869922,
+      "impressions": 869924,
       "clicks": 10404,
-      "ctr": 1.195969,
+      "ctr": 1.195967,
       "results": 1204,
       "costPerResult": 9.040647840531562
     },
@@ -206,12 +206,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 7950.08,
-      "impressions": 2025269,
-      "clicks": 30225,
-      "ctr": 1.492394,
+      "spend": 7950.13,
+      "impressions": 2025285,
+      "clicks": 30227,
+      "ctr": 1.492481,
       "results": 344,
-      "costPerResult": 23.110697674418603
+      "costPerResult": 23.110843023255814
     },
     {
       "id": "120250838115900654",
@@ -227,7 +227,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 32934.92,
-    "meio": 20419.04,
+    "meio": 20419.09,
     "fundo": 1915.76,
     "outros": 1133.77
   },
