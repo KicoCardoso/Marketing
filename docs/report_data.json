@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T10:31:25.173Z",
+  "updatedAt": "2026-08-13T10:35:56.990Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -114,33 +114,33 @@
       "totalSpend": 5799.25,
       "msgSpend": 5799.25,
       "msgCount": 819,
-      "impressions": 711403,
+      "impressions": 711404,
       "clicks": 8459
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 590.6800000000001,
-      "msgSpend": 549.64,
+      "totalSpend": 599.8699999999999,
+      "msgSpend": 557.96,
       "msgCount": 43,
-      "impressions": 100320,
-      "clicks": 1591
+      "impressions": 101419,
+      "clicks": 1617
     }
   ],
   "current": {
     "spend": 62204.37,
-    "impressions": 5737187,
+    "impressions": 5737188,
     "clicks": 66198,
     "ctr": 1.153841,
     "cpc": 0.939671,
-    "cpm": 10.842312,
+    "cpm": 10.84231,
     "reach": 2768019,
     "frequency": 2.072669,
     "postEngagement": 0,
     "videoP25": 183636,
     "videoP50": 124023,
     "videoP95": 33321,
-    "videoPlays": 5730174,
+    "videoPlays": 5730177,
     "msgCount": 10607,
     "cpl": 5.864464033185633
   },
@@ -216,7 +216,7 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 9410.22,
-      "impressions": 2406501,
+      "impressions": 2406502,
       "clicks": 35649,
       "ctr": 1.481362,
       "results": 417,
@@ -270,25 +270,7 @@
       "costPerResult": 157.79625
     }
   },
-  "funnel": {
-    "spend": 62795.05,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 188.00913173652697,
-    "cplAttend": 330.5002631578948,
-    "cac": 494.4492125984252,
-    "roas": 14.155013173809081
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
