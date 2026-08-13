@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T05:40:53.540Z",
+  "updatedAt": "2026-08-13T05:46:26.410Z",
   "members": [
     {
       "id": 118016784,
@@ -2099,8 +2099,13 @@
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkvc",
-      "description": "",
-      "priority": null,
+      "description": "Segue aprovação de roteiro:",
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2120,7 +2125,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv4",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -2140,7 +2150,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv3",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []

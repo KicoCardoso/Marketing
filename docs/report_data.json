@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T05:40:56.086Z",
+  "updatedAt": "2026-08-13T05:46:29.067Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -114,33 +114,33 @@
       "totalSpend": 5798.05,
       "msgSpend": 5798.05,
       "msgCount": 819,
-      "impressions": 711191,
+      "impressions": 711193,
       "clicks": 8457
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 212.42000000000002,
-      "msgSpend": 200.34,
+      "totalSpend": 216.37,
+      "msgSpend": 203.98000000000002,
       "msgCount": 8,
-      "impressions": 36358,
-      "clicks": 546
+      "impressions": 37042,
+      "clicks": 557
     }
   ],
   "current": {
     "spend": 62203.17,
-    "impressions": 5736975,
+    "impressions": 5736977,
     "clicks": 66196,
-    "ctr": 1.153849,
+    "ctr": 1.153848,
     "cpc": 0.939682,
-    "cpm": 10.842503,
+    "cpm": 10.842499,
     "reach": 2768019,
-    "frequency": 2.072592,
+    "frequency": 2.072593,
     "postEngagement": 0,
     "videoP25": 183634,
     "videoP50": 124021,
     "videoP95": 33320,
-    "videoPlays": 5729957,
+    "videoPlays": 5729958,
     "msgCount": 10607,
     "cpl": 5.864350900348826
   },
@@ -216,9 +216,9 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 9409.62,
-      "impressions": 2406351,
+      "impressions": 2406353,
       "clicks": 35647,
-      "ctr": 1.481372,
+      "ctr": 1.48137,
       "results": 417,
       "costPerResult": 22.565035971223022
     },
@@ -270,7 +270,25 @@
       "costPerResult": 157.79
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 62419.54,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 186.8848502994012,
+    "cplAttend": 328.5238947368421,
+    "cac": 491.4924409448819,
+    "roas": 14.240168383169758
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
