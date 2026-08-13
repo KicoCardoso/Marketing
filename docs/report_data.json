@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T12:36:00.339Z",
+  "updatedAt": "2026-08-13T12:41:14.929Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -111,38 +111,38 @@
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 5799.38,
-      "msgSpend": 5799.38,
+      "totalSpend": 5799.42,
+      "msgSpend": 5799.42,
       "msgCount": 819,
-      "impressions": 711438,
+      "impressions": 711442,
       "clicks": 8459
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 981.81,
-      "msgSpend": 914.79,
-      "msgCount": 81,
-      "impressions": 148368,
-      "clicks": 2297
+      "totalSpend": 1001.76,
+      "msgSpend": 934.0699999999999,
+      "msgCount": 90,
+      "impressions": 149664,
+      "clicks": 2314
     }
   ],
   "current": {
-    "spend": 62204.5,
-    "impressions": 5737221,
+    "spend": 62204.52,
+    "impressions": 5737224,
     "clicks": 66198,
-    "ctr": 1.153834,
-    "cpc": 0.939673,
-    "cpm": 10.84227,
+    "ctr": 1.153833,
+    "cpc": 0.939674,
+    "cpm": 10.842268,
     "reach": 2768019,
-    "frequency": 2.072681,
+    "frequency": 2.072682,
     "postEngagement": 0,
     "videoP25": 183637,
     "videoP50": 124024,
     "videoP95": 33321,
-    "videoPlays": 5730218,
+    "videoPlays": 5730219,
     "msgCount": 10607,
-    "cpl": 5.864476289242953
+    "cpl": 5.864478174790232
   },
   "previous": {
     "spend": 44019.16,
@@ -195,12 +195,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 13238.49,
-      "impressions": 1059268,
+      "spend": 13238.53,
+      "impressions": 1059272,
       "clicks": 12220,
-      "ctr": 1.153627,
+      "ctr": 1.153622,
       "results": 1533,
-      "costPerResult": 8.635675146771037
+      "costPerResult": 8.63570123939987
     },
     {
       "id": "120250809278580654",
@@ -235,7 +235,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 36050.19,
+    "topo": 36050.23,
     "meio": 22868.97,
     "fundo": 2002.76,
     "outros": 1282.58
