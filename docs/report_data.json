@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T08:56:02.706Z",
+  "updatedAt": "2026-08-13T09:01:15.175Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -111,38 +111,38 @@
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 5798.5199999999995,
-      "msgSpend": 5798.5199999999995,
+      "totalSpend": 5798.57,
+      "msgSpend": 5798.57,
       "msgCount": 819,
-      "impressions": 711273,
+      "impressions": 711280,
       "clicks": 8458
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 364.01,
-      "msgSpend": 339.59000000000003,
-      "msgCount": 22,
-      "impressions": 60053,
-      "clicks": 962
+      "totalSpend": 378.22,
+      "msgSpend": 353.16999999999996,
+      "msgCount": 23,
+      "impressions": 62302,
+      "clicks": 998
     }
   ],
   "current": {
-    "spend": 62203.68,
-    "impressions": 5737061,
+    "spend": 62203.69,
+    "impressions": 5737064,
     "clicks": 66197,
-    "ctr": 1.153849,
+    "ctr": 1.153848,
     "cpc": 0.939675,
-    "cpm": 10.84243,
+    "cpm": 10.842426,
     "reach": 2768019,
-    "frequency": 2.072623,
+    "frequency": 2.072625,
     "postEngagement": 0,
     "videoP25": 183634,
     "videoP50": 124021,
     "videoP95": 33320,
-    "videoPlays": 5730041,
+    "videoPlays": 5730046,
     "msgCount": 10607,
-    "cpl": 5.864398981804468
+    "cpl": 5.864399924578109
   },
   "previous": {
     "spend": 44019.16,
@@ -195,12 +195,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 13238.09,
-      "impressions": 1059223,
+      "spend": 13238.1,
+      "impressions": 1059224,
       "clicks": 12220,
-      "ctr": 1.153676,
+      "ctr": 1.153675,
       "results": 1533,
-      "costPerResult": 8.635414220482714
+      "costPerResult": 8.635420743639923
     },
     {
       "id": "120250809278580654",
@@ -215,12 +215,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 9409.87,
-      "impressions": 2406413,
+      "spend": 9409.91,
+      "impressions": 2406419,
       "clicks": 35648,
-      "ctr": 1.481375,
+      "ctr": 1.481371,
       "results": 417,
-      "costPerResult": 22.565635491606717
+      "costPerResult": 22.565731414868104
     },
     {
       "id": "120250838115900654",
@@ -235,8 +235,8 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 36049.79,
-    "meio": 22868.54,
+    "topo": 36049.8,
+    "meio": 22868.58,
     "fundo": 2002.76,
     "outros": 1282.55
   },
