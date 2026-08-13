@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T14:16:08.420Z",
+  "updatedAt": "2026-08-13T14:20:55.282Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -111,38 +111,38 @@
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 5799.610000000001,
-      "msgSpend": 5799.610000000001,
+      "totalSpend": 5799.62,
+      "msgSpend": 5799.62,
       "msgCount": 819,
-      "impressions": 711451,
+      "impressions": 711452,
       "clicks": 8459
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 1339.01,
-      "msgSpend": 1260.58,
-      "msgCount": 115,
-      "impressions": 175975,
-      "clicks": 2611
+      "totalSpend": 1349.65,
+      "msgSpend": 1271.06,
+      "msgCount": 119,
+      "impressions": 176967,
+      "clicks": 2618
     }
   ],
   "current": {
-    "spend": 62204.73,
-    "impressions": 5737235,
+    "spend": 62204.74,
+    "impressions": 5737236,
     "clicks": 66198,
     "ctr": 1.153831,
     "cpc": 0.939677,
     "cpm": 10.842284,
     "reach": 2768019,
-    "frequency": 2.072686,
+    "frequency": 2.072687,
     "postEngagement": 0,
     "videoP25": 183637,
     "videoP50": 124024,
     "videoP95": 33321,
     "videoPlays": 5730232,
     "msgCount": 10607,
-    "cpl": 5.864497973036674
+    "cpl": 5.864498915810314
   },
   "previous": {
     "spend": 44019.16,
@@ -215,12 +215,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 9410.31,
-      "impressions": 2406529,
+      "spend": 9410.32,
+      "impressions": 2406530,
       "clicks": 35649,
       "ctr": 1.481345,
       "results": 417,
-      "costPerResult": 22.566690647482012
+      "costPerResult": 22.566714628297362
     },
     {
       "id": "120250838115900654",
@@ -236,7 +236,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 36050.380000000005,
-    "meio": 22869.010000000002,
+    "meio": 22869.02,
     "fundo": 2002.76,
     "outros": 1282.58
   },
