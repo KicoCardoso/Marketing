@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T05:31:16.350Z",
+  "updatedAt": "2026-08-13T05:36:43.818Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -111,38 +111,38 @@
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 5798.040000000001,
-      "msgSpend": 5798.040000000001,
+      "totalSpend": 5798.05,
+      "msgSpend": 5798.05,
       "msgCount": 819,
-      "impressions": 711189,
+      "impressions": 711191,
       "clicks": 8457
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 205.56,
-      "msgSpend": 193.96,
+      "totalSpend": 210.03,
+      "msgSpend": 198.05,
       "msgCount": 8,
-      "impressions": 35285,
-      "clicks": 526
+      "impressions": 36034,
+      "clicks": 540
     }
   ],
   "current": {
-    "spend": 62203.16,
-    "impressions": 5736973,
+    "spend": 62203.17,
+    "impressions": 5736975,
     "clicks": 66196,
     "ctr": 1.153849,
     "cpc": 0.939682,
-    "cpm": 10.842505,
+    "cpm": 10.842503,
     "reach": 2768019,
     "frequency": 2.072592,
     "postEngagement": 0,
     "videoP25": 183634,
     "videoP50": 124021,
     "videoP95": 33320,
-    "videoPlays": 5729953,
+    "videoPlays": 5729957,
     "msgCount": 10607,
-    "cpl": 5.864349957575187
+    "cpl": 5.864350900348826
   },
   "previous": {
     "spend": 44019.16,
@@ -215,12 +215,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 9409.61,
-      "impressions": 2406349,
+      "spend": 9409.62,
+      "impressions": 2406351,
       "clicks": 35647,
-      "ctr": 1.481373,
+      "ctr": 1.481372,
       "results": 417,
-      "costPerResult": 22.565011990407676
+      "costPerResult": 22.565035971223022
     },
     {
       "id": "120250838115900654",
@@ -236,7 +236,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 36049.59,
-    "meio": 22868.28,
+    "meio": 22868.29,
     "fundo": 2002.76,
     "outros": 1282.53
   },
