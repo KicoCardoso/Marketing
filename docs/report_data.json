@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T05:25:54.846Z",
+  "updatedAt": "2026-08-13T05:31:16.350Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-12"
@@ -111,38 +111,38 @@
     {
       "date": "2026-08-12",
       "label": "12/08",
-      "totalSpend": 5798.030000000001,
-      "msgSpend": 5798.030000000001,
+      "totalSpend": 5798.040000000001,
+      "msgSpend": 5798.040000000001,
       "msgCount": 819,
-      "impressions": 711188,
+      "impressions": 711189,
       "clicks": 8457
     },
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 200.44,
-      "msgSpend": 189.45,
+      "totalSpend": 205.56,
+      "msgSpend": 193.96,
       "msgCount": 8,
-      "impressions": 34451,
-      "clicks": 510
+      "impressions": 35285,
+      "clicks": 526
     }
   ],
   "current": {
-    "spend": 62203.15,
-    "impressions": 5736972,
+    "spend": 62203.16,
+    "impressions": 5736973,
     "clicks": 66196,
     "ctr": 1.153849,
-    "cpc": 0.939681,
+    "cpc": 0.939682,
     "cpm": 10.842505,
     "reach": 2768019,
-    "frequency": 2.072591,
+    "frequency": 2.072592,
     "postEngagement": 0,
     "videoP25": 183634,
     "videoP50": 124021,
     "videoP95": 33320,
     "videoPlays": 5729953,
     "msgCount": 10607,
-    "cpl": 5.8643490148015465
+    "cpl": 5.864349957575187
   },
   "previous": {
     "spend": 44019.16,
@@ -195,12 +195,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 13237.88,
-      "impressions": 1059204,
+      "spend": 13237.89,
+      "impressions": 1059205,
       "clicks": 12220,
-      "ctr": 1.153697,
+      "ctr": 1.153695,
       "results": 1533,
-      "costPerResult": 8.635277234181343
+      "costPerResult": 8.635283757338552
     },
     {
       "id": "120250809278580654",
@@ -235,7 +235,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 36049.58,
+    "topo": 36049.59,
     "meio": 22868.28,
     "fundo": 2002.76,
     "outros": 1282.53
