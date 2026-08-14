@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T19:40:51.745Z",
+  "updatedAt": "2026-08-14T19:45:59.719Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,29 +120,29 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.85,
-      "msgSpend": 4846.85,
+      "totalSpend": 4846.860000000001,
+      "msgSpend": 4846.860000000001,
       "msgCount": 626,
-      "impressions": 579679,
+      "impressions": 579680,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 2410.4500000000003,
-      "msgSpend": 2329.81,
-      "msgCount": 329,
-      "impressions": 235093,
-      "clicks": 3358
+      "totalSpend": 2434.8900000000003,
+      "msgSpend": 2353.77,
+      "msgCount": 330,
+      "impressions": 237433,
+      "clicks": 3391
     }
   ],
   "current": {
-    "spend": 67051.67,
-    "impressions": 6316933,
+    "spend": 67051.68,
+    "impressions": 6316934,
     "clicks": 74078,
     "ctr": 1.172689,
     "cpc": 0.90515,
-    "cpm": 10.614593,
+    "cpm": 10.614592,
     "reach": 2964045,
     "frequency": 2.131187,
     "postEngagement": 0,
@@ -151,7 +151,7 @@
     "videoP95": 37021,
     "videoPlays": 6312923,
     "msgCount": 11233,
-    "cpl": 5.969168521321107
+    "cpl": 5.969169411555239
   },
   "previous": {
     "spend": 47057,
@@ -224,12 +224,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10815.07,
-      "impressions": 2740456,
+      "spend": 10815.08,
+      "impressions": 2740457,
       "clicks": 41044,
-      "ctr": 1.497707,
+      "ctr": 1.497706,
       "results": 476,
-      "costPerResult": 22.720735294117645
+      "costPerResult": 22.720756302521007
     },
     {
       "id": "120250838115900654",
@@ -245,7 +245,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39267.32000000001,
-    "meio": 24273.77,
+    "meio": 24273.78,
     "fundo": 2002.76,
     "outros": 1507.82
   },
