@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T11:31:07.393Z",
+  "updatedAt": "2026-08-14T11:35:55.725Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,20 +120,20 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.62,
-      "msgSpend": 4846.62,
+      "totalSpend": 4846.639999999999,
+      "msgSpend": 4846.639999999999,
       "msgCount": 626,
-      "impressions": 579647,
+      "impressions": 579650,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 781.47,
-      "msgSpend": 727.36,
+      "totalSpend": 791.25,
+      "msgSpend": 736.53,
       "msgCount": 52,
-      "impressions": 122487,
-      "clicks": 2021
+      "impressions": 123308,
+      "clicks": 2036
     }
   ],
   "current": {
@@ -214,22 +214,22 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.59,
-      "impressions": 203234,
+      "spend": 1487.6,
+      "impressions": 203236,
       "clicks": 3665,
-      "ctr": 1.80334,
+      "ctr": 1.803322,
       "results": 9,
-      "costPerResult": 165.28777777777776
+      "costPerResult": 165.2888888888889
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10814.91,
-      "impressions": 2740435,
+      "spend": 10814.92,
+      "impressions": 2740436,
       "clicks": 41044,
       "ctr": 1.497718,
       "results": 476,
-      "costPerResult": 22.720399159663867
+      "costPerResult": 22.72042016806723
     },
     {
       "id": "120250838115900654",
@@ -245,9 +245,9 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39267.270000000004,
-    "meio": 24273.61,
+    "meio": 24273.620000000003,
     "fundo": 2002.76,
-    "outros": 1507.8
+    "outros": 1507.81
   },
   "highlights": {
     "bestCost": {
@@ -273,10 +273,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.59,
+      "spend": 1487.6,
       "results": 9,
-      "ctr": 1.80334,
-      "costPerResult": 165.28777777777776
+      "ctr": 1.803322,
+      "costPerResult": 165.2888888888889
     }
   },
   "funnel": null,
