@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T11:35:55.725Z",
+  "updatedAt": "2026-08-14T11:40:54.367Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,38 +120,38 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.639999999999,
-      "msgSpend": 4846.639999999999,
+      "totalSpend": 4846.67,
+      "msgSpend": 4846.67,
       "msgCount": 626,
-      "impressions": 579650,
+      "impressions": 579655,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 791.25,
-      "msgSpend": 736.53,
+      "totalSpend": 825.47,
+      "msgSpend": 769.94,
       "msgCount": 52,
-      "impressions": 123308,
-      "clicks": 2036
+      "impressions": 124857,
+      "clicks": 2063
     }
   ],
   "current": {
-    "spend": 67051.44,
-    "impressions": 6316901,
+    "spend": 67051.49,
+    "impressions": 6316909,
     "clicks": 74078,
-    "ctr": 1.172695,
-    "cpc": 0.905146,
-    "cpm": 10.61461,
+    "ctr": 1.172694,
+    "cpc": 0.905147,
+    "cpm": 10.614604,
     "reach": 2964045,
-    "frequency": 2.131176,
+    "frequency": 2.131179,
     "postEngagement": 0,
     "videoP25": 199428,
     "videoP50": 132545,
     "videoP95": 37021,
-    "videoPlays": 6312884,
+    "videoPlays": 6312890,
     "msgCount": 11233,
-    "cpl": 5.969148045936081
+    "cpl": 5.969152497106739
   },
   "previous": {
     "spend": 47057,
@@ -204,12 +204,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 16455.44,
-      "impressions": 1278249,
+      "spend": 16455.45,
+      "impressions": 1278251,
       "clicks": 14170,
-      "ctr": 1.108548,
+      "ctr": 1.108546,
       "results": 2067,
-      "costPerResult": 7.961025641025641
+      "costPerResult": 7.961030478955007
     },
     {
       "id": "120250809278580654",
@@ -224,12 +224,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10814.92,
-      "impressions": 2740436,
+      "spend": 10814.94,
+      "impressions": 2740439,
       "clicks": 41044,
-      "ctr": 1.497718,
+      "ctr": 1.497716,
       "results": 476,
-      "costPerResult": 22.72042016806723
+      "costPerResult": 22.720462184873952
     },
     {
       "id": "120250838115900654",
@@ -244,8 +244,8 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 39267.270000000004,
-    "meio": 24273.620000000003,
+    "topo": 39267.28,
+    "meio": 24273.64,
     "fundo": 2002.76,
     "outros": 1507.81
   },
