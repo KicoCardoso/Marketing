@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T12:46:03.816Z",
+  "updatedAt": "2026-08-14T12:50:55.788Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,38 +120,38 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.6900000000005,
-      "msgSpend": 4846.6900000000005,
+      "totalSpend": 4846.7,
+      "msgSpend": 4846.7,
       "msgCount": 626,
-      "impressions": 579662,
+      "impressions": 579664,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 976.0799999999999,
-      "msgSpend": 914.29,
-      "msgCount": 69,
-      "impressions": 138742,
-      "clicks": 2256
+      "totalSpend": 989.81,
+      "msgSpend": 927.43,
+      "msgCount": 72,
+      "impressions": 140000,
+      "clicks": 2277
     }
   ],
   "current": {
-    "spend": 67051.51,
-    "impressions": 6316916,
+    "spend": 67051.52,
+    "impressions": 6316918,
     "clicks": 74078,
-    "ctr": 1.172693,
-    "cpc": 0.905147,
-    "cpm": 10.614596,
+    "ctr": 1.172692,
+    "cpc": 0.905148,
+    "cpm": 10.614594,
     "reach": 2964045,
-    "frequency": 2.131181,
+    "frequency": 2.131182,
     "postEngagement": 0,
     "videoP25": 199429,
     "videoP50": 132546,
     "videoP95": 37021,
     "videoPlays": 6312903,
     "msgCount": 11233,
-    "cpl": 5.969154277575002
+    "cpl": 5.969155167809134
   },
   "previous": {
     "spend": 47057,
@@ -224,12 +224,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10814.94,
-      "impressions": 2740442,
+      "spend": 10814.95,
+      "impressions": 2740444,
       "clicks": 41044,
-      "ctr": 1.497715,
+      "ctr": 1.497714,
       "results": 476,
-      "costPerResult": 22.720462184873952
+      "costPerResult": 22.720483193277314
     },
     {
       "id": "120250838115900654",
@@ -245,7 +245,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39267.3,
-    "meio": 24273.64,
+    "meio": 24273.65,
     "fundo": 2002.76,
     "outros": 1507.81
   },
