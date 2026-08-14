@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T05:06:00.720Z",
+  "updatedAt": "2026-08-14T05:10:52.470Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,38 +120,38 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4844.79,
-      "msgSpend": 4844.79,
+      "totalSpend": 4844.8,
+      "msgSpend": 4844.8,
       "msgCount": 626,
-      "impressions": 579332,
+      "impressions": 579335,
       "clicks": 7876
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 166.51,
-      "msgSpend": 68.48,
+      "totalSpend": 168.51,
+      "msgSpend": 69.23,
       "msgCount": 9,
-      "impressions": 26431,
-      "clicks": 479
+      "impressions": 26747,
+      "clicks": 480
     }
   ],
   "current": {
-    "spend": 67049.61,
-    "impressions": 6316586,
+    "spend": 67049.62,
+    "impressions": 6316589,
     "clicks": 74074,
     "ctr": 1.17269,
     "cpc": 0.905171,
-    "cpm": 10.61485,
+    "cpm": 10.614846,
     "reach": 2964045,
-    "frequency": 2.13107,
+    "frequency": 2.131071,
     "postEngagement": 0,
     "videoP25": 199421,
     "videoP50": 132542,
     "videoP95": 37020,
-    "videoPlays": 6312548,
+    "videoPlays": 6312552,
     "msgCount": 11233,
-    "cpl": 5.968985133090003
+    "cpl": 5.968986023324134
   },
   "previous": {
     "spend": 47057,
@@ -224,12 +224,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10813.93,
-      "impressions": 2740204,
+      "spend": 10813.94,
+      "impressions": 2740207,
       "clicks": 41042,
-      "ctr": 1.497772,
+      "ctr": 1.49777,
       "results": 476,
-      "costPerResult": 22.718340336134453
+      "costPerResult": 22.718361344537815
     },
     {
       "id": "120250838115900654",
@@ -245,7 +245,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39266.55,
-    "meio": 24272.63,
+    "meio": 24272.64,
     "fundo": 2002.76,
     "outros": 1507.67
   },
