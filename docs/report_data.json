@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T13:40:55.103Z",
+  "updatedAt": "2026-08-14T13:46:05.333Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,38 +120,38 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.71,
-      "msgSpend": 4846.71,
+      "totalSpend": 4846.75,
+      "msgSpend": 4846.75,
       "msgCount": 626,
-      "impressions": 579665,
+      "impressions": 579667,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 1110.87,
-      "msgSpend": 1045.1299999999999,
+      "totalSpend": 1129.04,
+      "msgSpend": 1063.02,
       "msgCount": 95,
-      "impressions": 148815,
-      "clicks": 2387
+      "impressions": 150029,
+      "clicks": 2402
     }
   ],
   "current": {
-    "spend": 67051.53,
-    "impressions": 6316919,
+    "spend": 67051.57,
+    "impressions": 6316921,
     "clicks": 74078,
     "ctr": 1.172692,
     "cpc": 0.905148,
-    "cpm": 10.614594,
+    "cpm": 10.614597,
     "reach": 2964045,
-    "frequency": 2.131182,
+    "frequency": 2.131183,
     "postEngagement": 0,
     "videoP25": 199429,
     "videoP50": 132546,
     "videoP95": 37021,
     "videoPlays": 6312908,
     "msgCount": 11233,
-    "cpl": 5.969156058043265
+    "cpl": 5.969159618979792
   },
   "previous": {
     "spend": 47057,
@@ -224,12 +224,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10814.95,
-      "impressions": 2740444,
+      "spend": 10814.99,
+      "impressions": 2740446,
       "clicks": 41044,
-      "ctr": 1.497714,
+      "ctr": 1.497712,
       "results": 476,
-      "costPerResult": 22.720483193277314
+      "costPerResult": 22.720567226890754
     },
     {
       "id": "120250838115900654",
@@ -245,7 +245,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39267.31,
-    "meio": 24273.65,
+    "meio": 24273.690000000002,
     "fundo": 2002.76,
     "outros": 1507.81
   },
