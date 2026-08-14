@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T06:25:58.902Z",
+  "updatedAt": "2026-08-14T06:31:12.942Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,38 +120,38 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4844.92,
-      "msgSpend": 4844.92,
+      "totalSpend": 4844.95,
+      "msgSpend": 4844.95,
       "msgCount": 626,
-      "impressions": 579355,
-      "clicks": 7877
+      "impressions": 579360,
+      "clicks": 7878
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 211.5,
-      "msgSpend": 89.04,
+      "totalSpend": 213.77,
+      "msgSpend": 89.78,
       "msgCount": 16,
-      "impressions": 32931,
-      "clicks": 593
+      "impressions": 33325,
+      "clicks": 602
     }
   ],
   "current": {
-    "spend": 67049.74,
-    "impressions": 6316609,
-    "clicks": 74075,
-    "ctr": 1.172702,
-    "cpc": 0.90516,
-    "cpm": 10.614831,
+    "spend": 67049.77,
+    "impressions": 6316614,
+    "clicks": 74076,
+    "ctr": 1.172717,
+    "cpc": 0.905148,
+    "cpm": 10.614828,
     "reach": 2964045,
-    "frequency": 2.131077,
+    "frequency": 2.131079,
     "postEngagement": 0,
     "videoP25": 199422,
     "videoP50": 132543,
     "videoP95": 37020,
     "videoPlays": 6312576,
     "msgCount": 11233,
-    "cpl": 5.968996706133714
+    "cpl": 5.968999376836108
   },
   "previous": {
     "spend": 47057,
@@ -214,22 +214,22 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.46,
-      "impressions": 203210,
-      "clicks": 3664,
-      "ctr": 1.803061,
+      "spend": 1487.48,
+      "impressions": 203212,
+      "clicks": 3665,
+      "ctr": 1.803535,
       "results": 9,
-      "costPerResult": 165.27333333333334
+      "costPerResult": 165.27555555555557
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10814.03,
-      "impressions": 2740223,
+      "spend": 10814.04,
+      "impressions": 2740226,
       "clicks": 41043,
-      "ctr": 1.497798,
+      "ctr": 1.497796,
       "results": 476,
-      "costPerResult": 22.718550420168068
+      "costPerResult": 22.71857142857143
     },
     {
       "id": "120250838115900654",
@@ -245,9 +245,9 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 39266.58,
-    "meio": 24272.730000000003,
+    "meio": 24272.74,
     "fundo": 2002.76,
-    "outros": 1507.67
+    "outros": 1507.69
   },
   "highlights": {
     "bestCost": {
@@ -273,10 +273,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.46,
+      "spend": 1487.48,
       "results": 9,
-      "ctr": 1.803061,
-      "costPerResult": 165.27333333333334
+      "ctr": 1.803535,
+      "costPerResult": 165.27555555555557
     }
   },
   "funnel": null,
