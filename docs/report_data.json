@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T14:05:25.098Z",
+  "updatedAt": "2026-08-14T14:10:51.697Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-13"
@@ -120,27 +120,27 @@
     {
       "date": "2026-08-13",
       "label": "13/08",
-      "totalSpend": 4846.75,
-      "msgSpend": 4846.75,
+      "totalSpend": 4846.76,
+      "msgSpend": 4846.76,
       "msgCount": 626,
-      "impressions": 579667,
+      "impressions": 579668,
       "clicks": 7880
     },
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 1187.49,
-      "msgSpend": 1120.53,
-      "msgCount": 116,
-      "impressions": 153550,
-      "clicks": 2450
+      "totalSpend": 1209.78,
+      "msgSpend": 1142.49,
+      "msgCount": 127,
+      "impressions": 154797,
+      "clicks": 2466
     }
   ],
   "current": {
-    "spend": 67051.57,
-    "impressions": 6316921,
+    "spend": 67051.58,
+    "impressions": 6316922,
     "clicks": 74078,
-    "ctr": 1.172692,
+    "ctr": 1.172691,
     "cpc": 0.905148,
     "cpm": 10.614597,
     "reach": 2964045,
@@ -151,7 +151,7 @@
     "videoP95": 37021,
     "videoPlays": 6312911,
     "msgCount": 11233,
-    "cpl": 5.969159618979792
+    "cpl": 5.969160509213923
   },
   "previous": {
     "spend": 47057,
@@ -214,12 +214,12 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.6,
-      "impressions": 203236,
+      "spend": 1487.61,
+      "impressions": 203237,
       "clicks": 3665,
-      "ctr": 1.803322,
+      "ctr": 1.803313,
       "results": 9,
-      "costPerResult": 165.2888888888889
+      "costPerResult": 165.29
     },
     {
       "id": "120250810627720654",
@@ -247,7 +247,7 @@
     "topo": 39267.31,
     "meio": 24273.690000000002,
     "fundo": 2002.76,
-    "outros": 1507.81
+    "outros": 1507.82
   },
   "highlights": {
     "bestCost": {
@@ -273,31 +273,13 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.6,
+      "spend": 1487.61,
       "results": 9,
-      "ctr": 1.803322,
-      "costPerResult": 165.2888888888889
+      "ctr": 1.803313,
+      "costPerResult": 165.29
     }
   },
-  "funnel": {
-    "spend": 68239.06,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 204.3085628742515,
-    "cplAttend": 359.15294736842105,
-    "cac": 537.3154330708661,
-    "roas": 13.025747423836144
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
