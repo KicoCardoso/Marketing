@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T14:40:51.866Z",
+  "updatedAt": "2026-08-15T14:46:02.141Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,25 +129,25 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4390.01,
+      "totalSpend": 4390.02,
       "msgSpend": 4221.45,
       "msgCount": 502,
-      "impressions": 524224,
+      "impressions": 524225,
       "clicks": 7438
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 1283.33,
-      "msgSpend": 1212.72,
+      "totalSpend": 1302.91,
+      "msgSpend": 1232.14,
       "msgCount": 133,
-      "impressions": 136358,
-      "clicks": 2351
+      "impressions": 137703,
+      "clicks": 2358
     }
   ],
   "current": {
-    "spend": 71441.7,
-    "impressions": 6841161,
+    "spend": 71441.71,
+    "impressions": 6841162,
     "clicks": 81516,
     "ctr": 1.191552,
     "cpc": 0.876413,
@@ -160,7 +160,7 @@
     "videoP95": 40156,
     "videoPlays": 6840502,
     "msgCount": 11735,
-    "cpl": 6.087916489135066
+    "cpl": 6.08791734128675
   },
   "previous": {
     "spend": 52374.01,
@@ -223,12 +223,12 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1656.17,
-      "impressions": 225738,
+      "spend": 1656.18,
+      "impressions": 225739,
       "clicks": 4091,
-      "ctr": 1.812278,
+      "ctr": 1.81227,
       "results": 9,
-      "costPerResult": 184.0188888888889
+      "costPerResult": 184.02
     },
     {
       "id": "120250810627720654",
@@ -256,7 +256,7 @@
     "topo": 42079.94,
     "meio": 25682.620000000003,
     "fundo": 2002.76,
-    "outros": 1676.38
+    "outros": 1676.39
   },
   "highlights": {
     "bestCost": {
@@ -282,10 +282,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1656.17,
+      "spend": 1656.18,
       "results": 9,
-      "ctr": 1.812278,
-      "costPerResult": 184.0188888888889
+      "ctr": 1.81227,
+      "costPerResult": 184.02
     }
   },
   "funnel": null,
