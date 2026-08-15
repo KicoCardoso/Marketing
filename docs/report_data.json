@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T04:50:03.021Z",
+  "updatedAt": "2026-08-15T04:55:55.470Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,38 +129,38 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4388.03,
-      "msgSpend": 4219.63,
+      "totalSpend": 4388.05,
+      "msgSpend": 4219.65,
       "msgCount": 502,
-      "impressions": 523906,
+      "impressions": 523909,
       "clicks": 7436
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 189.87,
-      "msgSpend": 176.8,
-      "msgCount": 27,
-      "impressions": 30702,
-      "clicks": 553
+      "totalSpend": 198.06,
+      "msgSpend": 184.14,
+      "msgCount": 29,
+      "impressions": 31910,
+      "clicks": 581
     }
   ],
   "current": {
-    "spend": 71439.72,
-    "impressions": 6840842,
+    "spend": 71439.74,
+    "impressions": 6840846,
     "clicks": 81514,
     "ctr": 1.191578,
-    "cpc": 0.87641,
-    "cpm": 10.443118,
+    "cpc": 0.876411,
+    "cpm": 10.443115,
     "reach": 3123499,
-    "frequency": 2.190121,
+    "frequency": 2.190123,
     "postEngagement": 0,
-    "videoP25": 213191,
-    "videoP50": 140057,
-    "videoP95": 40155,
-    "videoPlays": 6840138,
+    "videoP25": 213193,
+    "videoP50": 140058,
+    "videoP95": 40156,
+    "videoPlays": 6840143,
     "msgCount": 11735,
-    "cpl": 6.087747763101833
+    "cpl": 6.087749467405199
   },
   "previous": {
     "spend": 52374.01,
@@ -233,12 +233,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 12222.74,
-      "impressions": 3044366,
+      "spend": 12222.76,
+      "impressions": 3044369,
       "clicks": 46209,
-      "ctr": 1.517853,
+      "ctr": 1.517851,
       "results": 540,
-      "costPerResult": 22.634703703703703
+      "costPerResult": 22.634740740740742
     },
     {
       "id": "120250838115900654",
@@ -254,7 +254,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 42079.3,
-    "meio": 25681.440000000002,
+    "meio": 25681.46,
     "fundo": 2002.76,
     "outros": 1676.22
   },
