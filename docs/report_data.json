@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T08:55:57.498Z",
+  "updatedAt": "2026-08-15T08:59:55.895Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,20 +129,20 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4388.6900000000005,
-      "msgSpend": 4220.25,
+      "totalSpend": 4388.71,
+      "msgSpend": 4220.26,
       "msgCount": 502,
-      "impressions": 524042,
+      "impressions": 524045,
       "clicks": 7436
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 390.67999999999995,
-      "msgSpend": 356.45,
+      "totalSpend": 393.56,
+      "msgSpend": 358.87,
       "msgCount": 41,
-      "impressions": 60450,
-      "clicks": 1151
+      "impressions": 60832,
+      "clicks": 1156
     }
   ],
   "current": {
@@ -223,22 +223,22 @@
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1656.05,
-      "impressions": 225730,
+      "spend": 1656.06,
+      "impressions": 225731,
       "clicks": 4091,
-      "ctr": 1.812342,
+      "ctr": 1.812334,
       "results": 9,
-      "costPerResult": 184.00555555555556
+      "costPerResult": 184.00666666666666
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 12223.24,
-      "impressions": 3044471,
+      "spend": 12223.25,
+      "impressions": 3044473,
       "clicks": 46209,
-      "ctr": 1.517801,
+      "ctr": 1.5178,
       "results": 540,
-      "costPerResult": 22.63562962962963
+      "costPerResult": 22.63564814814815
     },
     {
       "id": "120250838115900654",
@@ -254,9 +254,9 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 42079.42,
-    "meio": 25681.940000000002,
+    "meio": 25681.95,
     "fundo": 2002.76,
-    "outros": 1676.26
+    "outros": 1676.27
   },
   "highlights": {
     "bestCost": {
@@ -282,10 +282,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1656.05,
+      "spend": 1656.06,
       "results": 9,
-      "ctr": 1.812342,
-      "costPerResult": 184.00555555555556
+      "ctr": 1.812334,
+      "costPerResult": 184.00666666666666
     }
   },
   "funnel": null,
