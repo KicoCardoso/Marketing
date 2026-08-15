@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T07:15:02.674Z",
+  "updatedAt": "2026-08-15T07:20:53.872Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,38 +129,38 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4388.4,
-      "msgSpend": 4219.97,
+      "totalSpend": 4388.42,
+      "msgSpend": 4219.99,
       "msgCount": 502,
-      "impressions": 523974,
+      "impressions": 523979,
       "clicks": 7436
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 320.63,
-      "msgSpend": 294.53999999999996,
+      "totalSpend": 324.98,
+      "msgSpend": 298.48,
       "msgCount": 38,
-      "impressions": 50171,
-      "clicks": 947
+      "impressions": 50751,
+      "clicks": 954
     }
   ],
   "current": {
-    "spend": 71440.09,
-    "impressions": 6840911,
+    "spend": 71440.11,
+    "impressions": 6840916,
     "clicks": 81514,
     "ctr": 1.191566,
     "cpc": 0.876415,
-    "cpm": 10.443067,
+    "cpm": 10.443062,
     "reach": 3123499,
-    "frequency": 2.190143,
+    "frequency": 2.190145,
     "postEngagement": 0,
     "videoP25": 213194,
     "videoP50": 140059,
     "videoP95": 40156,
-    "videoPlays": 6840205,
+    "videoPlays": 6840213,
     "msgCount": 11735,
-    "cpl": 6.087779292714103
+    "cpl": 6.087780997017469
   },
   "previous": {
     "spend": 52374.01,
@@ -233,12 +233,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 12223.02,
-      "impressions": 3044415,
+      "spend": 12223.04,
+      "impressions": 3044420,
       "clicks": 46209,
-      "ctr": 1.517829,
+      "ctr": 1.517826,
       "results": 540,
-      "costPerResult": 22.63522222222222
+      "costPerResult": 22.63525925925926
     },
     {
       "id": "120250838115900654",
@@ -254,7 +254,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 42079.36,
-    "meio": 25681.72,
+    "meio": 25681.74,
     "fundo": 2002.76,
     "outros": 1676.25
   },
