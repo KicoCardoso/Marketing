@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-15T02:55:58.356Z",
+  "updatedAt": "2026-08-15T03:01:12.251Z",
   "period": {
     "since": "2026-08-01",
-    "until": "2026-08-13"
+    "until": "2026-08-14"
   },
   "previousPeriod": {
     "since": "2026-07-01",
-    "until": "2026-07-13"
+    "until": "2026-07-14"
   },
   "dailySeries": [
     {
@@ -129,46 +129,46 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4361.7,
-      "msgSpend": 4196.23,
+      "totalSpend": 4373.76,
+      "msgSpend": 4207.41,
       "msgCount": 502,
-      "impressions": 519644,
-      "clicks": 7369
+      "impressions": 521457,
+      "clicks": 7398
     }
   ],
   "current": {
-    "spend": 67051.69,
-    "impressions": 6316937,
-    "clicks": 74078,
-    "ctr": 1.172689,
-    "cpc": 0.90515,
-    "cpm": 10.614589,
-    "reach": 2964045,
-    "frequency": 2.131188,
+    "spend": 71421.85,
+    "impressions": 6837913,
+    "clicks": 81471,
+    "ctr": 1.19146,
+    "cpc": 0.876654,
+    "cpm": 10.444978,
+    "reach": 3121137,
+    "frequency": 2.19084,
     "postEngagement": 0,
-    "videoP25": 199430,
-    "videoP50": 132546,
-    "videoP95": 37021,
-    "videoPlays": 6312928,
-    "msgCount": 11233,
-    "cpl": 5.9691703017893705
+    "videoP25": 212992,
+    "videoP50": 139928,
+    "videoP95": 40084,
+    "videoPlays": 6832148,
+    "msgCount": 11735,
+    "cpl": 6.086224968044313
   },
   "previous": {
-    "spend": 47057,
-    "impressions": 2873002,
-    "clicks": 32262,
-    "ctr": 1.122937,
-    "cpc": 1.458589,
-    "cpm": 16.379035,
-    "reach": 1667331,
-    "frequency": 1.723114,
+    "spend": 52374.01,
+    "impressions": 3144671,
+    "clicks": 34907,
+    "ctr": 1.110037,
+    "cpc": 1.500387,
+    "cpm": 16.654846,
+    "reach": 1780060,
+    "frequency": 1.76661,
     "postEngagement": 0,
-    "videoP25": 152532,
-    "videoP50": 78505,
-    "videoP95": 24630,
-    "videoPlays": 2636955,
-    "msgCount": 10619,
-    "cpl": 4.431396553347773
+    "videoP25": 165737,
+    "videoP50": 84730,
+    "videoP95": 26612,
+    "videoPlays": 2881632,
+    "msgCount": 11879,
+    "cpl": 4.408957824732722
   },
   "campaigns": [
     {
@@ -178,8 +178,8 @@
       "impressions": 1287695,
       "clicks": 7474,
       "ctr": 0.580417,
-      "results": 5616,
-      "costPerResult": 4.061935541310541
+      "results": 5617,
+      "costPerResult": 4.061212390956027
     },
     {
       "id": "120250655087250654",
@@ -188,8 +188,8 @@
       "impressions": 747049,
       "clicks": 6939,
       "ctr": 0.928855,
-      "results": 2464,
-      "costPerResult": 5.46213474025974
+      "results": 2467,
+      "costPerResult": 5.455492501013377
     },
     {
       "id": "120250655087860654",
@@ -204,32 +204,32 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 16455.5,
-      "impressions": 1278260,
-      "clicks": 14170,
-      "ctr": 1.108538,
-      "results": 2067,
-      "costPerResult": 7.961054668601839
+      "spend": 19263.12,
+      "impressions": 1475225,
+      "clicks": 16006,
+      "ctr": 1.084987,
+      "results": 2501,
+      "costPerResult": 7.702167133146741
     },
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.61,
-      "impressions": 203237,
-      "clicks": 3665,
-      "ctr": 1.803313,
+      "spend": 1653.96,
+      "impressions": 225464,
+      "clicks": 4086,
+      "ctr": 1.812263,
       "results": 9,
-      "costPerResult": 165.29
+      "costPerResult": 183.77333333333334
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 10815.08,
-      "impressions": 2740457,
-      "clicks": 41044,
-      "ctr": 1.497706,
-      "results": 476,
-      "costPerResult": 22.720756302521007
+      "spend": 12214.87,
+      "impressions": 3042722,
+      "clicks": 46185,
+      "ctr": 1.517884,
+      "results": 540,
+      "costPerResult": 22.62012962962963
     },
     {
       "id": "120250838115900654",
@@ -244,10 +244,10 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 39267.33,
-    "meio": 24273.78,
+    "topo": 42074.95,
+    "meio": 25673.57,
     "fundo": 2002.76,
-    "outros": 1507.82
+    "outros": 1674.17
   },
   "highlights": {
     "bestCost": {
@@ -260,9 +260,9 @@
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
       "spend": 22811.83,
-      "results": 5616,
+      "results": 5617,
       "ctr": 0.580417,
-      "costPerResult": 4.061935541310541
+      "costPerResult": 4.061212390956027
     },
     "hottest": {
       "name": "teste",
@@ -273,10 +273,10 @@
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
-      "spend": 1487.61,
+      "spend": 1653.96,
       "results": 9,
-      "ctr": 1.803313,
-      "costPerResult": 165.29
+      "ctr": 1.812263,
+      "costPerResult": 183.77333333333334
     }
   },
   "funnel": null,
