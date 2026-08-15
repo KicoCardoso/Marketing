@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T03:31:02.978Z",
+  "updatedAt": "2026-08-15T03:35:55.405Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,20 +129,20 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4387.1,
-      "msgSpend": 4218.8,
+      "totalSpend": 4387.25,
+      "msgSpend": 4218.95,
       "msgCount": 502,
-      "impressions": 523739,
+      "impressions": 523771,
       "clicks": 7435
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 57.96,
-      "msgSpend": 30.18,
-      "msgCount": 6,
-      "impressions": 9283,
-      "clicks": 156
+      "totalSpend": 69.63,
+      "msgSpend": 65.38,
+      "msgCount": 9,
+      "impressions": 11311,
+      "clicks": 194
     }
   ],
   "current": {
@@ -213,32 +213,32 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 19267.04,
-      "impressions": 1475711,
+      "spend": 19267.12,
+      "impressions": 1475722,
       "clicks": 16015,
-      "ctr": 1.08524,
+      "ctr": 1.085232,
       "results": 2501,
-      "costPerResult": 7.703734506197521
+      "costPerResult": 7.703766493402639
     },
     {
       "id": "120250809278580654",
       "name": "[SP][Site][lentes][trafego]",
       "spend": 1655.91,
-      "impressions": 225705,
+      "impressions": 225707,
       "clicks": 4091,
-      "ctr": 1.812543,
+      "ctr": 1.812527,
       "results": 9,
       "costPerResult": 183.99
     },
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 12222.34,
-      "impressions": 3044277,
+      "spend": 12222.41,
+      "impressions": 3044296,
       "clicks": 46208,
-      "ctr": 1.517865,
+      "ctr": 1.517855,
       "results": 540,
-      "costPerResult": 22.633962962962965
+      "costPerResult": 22.63409259259259
     },
     {
       "id": "120250838115900654",
@@ -253,8 +253,8 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 42078.87,
-    "meio": 25681.04,
+    "topo": 42078.95,
+    "meio": 25681.11,
     "fundo": 2002.76,
     "outros": 1676.1200000000001
   },
@@ -284,7 +284,7 @@
       "name": "[SP][Site][lentes][trafego]",
       "spend": 1655.91,
       "results": 9,
-      "ctr": 1.812543,
+      "ctr": 1.812527,
       "costPerResult": 183.99
     }
   },
