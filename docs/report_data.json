@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-15T08:20:54.740Z",
+  "updatedAt": "2026-08-15T08:25:51.941Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-14"
@@ -129,38 +129,38 @@
     {
       "date": "2026-08-14",
       "label": "14/08",
-      "totalSpend": 4388.62,
-      "msgSpend": 4220.18,
+      "totalSpend": 4388.63,
+      "msgSpend": 4220.19,
       "msgCount": 502,
-      "impressions": 524016,
+      "impressions": 524020,
       "clicks": 7436
     },
     {
       "date": "2026-08-15",
       "label": "15/08",
-      "totalSpend": 363.22,
-      "msgSpend": 331.94,
+      "totalSpend": 365.4,
+      "msgSpend": 333.93,
       "msgCount": 41,
-      "impressions": 56693,
-      "clicks": 1078
+      "impressions": 57017,
+      "clicks": 1083
     }
   ],
   "current": {
-    "spend": 71440.31,
-    "impressions": 6840953,
+    "spend": 71440.32,
+    "impressions": 6840957,
     "clicks": 81514,
-    "ctr": 1.191559,
+    "ctr": 1.191558,
     "cpc": 0.876418,
-    "cpm": 10.443035,
+    "cpm": 10.44303,
     "reach": 3123499,
-    "frequency": 2.190157,
+    "frequency": 2.190158,
     "postEngagement": 0,
     "videoP25": 213196,
     "videoP50": 140059,
     "videoP95": 40156,
     "videoPlays": 6840261,
     "msgCount": 11735,
-    "cpl": 6.087798040051129
+    "cpl": 6.087798892202812
   },
   "previous": {
     "spend": 52374.01,
@@ -233,12 +233,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 12223.18,
-      "impressions": 3044446,
+      "spend": 12223.19,
+      "impressions": 3044450,
       "clicks": 46209,
-      "ctr": 1.517813,
+      "ctr": 1.517811,
       "results": 540,
-      "costPerResult": 22.63551851851852
+      "costPerResult": 22.63553703703704
     },
     {
       "id": "120250838115900654",
@@ -254,7 +254,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 42079.41,
-    "meio": 25681.88,
+    "meio": 25681.89,
     "fundo": 2002.76,
     "outros": 1676.26
   },
