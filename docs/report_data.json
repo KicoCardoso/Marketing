@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T10:25:59.297Z",
+  "updatedAt": "2026-08-21T10:31:30.970Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-20"
@@ -186,26 +186,26 @@
       "totalSpend": 1864.6,
       "msgSpend": 1864.6,
       "msgCount": 298,
-      "impressions": 189321,
+      "impressions": 189322,
       "clicks": 2854
     },
     {
       "date": "2026-08-21",
       "label": "21/08",
-      "totalSpend": 233.12,
-      "msgSpend": 233.12,
+      "totalSpend": 242.76,
+      "msgSpend": 242.76,
       "msgCount": 26,
-      "impressions": 29330,
-      "clicks": 578
+      "impressions": 30040,
+      "clicks": 589
     }
   ],
   "current": {
     "spend": 90122.85,
-    "impressions": 8998506,
+    "impressions": 8998507,
     "clicks": 114292,
     "ctr": 1.270122,
     "cpc": 0.788532,
-    "cpm": 10.015313,
+    "cpm": 10.015311,
     "reach": 3776062,
     "frequency": 2.38304,
     "postEngagement": 0,
@@ -288,7 +288,7 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 18043.56,
-      "impressions": 4265823,
+      "impressions": 4265824,
       "clicks": 68998,
       "ctr": 1.61746,
       "results": 967,
@@ -342,7 +342,25 @@
       "costPerResult": 244.32222222222222
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 90365.61,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 270.55571856287423,
+    "cplAttend": 475.60847368421054,
+    "cac": 711.5402362204725,
+    "roas": 9.836316713847225
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
