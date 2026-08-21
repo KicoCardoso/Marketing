@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T08:10:49.533Z",
+  "updatedAt": "2026-08-21T08:16:25.838Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-20"
@@ -66,11 +66,11 @@
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 5706.580000000001,
+      "totalSpend": 5726.790000000001,
       "msgSpend": 5706.580000000001,
       "msgCount": 863,
-      "impressions": 627034,
-      "clicks": 7931
+      "impressions": 629368,
+      "clicks": 7977
     },
     {
       "date": "2026-08-08",
@@ -192,11 +192,11 @@
     {
       "date": "2026-08-21",
       "label": "21/08",
-      "totalSpend": 99.53,
-      "msgSpend": 99.53,
+      "totalSpend": 101.00999999999999,
+      "msgSpend": 101.00999999999999,
       "msgCount": 13,
-      "impressions": 11744,
-      "clicks": 248
+      "impressions": 11956,
+      "clicks": 252
     }
   ],
   "current": {
@@ -212,7 +212,7 @@
     "videoP25": 267807,
     "videoP50": 170098,
     "videoP95": 52861,
-    "videoPlays": 9017703,
+    "videoPlays": 9017706,
     "msgCount": 13852,
     "cpl": 6.506100202136875
   },
@@ -293,6 +293,16 @@
       "ctr": 1.617454,
       "results": 967,
       "costPerResult": 18.659038262668048
+    },
+    {
+      "id": "120250838115900654",
+      "name": "teste",
+      "spend": 20.21,
+      "impressions": 2334,
+      "clicks": 46,
+      "ctr": 1.970865,
+      "results": 0,
+      "costPerResult": null
     }
   ],
   "funnelSpendByStage": {
@@ -300,7 +310,7 @@
     "topo": 54398.64,
     "meio": 31501.99,
     "fundo": 2002.76,
-    "outros": 2198.9
+    "outros": 2219.11
   },
   "highlights": {
     "bestCost": {
@@ -318,11 +328,11 @@
       "costPerResult": 4.061212390956027
     },
     "hottest": {
-      "name": "[SP][Site][lentes][trafego]",
-      "spend": 2198.9,
-      "results": 9,
-      "ctr": 1.821203,
-      "costPerResult": 244.32222222222222
+      "name": "teste",
+      "spend": 20.21,
+      "results": 0,
+      "ctr": 1.970865,
+      "costPerResult": null
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
