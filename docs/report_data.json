@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T10:31:30.970Z",
+  "updatedAt": "2026-08-21T10:35:51.193Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-20"
@@ -186,33 +186,33 @@
       "totalSpend": 1864.6,
       "msgSpend": 1864.6,
       "msgCount": 298,
-      "impressions": 189322,
+      "impressions": 189323,
       "clicks": 2854
     },
     {
       "date": "2026-08-21",
       "label": "21/08",
-      "totalSpend": 242.76,
-      "msgSpend": 242.76,
+      "totalSpend": 252.24,
+      "msgSpend": 252.24,
       "msgCount": 26,
-      "impressions": 30040,
-      "clicks": 589
+      "impressions": 30759,
+      "clicks": 600
     }
   ],
   "current": {
     "spend": 90122.85,
-    "impressions": 8998507,
+    "impressions": 8998508,
     "clicks": 114292,
     "ctr": 1.270122,
     "cpc": 0.788532,
-    "cpm": 10.015311,
+    "cpm": 10.01531,
     "reach": 3776062,
     "frequency": 2.38304,
     "postEngagement": 0,
     "videoP25": 267807,
     "videoP50": 170098,
     "videoP95": 52861,
-    "videoPlays": 9017772,
+    "videoPlays": 9017774,
     "msgCount": 13852,
     "cpl": 6.506125469246319
   },
@@ -268,9 +268,9 @@
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
       "spend": 31586.89,
-      "impressions": 2336745,
+      "impressions": 2336746,
       "clicks": 24614,
-      "ctr": 1.053346,
+      "ctr": 1.053345,
       "results": 4180,
       "costPerResult": 7.556672248803828
     },
@@ -342,25 +342,7 @@
       "costPerResult": 244.32222222222222
     }
   },
-  "funnel": {
-    "spend": 90365.61,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 270.55571856287423,
-    "cplAttend": 475.60847368421054,
-    "cac": 711.5402362204725,
-    "roas": 9.836316713847225
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
