@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T04:46:02.961Z",
+  "updatedAt": "2026-08-21T04:50:56.421Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-20"
@@ -183,38 +183,38 @@
     {
       "date": "2026-08-20",
       "label": "20/08",
-      "totalSpend": 1864.15,
-      "msgSpend": 1864.15,
+      "totalSpend": 1864.16,
+      "msgSpend": 1864.16,
       "msgCount": 298,
-      "impressions": 189233,
+      "impressions": 189235,
       "clicks": 2852
     },
     {
       "date": "2026-08-21",
       "label": "21/08",
-      "totalSpend": 64.02,
-      "msgSpend": 64.02,
-      "msgCount": 7,
-      "impressions": 8171,
-      "clicks": 170
+      "totalSpend": 65.19,
+      "msgSpend": 65.19,
+      "msgCount": 10,
+      "impressions": 8342,
+      "clicks": 174
     }
   ],
   "current": {
-    "spend": 90122.4,
-    "impressions": 8998418,
+    "spend": 90122.41,
+    "impressions": 8998419,
     "clicks": 114290,
     "ctr": 1.270112,
-    "cpc": 0.788541,
+    "cpc": 0.788542,
     "cpm": 10.01536,
     "reach": 3776062,
-    "frequency": 2.383016,
+    "frequency": 2.383017,
     "postEngagement": 0,
     "videoP25": 267806,
     "videoP50": 170098,
     "videoP95": 52861,
-    "videoPlays": 9017674,
+    "videoPlays": 9017675,
     "msgCount": 13852,
-    "cpl": 6.506092982962748
+    "cpl": 6.506093704880162
   },
   "previous": {
     "spend": 84427.6,
@@ -287,12 +287,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 18043.21,
-      "impressions": 4265756,
+      "spend": 18043.22,
+      "impressions": 4265758,
       "clicks": 68996,
-      "ctr": 1.617439,
+      "ctr": 1.617438,
       "results": 967,
-      "costPerResult": 18.658955532574975
+      "costPerResult": 18.65896587383661
     },
     {
       "id": "120250838115900654",
@@ -308,7 +308,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 54398.62,
-    "meio": 31501.91,
+    "meio": 31501.920000000002,
     "fundo": 2002.76,
     "outros": 2219.11
   },
