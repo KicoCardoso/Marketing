@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T08:05:50.929Z",
+  "updatedAt": "2026-08-21T08:10:49.533Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-20"
@@ -186,33 +186,33 @@
       "totalSpend": 1864.25,
       "msgSpend": 1864.25,
       "msgCount": 298,
-      "impressions": 189257,
+      "impressions": 189258,
       "clicks": 2853
     },
     {
       "date": "2026-08-21",
       "label": "21/08",
-      "totalSpend": 98.53999999999999,
-      "msgSpend": 98.53999999999999,
+      "totalSpend": 99.53,
+      "msgSpend": 99.53,
       "msgCount": 13,
-      "impressions": 11637,
-      "clicks": 246
+      "impressions": 11744,
+      "clicks": 248
     }
   ],
   "current": {
     "spend": 90122.5,
-    "impressions": 8998441,
+    "impressions": 8998443,
     "clicks": 114291,
     "ctr": 1.27012,
     "cpc": 0.788535,
-    "cpm": 10.015346,
+    "cpm": 10.015344,
     "reach": 3776062,
     "frequency": 2.383023,
     "postEngagement": 0,
     "videoP25": 267807,
     "videoP50": 170098,
     "videoP95": 52861,
-    "videoPlays": 9017702,
+    "videoPlays": 9017703,
     "msgCount": 13852,
     "cpl": 6.506100202136875
   },
@@ -288,21 +288,11 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 18043.29,
-      "impressions": 4265776,
+      "impressions": 4265777,
       "clicks": 68997,
-      "ctr": 1.617455,
+      "ctr": 1.617454,
       "results": 967,
       "costPerResult": 18.659038262668048
-    },
-    {
-      "id": "120250838115900654",
-      "name": "teste",
-      "spend": 20.21,
-      "impressions": 2334,
-      "clicks": 46,
-      "ctr": 1.970865,
-      "results": 0,
-      "costPerResult": null
     }
   ],
   "funnelSpendByStage": {
@@ -310,7 +300,7 @@
     "topo": 54398.64,
     "meio": 31501.99,
     "fundo": 2002.76,
-    "outros": 2219.11
+    "outros": 2198.9
   },
   "highlights": {
     "bestCost": {
@@ -328,11 +318,11 @@
       "costPerResult": 4.061212390956027
     },
     "hottest": {
-      "name": "teste",
-      "spend": 20.21,
-      "results": 0,
-      "ctr": 1.970865,
-      "costPerResult": null
+      "name": "[SP][Site][lentes][trafego]",
+      "spend": 2198.9,
+      "results": 9,
+      "ctr": 1.821203,
+      "costPerResult": 244.32222222222222
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
