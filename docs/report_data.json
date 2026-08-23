@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T05:35:53.479Z",
+  "updatedAt": "2026-08-23T05:40:57.867Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-22"
@@ -66,11 +66,11 @@
     {
       "date": "2026-08-07",
       "label": "07/08",
-      "totalSpend": 5706.580000000001,
+      "totalSpend": 5726.790000000001,
       "msgSpend": 5706.580000000001,
       "msgCount": 863,
-      "impressions": 627034,
-      "clicks": 7931
+      "impressions": 629368,
+      "clicks": 7977
     },
     {
       "date": "2026-08-08",
@@ -204,26 +204,26 @@
       "totalSpend": 1686.49,
       "msgSpend": 1686.49,
       "msgCount": 218,
-      "impressions": 156074,
+      "impressions": 156075,
       "clicks": 2719
     },
     {
       "date": "2026-08-23",
       "label": "23/08",
-      "totalSpend": 127.13,
+      "totalSpend": 129.57,
       "msgSpend": 0,
       "msgCount": 0,
-      "impressions": 18892,
-      "clicks": 424
+      "impressions": 19329,
+      "clicks": 431
     }
   ],
   "current": {
     "spend": 93424.31,
-    "impressions": 9304051,
+    "impressions": 9304052,
     "clicks": 119686,
     "ctr": 1.286386,
     "cpc": 0.780578,
-    "cpm": 10.041251,
+    "cpm": 10.04125,
     "reach": 3854167,
     "frequency": 2.414024,
     "postEngagement": 0,
@@ -286,7 +286,7 @@
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
       "spend": 33903.8,
-      "impressions": 2484665,
+      "impressions": 2484666,
       "clicks": 26335,
       "ctr": 1.059901,
       "results": 4562,
@@ -311,16 +311,6 @@
       "ctr": 1.642859,
       "results": 1059,
       "costPerResult": 17.967998111425874
-    },
-    {
-      "id": "120250838115900654",
-      "name": "teste",
-      "spend": 20.21,
-      "impressions": 2334,
-      "clicks": 46,
-      "ctr": 1.970865,
-      "results": 0,
-      "costPerResult": null
     }
   ],
   "funnelSpendByStage": {
@@ -328,7 +318,7 @@
     "topo": 56715.630000000005,
     "meio": 32486.81,
     "fundo": 2002.76,
-    "outros": 2219.11
+    "outros": 2198.9
   },
   "highlights": {
     "bestCost": {
@@ -346,11 +336,11 @@
       "costPerResult": 4.061212390956027
     },
     "hottest": {
-      "name": "teste",
-      "spend": 20.21,
-      "results": 0,
-      "ctr": 1.970865,
-      "costPerResult": null
+      "name": "[SP][Site][lentes][trafego]",
+      "spend": 2198.9,
+      "results": 9,
+      "ctr": 1.821203,
+      "costPerResult": 244.32222222222222
     },
     "attention": {
       "name": "[SP][Site][lentes][trafego]",
