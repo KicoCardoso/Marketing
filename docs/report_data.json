@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T08:50:48.951Z",
+  "updatedAt": "2026-08-23T08:55:46.442Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-22"
@@ -201,29 +201,29 @@
     {
       "date": "2026-08-22",
       "label": "22/08",
-      "totalSpend": 1686.49,
-      "msgSpend": 1686.49,
+      "totalSpend": 1686.5,
+      "msgSpend": 1686.5,
       "msgCount": 218,
-      "impressions": 156082,
+      "impressions": 156084,
       "clicks": 2719
     },
     {
       "date": "2026-08-23",
       "label": "23/08",
-      "totalSpend": 192.42000000000002,
-      "msgSpend": 123.89,
+      "totalSpend": 194.36,
+      "msgSpend": 124.57,
       "msgCount": 9,
-      "impressions": 30119,
-      "clicks": 649
+      "impressions": 30327,
+      "clicks": 653
     }
   ],
   "current": {
     "spend": 93424.31,
-    "impressions": 9304059,
+    "impressions": 9304060,
     "clicks": 119686,
     "ctr": 1.286385,
     "cpc": 0.780578,
-    "cpm": 10.041242,
+    "cpm": 10.041241,
     "reach": 3854167,
     "frequency": 2.414026,
     "postEngagement": 0,
@@ -285,12 +285,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 33903.8,
-      "impressions": 2484667,
+      "spend": 33903.81,
+      "impressions": 2484668,
       "clicks": 26335,
-      "ctr": 1.059901,
+      "ctr": 1.0599,
       "results": 4562,
-      "costPerResult": 7.43178430512933
+      "costPerResult": 7.431786497150372
     },
     {
       "id": "120250809278580654",
@@ -306,7 +306,7 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 19028.11,
-      "impressions": 4423454,
+      "impressions": 4423455,
       "clicks": 72671,
       "ctr": 1.642856,
       "results": 1059,
@@ -325,7 +325,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 56715.630000000005,
+    "topo": 56715.64,
     "meio": 32486.81,
     "fundo": 2002.76,
     "outros": 2219.11
