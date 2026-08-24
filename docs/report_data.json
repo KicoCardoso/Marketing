@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-24T02:56:02.205Z",
+  "updatedAt": "2026-08-24T03:01:15.375Z",
   "period": {
     "since": "2026-08-01",
-    "until": "2026-08-22"
+    "until": "2026-08-23"
   },
   "previousPeriod": {
     "since": "2026-07-01",
-    "until": "2026-07-22"
+    "until": "2026-07-23"
   },
   "dailySeries": [
     {
@@ -210,46 +210,46 @@
     {
       "date": "2026-08-23",
       "label": "23/08",
-      "totalSpend": 1462.2,
-      "msgSpend": 1462.2,
+      "totalSpend": 1466.74,
+      "msgSpend": 1466.74,
       "msgCount": 129,
-      "impressions": 199750,
-      "clicks": 3363
+      "impressions": 200311,
+      "clicks": 3374
     }
   ],
   "current": {
-    "spend": 93424.33,
-    "impressions": 9304091,
-    "clicks": 119687,
-    "ctr": 1.286391,
-    "cpc": 0.780572,
-    "cpm": 10.04121,
-    "reach": 3854167,
-    "frequency": 2.414034,
+    "spend": 94891.07,
+    "impressions": 9504402,
+    "clicks": 123061,
+    "ctr": 1.294779,
+    "cpc": 0.77109,
+    "cpm": 9.983907,
+    "reach": 3892092,
+    "frequency": 2.441978,
     "postEngagement": 0,
-    "videoP25": 277148,
-    "videoP50": 175247,
-    "videoP95": 54901,
-    "videoPlays": 9328102,
-    "msgCount": 14326,
-    "cpl": 6.52131299734748
+    "videoP25": 281445,
+    "videoP50": 177364,
+    "videoP95": 55776,
+    "videoPlays": 9529211,
+    "msgCount": 14455,
+    "cpl": 6.564584572812176
   },
   "previous": {
-    "spend": 97008.02,
-    "impressions": 6296493,
-    "clicks": 78922,
-    "ctr": 1.253428,
-    "cpc": 1.229163,
-    "cpm": 15.406675,
-    "reach": 2677769,
-    "frequency": 2.351395,
+    "spend": 101423.23,
+    "impressions": 6551524,
+    "clicks": 83509,
+    "ctr": 1.27465,
+    "cpc": 1.214519,
+    "cpm": 15.480861,
+    "reach": 2744590,
+    "frequency": 2.387068,
     "postEngagement": 0,
-    "videoP25": 291500,
-    "videoP50": 156538,
-    "videoP95": 47316,
-    "videoPlays": 5360167,
-    "msgCount": 20623,
-    "cpl": 4.703875284876109
+    "videoP25": 302355,
+    "videoP50": 162351,
+    "videoP95": 49176,
+    "videoPlays": 5538778,
+    "msgCount": 21213,
+    "cpl": 4.781182765285438
   },
   "campaigns": [
     {
@@ -285,12 +285,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 33903.81,
-      "impressions": 2484681,
-      "clicks": 26336,
-      "ctr": 1.059935,
-      "results": 4562,
-      "costPerResult": 7.431786497150372
+      "spend": 34763.41,
+      "impressions": 2557735,
+      "clicks": 27258,
+      "ctr": 1.065709,
+      "results": 4628,
+      "costPerResult": 7.51154062229905
     },
     {
       "id": "120250809278580654",
@@ -305,12 +305,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 19028.12,
-      "impressions": 4423472,
-      "clicks": 72671,
-      "ctr": 1.64285,
-      "results": 1059,
-      "costPerResult": 17.968007554296506
+      "spend": 19635.26,
+      "impressions": 4550729,
+      "clicks": 75123,
+      "ctr": 1.65079,
+      "results": 1122,
+      "costPerResult": 17.50023172905526
     },
     {
       "id": "120250838115900654",
@@ -325,8 +325,8 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 56715.64,
-    "meio": 32486.82,
+    "topo": 57575.240000000005,
+    "meio": 33093.96,
     "fundo": 2002.76,
     "outros": 2219.11
   },
