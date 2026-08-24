@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T12:26:07.300Z",
+  "updatedAt": "2026-08-24T12:31:32.696Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-23"
@@ -210,20 +210,20 @@
     {
       "date": "2026-08-23",
       "label": "23/08",
-      "totalSpend": 1470.23,
-      "msgSpend": 1470.23,
+      "totalSpend": 1470.24,
+      "msgSpend": 1470.24,
       "msgCount": 132,
-      "impressions": 200843,
+      "impressions": 200844,
       "clicks": 3381
     },
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 261.8,
-      "msgSpend": 147.69,
+      "totalSpend": 264.47,
+      "msgSpend": 148.54,
       "msgCount": 12,
-      "impressions": 37605,
-      "clicks": 790
+      "impressions": 37894,
+      "clicks": 797
     }
   ],
   "current": {
@@ -314,12 +314,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 19636.7,
-      "impressions": 4551047,
+      "spend": 19636.71,
+      "impressions": 4551048,
       "clicks": 75127,
       "ctr": 1.650763,
       "results": 1122,
-      "costPerResult": 17.501515151515154
+      "costPerResult": 17.50152406417112
     },
     {
       "id": "120250838115900654",
@@ -335,7 +335,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 57577.29,
-    "meio": 33095.4,
+    "meio": 33095.41,
     "fundo": 2002.76,
     "outros": 2219.11
   },
@@ -369,7 +369,25 @@
       "costPerResult": 244.32222222222222
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 95161.12,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 284.9135329341317,
+    "cplAttend": 500.84799999999996,
+    "cac": 749.300157480315,
+    "roas": 9.340629450346949
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
