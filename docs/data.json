@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T09:05:48.290Z",
+  "updatedAt": "2026-08-24T09:10:24.953Z",
   "members": [
     {
       "id": 118016784,
@@ -2134,7 +2134,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajhbkv4",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
