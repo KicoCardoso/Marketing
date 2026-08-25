@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:02:08.978Z",
+  "updatedAt": "2026-08-25T07:05:50.002Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,38 +219,38 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6405.94,
-      "msgSpend": 6405.94,
+      "totalSpend": 6405.95,
+      "msgSpend": 6405.95,
       "msgCount": 796,
-      "impressions": 393379,
+      "impressions": 393380,
       "clicks": 3905
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 639.17,
-      "msgSpend": 639.17,
+      "totalSpend": 640.98,
+      "msgSpend": 640.98,
       "msgCount": 64,
-      "impressions": 36098,
-      "clicks": 369
+      "impressions": 36246,
+      "clicks": 370
     }
   ],
   "current": {
-    "spend": 101300.53,
-    "impressions": 9898317,
+    "spend": 101300.54,
+    "impressions": 9898318,
     "clicks": 126973,
     "ctr": 1.282774,
     "cpc": 0.797812,
     "cpm": 10.234117,
     "reach": 4009183,
-    "frequency": 2.468911,
+    "frequency": 2.468912,
     "postEngagement": 0,
     "videoP25": 297527,
     "videoP50": 186096,
     "videoP95": 58435,
-    "videoPlays": 9943742,
+    "videoPlays": 9943743,
     "msgCount": 15254,
-    "cpl": 6.6409158253572835
+    "cpl": 6.640916480923036
   },
   "previous": {
     "spend": 105967.58,
@@ -303,12 +303,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 38446.3,
-      "impressions": 2755240,
+      "spend": 38446.31,
+      "impressions": 2755241,
       "clicks": 28626,
-      "ctr": 1.038966,
+      "ctr": 1.038965,
       "results": 5045,
-      "costPerResult": 7.6206739345887025
+      "costPerResult": 7.620675916749256
     },
     {
       "id": "120250809278580654",
@@ -343,7 +343,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 61836.31,
+    "topo": 61836.31999999999,
     "meio": 35083.84,
     "fundo": 2161.27,
     "outros": 2219.11
