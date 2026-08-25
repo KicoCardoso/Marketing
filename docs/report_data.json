@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:20:50.630Z",
+  "updatedAt": "2026-08-25T07:25:56.835Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,38 +219,38 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6405.95,
-      "msgSpend": 6405.95,
+      "totalSpend": 6405.96,
+      "msgSpend": 6405.96,
       "msgCount": 796,
-      "impressions": 393381,
+      "impressions": 393382,
       "clicks": 3905
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 658.3199999999999,
-      "msgSpend": 658.3199999999999,
+      "totalSpend": 665.69,
+      "msgSpend": 665.69,
       "msgCount": 64,
-      "impressions": 36970,
-      "clicks": 377
+      "impressions": 37252,
+      "clicks": 382
     }
   ],
   "current": {
-    "spend": 101300.54,
-    "impressions": 9898319,
+    "spend": 101300.55,
+    "impressions": 9898320,
     "clicks": 126973,
     "ctr": 1.282773,
     "cpc": 0.797812,
-    "cpm": 10.234116,
+    "cpm": 10.234115,
     "reach": 4009183,
     "frequency": 2.468912,
     "postEngagement": 0,
     "videoP25": 297527,
     "videoP50": 186096,
     "videoP95": 58435,
-    "videoPlays": 9943746,
+    "videoPlays": 9943747,
     "msgCount": 15254,
-    "cpl": 6.640916480923036
+    "cpl": 6.64091713648879
   },
   "previous": {
     "spend": 105967.58,
@@ -323,12 +323,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20033.09,
-      "impressions": 4610456,
+      "spend": 20033.1,
+      "impressions": 4610457,
       "clicks": 76628,
       "ctr": 1.662048,
       "results": 1167,
-      "costPerResult": 17.16631533847472
+      "costPerResult": 17.166323907455013
     },
     {
       "id": "120250838115900654",
@@ -344,7 +344,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 61836.31999999999,
-    "meio": 35083.84,
+    "meio": 35083.85,
     "fundo": 2161.27,
     "outros": 2219.11
   },
