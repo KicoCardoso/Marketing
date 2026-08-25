@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T14:40:52.539Z",
+  "updatedAt": "2026-08-25T14:46:08.553Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,38 +219,38 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6407.44,
-      "msgSpend": 6407.44,
+      "totalSpend": 6407.45,
+      "msgSpend": 6407.45,
       "msgCount": 796,
-      "impressions": 393480,
+      "impressions": 393481,
       "clicks": 3907
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 3109.6600000000003,
-      "msgSpend": 3109.6600000000003,
-      "msgCount": 404,
-      "impressions": 139857,
-      "clicks": 1433
+      "totalSpend": 3152.73,
+      "msgSpend": 3152.73,
+      "msgCount": 422,
+      "impressions": 141110,
+      "clicks": 1445
     }
   ],
   "current": {
-    "spend": 101302.03,
-    "impressions": 9898418,
+    "spend": 101302.04,
+    "impressions": 9898419,
     "clicks": 126975,
     "ctr": 1.282781,
     "cpc": 0.797811,
     "cpm": 10.234164,
     "reach": 4009183,
-    "frequency": 2.468936,
+    "frequency": 2.468937,
     "postEngagement": 0,
     "videoP25": 297532,
     "videoP50": 186099,
     "videoP95": 58436,
     "videoPlays": 9943880,
     "msgCount": 15254,
-    "cpl": 6.64101416022027
+    "cpl": 6.641014815786023
   },
   "previous": {
     "spend": 105967.58,
@@ -303,12 +303,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 38447.18,
-      "impressions": 2755283,
+      "spend": 38447.19,
+      "impressions": 2755284,
       "clicks": 28628,
       "ctr": 1.039022,
       "results": 5045,
-      "costPerResult": 7.620848364717542
+      "costPerResult": 7.620850346878098
     },
     {
       "id": "120250809278580654",
@@ -343,7 +343,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 61837.3,
+    "topo": 61837.31,
     "meio": 35084.35,
     "fundo": 2161.27,
     "outros": 2219.11
