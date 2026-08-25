@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:40:54.948Z",
+  "updatedAt": "2026-08-25T11:45:09.033Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,38 +219,38 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6407.11,
-      "msgSpend": 6407.11,
+      "totalSpend": 6407.12,
+      "msgSpend": 6407.12,
       "msgCount": 796,
-      "impressions": 393468,
+      "impressions": 393469,
       "clicks": 3907
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 1851.4199999999998,
-      "msgSpend": 1851.4199999999998,
-      "msgCount": 174,
-      "impressions": 87097,
-      "clicks": 962
+      "totalSpend": 1876.13,
+      "msgSpend": 1876.13,
+      "msgCount": 177,
+      "impressions": 88320,
+      "clicks": 974
     }
   ],
   "current": {
-    "spend": 101301.7,
-    "impressions": 9898406,
+    "spend": 101301.71,
+    "impressions": 9898407,
     "clicks": 126975,
     "ctr": 1.282782,
     "cpc": 0.797808,
     "cpm": 10.234143,
     "reach": 4009183,
-    "frequency": 2.468933,
+    "frequency": 2.468934,
     "postEngagement": 0,
     "videoP25": 297529,
     "videoP50": 186096,
     "videoP95": 58435,
-    "videoPlays": 9943859,
+    "videoPlays": 9943860,
     "msgCount": 15254,
-    "cpl": 6.640992526550413
+    "cpl": 6.6409931821161665
   },
   "previous": {
     "spend": 105967.58,
@@ -323,12 +323,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20033.34,
-      "impressions": 4610490,
+      "spend": 20033.35,
+      "impressions": 4610491,
       "clicks": 76628,
       "ctr": 1.662036,
       "results": 1167,
-      "costPerResult": 17.166529562982006
+      "costPerResult": 17.166538131962294
     },
     {
       "id": "120250838115900654",
@@ -344,7 +344,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 61837.06,
-    "meio": 35084.26,
+    "meio": 35084.27,
     "fundo": 2161.27,
     "outros": 2219.11
   },
