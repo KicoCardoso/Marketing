@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T07:25:56.835Z",
+  "updatedAt": "2026-08-25T07:30:53.637Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,38 +219,38 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6405.96,
-      "msgSpend": 6405.96,
+      "totalSpend": 6406.03,
+      "msgSpend": 6406.03,
       "msgCount": 796,
-      "impressions": 393382,
+      "impressions": 393383,
       "clicks": 3905
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 665.69,
-      "msgSpend": 665.69,
+      "totalSpend": 671.25,
+      "msgSpend": 671.25,
       "msgCount": 64,
-      "impressions": 37252,
-      "clicks": 382
+      "impressions": 37528,
+      "clicks": 387
     }
   ],
   "current": {
-    "spend": 101300.55,
-    "impressions": 9898320,
+    "spend": 101300.62,
+    "impressions": 9898321,
     "clicks": 126973,
     "ctr": 1.282773,
     "cpc": 0.797812,
-    "cpm": 10.234115,
+    "cpm": 10.234122,
     "reach": 4009183,
     "frequency": 2.468912,
     "postEngagement": 0,
     "videoP25": 297527,
     "videoP50": 186096,
     "videoP95": 58435,
-    "videoPlays": 9943747,
+    "videoPlays": 9943748,
     "msgCount": 15254,
-    "cpl": 6.64091713648879
+    "cpl": 6.640921725449062
   },
   "previous": {
     "spend": 105967.58,
@@ -283,12 +283,12 @@
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 15050.75,
-      "impressions": 841355,
+      "spend": 15050.82,
+      "impressions": 841356,
       "clicks": 7694,
-      "ctr": 0.914477,
+      "ctr": 0.914476,
       "results": 2632,
-      "costPerResult": 5.718370060790273
+      "costPerResult": 5.718396656534955
     },
     {
       "id": "120250655087860654",
@@ -344,7 +344,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 61836.31999999999,
-    "meio": 35083.85,
+    "meio": 35083.92,
     "fundo": 2161.27,
     "outros": 2219.11
   },
