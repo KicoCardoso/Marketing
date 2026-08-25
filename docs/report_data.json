@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T08:31:02.092Z",
+  "updatedAt": "2026-08-25T08:35:55.603Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-24"
@@ -219,20 +219,20 @@
     {
       "date": "2026-08-24",
       "label": "24/08",
-      "totalSpend": 6406.27,
-      "msgSpend": 6406.27,
+      "totalSpend": 6406.28,
+      "msgSpend": 6406.28,
       "msgCount": 796,
-      "impressions": 393399,
+      "impressions": 393401,
       "clicks": 3905
     },
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 764.32,
-      "msgSpend": 764.32,
-      "msgCount": 73,
-      "impressions": 41841,
-      "clicks": 435
+      "totalSpend": 772.4100000000001,
+      "msgSpend": 772.4100000000001,
+      "msgCount": 78,
+      "impressions": 42173,
+      "clicks": 439
     }
   ],
   "current": {
@@ -273,12 +273,12 @@
     {
       "id": "120250654212670654",
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 23390.05,
-      "impressions": 1324477,
+      "spend": 23390.06,
+      "impressions": 1324478,
       "clicks": 7702,
-      "ctr": 0.581513,
+      "ctr": 0.581512,
       "results": 5749,
-      "costPerResult": 4.068542355192207
+      "costPerResult": 4.068544094625152
     },
     {
       "id": "120250655087250654",
@@ -324,7 +324,7 @@
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
       "spend": 20033.13,
-      "impressions": 4610464,
+      "impressions": 4610465,
       "clicks": 76628,
       "ctr": 1.662045,
       "results": 1167,
@@ -343,7 +343,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 61836.520000000004,
+    "topo": 61836.53,
     "meio": 35083.96,
     "fundo": 2161.27,
     "outros": 2219.11
@@ -358,10 +358,10 @@
     },
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 23390.05,
+      "spend": 23390.06,
       "results": 5749,
-      "ctr": 0.581513,
-      "costPerResult": 4.068542355192207
+      "ctr": 0.581512,
+      "costPerResult": 4.068544094625152
     },
     "hottest": {
       "name": "teste",
