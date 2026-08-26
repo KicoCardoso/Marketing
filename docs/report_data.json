@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T08:05:50.993Z",
+  "updatedAt": "2026-08-26T08:11:23.293Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4759.23,
-      "msgSpend": 4759.23,
+      "totalSpend": 4759.32,
+      "msgSpend": 4759.32,
       "msgCount": 871,
-      "impressions": 263882,
+      "impressions": 263884,
       "clicks": 3601
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 141.68,
-      "msgSpend": 122.86999999999999,
+      "totalSpend": 142.63,
+      "msgSpend": 123.80000000000001,
       "msgCount": 33,
-      "impressions": 11813,
-      "clicks": 221
+      "impressions": 11914,
+      "clicks": 222
     }
   ],
   "current": {
-    "spend": 106061.43,
-    "impressions": 10162306,
+    "spend": 106061.52,
+    "impressions": 10162309,
     "clicks": 130576,
     "ctr": 1.284905,
-    "cpc": 0.812258,
-    "cpm": 10.436748,
+    "cpc": 0.812259,
+    "cpm": 10.436754,
     "reach": 4080048,
-    "frequency": 2.490732,
+    "frequency": 2.490733,
     "postEngagement": 0,
     "videoP25": 309231,
     "videoP50": 192616,
     "videoP95": 60564,
-    "videoPlays": 10215326,
+    "videoPlays": 10215330,
     "msgCount": 16125,
-    "cpl": 6.5774530232558135
+    "cpl": 6.577458604651163
   },
   "previous": {
     "spend": 112152.74,
@@ -332,12 +332,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20587.49,
-      "impressions": 4690656,
+      "spend": 20587.58,
+      "impressions": 4690658,
       "clicks": 78486,
       "ctr": 1.673241,
       "results": 1221,
-      "costPerResult": 16.861171171171172
+      "costPerResult": 16.861244881244883
     },
     {
       "id": "120250838115900654",
@@ -353,7 +353,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 64788.48,
-    "meio": 36723.86,
+    "meio": 36723.950000000004,
     "fundo": 2329.98,
     "outros": 2219.11
   },
