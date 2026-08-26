@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T11:40:53.789Z",
+  "updatedAt": "2026-08-26T11:46:28.235Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4759.92,
-      "msgSpend": 4759.92,
+      "totalSpend": 4759.93,
+      "msgSpend": 4759.93,
       "msgCount": 871,
-      "impressions": 263968,
+      "impressions": 263969,
       "clicks": 3604
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 349.69,
-      "msgSpend": 349.69,
-      "msgCount": 47,
-      "impressions": 31371,
-      "clicks": 605
+      "totalSpend": 360.14,
+      "msgSpend": 360.14,
+      "msgCount": 51,
+      "impressions": 31677,
+      "clicks": 613
     }
   ],
   "current": {
-    "spend": 106062.12,
-    "impressions": 10162393,
+    "spend": 106062.13,
+    "impressions": 10162394,
     "clicks": 130579,
     "ctr": 1.284924,
     "cpc": 0.812245,
     "cpm": 10.436727,
     "reach": 4080048,
-    "frequency": 2.490753,
+    "frequency": 2.490754,
     "postEngagement": 0,
     "videoP25": 309232,
     "videoP50": 192616,
     "videoP95": 60564,
-    "videoPlays": 10215418,
+    "videoPlays": 10215420,
     "msgCount": 16125,
-    "cpl": 6.5774958139534885
+    "cpl": 6.577496434108528
   },
   "previous": {
     "spend": 112152.74,
@@ -332,12 +332,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20587.92,
-      "impressions": 4690717,
+      "spend": 20587.93,
+      "impressions": 4690718,
       "clicks": 78489,
-      "ctr": 1.673284,
+      "ctr": 1.673283,
       "results": 1221,
-      "costPerResult": 16.86152334152334
+      "costPerResult": 16.861531531531533
     },
     {
       "id": "120250838115900654",
@@ -353,7 +353,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 64788.68,
-    "meio": 36724.35,
+    "meio": 36724.36,
     "fundo": 2329.98,
     "outros": 2219.11
   },
@@ -387,7 +387,25 @@
       "costPerResult": 244.32222222222222
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 106422.27,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 318.6295508982036,
+    "cplAttend": 560.1172105263158,
+    "cac": 837.9706299212598,
+    "roas": 8.352243942926608
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
