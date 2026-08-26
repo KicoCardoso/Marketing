@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T04:15:54.273Z",
+  "updatedAt": "2026-08-26T04:20:53.030Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4758.9800000000005,
-      "msgSpend": 4758.9800000000005,
+      "totalSpend": 4759.009999999999,
+      "msgSpend": 4759.009999999999,
       "msgCount": 871,
-      "impressions": 263859,
+      "impressions": 263861,
       "clicks": 3600
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 82.39,
-      "msgSpend": 72.11,
+      "totalSpend": 85.28,
+      "msgSpend": 74.43,
       "msgCount": 21,
-      "impressions": 7254,
-      "clicks": 127
+      "impressions": 7534,
+      "clicks": 130
     }
   ],
   "current": {
-    "spend": 106061.18,
-    "impressions": 10162284,
+    "spend": 106061.21,
+    "impressions": 10162286,
     "clicks": 130575,
     "ctr": 1.284898,
     "cpc": 0.812263,
-    "cpm": 10.436746,
+    "cpm": 10.436747,
     "reach": 4080048,
     "frequency": 2.490727,
     "postEngagement": 0,
     "videoP25": 309230,
     "videoP50": 192615,
     "videoP95": 60563,
-    "videoPlays": 10215299,
+    "videoPlays": 10215300,
     "msgCount": 16125,
-    "cpl": 6.577437519379845
+    "cpl": 6.577439379844962
   },
   "previous": {
     "spend": 112152.74,
@@ -312,12 +312,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 41074.03,
-      "impressions": 2859160,
+      "spend": 41074.06,
+      "impressions": 2859162,
       "clicks": 29631,
       "ctr": 1.036353,
       "results": 5441,
-      "costPerResult": 7.548985480610182
+      "costPerResult": 7.5489909943025175
     },
     {
       "id": "120250809278580654",
@@ -352,7 +352,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 64788.36,
+    "topo": 64788.39,
     "meio": 36723.73,
     "fundo": 2329.98,
     "outros": 2219.11
