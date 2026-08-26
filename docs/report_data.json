@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T10:20:55.507Z",
+  "updatedAt": "2026-08-26T10:25:48.553Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4759.759999999999,
-      "msgSpend": 4759.759999999999,
+      "totalSpend": 4759.78,
+      "msgSpend": 4759.78,
       "msgCount": 871,
-      "impressions": 263946,
-      "clicks": 3603
+      "impressions": 263948,
+      "clicks": 3604
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 242.42000000000002,
-      "msgSpend": 221.93,
+      "totalSpend": 254.62,
+      "msgSpend": 232.68,
       "msgCount": 38,
-      "impressions": 19770,
-      "clicks": 371
+      "impressions": 20872,
+      "clicks": 397
     }
   ],
   "current": {
-    "spend": 106061.96,
-    "impressions": 10162371,
-    "clicks": 130578,
-    "ctr": 1.284917,
-    "cpc": 0.81225,
+    "spend": 106061.99,
+    "impressions": 10162374,
+    "clicks": 130579,
+    "ctr": 1.284926,
+    "cpc": 0.812244,
     "cpm": 10.436734,
     "reach": 4080048,
-    "frequency": 2.490748,
+    "frequency": 2.490749,
     "postEngagement": 0,
     "videoP25": 309231,
     "videoP50": 192616,
     "videoP95": 60564,
-    "videoPlays": 10215395,
+    "videoPlays": 10215397,
     "msgCount": 16125,
-    "cpl": 6.577485891472868
+    "cpl": 6.577487751937984
   },
   "previous": {
     "spend": 112152.74,
@@ -292,12 +292,12 @@
     {
       "id": "120250655087250654",
       "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 16136.37,
-      "impressions": 896542,
+      "spend": 16136.38,
+      "impressions": 896543,
       "clicks": 8263,
-      "ctr": 0.921652,
+      "ctr": 0.921651,
       "results": 2881,
-      "costPerResult": 5.600961471711211
+      "costPerResult": 5.600964942728219
     },
     {
       "id": "120250655087860654",
@@ -332,12 +332,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20587.85,
-      "impressions": 4690701,
-      "clicks": 78488,
-      "ctr": 1.673268,
+      "spend": 20587.87,
+      "impressions": 4690703,
+      "clicks": 78489,
+      "ctr": 1.673289,
       "results": 1221,
-      "costPerResult": 16.86146601146601
+      "costPerResult": 16.86148239148239
     },
     {
       "id": "120250838115900654",
@@ -353,7 +353,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 64788.65,
-    "meio": 36724.22,
+    "meio": 36724.25,
     "fundo": 2329.98,
     "outros": 2219.11
   },
