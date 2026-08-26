@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T14:51:00.721Z",
+  "updatedAt": "2026-08-26T14:56:01.865Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4759.95,
-      "msgSpend": 4759.95,
+      "totalSpend": 4759.96,
+      "msgSpend": 4759.96,
       "msgCount": 871,
-      "impressions": 263972,
+      "impressions": 263973,
       "clicks": 3604
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 560.53,
-      "msgSpend": 560.53,
-      "msgCount": 139,
-      "impressions": 39534,
+      "totalSpend": 560.5899999999999,
+      "msgSpend": 560.5899999999999,
+      "msgCount": 140,
+      "impressions": 39543,
       "clicks": 735
     }
   ],
   "current": {
-    "spend": 106062.15,
-    "impressions": 10162397,
+    "spend": 106062.16,
+    "impressions": 10162398,
     "clicks": 130579,
     "ctr": 1.284923,
     "cpc": 0.812245,
     "cpm": 10.436726,
     "reach": 4080048,
-    "frequency": 2.490754,
+    "frequency": 2.490755,
     "postEngagement": 0,
     "videoP25": 309233,
     "videoP50": 192617,
     "videoP95": 60565,
     "videoPlays": 10215427,
     "msgCount": 16125,
-    "cpl": 6.577497674418605
+    "cpl": 6.577498294573644
   },
   "previous": {
     "spend": 112152.74,
@@ -312,12 +312,12 @@
     {
       "id": "120250782297540654",
       "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 41074.35,
-      "impressions": 2859192,
+      "spend": 41074.36,
+      "impressions": 2859193,
       "clicks": 29631,
-      "ctr": 1.036342,
+      "ctr": 1.036341,
       "results": 5441,
-      "costPerResult": 7.549044293328432
+      "costPerResult": 7.549046131225878
     },
     {
       "id": "120250809278580654",
@@ -352,7 +352,7 @@
   ],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 64788.68,
+    "topo": 64788.69,
     "meio": 36724.380000000005,
     "fundo": 2329.98,
     "outros": 2219.11
