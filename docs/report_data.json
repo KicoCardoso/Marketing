@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T08:15:53.171Z",
+  "updatedAt": "2026-08-26T08:20:55.999Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-25"
@@ -228,38 +228,38 @@
     {
       "date": "2026-08-25",
       "label": "25/08",
-      "totalSpend": 4759.33,
-      "msgSpend": 4759.33,
+      "totalSpend": 4759.36,
+      "msgSpend": 4759.36,
       "msgCount": 871,
-      "impressions": 263885,
+      "impressions": 263886,
       "clicks": 3601
     },
     {
       "date": "2026-08-26",
       "label": "26/08",
-      "totalSpend": 143.41,
-      "msgSpend": 124.56,
+      "totalSpend": 144.95,
+      "msgSpend": 125.88,
       "msgCount": 33,
-      "impressions": 11971,
-      "clicks": 222
+      "impressions": 12079,
+      "clicks": 227
     }
   ],
   "current": {
-    "spend": 106061.52,
-    "impressions": 10162309,
+    "spend": 106061.56,
+    "impressions": 10162311,
     "clicks": 130576,
     "ctr": 1.284905,
     "cpc": 0.812259,
-    "cpm": 10.436754,
+    "cpm": 10.436756,
     "reach": 4080048,
     "frequency": 2.490733,
     "postEngagement": 0,
     "videoP25": 309231,
     "videoP50": 192616,
     "videoP95": 60564,
-    "videoPlays": 10215330,
+    "videoPlays": 10215332,
     "msgCount": 16125,
-    "cpl": 6.577458604651163
+    "cpl": 6.577461085271318
   },
   "previous": {
     "spend": 112152.74,
@@ -332,12 +332,12 @@
     {
       "id": "120250810627720654",
       "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20587.59,
-      "impressions": 4690659,
+      "spend": 20587.62,
+      "impressions": 4690660,
       "clicks": 78486,
       "ctr": 1.67324,
       "results": 1221,
-      "costPerResult": 16.86125307125307
+      "costPerResult": 16.861277641277642
     },
     {
       "id": "120250838115900654",
@@ -353,7 +353,7 @@
   "funnelSpendByStage": {
     "perfil": 0,
     "topo": 64788.48,
-    "meio": 36723.96,
+    "meio": 36723.99,
     "fundo": 2329.98,
     "outros": 2219.11
   },
