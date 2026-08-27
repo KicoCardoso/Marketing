@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T18:42:56.731Z",
+  "updatedAt": "2026-08-27T18:46:26.049Z",
   "period": {
     "since": "2026-08-01",
     "until": "2026-08-26"
@@ -396,7 +396,25 @@
       "costPerResult": 244.32222222222222
     }
   },
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 106624.1,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 319.23383233532934,
+    "cplAttend": 561.1794736842105,
+    "cac": 839.559842519685,
+    "roas": 8.336433883146492
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
