@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-28T02:55:51.104Z",
+  "updatedAt": "2026-08-28T03:01:10.500Z",
   "period": {
     "since": "2026-08-01",
-    "until": "2026-08-26"
+    "until": "2026-08-27"
   },
   "previousPeriod": {
     "since": "2026-07-01",
-    "until": "2026-07-26"
+    "until": "2026-07-27"
   },
   "dailySeries": [
     {
@@ -267,25 +267,25 @@
     "videoP50": 193361,
     "videoP95": 60852,
     "videoPlays": 10255965,
-    "msgCount": 16337,
-    "cpl": 6.526540980596193
+    "msgCount": 16383,
+    "cpl": 6.508215833485931
   },
   "previous": {
-    "spend": 116154.18,
-    "impressions": 7329004,
-    "clicks": 97736,
-    "ctr": 1.333551,
-    "cpc": 1.188448,
-    "cpm": 15.848563,
-    "reach": 2928299,
-    "frequency": 2.50282,
+    "spend": 121279.27,
+    "impressions": 7596306,
+    "clicks": 102236,
+    "ctr": 1.345865,
+    "cpc": 1.186268,
+    "cpm": 15.965559,
+    "reach": 3019800,
+    "frequency": 2.5155,
     "postEngagement": 0,
-    "videoP25": 335157,
-    "videoP50": 179699,
-    "videoP95": 54819,
-    "videoPlays": 6066141,
-    "msgCount": 23200,
-    "cpl": 5.006645689655172
+    "videoP25": 344332,
+    "videoP50": 184585,
+    "videoP95": 56293,
+    "videoPlays": 6244468,
+    "msgCount": 24272,
+    "cpl": 4.996673945286751
   },
   "campaigns": [
     {
@@ -295,8 +295,8 @@
       "impressions": 1345504,
       "clicks": 7840,
       "ctr": 0.582681,
-      "results": 5884,
-      "costPerResult": 4.035715499660095
+      "results": 5886,
+      "costPerResult": 4.034344206591913
     },
     {
       "id": "120250655087250654",
@@ -305,8 +305,8 @@
       "impressions": 899117,
       "clicks": 8301,
       "ctr": 0.923239,
-      "results": 2925,
-      "costPerResult": 5.542505982905983
+      "results": 2942,
+      "costPerResult": 5.510479265805574
     },
     {
       "id": "120250655087860654",
@@ -325,8 +325,8 @@
       "impressions": 2874932,
       "clicks": 29853,
       "ctr": 1.03839,
-      "results": 5562,
-      "costPerResult": 7.4378964401294505
+      "results": 5589,
+      "costPerResult": 7.401964573268922
     },
     {
       "id": "120250809278580654",
@@ -377,9 +377,9 @@
     "mostResults": {
       "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
       "spend": 23746.15,
-      "results": 5884,
+      "results": 5886,
       "ctr": 0.582681,
-      "costPerResult": 4.035715499660095
+      "costPerResult": 4.034344206591913
     },
     "hottest": {
       "name": "teste",
