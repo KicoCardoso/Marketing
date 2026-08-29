@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-29T02:56:01.634Z",
+  "updatedAt": "2026-08-29T03:01:11.914Z",
   "period": {
     "since": "2026-08-01",
-    "until": "2026-08-27"
+    "until": "2026-08-28"
   },
   "previousPeriod": {
     "since": "2026-07-01",
-    "until": "2026-07-27"
+    "until": "2026-07-28"
   },
   "dailySeries": [
     {
@@ -276,25 +276,25 @@
     "videoP50": 193361,
     "videoP95": 60852,
     "videoPlays": 10255965,
-    "msgCount": 16383,
-    "cpl": 6.508215833485931
+    "msgCount": 16435,
+    "cpl": 6.487623973227867
   },
   "previous": {
-    "spend": 121279.27,
-    "impressions": 7596306,
-    "clicks": 102236,
-    "ctr": 1.345865,
-    "cpc": 1.186268,
-    "cpm": 15.965559,
-    "reach": 3019800,
-    "frequency": 2.5155,
+    "spend": 127819.81,
+    "impressions": 8016019,
+    "clicks": 107506,
+    "ctr": 1.34114,
+    "cpc": 1.188955,
+    "cpm": 15.945547,
+    "reach": 3119682,
+    "frequency": 2.569499,
     "postEngagement": 0,
-    "videoP25": 344332,
-    "videoP50": 184585,
-    "videoP95": 56293,
-    "videoPlays": 6244468,
-    "msgCount": 24272,
-    "cpl": 4.996673945286751
+    "videoP25": 358828,
+    "videoP50": 192649,
+    "videoP95": 58537,
+    "videoPlays": 6573610,
+    "msgCount": 26044,
+    "cpl": 4.907840961449854
   },
   "campaigns": [
     {
@@ -314,8 +314,8 @@
       "impressions": 899117,
       "clicks": 8301,
       "ctr": 0.923239,
-      "results": 2942,
-      "costPerResult": 5.510479265805574
+      "results": 2956,
+      "costPerResult": 5.484380920162382
     },
     {
       "id": "120250655087860654",
@@ -334,8 +334,8 @@
       "impressions": 2874932,
       "clicks": 29853,
       "ctr": 1.03839,
-      "results": 5589,
-      "costPerResult": 7.401964573268922
+      "results": 5627,
+      "costPerResult": 7.3519779633907945
     },
     {
       "id": "120250809278580654",
