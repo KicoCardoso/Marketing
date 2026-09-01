@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T16:26:41.388Z",
+  "updatedAt": "2026-09-01T16:30:59.629Z",
   "period": {
     "since": "2026-09-01",
     "until": "2026-09-01"
@@ -8,7 +8,17 @@
     "since": "2026-08-01",
     "until": "2026-08-01"
   },
-  "dailySeries": [],
+  "dailySeries": [
+    {
+      "date": "2026-09-01",
+      "label": "01/09",
+      "totalSpend": 0,
+      "msgSpend": 0,
+      "msgCount": 1,
+      "impressions": 0,
+      "clicks": 0
+    }
+  ],
   "current": {
     "spend": 0,
     "impressions": 0,
