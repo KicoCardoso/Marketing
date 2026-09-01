@@ -1,437 +1,57 @@
 {
-  "updatedAt": "2026-09-01T02:55:56.465Z",
+  "updatedAt": "2026-09-01T03:01:06.312Z",
   "period": {
-    "since": "2026-08-01",
-    "until": "2026-08-30"
+    "since": "2026-09-01",
+    "until": "2026-09-01"
   },
   "previousPeriod": {
-    "since": "2026-07-01",
-    "until": "2026-07-30"
+    "since": "2026-08-01",
+    "until": "2026-08-01"
   },
-  "dailySeries": [
-    {
-      "date": "2026-08-01",
-      "label": "01/08",
-      "totalSpend": 3599.11,
-      "msgSpend": 3599.11,
-      "msgCount": 635,
-      "impressions": 215893,
-      "clicks": 1779
-    },
-    {
-      "date": "2026-08-02",
-      "label": "02/08",
-      "totalSpend": 2392.18,
-      "msgSpend": 2392.18,
-      "msgCount": 366,
-      "impressions": 138559,
-      "clicks": 1166
-    },
-    {
-      "date": "2026-08-03",
-      "label": "03/08",
-      "totalSpend": 4308.679999999999,
-      "msgSpend": 4308.679999999999,
-      "msgCount": 1236,
-      "impressions": 235154,
-      "clicks": 1776
-    },
-    {
-      "date": "2026-08-04",
-      "label": "04/08",
-      "totalSpend": 4961.48,
-      "msgSpend": 4961.48,
-      "msgCount": 1188,
-      "impressions": 319432,
-      "clicks": 2010
-    },
-    {
-      "date": "2026-08-05",
-      "label": "05/08",
-      "totalSpend": 4315.74,
-      "msgSpend": 4315.74,
-      "msgCount": 1257,
-      "impressions": 284253,
-      "clicks": 2233
-    },
-    {
-      "date": "2026-08-06",
-      "label": "06/08",
-      "totalSpend": 4536.780000000001,
-      "msgSpend": 4536.780000000001,
-      "msgCount": 1096,
-      "impressions": 371259,
-      "clicks": 3896
-    },
-    {
-      "date": "2026-08-07",
-      "label": "07/08",
-      "totalSpend": 5726.790000000001,
-      "msgSpend": 5706.580000000001,
-      "msgCount": 863,
-      "impressions": 629368,
-      "clicks": 7977
-    },
-    {
-      "date": "2026-08-08",
-      "label": "08/08",
-      "totalSpend": 6675.419999999999,
-      "msgSpend": 6675.419999999999,
-      "msgCount": 711,
-      "impressions": 651853,
-      "clicks": 8539
-    },
-    {
-      "date": "2026-08-09",
-      "label": "09/08",
-      "totalSpend": 6101.990000000001,
-      "msgSpend": 6101.990000000001,
-      "msgCount": 450,
-      "impressions": 845629,
-      "clicks": 11298
-    },
-    {
-      "date": "2026-08-10",
-      "label": "10/08",
-      "totalSpend": 6502.759999999999,
-      "msgSpend": 6502.759999999999,
-      "msgCount": 1061,
-      "impressions": 601895,
-      "clicks": 8084
-    },
-    {
-      "date": "2026-08-11",
-      "label": "11/08",
-      "totalSpend": 7284.19,
-      "msgSpend": 7284.19,
-      "msgCount": 925,
-      "impressions": 732489,
-      "clicks": 8981
-    },
-    {
-      "date": "2026-08-12",
-      "label": "12/08",
-      "totalSpend": 5799.700000000001,
-      "msgSpend": 5799.700000000001,
-      "msgCount": 819,
-      "impressions": 711470,
-      "clicks": 8459
-    },
-    {
-      "date": "2026-08-13",
-      "label": "13/08",
-      "totalSpend": 4846.87,
-      "msgSpend": 4846.87,
-      "msgCount": 626,
-      "impressions": 579683,
-      "clicks": 7880
-    },
-    {
-      "date": "2026-08-14",
-      "label": "14/08",
-      "totalSpend": 4390.22,
-      "msgSpend": 4221.65,
-      "msgCount": 502,
-      "impressions": 524245,
-      "clicks": 7438
-    },
-    {
-      "date": "2026-08-15",
-      "label": "15/08",
-      "totalSpend": 4512.849999999999,
-      "msgSpend": 4324.11,
-      "msgCount": 420,
-      "impressions": 535356,
-      "clicks": 8049
-    },
-    {
-      "date": "2026-08-16",
-      "label": "16/08",
-      "totalSpend": 3986.7200000000003,
-      "msgSpend": 3762.9,
-      "msgCount": 314,
-      "impressions": 638214,
-      "clicks": 10014
-    },
-    {
-      "date": "2026-08-17",
-      "label": "17/08",
-      "totalSpend": 4200.17,
-      "msgSpend": 4070.0099999999998,
-      "msgCount": 484,
-      "impressions": 469669,
-      "clicks": 6537
-    },
-    {
-      "date": "2026-08-18",
-      "label": "18/08",
-      "totalSpend": 2089.5299999999997,
-      "msgSpend": 2089.5299999999997,
-      "msgCount": 314,
-      "impressions": 141612,
-      "clicks": 2168
-    },
-    {
-      "date": "2026-08-19",
-      "label": "19/08",
-      "totalSpend": 2027.07,
-      "msgSpend": 2027.07,
-      "msgCount": 287,
-      "impressions": 183152,
-      "clicks": 3154
-    },
-    {
-      "date": "2026-08-20",
-      "label": "20/08",
-      "totalSpend": 1864.74,
-      "msgSpend": 1864.74,
-      "msgCount": 298,
-      "impressions": 189346,
-      "clicks": 2854
-    },
-    {
-      "date": "2026-08-21",
-      "label": "21/08",
-      "totalSpend": 1614.8300000000002,
-      "msgSpend": 1614.8300000000002,
-      "msgCount": 256,
-      "impressions": 149446,
-      "clicks": 2675
-    },
-    {
-      "date": "2026-08-22",
-      "label": "22/08",
-      "totalSpend": 1686.51,
-      "msgSpend": 1686.51,
-      "msgCount": 218,
-      "impressions": 156114,
-      "clicks": 2720
-    },
-    {
-      "date": "2026-08-23",
-      "label": "23/08",
-      "totalSpend": 1470.26,
-      "msgSpend": 1470.26,
-      "msgCount": 132,
-      "impressions": 200847,
-      "clicks": 3381
-    },
-    {
-      "date": "2026-08-24",
-      "label": "24/08",
-      "totalSpend": 6407.610000000001,
-      "msgSpend": 6407.610000000001,
-      "msgCount": 796,
-      "impressions": 393487,
-      "clicks": 3907
-    },
-    {
-      "date": "2026-08-25",
-      "label": "25/08",
-      "totalSpend": 4759.98,
-      "msgSpend": 4759.98,
-      "msgCount": 871,
-      "impressions": 263978,
-      "clicks": 3604
-    },
-    {
-      "date": "2026-08-26",
-      "label": "26/08",
-      "totalSpend": 561.92,
-      "msgSpend": 561.92,
-      "msgCount": 212,
-      "impressions": 39608,
-      "clicks": 738
-    },
-    {
-      "date": "2026-08-27",
-      "label": "27/08",
-      "totalSpend": 0,
-      "msgSpend": 0,
-      "msgCount": 46,
-      "impressions": 0,
-      "clicks": 0
-    },
-    {
-      "date": "2026-08-28",
-      "label": "28/08",
-      "totalSpend": 0,
-      "msgSpend": 0,
-      "msgCount": 52,
-      "impressions": 0,
-      "clicks": 0
-    },
-    {
-      "date": "2026-08-29",
-      "label": "29/08",
-      "totalSpend": 0,
-      "msgSpend": 0,
-      "msgCount": 7,
-      "impressions": 0,
-      "clicks": 0
-    },
-    {
-      "date": "2026-08-30",
-      "label": "30/08",
-      "totalSpend": 0,
-      "msgSpend": 0,
-      "msgCount": 3,
-      "impressions": 0,
-      "clicks": 0
-    },
-    {
-      "date": "2026-08-31",
-      "label": "31/08",
-      "totalSpend": 0,
-      "msgSpend": 0,
-      "msgCount": 35,
-      "impressions": 0,
-      "clicks": 0
-    }
-  ],
+  "dailySeries": [],
   "current": {
-    "spend": 106624.1,
-    "impressions": 10202011,
-    "clicks": 131317,
-    "ctr": 1.287168,
-    "cpc": 0.81196,
-    "cpm": 10.451283,
-    "reach": 4081057,
-    "frequency": 2.499845,
+    "spend": 0,
+    "impressions": 0,
+    "clicks": 0,
+    "ctr": 0,
+    "cpc": 0,
+    "cpm": 0,
+    "reach": 0,
+    "frequency": 0,
     "postEngagement": 0,
-    "videoP25": 310540,
-    "videoP50": 193361,
-    "videoP95": 60852,
-    "videoPlays": 10255965,
-    "msgCount": 16445,
-    "cpl": 6.483678929765887
+    "videoP25": 0,
+    "videoP50": 0,
+    "videoP95": 0,
+    "videoPlays": 0,
+    "msgCount": 0,
+    "cpl": null
   },
   "previous": {
-    "spend": 136540.94,
-    "impressions": 8594205,
-    "clicks": 115330,
-    "ctr": 1.341951,
-    "cpc": 1.183915,
-    "cpm": 15.887559,
-    "reach": 3212243,
-    "frequency": 2.675453,
+    "spend": 3599.11,
+    "impressions": 215893,
+    "clicks": 1779,
+    "ctr": 0.824019,
+    "cpc": 2.023108,
+    "cpm": 16.670805,
+    "reach": 163214,
+    "frequency": 1.32276,
     "postEngagement": 0,
-    "videoP25": 378602,
-    "videoP50": 204176,
-    "videoP95": 61847,
-    "videoPlays": 7025272,
-    "msgCount": 28399,
-    "cpl": 4.807948871439136
+    "videoP25": 12111,
+    "videoP50": 6275,
+    "videoP95": 1690,
+    "videoPlays": 218079,
+    "msgCount": 635,
+    "cpl": 5.667889763779527
   },
-  "campaigns": [
-    {
-      "id": "120250654212670654",
-      "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 23746.15,
-      "impressions": 1345504,
-      "clicks": 7840,
-      "ctr": 0.582681,
-      "results": 5886,
-      "costPerResult": 4.034344206591913
-    },
-    {
-      "id": "120250655087250654",
-      "name": "[claude] [insta] [Lentes] [Meio] [Engajamento] [instagram] [E2] Novo",
-      "spend": 16211.83,
-      "impressions": 899117,
-      "clicks": 8301,
-      "ctr": 0.923239,
-      "results": 2961,
-      "costPerResult": 5.4751198919284025
-    },
-    {
-      "id": "120250655087860654",
-      "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 2370.92,
-      "impressions": 70911,
-      "clicks": 871,
-      "ctr": 1.2283,
-      "results": 687,
-      "costPerResult": 3.4511208151382826
-    },
-    {
-      "id": "120250782297540654",
-      "name": "[whatsapp] [Lentes] [Topo] [Engajamento] [whatsapp] [E1]",
-      "spend": 41369.58,
-      "impressions": 2874932,
-      "clicks": 29853,
-      "ctr": 1.03839,
-      "results": 5632,
-      "costPerResult": 7.345450994318182
-    },
-    {
-      "id": "120250809278580654",
-      "name": "[SP][Site][lentes][trafego]",
-      "spend": 2198.9,
-      "impressions": 300955,
-      "clicks": 5481,
-      "ctr": 1.821203,
-      "results": 9,
-      "costPerResult": 244.32222222222222
-    },
-    {
-      "id": "120250810627720654",
-      "name": "[Whatsapp] [Lentes] [Meio] [Engajamento] [instagram] [E2]",
-      "spend": 20706.51,
-      "impressions": 4708258,
-      "clicks": 78925,
-      "ctr": 1.67631,
-      "results": 1237,
-      "costPerResult": 16.739296685529506
-    },
-    {
-      "id": "120250838115900654",
-      "name": "teste",
-      "spend": 20.21,
-      "impressions": 2334,
-      "clicks": 46,
-      "ctr": 1.970865,
-      "results": 0,
-      "costPerResult": null
-    }
-  ],
+  "campaigns": [],
   "funnelSpendByStage": {
     "perfil": 0,
-    "topo": 65115.73,
-    "meio": 36918.34,
-    "fundo": 2370.92,
-    "outros": 2219.11
+    "topo": 0,
+    "meio": 0,
+    "fundo": 0,
+    "outros": 0
   },
-  "highlights": {
-    "bestCost": {
-      "name": "[claude] [insta] [Lentes] [Fundo] [Engajamento] [instagram] [E3] Novo",
-      "spend": 2370.92,
-      "results": 687,
-      "ctr": 1.2283,
-      "costPerResult": 3.4511208151382826
-    },
-    "mostResults": {
-      "name": "[claude] [insta] [Lentes] [Topo] [Engajamento] [instagram] [E1]",
-      "spend": 23746.15,
-      "results": 5886,
-      "ctr": 0.582681,
-      "costPerResult": 4.034344206591913
-    },
-    "hottest": {
-      "name": "teste",
-      "spend": 20.21,
-      "results": 0,
-      "ctr": 1.970865,
-      "costPerResult": null
-    },
-    "attention": {
-      "name": "[SP][Site][lentes][trafego]",
-      "spend": 2198.9,
-      "results": 9,
-      "ctr": 1.821203,
-      "costPerResult": 244.32222222222222
-    }
-  },
+  "highlights": null,
   "funnel": null,
   "clintPeriodMTD": null,
   "leadToday": null
