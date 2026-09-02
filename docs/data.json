@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T13:35:51.333Z",
+  "updatedAt": "2026-09-02T13:40:57.074Z",
   "members": [
     {
       "id": 118016784,
@@ -122,14 +122,14 @@
     {
       "id": "86ajybq48",
       "name": "Certificado Diego (Fellow)",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": null,
       "date_created": 1786365617448,
-      "date_closed": null,
+      "date_closed": 1788356418534,
       "tipo": "Identidade visual",
       "email": "icaro.rodrigues@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajybq48",
@@ -2162,8 +2162,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 27,
-      "open": 4
+      "done": 28,
+      "open": 3
     },
     {
       "id": 118016782,
@@ -2190,11 +2190,11 @@
     "Influenciadores": 1
   },
   "avgCompletionTimeByType": {
+    "Identidade visual": 28868,
     "Fotografia": 2783,
     "Sem tipo": 26285,
     "CS": 9428,
     "Mídias sociais": 14823,
-    "Identidade visual": 24557,
     "Branding": 4201
   },
   "onTimeRateByUser": [
