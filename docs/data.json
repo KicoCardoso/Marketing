@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T15:01:08.445Z",
+  "updatedAt": "2026-09-02T15:11:01.229Z",
   "members": [
     {
       "id": 118016784,
@@ -20,11 +20,54 @@
   ],
   "tasks": [
     {
+      "id": "86akae4w0",
+      "name": "Teste de Videomaker",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1788332400000,
+      "date_created": 1788361710959,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86akae4w0",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86akae0gd",
+      "name": "Fazer briefing de influs",
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1788332400000,
+      "date_created": 1788361443066,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86akae0gd",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
       "id": "86akadbur",
       "name": "Lara Almeida - Convidar para ser nossa influenciadora",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1788764400000,
       "date_created": 1788360531074,
       "date_closed": null,
       "tipo": null,
@@ -40,8 +83,11 @@
       "id": "86akadbg5",
       "name": "Verificar questão do Ifood para os dentistas",
       "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1789023600000,
       "date_created": 1788360499492,
       "date_closed": null,
       "tipo": null,
@@ -56,9 +102,12 @@
     {
       "id": "86akadb6j",
       "name": "Desenhar proposta da Miss Universo BH",
-      "status": "fila de demandas",
-      "assignee": null,
-      "due_date": null,
+      "status": "demanda em desenvolvimento",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1788332400000,
       "date_created": 1788360480731,
       "date_closed": null,
       "tipo": null,
@@ -1048,7 +1097,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajnd3j7",
-      "description": "[LÂMINA 01]\nPor que algumas lentes ficam artificiais... e outras não? \nDescubra o segredo por trás dos sorrisos de famosos! \n\n[LÂMINA 02]\nNão é sorte…. É planejamento.\nO que faz uma lente parecer artificial não é o material. É o que acontece antes dela ser feita.\nSem planejamento, o resultado fica genérico. Sem estudo, análise, preparo adequado, o sorriso perde a naturalidade.\n\n[LÂMINA 03]\nO material faz diferença!\nA porcelana de alta qualidade tem algo que a resina não consegue reproduzir: ela não risca, não mancha e não escurece.\nMantém o brilho natural do dente, deixando quase impossível diferenciar a lente do dente real.\n\n[LÂMINA 04]\nÉ por isso que os sorrisos naturais têm um padrão. \nNa Aspekto, cada sorriso é planejado individualmente, com porcelana de alta qualidade e uma equipe especializada em entregar naturalidade em cada detalhe.\nSomos especialistas no que fazemos, e em como fazemos.\n\n[LÂMINA 05]\nQuer saber como podemos transformar o seu sorriso? \nClique no link da bio e fale com a nossa equipe.",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2053,46 +2102,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajhbkwb",
-      "name": "Criar conteúdos fixos para o perfil da Aspekto",
-      "status": "aprovação 1",
-      "assignee": {
-        "id": 118016782,
-        "name": "Kico Cardoso"
-      },
-      "due_date": 1785913200000,
-      "date_created": 1784046904119,
-      "date_closed": null,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajhbkwb",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajhbkw6",
-      "name": "Logo da nova campanha: 14 anos Aspekto",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784530800000,
-      "date_created": 1784046903867,
-      "date_closed": 1784298990785,
-      "tipo": "Branding",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajhbkw6",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2105,39 +2114,37 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 28,
+      "done": 27,
       "open": 3
     },
     {
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 10,
-      "open": 8
+      "open": 7
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 16,
-      "open": 15
+      "open": 20
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 40,
+    "Sem tipo": 42,
     "Fotografia": 22,
     "Identidade visual": 2,
     "CS": 2,
-    "Mídias sociais": 27,
-    "ADS": 6,
-    "Branding": 1
+    "Mídias sociais": 26,
+    "ADS": 6
   },
   "avgCompletionTimeByType": {
     "Identidade visual": 28868,
     "Fotografia": 2783,
     "Sem tipo": 26285,
     "CS": 9428,
-    "Mídias sociais": 13946,
-    "Branding": 4201
+    "Mídias sociais": 13946
   },
   "onTimeRateByUser": [
     {
@@ -2150,9 +2157,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 26,
-      "onTime": 10,
-      "rate": 38
+      "total": 25,
+      "onTime": 9,
+      "rate": 36
     },
     {
       "id": 118016782,
@@ -2172,7 +2179,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 85
+      "count": 83
     },
     {
       "month": "2026-08",
@@ -2180,7 +2187,7 @@
     },
     {
       "month": "2026-09",
-      "count": 5
+      "count": 7
     }
   ]
 }
