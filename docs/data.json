@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T17:41:02.817Z",
+  "updatedAt": "2026-09-04T17:45:52.554Z",
   "members": [
     {
       "id": 118016784,
@@ -147,7 +147,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1788764400000,
+      "due_date": 1789369200000,
       "date_created": 1788360531074,
       "date_closed": null,
       "tipo": null,
@@ -182,10 +182,10 @@
     {
       "id": "86akadb6j",
       "name": "Desenhar proposta da Miss Universo BH",
-      "status": "demanda em desenvolvimento",
+      "status": "aprovação 1",
       "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
+        "id": 118016782,
+        "name": "Kico Cardoso"
       },
       "due_date": 1788764400000,
       "date_created": 1788360480731,
@@ -1097,7 +1097,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajnf861",
-      "description": "A Aspekto não nasceu para ser mais uma clínica de lentes dentais no Brasil. Nasceu pra resolver um problema que quase ninguém estava disposto a enfrentar.\nEu sou o Guilherme Martinez, um dos sócios fundadores da Aspekto, e hoje quero te contar como tudo começou.\nHá 14 anos, lentes dentais de porcelana eram tratadas como um tratamento exclusivo, quase inatingível. A maioria das pessoas que sonhava em mudar o próprio sorriso ouvia a mesma resposta: 'não cabe no seu bolso'.\nE foi olhando para essa realidade que a Aspekto nasceu, com um propósito claro: democratizar o sorriso no Brasil. Levar lentes de porcelana de alto padrão para quem sempre achou que esse tipo de tratamento não era pra ele.\nPara isso, precisamos construir tudo do zero. Investimos em laboratório próprio, em tecnologia, em uma equipe especializada, em processos internos. Porque a única forma de entregar qualidade com acessibilidade é tendo controle total do que a gente faz.\nHoje, 14 anos depois, são mais de 20 mil sorrisos transformados por todo o Brasil. E cada um deles é a prova de que a nossa ideia estava certa: sorrir bem não deveria ser privilégio de ninguém.\nE hoje, nós comemoramos mais uma vitória: a inauguração da nossa nova unidade em São queremos alcançar. Porque democratizar o sorriso no Brasil é um projeto que não termina, ele só cresce. \nClique no botão abaixo e descubra como a Aspekto pode mudar o seu sorriso.",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2121,13 +2121,13 @@
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 10,
-      "open": 8
+      "open": 9
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 15,
-      "open": 18
+      "open": 17
     }
   ],
   "stageTimes": {},
