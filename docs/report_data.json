@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-04T02:55:55.873Z",
+  "updatedAt": "2026-09-04T03:01:15.896Z",
   "period": {
     "since": "2026-09-01",
-    "until": "2026-09-02"
+    "until": "2026-09-03"
   },
   "previousPeriod": {
     "since": "2026-08-01",
-    "until": "2026-08-02"
+    "until": "2026-08-03"
   },
   "dailySeries": [
     {
@@ -37,21 +37,21 @@
     "cpl": 0
   },
   "previous": {
-    "spend": 5991.29,
-    "impressions": 354452,
-    "clicks": 2945,
-    "ctr": 0.83086,
-    "cpc": 2.034394,
-    "cpm": 16.902966,
-    "reach": 240090,
-    "frequency": 1.47633,
+    "spend": 10299.97,
+    "impressions": 589606,
+    "clicks": 4721,
+    "ctr": 0.800704,
+    "cpc": 2.181735,
+    "cpm": 17.469242,
+    "reach": 362598,
+    "frequency": 1.62606,
     "postEngagement": 0,
-    "videoP25": 19694,
-    "videoP50": 10084,
-    "videoP95": 2814,
-    "videoPlays": 356950,
-    "msgCount": 1001,
-    "cpl": 5.985304695304695
+    "videoP25": 31473,
+    "videoP50": 16002,
+    "videoP95": 4540,
+    "videoPlays": 592005,
+    "msgCount": 2237,
+    "cpl": 4.604367456414841
   },
   "campaigns": [],
   "funnelSpendByStage": {
