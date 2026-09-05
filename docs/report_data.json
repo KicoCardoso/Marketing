@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T17:06:45.950Z",
+  "updatedAt": "2026-09-05T17:10:59.300Z",
   "period": {
     "since": "2026-09-01",
     "until": "2026-09-04"
@@ -62,25 +62,7 @@
     "outros": 0
   },
   "highlights": null,
-  "funnel": {
-    "spend": 0,
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "cplSchedule": 0,
-    "cplAttend": 0,
-    "cac": 0,
-    "roas": null
-  },
-  "clintPeriodMTD": {
-    "since": "2026-07-01T03:00:00Z",
-    "until": "2026-07-29T18:07:13Z",
-    "scheduled": 334,
-    "attended": 190,
-    "won": 127,
-    "wonValue": 888864.76,
-    "currency": "BRL"
-  },
-  "leadToday": 10
+  "funnel": null,
+  "clintPeriodMTD": null,
+  "leadToday": null
 }
