@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T00:20:56.690Z",
+  "updatedAt": "2026-09-05T00:25:59.123Z",
   "members": [
     {
       "id": 118016784,
@@ -1446,7 +1446,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajk6h3k",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -1465,7 +1470,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajjqvjx",
-      "description": "",
+      "description": "fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
