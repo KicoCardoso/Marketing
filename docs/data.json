@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T05:50:58.781Z",
+  "updatedAt": "2026-09-06T05:55:56.772Z",
   "members": [
     {
       "id": 118016784,
@@ -1399,11 +1399,17 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajmzxru",
-      "description": "",
+      "description": "Lentes dentais de porcelana em até 21x sem juros... e não, você não ouviu errado!\nA Aspekto acabou de abrir uma nova unidade aqui em São Paulo, na região do Morumbi. São mais de 14 anos de mercado, mais de 20 mil pacientes atendidos por todo o Brasil!\nE pra comemorar a chegada em São Paulo, a maior condição da história:lentes de porcelana com 60% de desconto, parcelado em até 21 vezes sem juros!\nMas essa condição é só durante o lançamento. As vagas são limitadas e só será liberado o desconto para quem fizer a pré-inscrição! \nClique no botão abaixo, se inscreva e garanta sua oferta.",
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Kico Cardoso",
+          "date": 1784839528462,
+          "text": "👤 Yuri Lima (via dashboard público):\nNA PASTA  CRITAVO, 2026, UNIDADE SÃO PAULO, JULHO"
+        }
+      ]
     },
     {
       "id": "86ajmypfc",
@@ -1440,7 +1446,12 @@
       "email": null,
       "url": "https://app.clickup.com/t/86ajk6h3k",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#6fddff",
+        "id": "3",
+        "orderindex": "3",
+        "priority": "normal"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
@@ -1459,7 +1470,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajjqvjx",
-      "description": "",
+      "description": "fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
