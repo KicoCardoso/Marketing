@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T13:55:46.656Z",
+  "updatedAt": "2026-09-07T14:01:12.526Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "86ake4ftf",
+      "name": "Jean Nonato, fotos para o instagram ",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1789023600000,
+      "date_created": 1788789545466,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "marina.riccio@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/86ake4ftf",
+      "description": "Dra. Marina Riccio, fotos para o instagram",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "86akbp00c",
       "name": "Paciente RAYLANDER DE OLIVEIRA REIS 17399",
@@ -2082,26 +2102,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajhdz34",
-      "name": "[ADS 19/06] Roteiro 03",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 118016782,
-        "name": "Kico Cardoso"
-      },
-      "due_date": 1784790000000,
-      "date_created": 1784051366406,
-      "date_closed": null,
-      "tipo": "ADS",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajhdz34",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2115,13 +2115,13 @@
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
       "done": 26,
-      "open": 6
+      "open": 7
     },
     {
       "id": 118016782,
       "name": "Kico Cardoso",
       "done": 10,
-      "open": 9
+      "open": 8
     },
     {
       "id": 278685306,
@@ -2132,12 +2132,12 @@
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Fotografia": 25,
+    "Fotografia": 26,
     "Sem tipo": 43,
     "Identidade visual": 1,
     "CS": 2,
     "Mídias sociais": 25,
-    "ADS": 4
+    "ADS": 3
   },
   "avgCompletionTimeByType": {
     "Identidade visual": 33180,
@@ -2179,7 +2179,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 79
+      "count": 78
     },
     {
       "month": "2026-08",
@@ -2187,7 +2187,7 @@
     },
     {
       "month": "2026-09",
-      "count": 11
+      "count": 12
     }
   ]
 }
