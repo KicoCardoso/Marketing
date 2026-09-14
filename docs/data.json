@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T15:21:28.120Z",
+  "updatedAt": "2026-09-14T15:26:24.329Z",
   "members": [
     {
       "id": 118016784,
@@ -22,14 +22,14 @@
     {
       "id": "86ake4ftf",
       "name": "Jean Nonato, fotos para o instagram ",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1789023600000,
       "date_created": 1788789545466,
-      "date_closed": null,
+      "date_closed": 1789399524420,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ake4ftf",
@@ -2114,8 +2114,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 31,
-      "open": 2
+      "done": 32,
+      "open": 1
     },
     {
       "id": 118016782,
@@ -2140,7 +2140,7 @@
     "ADS": 3
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 6763,
+    "Fotografia": 6899,
     "Identidade visual": 33180,
     "Sem tipo": 26285,
     "CS": 9428,
@@ -2157,9 +2157,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 29,
+      "total": 30,
       "onTime": 9,
-      "rate": 31
+      "rate": 30
     },
     {
       "id": 118016782,
