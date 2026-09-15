@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T20:31:18.935Z",
+  "updatedAt": "2026-09-15T20:36:06.236Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,23 @@
     }
   ],
   "tasks": [
+    {
+      "id": "17tjca209b7",
+      "name": "Foto Antes e Depois - Alice Pimenta Riccio",
+      "status": "fila de demandas",
+      "assignee": null,
+      "due_date": null,
+      "date_created": 1789504515240,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "davi.guimaraes@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/17tjca209b7",
+      "description": "Fotos de antes e depois da paciente Alice Pimenta Riccio",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "17tjca209b4",
       "name": "Pensar na estratégia de final do mês",
@@ -984,87 +1001,8 @@
       "description": "",
       "priority": null,
       "start_date": null,
-      "subtasks": [
-        {
-          "id": "86ajjmw16",
-          "name": "[Conteúdo Gui] Roteiro 09",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw1a",
-          "name": "[Conteúdo Gui] Roteiro 10",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw14",
-          "name": "[Conteúdo Gui] Roteiro 08",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw12",
-          "name": "[Conteúdo Gui] Roteiro 07",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw0y",
-          "name": "[Conteúdo Gui] Roteiro 06",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw0t",
-          "name": "[Conteúdo Gui] Roteiro 05",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw0m",
-          "name": "[Conteúdo Gui] Roteiro 04",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw0j",
-          "name": "[Conteúdo Gui] Roteiro 03",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        },
-        {
-          "id": "86ajjmw0f",
-          "name": "[Conteúdo Gui] Roteiro 02",
-          "status": "fila de demandas",
-          "assignee": {
-            "name": "Guilherme da Silva Barreto"
-          }
-        }
-      ],
-      "comments": [
-        {
-          "author": "Guilherme da Silva Barreto",
-          "date": 1785878978381,
-          "text": "Estamos pensando em outra linha editorial de conteúdos. Irei manter a tarefa ativa em \"Impedimentos\" caso decidimos seguir com os conteúdos de empreendedorismo\n"
-        }
-      ]
+      "subtasks": [],
+      "comments": []
     },
     {
       "id": "86ajr5ghu",
@@ -1080,7 +1018,7 @@
       "tipo": "CS",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr5ghu",
-      "description": "GUIA DE ENCAMINHAMENTO ODONTOLÓGICO\nData: //________\n\nDADOS DO PACIENTE\nNome: _________________________________________________\nData de Nascimento: //________\nProntuário:\nCPF: _________________________________________________\nTelefone: _____________________________________________\n\n\nDENTISTA SOLICITANTE\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\n\n\n\nPROCEDIMENTOS ENCAMINHADOS\nDescrever os procedimentos que deverão ser realizados:\n\n\n\n\n\n\nSITUAÇÃO FINANCEIRA\n☐ Pago\n☐ Não Pago\nObservações:\n\n\n\nPROCEDIMENTOS AUTORIZADOS\nEsta guia autoriza exclusivamente a realização dos seguintes procedimentos:\n☐ Avaliação Odontológica\n☐ Remoção de Cárie\n☐ Tratamento Endodôntico (Canal)\nNão está autorizada a realização de quaisquer outros procedimentos sem prévia autorização da Clínica Aspekto e do cirurgião-dentista responsável pelo tratamento.\n\n\nOBSERVAÇÕES\n\n\n\n\nPREENCHIMENTO PELO PROFISSIONAL EXECUTANTE\nProcedimentos realizados:\n\n\n\n\nData da execução: //________\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\nCRO: __________________________",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2082,26 +2020,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajj0z7n",
-      "name": "CAPA 06",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784703600000,
-      "date_created": 1784131990357,
-      "date_closed": 1784724618043,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajj0z7n",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2114,7 +2032,7 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 32,
+      "done": 31,
       "open": 1
     },
     {
@@ -2132,18 +2050,18 @@
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Fotografia": 27,
     "Sem tipo": 55,
-    "Fotografia": 26,
     "Identidade visual": 1,
     "CS": 1,
-    "Mídias sociais": 17
+    "Mídias sociais": 16
   },
   "avgCompletionTimeByType": {
     "Fotografia": 6899,
     "Sem tipo": 25904,
     "Identidade visual": 33180,
     "CS": 8725,
-    "Mídias sociais": 15332
+    "Mídias sociais": 16111
   },
   "onTimeRateByUser": [
     {
@@ -2156,9 +2074,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 30,
+      "total": 29,
       "onTime": 9,
-      "rate": 30
+      "rate": 31
     },
     {
       "id": 118016782,
@@ -2178,7 +2096,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 66
+      "count": 65
     },
     {
       "month": "2026-08",
@@ -2186,7 +2104,7 @@
     },
     {
       "month": "2026-09",
-      "count": 24
+      "count": 25
     }
   ]
 }
