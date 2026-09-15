@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T21:11:10.558Z",
+  "updatedAt": "2026-09-15T21:16:11.333Z",
   "members": [
     {
       "id": 118016784,
@@ -67,7 +67,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1790319600000,
       "date_created": 1789503867886,
       "date_closed": null,
       "tipo": null,
@@ -82,12 +82,12 @@
     {
       "id": "17tjca209b3",
       "name": "Selecionar conteúdos a serem postados nos perfis",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789455600000,
       "date_created": 1789503867517,
       "date_closed": null,
       "tipo": null,
@@ -102,12 +102,12 @@
     {
       "id": "17tjca209b2",
       "name": "Desenvolver estratégia de stories",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789455600000,
       "date_created": 1789503867103,
       "date_closed": null,
       "tipo": null,
@@ -147,52 +147,12 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789542000000,
       "date_created": 1789503866425,
       "date_closed": null,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca209b0",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "17tjca209az",
-      "name": "Pedir para o kico entregar um documento com a estratégia completa por escrito",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": null,
-      "date_created": 1789503866089,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/17tjca209az",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "17tjca209ay",
-      "name": "Levantar relatório de desempenho de conteúdos",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": null,
-      "date_created": 1789503865714,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/17tjca209ay",
       "description": "",
       "priority": null,
       "start_date": null,
@@ -222,12 +182,12 @@
     {
       "id": "17tjca209aw",
       "name": "Fazer a contagem de leads no perfil",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789455600000,
       "date_created": 1789503865078,
       "date_closed": null,
       "tipo": null,
@@ -1326,7 +1286,7 @@
       "tipo": "Fotografia",
       "email": "marcela.azevedo@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajprntq",
-      "description": "Foto de antes e depois do sorriso",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2111,6 +2071,46 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajj0z7v",
+      "name": "CAPA 07",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1784703600000,
+      "date_created": 1784131990656,
+      "date_closed": 1784756508230,
+      "tipo": "Mídias sociais",
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajj0z7v",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "86ajj0z7n",
+      "name": "CAPA 06",
+      "status": "concluído",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1784703600000,
+      "date_created": 1784131990357,
+      "date_closed": 1784724618043,
+      "tipo": "Mídias sociais",
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajj0z7n",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2123,7 +2123,7 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 31,
+      "done": 32,
       "open": 1
     },
     {
@@ -2135,24 +2135,24 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 9,
-      "open": 29
+      "done": 10,
+      "open": 27
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 56,
+    "Sem tipo": 54,
     "Fotografia": 27,
     "Identidade visual": 1,
     "CS": 1,
-    "Mídias sociais": 15
+    "Mídias sociais": 17
   },
   "avgCompletionTimeByType": {
     "Fotografia": 6899,
     "Sem tipo": 25904,
     "Identidade visual": 33180,
     "CS": 8725,
-    "Mídias sociais": 17061
+    "Mídias sociais": 15332
   },
   "onTimeRateByUser": [
     {
@@ -2165,9 +2165,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 29,
+      "total": 30,
       "onTime": 9,
-      "rate": 31
+      "rate": 30
     },
     {
       "id": 118016782,
@@ -2179,7 +2179,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 9,
+      "total": 10,
       "onTime": 0,
       "rate": 0
     }
@@ -2187,7 +2187,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 64
+      "count": 66
     },
     {
       "month": "2026-08",
@@ -2195,7 +2195,7 @@
     },
     {
       "month": "2026-09",
-      "count": 26
+      "count": 24
     }
   ]
 }
