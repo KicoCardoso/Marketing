@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T21:06:35.861Z",
+  "updatedAt": "2026-09-15T21:11:10.558Z",
   "members": [
     {
       "id": 118016784,
@@ -20,10 +20,33 @@
   ],
   "tasks": [
     {
+      "id": "17tjca209bq",
+      "name": "Reunião com a agencia",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1789628400000,
+      "date_created": 1789506515939,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca209bq",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
       "id": "17tjca209b7",
       "name": "Foto Antes e Depois - Alice Pimenta Riccio",
       "status": "fila de demandas",
-      "assignee": null,
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
       "due_date": null,
       "date_created": 1789504515240,
       "date_closed": null,
@@ -179,12 +202,12 @@
     {
       "id": "17tjca209ax",
       "name": "Aprovar conteúdos para o Ícaro produzir",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789455600000,
       "date_created": 1789503865404,
       "date_closed": null,
       "tipo": null,
@@ -219,12 +242,12 @@
     {
       "id": "17tjca209av",
       "name": "Contratar nova agência de influ",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1790319600000,
       "date_created": 1789503864759,
       "date_closed": null,
       "tipo": null,
@@ -233,18 +256,27 @@
       "description": "",
       "priority": null,
       "start_date": null,
-      "subtasks": [],
+      "subtasks": [
+        {
+          "id": "17tjca209bq",
+          "name": "Reunião com a agencia",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        }
+      ],
       "comments": []
     },
     {
       "id": "17tjca209au",
       "name": "Trabalhar no perfil do facebook para ficar como vitrine",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789455600000,
       "date_created": 1789503864473,
       "date_closed": null,
       "tipo": null,
@@ -264,7 +296,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1789974000000,
       "date_created": 1789503864100,
       "date_closed": null,
       "tipo": null,
@@ -1075,7 +1107,13 @@
           }
         }
       ],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785878978381,
+          "text": "Estamos pensando em outra linha editorial de conteúdos. Irei manter a tarefa ativa em \"Impedimentos\" caso decidimos seguir com os conteúdos de empreendedorismo\n"
+        }
+      ]
     },
     {
       "id": "86ajr5ghu",
@@ -1091,7 +1129,7 @@
       "tipo": "CS",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr5ghu",
-      "description": "",
+      "description": "GUIA DE ENCAMINHAMENTO ODONTOLÓGICO\nData: //________\n\nDADOS DO PACIENTE\nNome: _________________________________________________\nData de Nascimento: //________\nProntuário:\nCPF: _________________________________________________\nTelefone: _____________________________________________\n\n\nDENTISTA SOLICITANTE\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\n\n\n\nPROCEDIMENTOS ENCAMINHADOS\nDescrever os procedimentos que deverão ser realizados:\n\n\n\n\n\n\nSITUAÇÃO FINANCEIRA\n☐ Pago\n☐ Não Pago\nObservações:\n\n\n\nPROCEDIMENTOS AUTORIZADOS\nEsta guia autoriza exclusivamente a realização dos seguintes procedimentos:\n☐ Avaliação Odontológica\n☐ Remoção de Cárie\n☐ Tratamento Endodôntico (Canal)\nNão está autorizada a realização de quaisquer outros procedimentos sem prévia autorização da Clínica Aspekto e do cirurgião-dentista responsável pelo tratamento.\n\n\nOBSERVAÇÕES\n\n\n\n\nPREENCHIMENTO PELO PROFISSIONAL EXECUTANTE\nProcedimentos realizados:\n\n\n\n\nData da execução: //________\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\nCRO: __________________________",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1108,7 +1146,7 @@
       "tipo": "Fotografia",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr56h3",
-      "description": "",
+      "description": "Editar Fotos",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1128,7 +1166,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqukt7",
-      "description": "",
+      "description": "rebeca - fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1148,7 +1186,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqugy2",
-      "description": "",
+      "description": "Rebeca - fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1168,7 +1206,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajqr53k",
-      "description": "",
+      "description": "Segue o cronograma de agosto:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1188,7 +1226,7 @@
       "tipo": "Fotografia",
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajqhh4g",
-      "description": "",
+      "description": "REBECA SALMEN - edição de foto para postar",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1208,7 +1246,7 @@
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh3h",
-      "description": "",
+      "description": "Dra. Marina Riccio, PACIENTE: Raylander de oliveira Guimaraes 17399",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1228,7 +1266,7 @@
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh2v",
-      "description": "",
+      "description": "Dra. Marina Riccio, PACIENTE: MATEUS Guimaraes monteiro 17326",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1248,7 +1286,7 @@
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh1f",
-      "description": "",
+      "description": "Dra. Marina Riccio, PACIENTE: MATHEUS RODRIGUES MARINHO 13216",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1268,7 +1306,7 @@
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh09",
-      "description": "",
+      "description": "Paciente Thadeu Henrique 13140",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1288,7 +1326,7 @@
       "tipo": "Fotografia",
       "email": "marcela.azevedo@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajprntq",
-      "description": "",
+      "description": "Foto de antes e depois do sorriso",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2073,26 +2111,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajj0z7v",
-      "name": "CAPA 07",
-      "status": "concluído",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1784703600000,
-      "date_created": 1784131990656,
-      "date_closed": 1784756508230,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajj0z7v",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2117,24 +2135,24 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 10,
-      "open": 27
+      "done": 9,
+      "open": 29
     }
   ],
   "stageTimes": {},
   "tasksByType": {
+    "Sem tipo": 56,
     "Fotografia": 27,
-    "Sem tipo": 55,
     "Identidade visual": 1,
     "CS": 1,
-    "Mídias sociais": 16
+    "Mídias sociais": 15
   },
   "avgCompletionTimeByType": {
     "Fotografia": 6899,
     "Sem tipo": 25904,
     "Identidade visual": 33180,
     "CS": 8725,
-    "Mídias sociais": 16111
+    "Mídias sociais": 17061
   },
   "onTimeRateByUser": [
     {
@@ -2161,7 +2179,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 10,
+      "total": 9,
       "onTime": 0,
       "rate": 0
     }
@@ -2169,7 +2187,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 65
+      "count": 64
     },
     {
       "month": "2026-08",
@@ -2177,7 +2195,7 @@
     },
     {
       "month": "2026-09",
-      "count": 25
+      "count": 26
     }
   ]
 }
