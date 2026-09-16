@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T21:31:08.591Z",
+  "updatedAt": "2026-09-16T21:35:58.724Z",
   "members": [
     {
       "id": 118016784,
@@ -142,7 +142,7 @@
     {
       "id": "17tjca209b4",
       "name": "Pensar na estratégia de final do mês",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -222,7 +222,7 @@
     {
       "id": "17tjca209b0",
       "name": "Levantar um relatório de métricas do meta",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -262,14 +262,14 @@
     {
       "id": "17tjca209aw",
       "name": "Fazer a contagem de leads no perfil",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1789455600000,
       "date_created": 1789503865078,
-      "date_closed": null,
+      "date_closed": 1789594241932,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca209aw",
@@ -2056,8 +2056,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 10,
-      "open": 25
+      "done": 11,
+      "open": 24
     }
   ],
   "stageTimes": {},
@@ -2070,7 +2070,7 @@
   },
   "avgCompletionTimeByType": {
     "Fotografia": 6675,
-    "Sem tipo": 24613,
+    "Sem tipo": 23513,
     "Identidade visual": 33180,
     "CS": 8725,
     "Mídias sociais": 20520
@@ -2100,7 +2100,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 9,
+      "total": 10,
       "onTime": 0,
       "rate": 0
     }
