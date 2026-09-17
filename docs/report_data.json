@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-17T02:56:15.113Z",
+  "updatedAt": "2026-09-17T03:02:05.989Z",
   "period": {
     "since": "2026-09-01",
-    "until": "2026-09-15"
+    "until": "2026-09-16"
   },
   "previousPeriod": {
     "since": "2026-08-01",
-    "until": "2026-08-15"
+    "until": "2026-08-16"
   },
   "dailySeries": [
     {
@@ -37,21 +37,21 @@
     "cpl": 0
   },
   "previous": {
-    "spend": 75954.76,
-    "impressions": 7376538,
-    "clicks": 89565,
-    "ctr": 1.214187,
-    "cpc": 0.848041,
-    "cpm": 10.296803,
-    "reach": 3324608,
-    "frequency": 2.218769,
+    "spend": 79941.48,
+    "impressions": 8014752,
+    "clicks": 99579,
+    "ctr": 1.242446,
+    "cpc": 0.802795,
+    "cpm": 9.974292,
+    "reach": 3517882,
+    "frequency": 2.278289,
     "postEngagement": 0,
-    "videoP25": 227476,
-    "videoP50": 147841,
-    "videoP95": 43291,
-    "videoPlays": 7380328,
-    "msgCount": 12155,
-    "cpl": 6.248849033319621
+    "videoP25": 239856,
+    "videoP50": 154769,
+    "videoP95": 46540,
+    "videoPlays": 8022083,
+    "msgCount": 12469,
+    "cpl": 6.411218221188547
   },
   "campaigns": [],
   "funnelSpendByStage": {
@@ -62,7 +62,25 @@
     "outros": 0
   },
   "highlights": null,
-  "funnel": null,
-  "clintPeriodMTD": null,
-  "leadToday": null
+  "funnel": {
+    "spend": 0,
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "cplSchedule": 0,
+    "cplAttend": 0,
+    "cac": 0,
+    "roas": null
+  },
+  "clintPeriodMTD": {
+    "since": "2026-07-01T03:00:00Z",
+    "until": "2026-07-29T18:07:13Z",
+    "scheduled": 334,
+    "attended": 190,
+    "won": 127,
+    "wonValue": 888864.76,
+    "currency": "BRL"
+  },
+  "leadToday": 10
 }
