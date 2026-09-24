@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T14:51:07.324Z",
+  "updatedAt": "2026-09-24T14:55:55.963Z",
   "members": [
     {
       "id": 118016784,
@@ -142,14 +142,14 @@
     {
       "id": "17tjca209bw",
       "name": "Carrossel 01",
-      "status": "produção / edição",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1789974000000,
       "date_created": 1789508005797,
-      "date_closed": null,
+      "date_closed": 1790261535141,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca209bw",
@@ -2044,8 +2044,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 30,
-      "open": 5
+      "done": 31,
+      "open": 4
     },
     {
       "id": 118016782,
@@ -2069,8 +2069,8 @@
     "Mídias sociais": 10
   },
   "avgCompletionTimeByType": {
+    "Sem tipo": 23015,
     "Fotografia": 6675,
-    "Sem tipo": 23513,
     "Identidade visual": 33180,
     "CS": 8725,
     "Mídias sociais": 50855
@@ -2086,9 +2086,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 28,
+      "total": 29,
       "onTime": 9,
-      "rate": 32
+      "rate": 31
     },
     {
       "id": 118016782,
