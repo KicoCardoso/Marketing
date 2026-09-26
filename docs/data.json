@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T09:11:01.228Z",
+  "updatedAt": "2026-09-26T09:15:59.145Z",
   "members": [
     {
       "id": 118016784,
@@ -1124,8 +1124,87 @@
       "description": "",
       "priority": null,
       "start_date": null,
-      "subtasks": [],
-      "comments": []
+      "subtasks": [
+        {
+          "id": "86ajjmw16",
+          "name": "[Conteúdo Gui] Roteiro 09",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw1a",
+          "name": "[Conteúdo Gui] Roteiro 10",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw14",
+          "name": "[Conteúdo Gui] Roteiro 08",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw12",
+          "name": "[Conteúdo Gui] Roteiro 07",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw0y",
+          "name": "[Conteúdo Gui] Roteiro 06",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw0t",
+          "name": "[Conteúdo Gui] Roteiro 05",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw0m",
+          "name": "[Conteúdo Gui] Roteiro 04",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw0j",
+          "name": "[Conteúdo Gui] Roteiro 03",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "86ajjmw0f",
+          "name": "[Conteúdo Gui] Roteiro 02",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        }
+      ],
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1785878978381,
+          "text": "Estamos pensando em outra linha editorial de conteúdos. Irei manter a tarefa ativa em \"Impedimentos\" caso decidimos seguir com os conteúdos de empreendedorismo\n"
+        }
+      ]
     },
     {
       "id": "86ajr5ghu",
@@ -1141,7 +1220,7 @@
       "tipo": "CS",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr5ghu",
-      "description": "",
+      "description": "GUIA DE ENCAMINHAMENTO ODONTOLÓGICO\nData: //________\n\nDADOS DO PACIENTE\nNome: _________________________________________________\nData de Nascimento: //________\nProntuário:\nCPF: _________________________________________________\nTelefone: _____________________________________________\n\n\nDENTISTA SOLICITANTE\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\n\n\n\nPROCEDIMENTOS ENCAMINHADOS\nDescrever os procedimentos que deverão ser realizados:\n\n\n\n\n\n\nSITUAÇÃO FINANCEIRA\n☐ Pago\n☐ Não Pago\nObservações:\n\n\n\nPROCEDIMENTOS AUTORIZADOS\nEsta guia autoriza exclusivamente a realização dos seguintes procedimentos:\n☐ Avaliação Odontológica\n☐ Remoção de Cárie\n☐ Tratamento Endodôntico (Canal)\nNão está autorizada a realização de quaisquer outros procedimentos sem prévia autorização da Clínica Aspekto e do cirurgião-dentista responsável pelo tratamento.\n\n\nOBSERVAÇÕES\n\n\n\n\nPREENCHIMENTO PELO PROFISSIONAL EXECUTANTE\nProcedimentos realizados:\n\n\n\n\nData da execução: //________\nNome do(a) Cirurgião(ã)-Dentista: ___________________________________________\nCRO: __________________________",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1158,7 +1237,7 @@
       "tipo": "Fotografia",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr56h3",
-      "description": "",
+      "description": "Editar Fotos",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1178,7 +1257,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqukt7",
-      "description": "",
+      "description": "rebeca - fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1198,7 +1277,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqugy2",
-      "description": "",
+      "description": "Rebeca - fotos finais",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1218,7 +1297,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajqr53k",
-      "description": "",
+      "description": "Segue o cronograma de agosto:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1238,7 +1317,7 @@
       "tipo": "Fotografia",
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajqhh4g",
-      "description": "",
+      "description": "REBECA SALMEN - edição de foto para postar",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1258,7 +1337,7 @@
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajqhh3h",
-      "description": "",
+      "description": "Dra. Marina Riccio, PACIENTE: Raylander de oliveira Guimaraes 17399",
       "priority": null,
       "start_date": null,
       "subtasks": [],
