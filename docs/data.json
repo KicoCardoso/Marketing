@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T11:51:03.646Z",
+  "updatedAt": "2026-09-30T11:55:55.543Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "17tjca21xyr",
+      "name": "Fotos para instagram- Paciente Plínio Alves",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 118016783,
+        "name": "Ícaro Eduardo Alves Rodrigues"
+      },
+      "due_date": 1791097200000,
+      "date_created": 1790769304458,
+      "date_closed": null,
+      "tipo": "Fotografia",
+      "email": "marina.riccio@grupoaspekto.com",
+      "url": "https://app.clickup.com/t/17tjca21xyr",
+      "description": "Dra.Marina Riccio- fotos para insta- Plínio Alves",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "17tjca21abp",
       "name": "Editar as fotos do paciente Rogério Alexandre ",
@@ -981,7 +1001,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajrwvpt",
-      "description": "[Lâmina 01]:\nManual das lentes Aspekto\nVocê sabe a diferença entre BL1, BL2 e BL3? Arrasta pro lado e descubra qual combina com o seu sorriso.\n[Lâmina 02]:\nAfinal, o que são as cores BL?\nBL vem de Bleach, que significa \"clareado\" em inglês. É uma escala criada especialmente para lentes dentais, com tons que vão além do branco natural.\n[Lâmina 03]: Diferença entre BL1, BL2 e BL3\nE a regra é simples: quanto menor o número, mais claro e brilhante é o resultado.\nMas cada uma entrega um efeito diferente.\n[Mostrar uma foto de cada BL nessa lâmina.]\n[Lâmina 04]: É o material que faz seu branco durar.\nPorcelana: não mancha, não amarela e mantém o brilho por mais de 20 anos.\nResina: mais acessível, mas com durabilidade menor e maior tendência a manchar com o tempo.\nOu seja, o material define quanto tempo o seu branco vai continuar sendo o seu branco.\n[Lâmina 05]: Agora sim: qual será o seu sorriso?\nNa Aspekto, cada sorriso é pensado individualmente e certamente seu novo sorriso está aqui!\nClique no link da bio e agende sua avaliação.",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1001,7 +1021,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajrwvpk",
-      "description": "[Lâmina 01]: \n3 mitos sobre o preço das lentes dentais da Aspekto\n\nDescubra como mais de 20 mil pacientes tiveram o sorriso transformado de maneira acessível!\n\n[Lâmina 02]: Mito 1: Quanto mais barato o procedimento, pior a qualidade!\nVerdade:\nCom laboratório próprio e equipamentos de precisão, a Aspekto elimina intermediários, controla a qualidade e entrega um preço mais acessível.\n\n[Lâmina 03]: Mito 2: É tão acessível, não deve ser porcelana de qualidade \n\nVerdade\nO que reduz o custo real é a escala. Produzindo várias lentes por dia, com processo otimizado e materiais em volume, o preço cai sem afetar a qualidade. \n\n[Lâmina 04]: Mito 03: É arriscado pagar tão barato e comprometer minha saúde bucal\n\n14 anos treinando uma equipe interna no mesmo padrão significa mais precisão, menos retrabalho e nenhum risco de amadorismo comprometer sua saúde bucal. \n\n\n[Lâmina 05]: \nLaboratório próprio, escala de produção e uma equipe com 14 anos de experiência.\nÉ essa estrutura que sustenta o padrão Aspekto e permite que qualidade e preço acessível caminhem juntos.\nClique no link da bio e venha conhecer esse padrão de perto.",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2003,26 +2023,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajj9f18",
-      "name": "Vinicius Braccini de Lima - 15536",
-      "status": "impedimento",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784271600000,
-      "date_created": 1784149246303,
-      "date_closed": null,
-      "tipo": "Fotografia",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajj9f18",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2099,7 +2099,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 59
+      "count": 58
     },
     {
       "month": "2026-08",
@@ -2107,7 +2107,7 @@
     },
     {
       "month": "2026-09",
-      "count": 31
+      "count": 32
     }
   ]
 }
