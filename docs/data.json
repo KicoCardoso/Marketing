@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T15:13:16.645Z",
+  "updatedAt": "2026-10-06T15:18:16.639Z",
   "members": [
     {
       "id": 118016784,
@@ -42,14 +42,14 @@
     {
       "id": "17tjca21abp",
       "name": "Editar as fotos do paciente Rogério Alexandre ",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 118016783,
         "name": "Ícaro Eduardo Alves Rodrigues"
       },
       "due_date": 1790665200000,
       "date_created": 1790295217551,
-      "date_closed": null,
+      "date_closed": 1791299561740,
       "tipo": "Fotografia",
       "email": "marina.riccio@grupoaspekto.com",
       "url": "https://app.clickup.com/t/17tjca21abp",
@@ -2183,8 +2183,8 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 33,
-      "open": 3
+      "done": 34,
+      "open": 2
     },
     {
       "id": 118016782,
@@ -2208,7 +2208,7 @@
     "Mídias sociais": 10
   },
   "avgCompletionTimeByType": {
-    "Fotografia": 6705,
+    "Fotografia": 7063,
     "Sem tipo": 22223,
     "Identidade visual": 33180,
     "CS": 8725,
@@ -2225,9 +2225,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 31,
+      "total": 32,
       "onTime": 9,
-      "rate": 29
+      "rate": 28
     },
     {
       "id": 118016782,
