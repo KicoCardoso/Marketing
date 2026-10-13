@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T19:26:05.716Z",
+  "updatedAt": "2026-10-13T19:31:17.811Z",
   "members": [
     {
       "id": 118016784,
@@ -20,6 +20,46 @@
   ],
   "tasks": [
     {
+      "id": "17tjca23teh",
+      "name": "Gravação de conteúdos SP",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": null,
+      "date_created": 1791919795033,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca23teh",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "17tjca23tec",
+      "name": "Acesso ao Instagram da @clinicaaspekto no Meta",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": null,
+      "date_created": 1791919707045,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca23tec",
+      "description": "Estamos sem acesso ao Instagram da clínica no Meta, impedindo que eu possa fazer a gestão de comentários no perfil. Solicito que seja reestabelecido o acesso a conta.",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
       "id": "17tjca23td2",
       "name": "Black Friday - Aprovação de mensagens do Grupo VIP",
       "status": "fila de demandas",
@@ -33,7 +73,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23td2",
-      "description": "",
+      "description": "Abaixo estão as mensagens e dias a serem enviadas as mensagens do Grupo VIP, como também o calendário de envios:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -73,7 +113,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23tcy",
-      "description": "",
+      "description": "Seguem os roteiros ADS para a Black Friday",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -93,7 +133,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23tcw",
-      "description": "Abaixo estão as copys dos emails marketings",
+      "description": "Abaixo estão as copys dos e-mails Marketing, para aprovação:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1097,7 +1137,7 @@
       "tipo": "Fotografia",
       "email": "helena.haddad@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajr56h3",
-      "description": "",
+      "description": "Editar Fotos",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2062,46 +2102,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajj0z7n",
-      "name": "CAPA 06",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784703600000,
-      "date_created": 1784131990357,
-      "date_closed": 1784724618043,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajj0z7n",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajj0z7g",
-      "name": "CAPA 05",
-      "status": "concluído",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1784703600000,
-      "date_created": 1784131990056,
-      "date_closed": 1784756508230,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajj0z7g",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2114,7 +2114,7 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 36,
+      "done": 35,
       "open": 2
     },
     {
@@ -2126,24 +2126,24 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 15,
-      "open": 17
+      "done": 14,
+      "open": 19
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 52,
+    "Sem tipo": 54,
     "Fotografia": 28,
     "Identidade visual": 1,
     "CS": 1,
-    "Mídias sociais": 18
+    "Mídias sociais": 16
   },
   "avgCompletionTimeByType": {
     "Fotografia": 7063,
     "Sem tipo": 22223,
     "Identidade visual": 33180,
     "CS": 8725,
-    "Mídias sociais": 14785
+    "Mídias sociais": 16111
   },
   "onTimeRateByUser": [
     {
@@ -2156,9 +2156,9 @@
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 34,
+      "total": 33,
       "onTime": 9,
-      "rate": 26
+      "rate": 27
     },
     {
       "id": 118016782,
@@ -2170,7 +2170,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 13,
+      "total": 12,
       "onTime": 0,
       "rate": 0
     }
@@ -2178,7 +2178,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 66
+      "count": 64
     },
     {
       "month": "2026-08",
@@ -2190,7 +2190,7 @@
     },
     {
       "month": "2026-10",
-      "count": 4
+      "count": 6
     }
   ]
 }
