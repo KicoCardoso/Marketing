@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:25:48.962Z",
+  "updatedAt": "2026-11-02T17:31:16.897Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "17tjca26xnc",
+      "name": "Montar copy para criativo da Life",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": null,
+      "date_created": 1793640628151,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca26xnc",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "17tjca26xfy",
       "name": "Postar primeiro conteúdo de Black no feed",
@@ -42,38 +62,18 @@
     {
       "id": "17tjca26xfx",
       "name": "Trocar a logo da Aspekto pela Black",
-      "status": "fila de demandas",
+      "status": "criação de copy / roteiros",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1793639946672,
       "date_closed": null,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfx",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "17tjca26xfw",
-      "name": "Entrar em contato com a Elaine - 11973199319",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": null,
-      "date_created": 1793639946297,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/17tjca26xfw",
-      "description": "",
+      "description": ", me envia a logo da Aspekto da Black Friday? Precisamos trocar a foto de perfil do Instagram",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -241,7 +241,7 @@
     },
     {
       "id": "17tjca26xfk",
-      "name": "LP para o 11/11 Aspekto",
+      "name": "Ação do 11/11 Aspekto",
       "status": "fila de demandas",
       "assignee": {
         "id": 278685306,
@@ -256,7 +256,16 @@
       "description": "",
       "priority": null,
       "start_date": null,
-      "subtasks": [],
+      "subtasks": [
+        {
+          "id": "17tjca26xnc",
+          "name": "Montar copy para criativo da Life",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        }
+      ],
       "comments": []
     },
     {
@@ -300,26 +309,6 @@
       "comments": []
     },
     {
-      "id": "17tjca26xfg",
-      "name": "Marcar reunião com a superagência",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": null,
-      "date_created": 1793639941984,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/17tjca26xfg",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
       "id": "17tjca26xff",
       "name": "Organizar os influenciadores para novembro",
       "status": "fila de demandas",
@@ -342,7 +331,7 @@
     {
       "id": "17tjca26xfe",
       "name": "Atualização do Dashbord de coteúdos ADS",
-      "status": "fila de demandas",
+      "status": "aprovação 1",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -353,7 +342,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfe",
-      "description": "Noss",
+      "description": "Nosso time precisa de mais visibilidade sobre o desempenho de cada conteúdo ADS. Nesse caso, proponho que haja o link de cada conteúdo anexado nos indicadores de cada ADS, para que possamos assistir os vídeos e analisar com mais profundidade os conteúdos.",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2024,6 +2013,26 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajjmw1a",
+      "name": "[Conteúdo Gui] Roteiro 10",
+      "status": "concluído",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1785135600000,
+      "date_created": 1784216093565,
+      "date_closed": 1793639401978,
+      "tipo": "Mídias sociais",
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajjmw1a",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2048,22 +2057,24 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 17,
-      "open": 19
+      "done": 18,
+      "open": 18
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 71,
+    "Sem tipo": 70,
     "Fotografia": 27,
     "Identidade visual": 1,
-    "CS": 1
+    "CS": 1,
+    "Mídias sociais": 1
   },
   "avgCompletionTimeByType": {
     "Sem tipo": 36625,
     "Fotografia": 7780,
     "Identidade visual": 33180,
-    "CS": 8725
+    "CS": 8725,
+    "Mídias sociais": 157055
   },
   "onTimeRateByUser": [
     {
@@ -2090,7 +2101,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 9,
+      "total": 10,
       "onTime": 0,
       "rate": 0
     }
@@ -2098,7 +2109,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 45
+      "count": 46
     },
     {
       "month": "2026-08",
@@ -2114,7 +2125,7 @@
     },
     {
       "month": "2026-11",
-      "count": 17
+      "count": 16
     }
   ]
 }
