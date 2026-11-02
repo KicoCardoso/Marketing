@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:31:16.897Z",
+  "updatedAt": "2026-11-02T17:35:54.549Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,86 @@
     }
   ],
   "tasks": [
+    {
+      "id": "17tjca26xnu",
+      "name": "Montar uma apresentação padrão para reunião de marketing",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1793602800000,
+      "date_created": 1793640843134,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca26xnu",
+      "description": "Definir metas, ações e objetivos para o time de marketing e fazer um relatório no qual a IA entende e faça uma apresenrtação boa para mim, de forma fácil e rápida.",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "17tjca26xnr",
+      "name": "Dashbord do perfil da Aspekto",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1793948400000,
+      "date_created": 1793640807861,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca26xnr",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "17tjca26xnh",
+      "name": "Desenvolver criativo para o feed",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": null,
+      "date_created": 1793640657365,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca26xnh",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
+    {
+      "id": "17tjca26xnf",
+      "name": "Entender como direcionar leads para o comercial: LP ou API",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": null,
+      "date_created": 1793640646731,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca26xnf",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "17tjca26xnc",
       "name": "Montar copy para criativo da Life",
@@ -87,7 +167,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793602800000,
       "date_created": 1793639945935,
       "date_closed": null,
       "tipo": null,
@@ -107,7 +187,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793602800000,
       "date_created": 1793639945567,
       "date_closed": null,
       "tipo": null,
@@ -127,7 +207,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1793639945256,
       "date_closed": null,
       "tipo": null,
@@ -187,13 +267,13 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1793639944079,
       "date_closed": null,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfp",
-      "description": "",
+      "description": "Ele me enviou um documento com o briefing que ele ira desenvolver",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -241,25 +321,46 @@
     },
     {
       "id": "17tjca26xfk",
-      "name": "Ação do 11/11 Aspekto",
+      "name": "Ações do 11/11 Aspekto",
       "status": "fila de demandas",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793948400000,
       "date_created": 1793639943040,
       "date_closed": null,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfk",
       "description": "",
-      "priority": null,
+      "priority": {
+        "color": "#f8ae00",
+        "id": "2",
+        "orderindex": "2",
+        "priority": "high"
+      },
       "start_date": null,
       "subtasks": [
         {
           "id": "17tjca26xnc",
           "name": "Montar copy para criativo da Life",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "17tjca26xnf",
+          "name": "Entender como direcionar leads para o comercial: LP ou API",
+          "status": "fila de demandas",
+          "assignee": {
+            "name": "Guilherme da Silva Barreto"
+          }
+        },
+        {
+          "id": "17tjca26xnh",
+          "name": "Desenvolver criativo para o feed",
           "status": "fila de demandas",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
@@ -316,7 +417,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793602800000,
       "date_created": 1793639941648,
       "date_closed": null,
       "tipo": null,
@@ -954,7 +1055,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak5f4ch",
-      "description": "Seguem as informações do candidato: \n\nMeu Linkedin: https://www.linkedin.com/in/yuriluiz/\nAlguns projetos: https://yuricabeloeditor.com.br/\nCurriculo:",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -974,7 +1075,7 @@
       "tipo": "Fotografia",
       "email": "lara.teixera@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ak3z44a",
-      "description": "Lara Teixeira\nFotos de antes e depois da paciente Karina (iniciais foram no ano passado, finais completas feitas dia 20/08/2026)",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -994,7 +1095,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajypppe",
-      "description": "fotos fianis",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1953,99 +2054,19 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajmypfc",
-      "name": "Maria Augusta de Assis Rodrigues Haddad - 15h",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016784,
-        "name": "Yuri Lima"
-      },
-      "due_date": 1785049200000,
-      "date_created": 1784656128281,
-      "date_closed": 1785279917958,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajmypfc",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajk6h3k",
-      "name": "Organizar demandas de influenciadores para a agência",
-      "status": "concluído",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1784530800000,
-      "date_created": 1784299175841,
-      "date_closed": 1784553267098,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajk6h3k",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajjqvjx",
-      "name": "Lucas Diniz Oliveira Estanislau - 16878 - Fotos finais",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016783,
-        "name": "Ícaro Eduardo Alves Rodrigues"
-      },
-      "due_date": 1784790000000,
-      "date_created": 1784223816128,
-      "date_closed": 1784291723957,
-      "tipo": "Fotografia",
-      "email": "rebeca.carvalho@grupoaspekto.com",
-      "url": "https://app.clickup.com/t/86ajjqvjx",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
-      "id": "86ajjmw1a",
-      "name": "[Conteúdo Gui] Roteiro 10",
-      "status": "concluído",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1785135600000,
-      "date_created": 1784216093565,
-      "date_closed": 1793639401978,
-      "tipo": "Mídias sociais",
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajjmw1a",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "done": 1,
+      "done": 0,
       "open": 10
     },
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "done": 31,
+      "done": 30,
       "open": 4
     },
     {
@@ -2057,39 +2078,37 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 18,
-      "open": 18
+      "done": 16,
+      "open": 22
     }
   ],
   "stageTimes": {},
   "tasksByType": {
-    "Sem tipo": 70,
-    "Fotografia": 27,
+    "Sem tipo": 72,
+    "Fotografia": 26,
     "Identidade visual": 1,
-    "CS": 1,
-    "Mídias sociais": 1
+    "CS": 1
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 36625,
-    "Fotografia": 7780,
+    "Sem tipo": 38579,
+    "Fotografia": 8057,
     "Identidade visual": 33180,
-    "CS": 8725,
-    "Mídias sociais": 157055
+    "CS": 8725
   },
   "onTimeRateByUser": [
     {
       "id": 118016784,
       "name": "Yuri Lima",
-      "total": 1,
+      "total": 0,
       "onTime": 0,
-      "rate": 0
+      "rate": null
     },
     {
       "id": 118016783,
       "name": "Ícaro Eduardo Alves Rodrigues",
-      "total": 29,
-      "onTime": 6,
-      "rate": 21
+      "total": 28,
+      "onTime": 5,
+      "rate": 18
     },
     {
       "id": 118016782,
@@ -2101,7 +2120,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 10,
+      "total": 8,
       "onTime": 0,
       "rate": 0
     }
@@ -2109,7 +2128,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 46
+      "count": 42
     },
     {
       "month": "2026-08",
@@ -2125,7 +2144,7 @@
     },
     {
       "month": "2026-11",
-      "count": 16
+      "count": 20
     }
   ]
 }
