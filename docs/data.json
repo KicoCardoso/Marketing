@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:06:05.528Z",
+  "updatedAt": "2026-11-02T17:11:04.466Z",
   "members": [
     {
       "id": 118016784,
@@ -67,7 +67,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1791919795033,
       "date_closed": null,
       "tipo": null,
@@ -77,7 +77,13 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1793639261377,
+          "text": "@Kico Cardoso, fico no aguardo dos conteúdos editados.\n"
+        }
+      ]
     },
     {
       "id": "17tjca23tec",
@@ -87,7 +93,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1791919707045,
       "date_closed": null,
       "tipo": null,
@@ -97,19 +103,25 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1793639309566,
+          "text": "@Kico Cardoso, apesar de me liberarem o acesso, ainda não consigo ver a aba de \"Caixa de Entrada\" do perfil.\n"
+        }
+      ]
     },
     {
       "id": "17tjca23td2",
       "name": "Black Friday - Aprovação de mensagens do Grupo VIP",
-      "status": "aprovação 1",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1791919461904,
-      "date_closed": null,
+      "date_closed": 1793639375207,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23td2",
@@ -122,14 +134,14 @@
     {
       "id": "17tjca23td1",
       "name": "Black Friday - Aprovação de E-mail Marketing",
-      "status": "aprovação 1",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1791919451538,
-      "date_closed": null,
+      "date_closed": 1793639409732,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23td1",
@@ -142,14 +154,14 @@
     {
       "id": "17tjca23tcy",
       "name": "Black Friday - Aprovação de Copys para Gravação",
-      "status": "aprovação 1",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1791919397121,
-      "date_closed": null,
+      "date_closed": 1793639380493,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23tcy",
@@ -162,14 +174,14 @@
     {
       "id": "17tjca23tcw",
       "name": "Black Friday - Aprovação de E-mail Marketing",
-      "status": "aprovação 1",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1791919387366,
-      "date_closed": null,
+      "date_closed": 1793639385265,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca23tcw",
@@ -699,14 +711,14 @@
     {
       "id": "86ajwk7fp",
       "name": "Maria Eduarda Monteiro - Pendente",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1785953063929,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk7fp",
@@ -719,14 +731,14 @@
     {
       "id": "86ajwk6y4",
       "name": "Wilker Igor Santos Rocha - Pendente",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1785953008084,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk6y4",
@@ -739,14 +751,14 @@
     {
       "id": "86ajwjpt1",
       "name": "Maria José Parreiras De Miranda - Pendente",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1786345200000,
       "date_created": 1785951947090,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwjpt1",
@@ -1050,14 +1062,14 @@
     {
       "id": "86ajr94rb",
       "name": "Conteúdos Guilherme",
-      "status": "impedimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1786950000000,
       "date_created": 1785260778393,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajr94rb",
@@ -1068,7 +1080,7 @@
         {
           "id": "86ajjmw16",
           "name": "[Conteúdo Gui] Roteiro 09",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1076,7 +1088,7 @@
         {
           "id": "86ajjmw1a",
           "name": "[Conteúdo Gui] Roteiro 10",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1084,7 +1096,7 @@
         {
           "id": "86ajjmw14",
           "name": "[Conteúdo Gui] Roteiro 08",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1092,7 +1104,7 @@
         {
           "id": "86ajjmw12",
           "name": "[Conteúdo Gui] Roteiro 07",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1100,7 +1112,7 @@
         {
           "id": "86ajjmw0y",
           "name": "[Conteúdo Gui] Roteiro 06",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1108,7 +1120,7 @@
         {
           "id": "86ajjmw0t",
           "name": "[Conteúdo Gui] Roteiro 05",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1116,7 +1128,7 @@
         {
           "id": "86ajjmw0m",
           "name": "[Conteúdo Gui] Roteiro 04",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1124,7 +1136,7 @@
         {
           "id": "86ajjmw0j",
           "name": "[Conteúdo Gui] Roteiro 03",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1132,7 +1144,7 @@
         {
           "id": "86ajjmw0f",
           "name": "[Conteúdo Gui] Roteiro 02",
-          "status": "fila de demandas",
+          "status": "concluído",
           "assignee": {
             "name": "Guilherme da Silva Barreto"
           }
@@ -1357,7 +1369,7 @@
       "tipo": "Fotografia",
       "email": "marcela.azevedo@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajprntq",
-      "description": "Foto de antes e depois do sorriso",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1377,7 +1389,7 @@
       "tipo": "Fotografia",
       "email": "rebecasalmen@outlook.com",
       "url": "https://app.clickup.com/t/86ajpqzh3",
-      "description": "REBECA SALMEN - edição de foto (igualar a cor das lentes)",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1397,7 +1409,7 @@
       "tipo": "Fotografia",
       "email": "pkumaira@gmail.com",
       "url": "https://app.clickup.com/t/86ajpn10t",
-      "description": "Pedro Kumaira- fotos antes e depois do paciente: Danyell Lucas Furtado",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1766,14 +1778,14 @@
     {
       "id": "86ajjmw1a",
       "name": "[Conteúdo Gui] Roteiro 10",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216093565,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw1a",
@@ -1786,14 +1798,14 @@
     {
       "id": "86ajjmw16",
       "name": "[Conteúdo Gui] Roteiro 09",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216093281,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw16",
@@ -1806,14 +1818,14 @@
     {
       "id": "86ajjmw14",
       "name": "[Conteúdo Gui] Roteiro 08",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216092947,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw14",
@@ -1826,14 +1838,14 @@
     {
       "id": "86ajjmw12",
       "name": "[Conteúdo Gui] Roteiro 07",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216092754,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw12",
@@ -1846,14 +1858,14 @@
     {
       "id": "86ajjmw0y",
       "name": "[Conteúdo Gui] Roteiro 06",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216092545,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw0y",
@@ -1866,14 +1878,14 @@
     {
       "id": "86ajjmw0t",
       "name": "[Conteúdo Gui] Roteiro 05",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216092322,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw0t",
@@ -1886,14 +1898,14 @@
     {
       "id": "86ajjmw0m",
       "name": "[Conteúdo Gui] Roteiro 04",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216092112,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw0m",
@@ -1906,14 +1918,14 @@
     {
       "id": "86ajjmw0j",
       "name": "[Conteúdo Gui] Roteiro 03",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216091885,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw0j",
@@ -1926,14 +1938,14 @@
     {
       "id": "86ajjmw0f",
       "name": "[Conteúdo Gui] Roteiro 02",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1785135600000,
       "date_created": 1784216091693,
-      "date_closed": null,
+      "date_closed": 1793639401978,
       "tipo": "Mídias sociais",
       "email": null,
       "url": "https://app.clickup.com/t/86ajjmw0f",
@@ -2126,8 +2138,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 12,
-      "open": 19
+      "done": 29,
+      "open": 2
     }
   ],
   "stageTimes": {},
@@ -2139,11 +2151,11 @@
     "Mídias sociais": 14
   },
   "avgCompletionTimeByType": {
+    "Sem tipo": 36625,
     "Fotografia": 7063,
-    "Sem tipo": 22223,
     "Identidade visual": 33180,
     "CS": 8725,
-    "Mídias sociais": 18392
+    "Mídias sociais": 107532
   },
   "onTimeRateByUser": [
     {
@@ -2170,7 +2182,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 10,
+      "total": 21,
       "onTime": 0,
       "rate": 0
     }
