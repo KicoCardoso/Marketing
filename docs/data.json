@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T15:51:13.405Z",
+  "updatedAt": "2026-11-03T15:55:54.393Z",
   "members": [
     {
       "id": 118016784,
@@ -42,14 +42,14 @@
     {
       "id": "17tjca26xnw",
       "name": "Trazer resultados gerais do mês passado",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1793689200000,
       "date_created": 1793640921202,
-      "date_closed": null,
+      "date_closed": 1793721260181,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xnw",
@@ -62,7 +62,7 @@
     {
       "id": "17tjca26xnu",
       "name": "Montar uma apresentação padrão para reunião de marketing",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -167,7 +167,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1793639947008,
       "date_closed": null,
       "tipo": null,
@@ -182,14 +182,14 @@
     {
       "id": "17tjca26xfx",
       "name": "Trocar a logo da Aspekto pela Black",
-      "status": "criação de copy / roteiros",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1793689200000,
       "date_created": 1793639946672,
-      "date_closed": null,
+      "date_closed": 1793721183526,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfx",
@@ -202,14 +202,14 @@
     {
       "id": "17tjca26xfv",
       "name": "Mandar vídeo que fala sobre a Aspekto para Isadora",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1793602800000,
       "date_created": 1793639945935,
-      "date_closed": null,
+      "date_closed": 1793721219018,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfv",
@@ -227,7 +227,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1793602800000,
+      "due_date": 1793689200000,
       "date_created": 1793639945567,
       "date_closed": null,
       "tipo": null,
@@ -267,7 +267,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793775600000,
       "date_created": 1793639944903,
       "date_closed": null,
       "tipo": null,
@@ -287,7 +287,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": null,
+      "due_date": 1793689200000,
       "date_created": 1793639944489,
       "date_closed": null,
       "tipo": null,
@@ -412,14 +412,14 @@
     {
       "id": "17tjca26xfj",
       "name": "Organizar calendário geral das ações de novembro",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1793639942686,
-      "date_closed": null,
+      "date_closed": 1793721076505,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfj",
@@ -432,14 +432,14 @@
     {
       "id": "17tjca26xfh",
       "name": "Organizar cronograma de novembro",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": null,
       "date_created": 1793639942357,
-      "date_closed": null,
+      "date_closed": 1793721072369,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfh",
@@ -2078,8 +2078,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 16,
-      "open": 24
+      "done": 21,
+      "open": 19
     }
   ],
   "stageTimes": {},
@@ -2090,7 +2090,7 @@
     "CS": 1
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 38410,
+    "Sem tipo": 32960,
     "Fotografia": 8057,
     "Identidade visual": 33180,
     "CS": 8725
@@ -2120,7 +2120,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 8,
+      "total": 11,
       "onTime": 0,
       "rate": 0
     }
