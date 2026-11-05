@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T18:31:07.642Z",
+  "updatedAt": "2026-11-05T18:36:02.395Z",
   "members": [
     {
       "id": 118016784,
@@ -19,6 +19,26 @@
     }
   ],
   "tasks": [
+    {
+      "id": "17tjca27jbm",
+      "name": "Desenvolver aplicativo Ga.io",
+      "status": "fila de demandas",
+      "assignee": {
+        "id": 278685306,
+        "name": "Guilherme da Silva Barreto"
+      },
+      "due_date": 1794553200000,
+      "date_created": 1793903610616,
+      "date_closed": null,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/17tjca27jbm",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
+    },
     {
       "id": "17tjca275jh",
       "name": "Buscar fotos de pacientes",
@@ -1047,7 +1067,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86akadb6j",
-      "description": "Segue o planejamento a ser feito para apresentar para a comissão do Miss Universo BH. \n\nEu quero a validação do que será feito, a ideia é apresentar essa estrutura para a comissão e desenvolver os próximos passos junto com a organização.",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2046,26 +2066,6 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
-    },
-    {
-      "id": "86ajmzxt3",
-      "name": "[ADS SP - BOF] Roteiro 03",
-      "status": "concluído",
-      "assignee": {
-        "id": 118016782,
-        "name": "Kico Cardoso"
-      },
-      "due_date": 1785567600000,
-      "date_created": 1784658665720,
-      "date_closed": 1787267397095,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/86ajmzxt3",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
     }
   ],
   "userStats": [
@@ -2084,14 +2084,14 @@
     {
       "id": 118016782,
       "name": "Kico Cardoso",
-      "done": 7,
+      "done": 6,
       "open": 7
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
       "done": 23,
-      "open": 17
+      "open": 18
     }
   ],
   "stageTimes": {},
@@ -2102,7 +2102,7 @@
     "CS": 1
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 31368,
+    "Sem tipo": 31021,
     "Fotografia": 8057,
     "Identidade visual": 33180,
     "CS": 8725
@@ -2125,7 +2125,7 @@
     {
       "id": 118016782,
       "name": "Kico Cardoso",
-      "total": 7,
+      "total": 6,
       "onTime": 0,
       "rate": 0
     },
@@ -2140,7 +2140,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 40
+      "count": 39
     },
     {
       "month": "2026-08",
@@ -2156,7 +2156,7 @@
     },
     {
       "month": "2026-11",
-      "count": 22
+      "count": 23
     }
   ]
 }
