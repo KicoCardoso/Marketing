@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T16:51:01.723Z",
+  "updatedAt": "2026-11-05T16:56:05.782Z",
   "members": [
     {
       "id": 118016784,
@@ -267,7 +267,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1793689200000,
+      "due_date": 1793948400000,
       "date_created": 1793639945256,
       "date_closed": null,
       "tipo": null,
@@ -317,7 +317,13 @@
       "priority": null,
       "start_date": null,
       "subtasks": [],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1793897461421,
+          "text": "Solicitei dados dele e vamos agendar na sexta-feira\n"
+        }
+      ]
     },
     {
       "id": "17tjca26xfp",
@@ -327,7 +333,7 @@
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
-      "due_date": 1793689200000,
+      "due_date": 1793948400000,
       "date_created": 1793639944079,
       "date_closed": null,
       "tipo": null,
@@ -472,14 +478,14 @@
     {
       "id": "17tjca26xff",
       "name": "Organizar os influenciadores para novembro",
-      "status": "demanda em desenvolvimento",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1793689200000,
       "date_created": 1793639941648,
-      "date_closed": null,
+      "date_closed": 1793897709388,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xff",
@@ -1055,7 +1061,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86akadb6j",
-      "description": "",
+      "description": "Segue o planejamento a ser feito para apresentar para a comissão do Miss Universo BH. \n\nEu quero a validação do que será feito, a ideia é apresentar essa estrutura para a comissão e desenvolver os próximos passos junto com a organização.",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1075,9 +1081,9 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak9fkzf",
-      "description": "",
+      "description": "Segue as copys: \n\nSegue o calendário:",
       "priority": null,
-      "start_date": null,
+      "start_date": 1788332400000,
       "subtasks": [],
       "comments": []
     },
@@ -1095,7 +1101,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak6edng",
-      "description": "",
+      "description": "Candidata com um bom potencial para desenvolver conteúdos que pode ser uma boa opção para a vaga. Tem uma excelente formação academia.  \n\nSegue curriculo + portifólio:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1115,7 +1121,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak5f4ch",
-      "description": "",
+      "description": "Seguem as informações do candidato: \n\nMeu Linkedin: https://www.linkedin.com/in/yuriluiz/\nAlguns projetos: https://yuricabeloeditor.com.br/\nCurriculo:",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1135,7 +1141,7 @@
       "tipo": "Fotografia",
       "email": "lara.teixera@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ak3z44a",
-      "description": "",
+      "description": "Lara Teixeira\nFotos de antes e depois da paciente Karina (iniciais foram no ano passado, finais completas feitas dia 20/08/2026)",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1155,7 +1161,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajypppe",
-      "description": "",
+      "description": "fotos fianis",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1192,7 +1198,7 @@
       "tipo": "Fotografia",
       "email": "davi.guimaraes@grupoaspekto.com.br",
       "url": "https://app.clickup.com/t/86ajxc2km",
-      "description": "",
+      "description": "Editar fotos de antes e depois da paciente Lidcy Anacleto Gomes",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1212,7 +1218,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk7fp",
-      "description": "",
+      "description": "Contato: 31 7533-5462",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1232,7 +1238,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk6y4",
-      "description": "",
+      "description": "Contato: 31 8534-1731",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2078,8 +2084,8 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 21,
-      "open": 20
+      "done": 22,
+      "open": 19
     }
   ],
   "stageTimes": {},
@@ -2090,7 +2096,7 @@
     "CS": 1
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 32641,
+    "Sem tipo": 31807,
     "Fotografia": 8057,
     "Identidade visual": 33180,
     "CS": 8725
@@ -2120,7 +2126,7 @@
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 11,
+      "total": 12,
       "onTime": 0,
       "rate": 0
     }
