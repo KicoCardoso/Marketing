@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T16:56:05.782Z",
+  "updatedAt": "2026-11-05T17:01:20.688Z",
   "members": [
     {
       "id": 118016784,
@@ -180,26 +180,6 @@
       "comments": []
     },
     {
-      "id": "17tjca26xfy",
-      "name": "Postar primeiro conteúdo de Black no feed",
-      "status": "fila de demandas",
-      "assignee": {
-        "id": 278685306,
-        "name": "Guilherme da Silva Barreto"
-      },
-      "due_date": 1793689200000,
-      "date_created": 1793639947008,
-      "date_closed": null,
-      "tipo": null,
-      "email": null,
-      "url": "https://app.clickup.com/t/17tjca26xfy",
-      "description": "",
-      "priority": null,
-      "start_date": null,
-      "subtasks": [],
-      "comments": []
-    },
-    {
       "id": "17tjca26xfx",
       "name": "Trocar a logo da Aspekto pela Black",
       "status": "concluído",
@@ -242,14 +222,14 @@
     {
       "id": "17tjca26xfu",
       "name": "Montar briefing para influs de SP",
-      "status": "fila de demandas",
+      "status": "concluído",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
       },
       "due_date": 1793689200000,
       "date_created": 1793639945567,
-      "date_closed": null,
+      "date_closed": 1793897901303,
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/17tjca26xfu",
@@ -388,7 +368,7 @@
     {
       "id": "17tjca26xfk",
       "name": "Ações do 11/11 Aspekto",
-      "status": "fila de demandas",
+      "status": "demanda em desenvolvimento",
       "assignee": {
         "id": 278685306,
         "name": "Guilherme da Silva Barreto"
@@ -433,7 +413,13 @@
           }
         }
       ],
-      "comments": []
+      "comments": [
+        {
+          "author": "Guilherme da Silva Barreto",
+          "date": 1793897876368,
+          "text": "Gravamos a live com a Luiza →\ndrive.google.com/drive/folders/1qkBo9UH6RmxLYa-tWATpnABVubC3SPUL?usp=sharing \n "
+        }
+      ]
     },
     {
       "id": "17tjca26xfj",
@@ -1081,9 +1067,9 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak9fkzf",
-      "description": "Segue as copys: \n\nSegue o calendário:",
+      "description": "",
       "priority": null,
-      "start_date": 1788332400000,
+      "start_date": null,
       "subtasks": [],
       "comments": []
     },
@@ -1101,7 +1087,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak6edng",
-      "description": "Candidata com um bom potencial para desenvolver conteúdos que pode ser uma boa opção para a vaga. Tem uma excelente formação academia.  \n\nSegue curriculo + portifólio:",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1121,7 +1107,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ak5f4ch",
-      "description": "Seguem as informações do candidato: \n\nMeu Linkedin: https://www.linkedin.com/in/yuriluiz/\nAlguns projetos: https://yuricabeloeditor.com.br/\nCurriculo:",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1141,7 +1127,7 @@
       "tipo": "Fotografia",
       "email": "lara.teixera@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ak3z44a",
-      "description": "Lara Teixeira\nFotos de antes e depois da paciente Karina (iniciais foram no ano passado, finais completas feitas dia 20/08/2026)",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1161,7 +1147,7 @@
       "tipo": "Fotografia",
       "email": "rebeca.carvalho@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajypppe",
-      "description": "fotos fianis",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1198,7 +1184,7 @@
       "tipo": "Fotografia",
       "email": "davi.guimaraes@grupoaspekto.com.br",
       "url": "https://app.clickup.com/t/86ajxc2km",
-      "description": "Editar fotos de antes e depois da paciente Lidcy Anacleto Gomes",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1218,7 +1204,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk7fp",
-      "description": "Contato: 31 7533-5462",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1238,7 +1224,7 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajwk6y4",
-      "description": "Contato: 31 8534-1731",
+      "description": "",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -2060,6 +2046,26 @@
       "start_date": null,
       "subtasks": [],
       "comments": []
+    },
+    {
+      "id": "86ajmzxt3",
+      "name": "[ADS SP - BOF] Roteiro 03",
+      "status": "concluído",
+      "assignee": {
+        "id": 118016782,
+        "name": "Kico Cardoso"
+      },
+      "due_date": 1785567600000,
+      "date_created": 1784658665720,
+      "date_closed": 1787267397095,
+      "tipo": null,
+      "email": null,
+      "url": "https://app.clickup.com/t/86ajmzxt3",
+      "description": "",
+      "priority": null,
+      "start_date": null,
+      "subtasks": [],
+      "comments": []
     }
   ],
   "userStats": [
@@ -2078,14 +2084,14 @@
     {
       "id": 118016782,
       "name": "Kico Cardoso",
-      "done": 6,
+      "done": 7,
       "open": 7
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "done": 22,
-      "open": 19
+      "done": 23,
+      "open": 17
     }
   ],
   "stageTimes": {},
@@ -2096,7 +2102,7 @@
     "CS": 1
   },
   "avgCompletionTimeByType": {
-    "Sem tipo": 31807,
+    "Sem tipo": 31368,
     "Fotografia": 8057,
     "Identidade visual": 33180,
     "CS": 8725
@@ -2119,14 +2125,14 @@
     {
       "id": 118016782,
       "name": "Kico Cardoso",
-      "total": 6,
+      "total": 7,
       "onTime": 0,
       "rate": 0
     },
     {
       "id": 278685306,
       "name": "Guilherme da Silva Barreto",
-      "total": 12,
+      "total": 13,
       "onTime": 0,
       "rate": 0
     }
@@ -2134,7 +2140,7 @@
   "monthlyVolume": [
     {
       "month": "2026-07",
-      "count": 39
+      "count": 40
     },
     {
       "month": "2026-08",
@@ -2150,7 +2156,7 @@
     },
     {
       "month": "2026-11",
-      "count": 23
+      "count": 22
     }
   ]
 }
