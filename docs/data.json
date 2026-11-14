@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T06:06:01.486Z",
+  "updatedAt": "2026-11-14T06:11:00.501Z",
   "members": [
     {
       "id": 118016784,
@@ -1350,7 +1350,7 @@
       "tipo": "Fotografia",
       "email": "breno.goncalves@grupoaspekto.com",
       "url": "https://app.clickup.com/t/86ajtcpjd",
-      "description": "",
+      "description": "fazer antes e depois do caso dela para envio de ex paciente com resina",
       "priority": null,
       "start_date": null,
       "subtasks": [],
@@ -1370,8 +1370,13 @@
       "tipo": null,
       "email": null,
       "url": "https://app.clickup.com/t/86ajt2agb",
-      "description": "",
-      "priority": null,
+      "description": "Precisamos desenvolver uma LP para captação de leads para a inauguração da nova unidade em SP. Abaixo, estão as copys da página, além de um mockup de exemplo, somente para referência, mas seria interessante a LP estar com o desing mais próximo do site. \n\nSegue:",
+      "priority": {
+        "color": "#f50000",
+        "id": "1",
+        "orderindex": "1",
+        "priority": "urgent"
+      },
       "start_date": null,
       "subtasks": [],
       "comments": []
